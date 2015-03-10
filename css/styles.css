@@ -146,7 +146,7 @@ button:hover a {
 
 
 
-@media screen and (max-width:540px) {
+@media screen and (max-width:328px) {
 	#menu {
 		display: block;
 		right: 0.75rem;
@@ -183,12 +183,6 @@ button:hover a {
 		border-bottom: 2px solid white;
 	}
 
-	
-
-	.nav-list span {
-		display: none;
-	}
-
 	nav {
 		float: none;
 	}
@@ -197,10 +191,39 @@ button:hover a {
 		width: 100%;
 		text-align: left;
 		position: absolute;
-		top: 1rem;
-		left: 1rem;
-		
+		top: 1.6rem;
+		left: 1rem;	
 	}
+
+
+
+	.pie {
+		width: 50%;
+	}
+
+	main {
+		padding-top: 6vh;
+	}
+
+	h1 {
+		font-size: 1.33rem;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	h2 {
+		font-size: 1rem;
+	}
+
+	.nav-list span {
+		display: none;
+	}
+
+	button {
+		margin-top: 3rem;
+	}
+
+
 }
 
 
