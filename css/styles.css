@@ -133,13 +133,75 @@ button:hover a {
 
 
 
+/* Responsive Menu */
+
+#menu {
+	display: none;
+	position: absolute;
+}
+
+#nav-list {
+
+}
 
 
 
+@media screen and (max-width:540px) {
+	#menu {
+		display: block;
+		right: 0.75rem;
+		top: 0.75rem;
+	}
 
+	header {
+		padding: 0;
+	}
 
+	.nav-list {
+		width: 100%;
+		margin-top: 48px;
+		float: none;
+		text-align: center;
+		visibility: hidden;
+		opacity: 0;
+		height: 0;
+		-webkit-transition: all 0.1s;
+	}
 
+	.show-menu {
+		visibility: visible;
+		opacity: 1;
+		height: auto;
+		-webkit-transition: all 0.1s;
+		width: 100%;
+	}
 
+	.nav-list li {
+		width: 100%;
+		display: block;
+		padding: 1rem 0 1rem 0;
+		border-bottom: 2px solid white;
+	}
+
+	
+
+	.nav-list span {
+		display: none;
+	}
+
+	nav {
+		float: none;
+	}
+
+	header p {
+		width: 100%;
+		text-align: left;
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		
+	}
+}
 
 
 
