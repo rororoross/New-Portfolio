@@ -75,7 +75,6 @@ nav ul li {
 	display: inline;
 }
 
-
 .pie {
 	margin: 0 auto;
 	width: 12.5%;
@@ -115,7 +114,7 @@ button a {
 }
 
 button:hover {
-	background-color: #8cd212;
+	background-color: #ffff00;
 	transition: 0.5s;
 	cursor: pointer;
 }
@@ -274,7 +273,6 @@ a {
 
 .mac-container, .iphone-container, .animation-container {
 	float: left;
-	
 	width: 33%;
 }
 
@@ -306,18 +304,44 @@ h3 {
 
 
 
+/* Bus App Styles */
+
+#bus-app {
+	padding-top: 0;
+}
+
+#phone-background {
+	background-image: url(../img/phone-bg.png);
+	width: 600px;
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: absolute;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	background-position: center bottom;
+}
+
+#phone-screen {
+	width: 271px;
+	height: 474px;
+	background-color: #fff;
+	position: absolute;
+	top: 205px;
+	left: 88px;
+}
 
 
-
-
-
-
-
-
-
-
-
-
+#bus-header {
+	background-color: #34b262;
+	width: 100%;
+	height: 46px;
+	padding: 0;
+	z-index: 5;
+}
 
 
 
