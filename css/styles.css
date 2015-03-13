@@ -75,9 +75,6 @@ nav ul li {
 	display: inline;
 }
 
-nav ul li:nth-child(1) {
-	color: #8cd212;
-}
 
 .pie {
 	margin: 0 auto;
@@ -128,6 +125,11 @@ button:hover a {
 	transition: 0.5s;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 
 
 
@@ -138,6 +140,7 @@ button:hover a {
 #menu {
 	display: none;
 	position: absolute;
+	z-index: 10;
 }
 
 #nav-list {
@@ -146,11 +149,11 @@ button:hover a {
 
 
 
-@media screen and (max-width:328px) {
+@media screen and (max-width:528px) {
 	#menu {
 		display: block;
-		right: 0.75rem;
-		top: 0.75rem;
+		right: 0.25rem;
+		top: 0.25rem;
 	}
 
 	header {
@@ -159,36 +162,65 @@ button:hover a {
 
 	.nav-list {
 		width: 100%;
-		margin-top: 48px;
+		padding: 0;
 		float: none;
 		text-align: center;
-		visibility: hidden;
 		opacity: 0;
 		height: 0;
-		-webkit-transition: all 0.1s;
-	}
-
-	.show-menu {
-		visibility: visible;
-		opacity: 1;
-		height: auto;
-		-webkit-transition: all 0.1s;
-		width: 100%;
+		-webkit-transition: all 1s;
+		display: none;
 	}
 
 	.nav-list li {
 		width: 100%;
 		display: block;
-		padding: 1rem 0 1rem 0;
-		border-bottom: 2px solid white;
+		padding: 0;
+		vertical-align: middle;
+		display: table-cell;
+		height: 25vh;
 	}
+
+	.show-menu {
+		opacity: 1;
+		height: auto;
+		-webkit-transition: all 500ms;
+		width: 100%;
+		padding: 0;
+		position: absolute;
+		height: auto;
+		background-color: #ff5151;
+		margin: 0;
+		display: table;
+	}
+
+	.show-menu li {
+		height: 25vh;
+		box-sizing: border-box;
+		border-bottom: 2px solid white;
+		width: 1600px;
+		vertical-align: middle;
+		display: table-cell;
+		-webkit-transition: all 500ms;
+	}
+
+
+	.show-menu li:hover {
+		background-color: #ffffff;
+		transition: all 0.5s;
+		color: #ff5151;
+	}
+
+	.show-menu a {
+		color: white;
+	}
+
+	
 
 	nav {
 		float: none;
 	}
 
 	header p {
-		width: 100%;
 		text-align: left;
 		position: absolute;
 		top: 1.6rem;
@@ -202,7 +234,7 @@ button:hover a {
 	}
 
 	main {
-		padding-top: 6vh;
+		padding-top: 6rem;
 	}
 
 	h1 {
