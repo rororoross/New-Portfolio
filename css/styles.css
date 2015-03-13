@@ -262,6 +262,62 @@ a {
 
 
 
+/* My work styles */
+
+.my-work-body {
+	background-color: #5baafa;
+}
+
+.active {
+	color: #ffff00;
+}
+
+.mac-container, .iphone-container, .animation-container {
+	float: left;
+	
+	width: 33%;
+}
+
+.mac, .iphone, .animation {
+	margin: 0 auto;
+	display: block;
+}
+
+h3 {
+	text-align: center;
+	font-size: 0.9rem;
+	padding-top: 0.5rem;
+}
+
+.work-container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 6rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
