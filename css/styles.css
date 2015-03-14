@@ -320,7 +320,7 @@ h3 {
 	bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	left: 0;
+	left: 10%;
 	right: 0;
 	background-position: center bottom;
 }
@@ -334,6 +334,7 @@ h3 {
 	left: 88px;
 }
 
+/* Phone Stylings */
 
 #bus-header {
 	background-color: #34b262;
@@ -343,6 +344,65 @@ h3 {
 	z-index: 5;
 }
 
+#phone-head {
+	text-align: center;
+	padding-top: 4rem;
+	font-weight: 500;
+}
+
+
+@media screen and (min-width: 1700px) {
+
+	#phone-background {
+	width: 740px;
+	height: 960px;
+}
+
+#phone-screen {
+	width: 335px;
+	height: 584px;
+	background-color: #fff;
+	position: absolute;
+	top: 227px;
+	left: 108px;
+}
+
+/* Phone Stylings */
+
+#bus-header {
+	background-color: #34b262;
+	width: 100%;
+	height: 58px;
+	padding: 0;
+	z-index: 5;
+}
+
+#bus-subheader {
+	background-color: #000;
+	width: 100%;
+	height: 68px;
+	z-index: 5;
+}
+
+#map {
+	width: 100%;
+	height: 290px;
+	z-index: 5;
+	background-color: #ccc;
+}
+
+#routes {
+	width: 100%;
+	height: 165px;
+	z-index: 5;
+	background-color: #999;
+}
+
+
+
+
+
+}
 
 
 
