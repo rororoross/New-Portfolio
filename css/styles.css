@@ -399,6 +399,39 @@ h3 {
 }
 
 
+/* Icons */
+#bus-menu {
+	width: 32px;
+	padding-top: 13px;
+	padding-left: 13px;
+	position: absolute;
+}
+
+#bus-logo {
+	width: 36px;
+	position: absolute;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	top: 8px;
+}
+
+#bus-star {
+	width: 36px;
+	position: absolute;
+	right: 42px;
+	top: 12px;
+}
+
+
+#bus-search {
+	width: 24px;
+	position: absolute;
+	right: 12px;
+	top: 18px;
+}
+
+
 
 
 
