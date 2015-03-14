@@ -351,7 +351,7 @@ h3 {
 }
 
 
-@media screen and (min-width: 1700px) {
+
 
 	#phone-background {
 	width: 740px;
@@ -374,7 +374,10 @@ h3 {
 	width: 100%;
 	height: 58px;
 	padding: 0;
-	z-index: 5;
+	z-index: 6;
+	-webkit-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 1);
+	-moz-box-shadow:    0px 5px 5px -3px rgba(0, 0, 0, 1);
+	box-shadow:         0px 3px 5px -3px rgba(0, 0, 0, 1);
 }
 
 #bus-subheader {
@@ -385,7 +388,11 @@ h3 {
 	position: relative;
 	color: black;
 	font-size: 12px;
+	-webkit-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 0.51);
+	-moz-box-shadow:    0px 3px 5px -3px rgba(0, 0, 0, 0.51);
+	box-shadow:         0px 3px 5px -3px rgba(0, 0, 0, 0.51);
 }
+
 
 #my-location {
 	width: 75%;
@@ -411,13 +418,12 @@ h3 {
 	height: 34px;
 }
 
-
-
 #map {
 	width: 100%;
 	height: 290px;
 	z-index: 5;
-	background-color: #ccc;
+	background-image: url(../img/map.jpg);
+	background-size: cover;
 }
 
 #routes {
@@ -425,7 +431,81 @@ h3 {
 	height: 165px;
 	z-index: 5;
 	background-color: #999;
+	position: relative;
+	-webkit-box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.15);
+-moz-box-shadow:    0px -2px 1px 0px rgba(0, 0, 0, 0.15);
+box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 }
+
+#near-you {
+	height: 45px;
+	width: 100%;
+	background-color: #0243df;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+#near-you p {
+	padding-left: 54px;
+	padding-top: 14px;
+}
+
+#route-button {
+	width: 48px;
+	height: 48px;
+	background-color: #34b262;
+	border-radius: 24px;
+	position: absolute;
+	top: -24px;
+	right: 24px;
+	-webkit-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    2px 3px 8px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:         2px 3px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+.route-number {
+	width: 28px;
+	height: 28px;
+	background-color: #34b262;
+	border-radius: 14px;
+	font-size: 13px;
+	text-align: center;
+	color: white;
+	float: left;
+	margin-left: 18px;
+	margin-top: 4px;
+}
+
+.route-number p {
+	padding-top: 6px;
+	font-weight: 500;
+}
+
+.route-row {
+	height: 42px;
+	width: 100%;
+	background-color: white;
+	color: #4d4d4d;
+	font-size: 12px;
+}
+
+.route-name {
+	margin-top: 6px;
+}
+
+.route-name, .route-stop {
+	padding-left: 16px;
+	float: left;
+	width: 70%;
+}
+
+.route-stop {
+	font-size: 10px;
+	padding-top: 4px;
+	color: #999999;
+}
+
+
 
 
 /* Icons */
@@ -477,7 +557,7 @@ h3 {
 
 
 
-}
+
 
 
 
