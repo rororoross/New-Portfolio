@@ -579,12 +579,13 @@ h5 {
 }
 
 /* Icons */
-#bus-menu {
+.bus-menu {
 	width: 32px;
 	padding-top: 13px;
 	padding-left: 13px;
 	position: absolute;
 	z-index: 15;
+	transition: padding-left 200ms;
 }
 
 #bus-logo {
@@ -657,20 +658,48 @@ h5 {
 	top: 227px;
 	left: 108px;
 	position: absolute;
-	background-color: red;
+	background-color: #fff;
 	z-index: 11;
 	transition: width 300ms;
 }
 
-.drawer-expand {
-	width: 300px;
-	transition: width 300ms;
+#drawer-header {
+	width: 100%;
+	height: 58px;
+	background-color: #34b262;
 }
 
+.drawer-expand {
+	width: 290px;
+	transition: width 300ms;
 
+}
 
+.bus-expand {
+	width: 32px;
+	padding-top: 13px;
+	padding-left: 243px;
+	position: absolute;
+	z-index: 15;
+	transition: padding-left 300ms;
+}
 
+.overlay {
+	width: 335px;
+	height: 584px;
+	background-color: rgba(0,0,0,0.6);
+	position: absolute;
+	top: 227px;
+	left: 108px;
+	z-index: 10;
+	opacity: 0;
+	transition: all 300ms;
+}
 
+.overlay-display {
+	opacity: 1;
+	transition: all 300ms;
+}
 
 
 
