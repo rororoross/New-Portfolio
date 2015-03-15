@@ -335,7 +335,7 @@ h5 {
 .app-info p {
 	width: 66%;
 	float: right;
-	padding-right: 4rem;
+	padding-right: 7rem;
 	padding-top: 2rem;
 	line-height: 1.5rem;
 	font-weight: 500;
@@ -497,7 +497,7 @@ h5 {
 	-moz-box-shadow:    0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	transition: all 400ms;
-	
+
 	position: absolute;
 	bottom: 0px;
 }
