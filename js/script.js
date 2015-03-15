@@ -10,6 +10,6 @@ $( ".bus-menu" ).click(function() {
 
 $( "#route-button" ).click(function() {
 	$(".routes").toggleClass("routes-expand");
-	$(".bottom-routes").toggleClass("show-route");
+	$(".hide-routes").toggleClass("show-route");
 	
 });
