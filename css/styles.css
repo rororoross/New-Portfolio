@@ -295,9 +295,68 @@ h3 {
 
 
 
+/* App Details */
+.app-info {
+	float: right;
+	margin-top: 180px;
+	margin-right: 0px;
+	width: 700px;
+	height: 600px;
+	position: relative;
+}
 
+h4 {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
 
+h5 {
+	color: #ffff00;
+	font-weight: 500;
+	padding-left: 12px;
+	padding-top: 4px;
+}
 
+.app-specs {
+	padding-left: 12px;
+	padding-top: 2px;
+}
+
+.app-specs li {
+	padding: 2px;
+	font-weight: 500;
+}
+
+.app-specs li span {
+	color: #ffff00;
+}
+
+.app-info p {
+	width: 66%;
+	float: right;
+	padding-right: 4rem;
+	padding-top: 2rem;
+	line-height: 1.5rem;
+	font-weight: 500;
+}
+
+.github-icon {
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	right: 100px;
+	top: 2px;
+	background-image: url(../img/github-icon.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.github-icon:hover {
+	background-image: url(../img/github-icon-yellow.png);
+	cursor: pointer;
+	transition: all 500ms;
+}
 
 
 
@@ -311,7 +370,7 @@ h3 {
 }
 
 #phone-background {
-	background-image: url(../img/phone-bg.png);
+	background-image: url(../img/phone-bg-2.png);
 	width: 600px;
 	height: 800px;
 	background-repeat: no-repeat;
@@ -346,8 +405,9 @@ h3 {
 
 #phone-head {
 	text-align: center;
-	padding-top: 4rem;
+	padding-top: 5rem;
 	font-weight: 500;
+	margin-right: 25%;
 }
 
 
@@ -393,7 +453,6 @@ h3 {
 	box-shadow:         0px 3px 5px -3px rgba(0, 0, 0, 0.51);
 }
 
-
 #my-location {
 	width: 75%;
 	margin: 0 auto;
@@ -433,8 +492,8 @@ h3 {
 	background-color: #999;
 	position: relative;
 	-webkit-box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.15);
--moz-box-shadow:    0px -2px 1px 0px rgba(0, 0, 0, 0.15);
-box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow:    0px -2px 1px 0px rgba(0, 0, 0, 0.15);
+	box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 }
 
 #near-you {
@@ -443,6 +502,7 @@ box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	background-color: #0243df;
 	font-size: 14px;
 	font-weight: 600;
+	border-bottom: 1px solid #999999;
 }
 
 #near-you p {
@@ -457,29 +517,13 @@ box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	border-radius: 24px;
 	position: absolute;
 	top: -24px;
-	right: 24px;
+	right: 18px;
 	-webkit-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:    2px 3px 8px 0px rgba(0, 0, 0, 0.5);
-	box-shadow:         2px 3px 8px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:        0 2px 5px 0 rgba(0, 0, 0, 0.26);
 }
 
-.route-number {
-	width: 28px;
-	height: 28px;
-	background-color: #34b262;
-	border-radius: 14px;
-	font-size: 13px;
-	text-align: center;
-	color: white;
-	float: left;
-	margin-left: 18px;
-	margin-top: 4px;
-}
-
-.route-number p {
-	padding-top: 6px;
-	font-weight: 500;
-}
+/* Route Row */
 
 .route-row {
 	height: 42px;
@@ -487,16 +531,45 @@ box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	background-color: white;
 	color: #4d4d4d;
 	font-size: 12px;
+	position: relative;
+	border-bottom: 1px solid #f4f4f4;
+}
+
+.route-number {
+	width: 24px;
+	height: 24px;
+	background-color: #34b262;
+	border-radius: 12px;
+	font-size: 13px;
+	text-align: center;
+	color: white;
+	float: left;
+	margin-left: 18px;
+	margin-top: 9px;
+}
+
+.route-number p {
+	padding-top: 5px;
+	font-weight: 500;
 }
 
 .route-name {
-	margin-top: 6px;
+	margin-top: 8px;
 }
 
 .route-name, .route-stop {
 	padding-left: 16px;
 	float: left;
-	width: 70%;
+	width: 40%;
+}
+
+.route-time {
+	float: right;
+	width: auto;
+	font-size: 10px;
+	color: #4d4d4d;
+	padding-right: 36px;
+	padding-top: 4px;
 }
 
 .route-stop {
@@ -505,15 +578,13 @@ box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	color: #999999;
 }
 
-
-
-
 /* Icons */
 #bus-menu {
 	width: 32px;
 	padding-top: 13px;
 	padding-left: 13px;
 	position: absolute;
+	z-index: 15;
 }
 
 #bus-logo {
@@ -554,11 +625,47 @@ box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	top: 20px;
 }
 
+.route-timer {
+	width: 12px;
+	position: absolute;
+	right: 20px;
+	bottom: 14px;
+}
+
+.route-arrow {
+	width: 9px;
+	transform: rotate(90deg);
+	position: absolute;
+	left: 49px;
+	top: 10px;
+}
+
+#find-location {
+	width: 24px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 12px;
+}
 
 
 
+/* Drawer Styles */
 
+.drawer {
+	width: 0px;
+	height: 584px;
+	top: 227px;
+	left: 108px;
+	position: absolute;
+	background-color: red;
+	z-index: 11;
+	transition: width 300ms;
+}
 
+.drawer-expand {
+	width: 300px;
+	transition: width 300ms;
+}
 
 
 

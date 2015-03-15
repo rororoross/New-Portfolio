@@ -23,8 +23,21 @@
         </header>
 
 		<main id="bus-app">
-            <p id="phone-head">interactive prototype</p>
+            
+             <section class="app-info">
+                <a href="http://github.com/rossfenrick/New-Portfolio" target="_blank"><div class="github-icon"></div></a>
+                <h4>Bus Tracker App</h3>
+                <h5>Personal Project (Mobile Design, UX, Web Development)</h4>
+                <ul class="app-specs">
+                    <li><span>*</span> HTML</li>
+                    <li><span>*</span> CSS3</li>
+                    <li><span>*</span> jQuery</li>
+                    <li><span>*</span> Photoshop</li>
+                </ul>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum officiis laboriosam minima quibusdam est mollitia magnam omnis, expedita sapiente facere ab eaque, placeat nesciunt assumenda asperiores obcaecati consectetur officia aperiam.</p>
+            </section>
             <div id="phone-background">
+                <p id="phone-head">interactive prototype</p>
                 <div id="phone-screen">
                     <div id="bus-header">
                         <img src="img/ic_menu_48px.svg" alt="" id="bus-menu">
@@ -42,26 +55,46 @@
                             <div id="my-location"><p>My location</p></div>
                             <div id="destination"><p>Choose destination...</p></div>
                         </div>
-
-
-
                     </div>
                     <div id="map"></div>
                     <div id="routes">
                         <div id="near-you">
                             <p>Routes near you</p>
                         </div>
-                        <div id="route-button"></div>
+                        <div id="route-button">
+                            <img src="img/ic_my_location_48px.svg" alt="" id="find-location">
+                        </div>
                         <div class="route-row">
                             <div class="route-number"><p>30</p></div>
                             <p class="route-name">UWM via Maryland</p>
                             <p class="route-stop">Van Buren & Kilbourn</p>
+                            <p class="route-time">Due in 5 min</p>
+                            <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                            <img src="img/arrow492.svg" alt="" class="route-arrow">
+                        </div>
+                        <div class="route-row">
+                            <div class="route-number"><p>10</p></div>
+                            <p class="route-name">Bayshore</p>
+                            <p class="route-stop">Prospect & Wells</p>
+                            <p class="route-time">Due in 8 min</p>
+                            <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                            <img src="img/arrow492.svg" alt="" class="route-arrow">
+                        </div>
+                         <div class="route-row">
+                            <div class="route-number"><p>15</p></div>
+                            <p class="route-name">Downtown</p>
+                            <p class="route-stop">Wisconsin & Cass</p>
+                            <p class="route-time">Due in 1 min</p>
+                            <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                            <img src="img/arrow492.svg" alt="" class="route-arrow">
                         </div>
                     </div>
                 </div>
 
+                <div class="drawer"></div>
+
+
             </div>
-            
 		</main>
     </body>
     <script src="js/script.js"></script>
