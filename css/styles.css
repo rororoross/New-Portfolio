@@ -578,11 +578,11 @@ h5 {
 /* Icons */
 .bus-menu {
 	width: 32px;
-	padding-top: 13px;
-	padding-left: 13px;
+	margin-top: 13px;
+	margin-left: 13px;
 	position: absolute;
 	z-index: 15;
-	transition: padding-left 300ms;
+	transition: margin-left 300ms;
 	
 }
 
@@ -659,7 +659,7 @@ h5 {
 	background-color: #fff;
 	z-index: 11;
 	transition: width 400ms;
-	
+	display: none;
 }
 
 #drawer-header {
@@ -671,16 +671,16 @@ h5 {
 .drawer-expand {
 	width: 290px;
 	transition: width 300ms;
-	
+	display: block;
 }
 
 .bus-expand {
 	width: 32px;
-	padding-top: 13px;
-	padding-left: 243px;
+	margin-top: 13px;
+	margin-left: 243px;
 	position: absolute;
 	z-index: 15;
-	transition: padding-left 300ms;
+	transition: margin-left 300ms;
 	
 }
 
@@ -727,4 +727,114 @@ h5 {
 	transition: all 400ms;
 	opacity: 1;
 }
+
+/* Drawer Styles */
+#header-p {
+	color: white;
+	font-weight: 100;
+	font-size: 1.2rem;
+	padding: 1.1rem;
+}
+
+#header-weight {
+	font-weight: 600;
+}
+
+.drawer-row-top {
+	margin: 1.4rem;
+	margin-bottom: 1rem;
+}
+
+.drawer-row {
+	margin: 0.9rem;
+}
+
+.drawer-icon {
+	width: 32px;
+	float: left;
+}
+
+.star {
+	width: 40px;
+	height: 40px;
+	padding: 0;
+}
+
+.row-name-top, .row-name {
+	color: #34b262;
+	float: left;
+	padding-top: 8px;
+	font-weight: 600;
+	font-size: 1.2rem;
+	margin-left: 1rem;
+}
+
+.row-name {
+	padding-top: 14px;
+	margin-left: 0.7rem;
+	color: #2e2e2e;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.drawer-route {
+	width: 26px;
+	height: 26px;
+	padding-left: 8px;
+	padding-top: 6px;
+	padding-right: 3px;
+}
+
+.drawer-map {
+	width: 22px;
+	height: 22px;
+	padding-left: 10px;
+	padding-top: 12px;
+	padding-right: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

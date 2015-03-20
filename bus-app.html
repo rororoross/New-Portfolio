@@ -1,95 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <meta charset="utf-8">
-    <title>Ross Fenrick</title>
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,900' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-    <body class="my-work-body">
-        <header>
-        	<p>ross fenrick | <span>front end developer</span></p>
-        	<nav>
-        		<a href="#"><img id="menu" src="img/menu.svg" alt=""></a>
-	        	<ul class="nav-list" class="show-menu">
-		        	<a href="index.html"><li>home</li></a> <span>|</span> 
-		        	<a href="#"><li>about</li></a> <span>|</span> 
-		        	<a href="work.html"><li class="active">my work</li></a> <span>|</span> 
-		        	<a href="#"><li>get in touch</li></a>
-	        	</ul>
-        	</nav>
-        </header>
-
-		<main id="bus-app">
-            
-             <section class="app-info">
-                <a href="http://github.com/rossfenrick/New-Portfolio" target="_blank"><div class="github-icon"></div></a>
-                <h4>Bus Tracker App</h3>
-                <h5>Personal Project (Mobile Design, UX, Web Development)</h4>
-                <ul class="app-specs">
-                    <li><span>*</span> HTML</li>
-                    <li><span>*</span> CSS3</li>
-                    <li><span>*</span> jQuery</li>
-                    <li><span>*</span> Photoshop</li>
-                </ul>
-                <p>This started as purely a visual design project to experiment with Google's Material Design language. I had a lot of ideas for interactions and architecture while designing it so I decided to code a prototype to explore them further. Made from scratch as always.</p>
+<head>
+<meta charset="utf-8">
+<title>Ross Fenrick</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+<link href='http://fonts.googleapis.com/css?family=Roboto:500,300,700,400' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body class="my-work-body">
+    <header>
+        <p>ross fenrick | <span>front end developer</span></p>
+        <nav>
+        	<a href="#"><img id="menu" src="img/menu.svg" alt=""></a>
+	        <ul class="nav-list" class="show-menu">
+		        <a href="index.html"><li>home</li></a> <span>|</span> 
+		        <a href="#"><li>about</li></a> <span>|</span> 
+		        <a href="work.html"><li class="active">my work</li></a> <span>|</span> 
+		        <a href="#"><li>get in touch</li></a>
+	        </ul>
+        </nav>
+    </header>
+	<main id="bus-app">
+        <section class="app-info">
+            <a href="http://github.com/rossfenrick/New-Portfolio" target="_blank"><div class="github-icon"></div></a>
+            <h4>Bus Tracker App</h3>
+            <h5>Personal Project (Mobile Design, UX, Web Development)</h4>
+            <ul class="app-specs">
+                <li><span>*</span> HTML</li>
+                <li><span>*</span> CSS3</li>
+                <li><span>*</span> jQuery</li>
+                <li><span>*</span> Photoshop</li>
+            </ul>
+            <p>This started as purely a visual design project to experiment with Google's Material Design language. I had a lot of ideas for interactions and architecture while designing it so I decided to code a prototype to explore them further. Made from scratch as always.</p>
             </section>
-            <div id="phone-background">
-                <p id="phone-head">interactive prototype</p>
-                <div id="phone-screen">
-                    <div id="bus-header">
-                        <img src="img/ic_menu_48px.svg" alt="" class="bus-menu">
-                        <img src="img/bus-logo-white-fill.png" alt="" id="bus-logo">
-                        <img src="img/ic_star_rate_48px.svg" alt="" id="bus-star" class="svg">
-                        <img src="img/ic_search_48px.svg" alt="" id="bus-search">
+        <div id="phone-background">
+            <p id="phone-head">interactive prototype</p>
+            <div id="phone-screen">
+            <div id="bus-header">
+                <img src="img/ic_menu_48px.svg" alt="" class="bus-menu">
+                <img src="img/bus-logo-white-fill.png" alt="" id="bus-logo">
+                <img src="img/ic_star_rate_48px.svg" alt="" id="bus-star" class="svg">
+                <img src="img/ic_search_48px.svg" alt="" id="bus-search">
+            </div>
+            <div id="bus-subheader">
+                <svg xmlns="http://www.w3.org/2000/svg" id="nav-icon-one" viewBox="0 0 48 48">
+                    <path d="M0 0h48v48h-48z" fill="none"/>
+                    <path d="M24 4l-15 36.59 1.41 1.41 13.59-6 13.59 6 1.41-1.41z" fill="#34b262"/>
+                </svg>
+                <img src="img/ic_swap_vert_48px.svg" alt="" id="swapvert">
+                <div id="location-container">
+                    <div id="my-location"><p>My location</p></div>
+                    <div id="destination"><p>Choose destination...</p></div>
+                </div>
+            </div>
+            <div id="map"></div>
+                <div class="routes">
+                <div id="near-you">
+                    <p>Routes near you</p>
+                </div>
+                <div id="route-button">
+                    <img src="img/ic_directions_48px.svg" alt="" id="find-location">
+                </div>
+                <div class="route-row">
+                    <div class="route-number"><p>30</p></div>
+                    <p class="route-name">UWM via Maryland</p>
+                    <p class="route-stop">Van Buren & Kilbourn</p>
+                    <p class="route-time">Due in 5 min</p>
+                    <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                    <img src="img/arrow492.svg" alt="" class="route-arrow">
+                </div>
+                <div class="route-row">
+                    <div class="route-number"><p>10</p></div>
+                        <p class="route-name">Bayshore</p>
+                        <p class="route-stop">Prospect & Wells</p>
+                        <p class="route-time">Due in 8 min</p>
+                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                        <img src="img/arrow492.svg" alt="" class="route-arrow">
                     </div>
-                    <div id="bus-subheader">
-                        <svg xmlns="http://www.w3.org/2000/svg" id="nav-icon-one" viewBox="0 0 48 48">
-                            <path d="M0 0h48v48h-48z" fill="none"/>
-                            <path d="M24 4l-15 36.59 1.41 1.41 13.59-6 13.59 6 1.41-1.41z" fill="#34b262"/>
-                        </svg>
-                        <img src="img/ic_swap_vert_48px.svg" alt="" id="swapvert">
-                        <div id="location-container">
-                            <div id="my-location"><p>My location</p></div>
-                            <div id="destination"><p>Choose destination...</p></div>
-                        </div>
+                    <div class="route-row">
+                        <div class="route-number"><p>15</p></div>
+                        <p class="route-name">Downtown</p>
+                        <p class="route-stop">Wisconsin & Cass</p>
+                        <p class="route-time">Due in 1 min</p>
+                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                        <img src="img/arrow492.svg" alt="" class="route-arrow">
                     </div>
-                    <div id="map"></div>
-                    <div class="routes">
-                        <div id="near-you">
-                            <p>Routes near you</p>
-                        </div>
-                        <div id="route-button">
-                            <img src="img/ic_directions_48px.svg" alt="" id="find-location">
-                        </div>
-                        <div class="route-row">
-                            <div class="route-number"><p>30</p></div>
-                            <p class="route-name">UWM via Maryland</p>
-                            <p class="route-stop">Van Buren & Kilbourn</p>
-                            <p class="route-time">Due in 5 min</p>
-                            <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
-                            <img src="img/arrow492.svg" alt="" class="route-arrow">
-                        </div>
-                        <div class="route-row">
-                            <div class="route-number"><p>10</p></div>
-                            <p class="route-name">Bayshore</p>
-                            <p class="route-stop">Prospect & Wells</p>
-                            <p class="route-time">Due in 8 min</p>
-                            <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
-                            <img src="img/arrow492.svg" alt="" class="route-arrow">
-                        </div>
-                         <div class="route-row">
-                            <div class="route-number"><p>15</p></div>
-                            <p class="route-name">Downtown</p>
-                            <p class="route-stop">Wisconsin & Cass</p>
-                            <p class="route-time">Due in 1 min</p>
-                            <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
-                            <img src="img/arrow492.svg" alt="" class="route-arrow">
-                        </div>
-                        <div class="hide-routes">
-                         <div class="route-row bottom-routes">
+                    <div class="hide-routes">
+                        <div class="route-row bottom-routes">
                             <div class="route-number"><p>45</p></div>
                             <p class="route-name">Boytel</p>
                             <p class="route-stop">Wisconsin & Cass</p>
@@ -113,14 +111,52 @@
                             <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
                             <img src="img/arrow492.svg" alt="" class="route-arrow">
                         </div>
-                        </div>
-
                     </div>
+                </div>
                 </div>
 
                 <div class="drawer">
                     <div id="drawer-header">
-                        <p><span>MCTS</span> Tracker</p>
+                        <p id="header-p"><span id="header-weight">MCTS</span> Tracker</p>
+                    </div>
+                    <div class="drawer-row-top">
+                        <img src="img/ic_home_48px.svg" alt="" class="drawer-icon">
+                        <p class="row-name-top">Home</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="drawer-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="drawer-icon star" viewBox="0 0 48 48">
+                        <path d="M24 28.6l7.42 5.4-2.84-8.72 7.42-5.28h-9.1l-2.9-9-2.9 9h-9.1l7.42 5.28-2.83 8.72z" fill="#2e2e2e"/>
+                        <path d="M0 0h48v48h-48z" fill="none"/>
+                        </svg>
+                        <p class="row-name">Favorites</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="drawer-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="drawer-icon drawer-route"  viewBox="0 0 48 48">
+                            <path d="M43.41 22.59l-18-18c-.78-.78-2.05-.78-2.82 0l-18 18c-.78.78-.78 2.05 0 2.83l18 17.99v.01c.78.78 2.05.78 2.83 0l18-18c.78-.79.78-2.05-.01-2.83zm-15.41 6.41v-5h-8v6h-4v-8c0-1.11.89-2 2-2h10v-5l7 7-7 7z" fill="#2e2e2e"/>
+                            <path d="M0 0h48v48h-48z" fill="none"/>
+                        </svg>
+
+                        </svg>
+                        <p class="row-name">Routes</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="drawer-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="drawer-icon drawer-map" viewBox="0 0 48 48">
+                            <path d="M41 6c-.11 0-.21.01-.31.05l-10.69 4.15-12-4.2-11.27 3.8c-.42.14-.73.5-.73.96v30.24c0 .55.45 1 1 1 .11 0 .21-.01.31-.05l10.69-4.15 12 4.2 11.28-3.79c.42-.15.72-.51.72-.97v-30.24c0-.55-.45-1-1-1zm-11 32l-12-4.21v-23.79l12 4.21v23.79z" fill="#2e2e2e"/>
+                            <path d="M0 0h48v48h-48z" fill="none"/>
+                        </svg>
+
+                        <p class="row-name">Map</p>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="drawer-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="drawer-icon star" >
+                        <path d="M24 28.6l7.42 5.4-2.84-8.72 7.42-5.28h-9.1l-2.9-9-2.9 9h-9.1l7.42 5.28-2.83 8.72z" fill="#2e2e2e"/>
+                        <path d="M0 0h48v48h-48z" fill="none"/>
+                        </svg>
+                        <p class="row-name">QR Code</p>
                     </div>
                 </div>
                 <div class="overlay"></div>
