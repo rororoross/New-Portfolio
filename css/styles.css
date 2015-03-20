@@ -165,7 +165,7 @@ a {
 		padding: 0;
 		float: none;
 		text-align: center;
-		opacity: 0;
+		dis
 		height: 0;
 		-webkit-transition: all 1s;
 		display: none;
@@ -487,9 +487,19 @@ h5 {
 	-webkit-box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow:    0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	box-shadow:         0px -2px 1px 0px rgba(0, 0, 0, 0.15);
-	transition: all 400ms;
+	transition: all 300ms;
+	transition-timing-function: ease-in-out;
 	position: absolute;
 	bottom: 0px;
+	overflow: hidden;
+}
+
+.routes-expand {
+	position: absolute;
+	bottom: 0px;
+	height: 400px;
+	transition: all 300ms;
+	transition-timing-function: ease-in-out;
 }
 
 #near-you {
@@ -506,18 +516,38 @@ h5 {
 	padding-top: 14px;
 }
 
-#route-button {
+.route-button {
 	width: 48px;
 	height: 48px;
 	background-color: #34b262;
 	border-radius: 24px;
 	position: absolute;
-	top: -24px;
+	bottom: 140px;
 	right: 18px;
 	-webkit-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:    2px 3px 8px 0px rgba(0, 0, 0, 0.5);
 	box-shadow:        0 2px 5px 0 rgba(0, 0, 0, 0.26);
 	cursor: pointer;
+	z-index: 10;
+	transition: all 300ms;
+	transition-timing-function: ease-in-out;
+}
+
+.routes-button-raise {
+	width: 48px;
+	height: 48px;
+	background-color: #34b262;
+	border-radius: 24px;
+	position: absolute;
+	bottom: 378px;
+	right: 18px;
+	-webkit-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow:    2px 3px 8px 0px rgba(0, 0, 0, 0.5);
+	box-shadow:        0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	cursor: pointer;
+	z-index: 10;
+	transition: all 300ms;
+	transition-timing-function: ease-in-out;
 }
 
 /* Route Row */
@@ -583,6 +613,9 @@ h5 {
 	position: absolute;
 	z-index: 15;
 	transition: margin-left 300ms;
+	cursor: pointer;
+	opacity: 1;
+	display: block;
 	
 }
 
@@ -666,6 +699,7 @@ h5 {
 	width: 100%;
 	height: 58px;
 	background-color: #34b262;
+	position: relative;
 }
 
 .drawer-expand {
@@ -702,13 +736,7 @@ h5 {
 	
 }
 
-.routes-expand {
-	position: absolute;
-	bottom: 0px;
-	height: 400px;
-	transition: all 300ms;
-	
-}
+
 
 .bottom-routes {
 	transition: all 300ms;
@@ -795,11 +823,22 @@ h5 {
 	padding-right: 5px;
 }
 
+.drawer-menu {
+	position: absolute;
+	right: 13px;
+	top: 13px;
+	z-index: 20;
+	width: 32px;
+	cursor: pointer;
+}
 
+.display-none {
+	display: none;
+}
 
-
-
-
+.display-block {
+	display: block;
+}
 
 
 
