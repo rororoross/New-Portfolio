@@ -6,7 +6,7 @@ $( ".bus-menu" ).click(function() {
 	$(this).addClass("display-none");
 	$(".drawer").toggleClass("drawer-expand");
 	$(".overlay").toggleClass("overlay-display");
-	
+	$(".drawer-menu").addClass("display-block");
 });
 
 $( ".drawer-menu" ).click(function() {
