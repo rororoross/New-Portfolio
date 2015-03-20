@@ -679,10 +679,7 @@ h5 {
 	padding-top: 12px;
 }
 
-
-
 /* Drawer Styles */
-
 .drawer {
 	width: 0px;
 	height: 584px;
@@ -741,15 +738,9 @@ h5 {
 	transition: all 300ms;
 }
 
-
-
 .bottom-routes {
 	transition: all 300ms;
-	
-	
 }
-
-
 
 .hide-routes {
 	opacity: 0;
@@ -847,10 +838,29 @@ h5 {
 }
 
 
+/* transfer.html */
+.monitor-transfer {
+	width: 600px;
+	margin: 0 auto;
+	display: block;
+	margin-top: 20vh;
+	
+}
 
+.back-next {
+	width: 100%;
+	text-align: center;
+}
 
+.column-1, .column-2 {
+	width: 50%;
+	height: 100vh;
+	float: left;
+}
 
-
+.column-2 {
+	
+}
 
 
 
