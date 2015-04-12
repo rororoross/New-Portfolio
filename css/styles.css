@@ -332,7 +332,7 @@ h5 {
 	color: #ffff00;
 }
 
-.app-info p {
+.app-info-p {
 	width: 66%;
 	float: right;
 	padding-right: 7rem;
@@ -844,16 +844,17 @@ h5 {
 
 /* transfer.html */
 .monitor-transfer {
-	width: 600px;
+	width: 80%;
 	margin: 0 auto;
 	display: block;
-	margin-top: 20vh;
-	
+	margin-top: 10vh;
 }
 
 .back-next {
 	width: 100%;
 	text-align: center;
+	font-size: 1.2rem;
+	margin-top: 2rem;
 }
 
 .column-1, .column-2 {
@@ -866,9 +867,36 @@ h5 {
 	
 }
 
-/* testing out ssh key again 2 */
+.see-it-live {
+	position: relative;
+	width: 180px;
+	padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+	display: block;
+	margin: 0 auto;
+	margin-top: 108px;
+}
 
+.see-it-live a {
+	color: white;
+}
 
+.see-it-live:hover a {
+	color: #5baafa;
+}
+
+.web-info-p {
+	padding-top: 2rem;
+	line-height: 1.5rem;
+	font-weight: 500;
+}
+
+.web-info {
+	float: right;
+	margin-top: 140px;
+	margin-right: 60px;
+	width: 80%;
+	position: relative;
+}
 
 
 
