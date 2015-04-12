@@ -703,6 +703,7 @@ h5 {
 	position: relative;
 	width: 290px;
 	height: 584px;
+	visibility: hidden;
 }
 
 .drawer-expand {
@@ -837,6 +838,9 @@ h5 {
 	display: block;
 }
 
+.visible-element {
+	visibility: visible;
+}
 
 /* transfer.html */
 .monitor-transfer {
