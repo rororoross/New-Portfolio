@@ -683,13 +683,12 @@ h5 {
 .drawer {
 	width: 0px;
 	height: 584px;
-	top: 228px;
-	left: 110px;
+	top: 227px;
+	left: 108px;
 	position: absolute;
 	background-color: #fff;
 	z-index: 11;
-	transition: width 300ms, transition opacity 300ms;
-	opacity: 0;
+	transition: all 300ms;
 }
 
 #drawer-header {
@@ -710,7 +709,8 @@ h5 {
 	width: 290px;
 	left: 108px;
 	top: 227px;
-	transition: width 300ms, transition opacity 300ms;
+	position: absolute;
+	transition: all 300ms;
 	opacity: 1;
 }
 
