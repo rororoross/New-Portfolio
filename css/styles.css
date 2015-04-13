@@ -780,8 +780,8 @@ h5 {
 }
 
 .star {
-	width: 40px;
-	height: 40px;
+	width: 48px;
+	height: 48px;
 	padding: 0;
 }
 
@@ -805,16 +805,16 @@ h5 {
 }
 
 .drawer-route {
-	width: 26px;
-	height: 26px;
+	width: 29px;
+	height: 29px;
 	padding-left: 8px;
 	padding-top: 6px;
 	padding-right: 3px;
 }
 
 .drawer-map {
-	width: 22px;
-	height: 22px;
+	width: 26px;
+	height: 26px;
 	padding-left: 10px;
 	padding-top: 12px;
 	padding-right: 5px;
