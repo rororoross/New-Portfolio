@@ -772,6 +772,7 @@ h5 {
 
 .drawer-row {
 	margin: 0.9rem;
+	margin-top: 1.2rem;
 }
 
 .drawer-icon {
@@ -791,13 +792,21 @@ h5 {
 	padding-top: 8px;
 	font-weight: 600;
 	font-size: 1.2rem;
-	margin-left: 1rem;
+	margin-left: 1.4rem;
 }
 
 .row-name {
 	padding-top: 14px;
-	margin-left: 0.7rem;
+	margin-left: 1.4rem;
 	color: #2e2e2e;
+}
+
+.fav-row {
+	margin-left: 0.9rem;
+}
+
+.row-routes {
+	padding-top: 10px;
 }
 
 .clearfix {
@@ -813,10 +822,18 @@ h5 {
 }
 
 .drawer-map {
-	width: 26px;
-	height: 26px;
+	width: 24px;
+	height: 24px;
 	padding-left: 10px;
 	padding-top: 12px;
+	padding-right: 5px;
+}
+
+.drawer-qr {
+	width: 20px;
+	height: 20px;
+	padding-left: 10px;
+	padding-top: 14px;
 	padding-right: 5px;
 }
 
