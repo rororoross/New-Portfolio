@@ -23,9 +23,9 @@ $( ".route-button-link" ).click(function() {
 });
 
 $( "button" ).click(function() {
-	$(".anim").addClass("plz").delay( 700 ).fadeOut( 300 );
-	$(".home").delay( 700 ).fadeOut( 300 );
+	$(".anim").addClass("plz").delay( 600 ).fadeOut( 300 );
+	$(".home").delay( 600 ).fadeOut( 300 );
 	$(".mac-container").addClass("fade-in");
-	$(".iphone-container").addClass("fade-in");
+	$(".iphone-container").addClass("fade-in-two");
 	$(".animation-container").addClass("fade-in");
 });

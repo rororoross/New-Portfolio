@@ -286,6 +286,12 @@ a {
 	float: left;
 	width: 33%;
 	opacity: 0;
+	transition: all 300ms;
+}
+
+.mac-container:hover, .iphone-container:hover, .animation-container:hover {
+	transform: translateY(-8px);
+	transition: all 300ms;
 }
 
 .mac, .iphone, .animation {
@@ -982,14 +988,20 @@ h5 {
 
 .fade-in {
 	-webkit-animation: fade-in 400ms linear;
-	-webkit-animation-delay: 1000ms;
+	-webkit-animation-delay: 900ms;
+	opacity: 1;
+}
+
+.fade-in-two {
+	-webkit-animation: fade-in 500ms linear;
+	-webkit-animation-delay: 900ms;
 	opacity: 1;
 }
 
 .plz {
-		width: 20vw;
+	width: 20vw;
 	height: 20vw;
--webkit-animation: NAME-YOUR-ANIMATIONN 800ms linear;
+	-webkit-animation: NAME-YOUR-ANIMATIONN 800ms linear;
 	-webkit-animation-fill-mode: forwards;
 	z-index: 5;
 }
@@ -1028,8 +1040,9 @@ h5 {
 
 
 @-webkit-keyframes fade-in {
-  0%   {opacity: 0;}
-  100% { opacity: 1;} 
+  0%   {transform: scale(0);}
+  70%  {transform: scale(1.2);}
+  100% { transform: scale(1);} 
 }
 
 @-webkit-keyframes blue-bg {
