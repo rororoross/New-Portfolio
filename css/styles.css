@@ -49,11 +49,14 @@ table {
 */
 
 body { 
-	background-color: #ff5151;
 	font-family: 'Roboto', sans-serif;
-
 	color: white;
 	overflow: hidden;
+	background-color: #ff5151;
+}
+
+.red-bg {
+	
 }
 
 header {
@@ -106,6 +109,8 @@ button {
 	margin: 0 auto;
 	margin-top: 5rem;
 	display: block;
+	-webkit-animation: btn-hover 2600ms infinite;
+	-webkit-transition-timing-function: ease;
 }
 
 button a {
@@ -131,7 +136,11 @@ a {
 	color: white;
 }
 
-
+.home {
+	background-color: #ff5151;
+	width: 100vw;
+	height: 100vw;
+}
 
 
 
@@ -276,6 +285,7 @@ a {
 .mac-container, .iphone-container, .animation-container {
 	float: left;
 	width: 33%;
+	opacity: 0;
 }
 
 .mac, .iphone, .animation {
@@ -348,14 +358,14 @@ h5 {
 	position: absolute;
 	right: 100px;
 	top: 2px;
-	background-image: url(../img/github-icon.png);
+	background-image: url(../img/github-icon-yellow.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .github-icon:hover {
-	background-image: url(../img/github-icon-yellow.png);
+	background-image: url(../img/github-icon.png);
 	cursor: pointer;
 	transition: all 500ms;
 }
@@ -942,15 +952,109 @@ h5 {
 	width: 4rem;
 }
 
+.anim {
+	background-color: #5baafa;
+	
+	border-radius: 10vw;
+	position: absolute;
+ 	left:0;
+    right:0;
+    bottom: 15vw;
+    margin-left:auto;
+    margin-right:auto;
+	z-index: 5;
+
+}
+
+
+.work {
+	opacity: 1;
+	z-index: 55555;
+	background-color: #5baafa;
+	width: 100vw;
+	height: 100vw;
+	transition: all 500ms;
+}
+
+.body-blue {
+	background-color: #5baafa;
+}
+
+.fade-in {
+	-webkit-animation: fade-in 400ms linear;
+	-webkit-animation-delay: 1000ms;
+	opacity: 1;
+}
+
+.plz {
+		width: 20vw;
+	height: 20vw;
+-webkit-animation: NAME-YOUR-ANIMATIONN 800ms linear;
+	-webkit-animation-fill-mode: forwards;
+	z-index: 5;
+}
+
+.anim-2 {
+	width: 120vw;
+	height: 120vw;
+	background-color: #fff;
+	-webkit-animation: NAME-YOUR-ANIMATIONN 1200ms linear;
+	
+	bottom: -87vw;
+	right: -40vw;
+	position: absolute;
+	z-index: 1;
+	transform: rotate(63deg);
+	opacity: 0;
+}
+
+.fade-out {
+	-webkit-animation: fade-out 1200ms linear;
+}
+
+@-webkit-keyframes NAME-YOUR-ANIMATIONN {
+  0%   { transform: scale(0); opacity: 1; }
+  100% { transform: scale(8.5); opacity: 1; z-index: 5;}
+}
+
+	
+@-webkit-keyframes plz {
+  0%   { width: 20vw;
+	height: 20vw;}
+  100% { width: 20vw;
+	height: 20vw; } 
+}
 
 
 
+@-webkit-keyframes fade-in {
+  0%   {opacity: 0;}
+  100% { opacity: 1;} 
+}
+
+@-webkit-keyframes blue-bg {
+  0%   { background-color: #5baafa;}
+  100% { background-color: #5baafa;} 
+}
+
+@-webkit-keyframes fade-out {
+  0%   {opacity: 1; }
+  100% { opacity: 0; }
+}
 
 
+@-webkit-keyframes NAME-YOUR-ANIMATION {
+  0%   { transform: rotate(63deg); opacity: 1;}
+  99%  { opacity: 1; }
+  100% { transform: rotate(63deg) translateX(-100vw); opacity: 0;}
+}
 
 
-
-
+@-webkit-keyframes btn-hover {
+  0%   { transform: translateY(2px);  }
+  50%  { transform: translateY(-3px); }
+  100%  { transform: translateY(2px); }
+}
 
 
 
@@ -959,7 +1063,8 @@ h5 {
 }
 
 .display-block {
-	display: block;
+	-webkit-animation: fade-in 300ms linear;
+	-webkit-animation-fill-mode: forwards;
 }
 
 .visible-element {

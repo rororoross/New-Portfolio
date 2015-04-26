@@ -21,3 +21,11 @@ $( ".route-button-link" ).click(function() {
 	$(".routes").toggleClass("routes-expand");
 	$(".route-button").toggleClass("routes-button-raise");
 });
+
+$( "button" ).click(function() {
+	$(".anim").addClass("plz").delay( 700 ).fadeOut( 300 );
+	$(".home").delay( 700 ).fadeOut( 300 );
+	$(".mac-container").addClass("fade-in");
+	$(".iphone-container").addClass("fade-in");
+	$(".animation-container").addClass("fade-in");
+});
