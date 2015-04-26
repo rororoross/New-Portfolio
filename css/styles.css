@@ -55,8 +55,10 @@ body {
 	background-color: #ff5151;
 }
 
-.red-bg {
-	
+.work-bg {
+	background-color: #5baafa;
+	overflow: visible;
+	overflow-x: hidden;
 }
 
 header {
@@ -292,15 +294,14 @@ a {
 .work-action-container-fix {
 	width: auto;
 	margin: 2rem;
-	transform: translateY(0px)translateX(400px);
 	transition: all 700ms;
 }
 
-/*.mac-container:hover, .iphone-container:hover, .animation-container:hover {
+.mac-container:hover, .iphone-container:hover, .animation-container:hover {
 	transform: translateY(-8px);
 	transition: all 300ms;
 }
-*/
+
 .mac, .iphone, .animation {
 	margin: 0 auto;
 	display: block;
@@ -313,6 +314,12 @@ a {
 	width: 70%;
 }
 
+.current-border {
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid yellow;
+	transition-delay: 400ms;
+}
+
 .work-action {
 	width: 30px;
 	transform: translateY(-200px);
@@ -323,6 +330,7 @@ a {
 	width: 60px;
 	transform: translateY(-200px);
 	transition: all 700ms;
+	transition-timing-function: ease-in-out;
 }
 
 h3 {
@@ -336,6 +344,15 @@ h3 {
 	width: 80%;
 	margin: 0 auto;
 	margin-top: 6rem;
+	transition: all 700ms;
+	transition-timing-function: ease-in-out;
+}
+
+.work-container-add {
+	width: 15%;
+	margin: 0 auto;
+	margin-top: 0rem;
+	transition: all 700ms;
 }
 
 
@@ -391,14 +408,14 @@ h5 {
 	position: absolute;
 	right: 100px;
 	top: 2px;
-	background-image: url(../img/github-icon-yellow.png);
+	background-image: url(../img/github-icon.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 
 .github-icon:hover {
-	background-image: url(../img/github-icon.png);
+	background-image: url(../img/github-icon-yellow.png);
 	cursor: pointer;
 	transition: all 500ms;
 }
@@ -900,11 +917,22 @@ h5 {
 }
 
 /* transfer.html */
+.web-container {
+	margin-top: 10rem;
+	opacity: 0;
+}
+
+.web-container-transition {
+	opacity: 1;
+	transition: 800ms;
+	transition-delay: 500ms;
+}
+
 .monitor-transfer {
-	width: 80%;
+	width: 40%;
 	margin: 0 auto;
+	margin-top: 6%;
 	display: block;
-	margin-top: 10vh;
 }
 
 .back-next {
@@ -916,8 +944,11 @@ h5 {
 
 .column-1, .column-2 {
 	width: 50%;
-	height: 100vh;
 	float: left;
+}
+
+.web-work {
+	margin-top: 16rem;
 }
 
 .see-it-live {
@@ -945,7 +976,6 @@ h5 {
 
 .web-info {
 	float: right;
-	margin-top: 140px;
 	margin-right: 60px;
 	width: 80%;
 	position: relative;
@@ -1014,8 +1044,15 @@ h5 {
 }
 
 .fade-in {
-	-webkit-animation: fade-in 400ms linear;
+	-webkit-animation: fade-in 600ms linear;
 	-webkit-animation-delay: 900ms;
+	opacity: 1;
+}
+
+.slide-left {
+	-webkit-animation: slide-left 500ms linear;
+	-webkit-animation-delay: 200ms;
+	-webkit-animation-fill-mode: forwards;
 	opacity: 1;
 }
 
@@ -1064,7 +1101,10 @@ h5 {
 	height: 20vw; } 
 }
 
-
+@-webkit-keyframes slide-left {
+  0%   {transform: translateX(-1500px); opacity:1; }
+  100% { transform: translateX(0px); opacity:1;} 
+}
 
 @-webkit-keyframes fade-in {
   0%   {transform: scale(0);}

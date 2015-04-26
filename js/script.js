@@ -39,13 +39,28 @@ $( ".work-link" ).click(function() {
 });
 
 $( ".mac-container" ).click(function() {
-	$(".mac-container").addClass("work-action-container-fix");
-	$(".iphone-container").addClass("work-action-container-fix");
-	$(".animation-container").addClass("work-action-container-fix");
-	$(".mac").addClass("work-action-mac");
-	$(".mac-link").addClass("work-action-mac");
-	$(this).css("width: auto")
-	$(".iphone").addClass("work-action");
-	$(".animation").addClass("work-action");
+	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
+	$("main").css("padding-top", "5vh");
+	$(".mac").addClass("current-border");
+	$(".web-container").addClass("web-container-transition");
+	$("body").addClass("work-bg");
 });
+
+
+
+
+
+
+// $( ".mac-container" ).click(function() {
+// 	$(".mac-container").addClass("work-action-container-fix");
+// 	$(".iphone-container").addClass("work-action-container-fix");
+// 	$(".animation-container").addClass("work-action-container-fix");
+// 	$(".work-container").addClass("work-container-add");
+// 	$(".mac").addClass("work-action-mac");
+// 	$(".mac-link").addClass("work-action-mac");
+// 	$(this).css("width: auto")
+// 	$(".iphone").addClass("work-action");
+// 	$(".animation").addClass("work-action");
+// 	$("h3").hide();
+// });
