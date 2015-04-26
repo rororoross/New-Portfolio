@@ -61,13 +61,23 @@ body {
 	overflow-x: hidden;
 }
 
-header {
-	padding: 1rem;
-	font-weight: 500;
+.work-header {
+	background-color: #5baafa;
+	height: 40px;
 }
+
+header {
+	font-weight: 500;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999999;
+}
+
 
 header p {
 	float: left;
+	padding: 1rem;
 }
 
 header p span {
@@ -75,7 +85,10 @@ header p span {
 }
 
 nav {
+	right: 0;
+	top: 0;
 	float: right;
+	padding: 1rem;
 }
 
 nav ul li {

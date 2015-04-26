@@ -45,6 +45,7 @@ $( ".mac-container" ).click(function() {
 	$(".mac").addClass("current-border");
 	$(".web-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
+	$("header").addClass("work-header");
 });
 
 
