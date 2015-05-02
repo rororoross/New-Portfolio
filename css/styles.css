@@ -74,7 +74,6 @@ header {
 	z-index: 9999999;
 }
 
-
 header p {
 	float: left;
 	padding: 1rem;
@@ -157,9 +156,6 @@ a {
 	height: 100vw;
 }
 
-
-
-
 /* Responsive Menu */
 
 #menu {
@@ -171,8 +167,6 @@ a {
 #nav-list {
 
 }
-
-
 
 @media screen and (max-width:528px) {
 	#menu {
@@ -228,7 +222,6 @@ a {
 		-webkit-transition: all 500ms;
 	}
 
-
 	.show-menu li:hover {
 		background-color: #ffffff;
 		transition: all 0.5s;
@@ -238,8 +231,6 @@ a {
 	.show-menu a {
 		color: white;
 	}
-
-	
 
 	nav {
 		float: none;
@@ -251,8 +242,6 @@ a {
 		top: 1.6rem;
 		left: 1rem;	
 	}
-
-
 
 	.pie {
 		width: 50%;
@@ -279,16 +268,9 @@ a {
 	button {
 		margin-top: 3rem;
 	}
-
-
 }
 
-
-
-
-
 /* My work styles */
-
 .my-work-body {
 	background-color: #5baafa;
 }
@@ -367,8 +349,6 @@ h3 {
 	margin-top: 0rem;
 	transition: all 700ms;
 }
-
-
 
 /* App Details */
 .app-info {
@@ -502,7 +482,6 @@ h5 {
 }
 
 /* Phone Stylings */
-
 #bus-header {
 	background-color: #34b262;
 	width: 100%;
@@ -632,7 +611,6 @@ h5 {
 }
 
 /* Route Row */
-
 .route-row {
 	height: 42px;
 	width: 100%;
@@ -697,7 +675,6 @@ h5 {
 	cursor: pointer;
 	opacity: 1;
 	display: block;
-	
 }
 
 #bus-logo {
@@ -964,6 +941,12 @@ h5 {
 	margin-top: 16rem;
 }
 
+.work-pad {
+	clear: both;
+	padding: 6rem;
+	width: 100%;
+}
+
 .see-it-live {
 	position: relative;
 	width: 180px;
@@ -1031,7 +1014,6 @@ h5 {
 
 .anim {
 	background-color: #5baafa;
-	
 	border-radius: 10vw;
 	position: absolute;
  	left:0;
@@ -1040,9 +1022,7 @@ h5 {
     margin-left:auto;
     margin-right:auto;
 	z-index: 5;
-
 }
-
 
 .work {
 	opacity: 1;
@@ -1051,6 +1031,7 @@ h5 {
 	width: 100vw;
 	height: 100vw;
 	transition: all 500ms;
+	padding-bottom: 6rem;
 }
 
 .body-blue {
@@ -1089,7 +1070,6 @@ h5 {
 	height: 120vw;
 	background-color: #fff;
 	-webkit-animation: NAME-YOUR-ANIMATIONN 1200ms linear;
-	
 	bottom: -87vw;
 	right: -40vw;
 	position: absolute;
@@ -1136,21 +1116,17 @@ h5 {
   100% { opacity: 0; }
 }
 
-
 @-webkit-keyframes NAME-YOUR-ANIMATION {
   0%   { transform: rotate(63deg); opacity: 1;}
   99%  { opacity: 1; }
   100% { transform: rotate(63deg) translateX(-100vw); opacity: 0;}
 }
 
-
 @-webkit-keyframes btn-hover {
   0%   { transform: translateY(2px);  }
   50%  { transform: translateY(-3px); }
   100%  { transform: translateY(2px); }
 }
-
-
 
 .display-none {
 	display: none;
