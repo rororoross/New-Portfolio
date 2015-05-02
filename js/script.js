@@ -36,6 +36,7 @@ $( ".work-link" ).click(function() {
 	$(".mac-container").addClass("fade-in");
 	$(".iphone-container").addClass("fade-in-two");
 	$(".animation-container").addClass("fade-in");
+	$(".mobile-container").show();
 });
 
 $( ".mac-container" ).click(function() {
@@ -56,6 +57,8 @@ $( ".iphone-container" ).click(function() {
 	$(".mobile-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
 	$("header").addClass("work-header");
+	$(".web-container").hide();
+	$(".mobile-container").show().delay(1500);
 });
 
 

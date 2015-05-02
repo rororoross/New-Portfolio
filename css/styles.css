@@ -356,7 +356,7 @@ h3 {
 /* App Details */
 .app-info {
 	float: right;
-	margin-top: 180px;
+	margin-top: 0px;
 	margin-right: 0px;
 	width: 700px;
 	height: 600px;
@@ -429,30 +429,29 @@ h5 {
 }
 
 #phone-background {
-	background-image: url(../img/phone-bg-2.png);
-	width: 600px;
-	height: 800px;
+	background-image: url(../img/phone-bg-3.png);
+	width: 386px;
+	height: 808px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
 	bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
-	left: 10%;
+	left: 0%;
 	right: 0;
 	background-position: center bottom;
 	z-index: 8;
 }
 
 #phone-screen {
-	width: 271px;
-	height: 474px;
+	width: 335px;
+	height: 584px;
 	background-color: #fff;
 	position: absolute;
-	top: 205px;
-	left: 88px;
+	top: 113px;
+	left: 27px;
 }
-
 /* Phone Stylings */
 
 #bus-header {
@@ -470,19 +469,7 @@ h5 {
 	margin-right: 25%;
 }
 
-#phone-background {
-	width: 740px;
-	height: 960px;
-}
 
-#phone-screen {
-	width: 335px;
-	height: 584px;
-	background-color: #fff;
-	position: absolute;
-	top: 227px;
-	left: 108px;
-}
 
 /* Phone Stylings */
 #bus-header {
@@ -918,6 +905,8 @@ h5 {
 .mobile-container {
 	margin-top: 10rem;
 	opacity: 0;
+	display: none;
+
 }
 
 .web-container-transition {
@@ -931,6 +920,10 @@ h5 {
 	margin: 0 auto;
 	margin-top: 6%;
 	display: block;
+}
+
+.monitor-margin {
+	margin-top: 3%;
 }
 
 .back-next {
