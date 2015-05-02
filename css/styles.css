@@ -123,6 +123,9 @@ button {
 	margin: 0 auto;
 	margin-top: 5rem;
 	display: block;
+}
+
+.check-out-work {
 	-webkit-animation: btn-hover 2600ms infinite;
 	-webkit-transition-timing-function: ease;
 }
@@ -908,6 +911,11 @@ h5 {
 
 /* transfer.html */
 .web-container {
+	margin-top: 10rem;
+	opacity: 0;
+}
+
+.mobile-container {
 	margin-top: 10rem;
 	opacity: 0;
 }

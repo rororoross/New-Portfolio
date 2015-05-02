@@ -48,6 +48,16 @@ $( ".mac-container" ).click(function() {
 	$("header").addClass("work-header");
 });
 
+$( ".iphone-container" ).click(function() {
+	$(".work-container").addClass("work-container-add");
+	$("h3").hide();
+	$("main").css("padding-top", "5vh");
+	$(".iphone").addClass("current-border");
+	$(".mobile-container").addClass("web-container-transition");
+	$("body").addClass("work-bg");
+	$("header").addClass("work-header");
+});
+
 
 
 
