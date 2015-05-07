@@ -981,28 +981,43 @@ h5 {
 
 /* about.html */
 .about-body {
-	background-color: white;
-	color: black;
+	background-color: #562f72;
+	color: white;
+	font-weight: 500;
+	overflow: visible;
 }
 
 .about-body a {
-	color: black;
+	color: white;
 }
 
 .steps-nav {
-	float: left;
+	position: fixed;
 	width: 20%;
+	left: 0;
+	top: 12rem;
 }
 
 .about-nav {
 	width: 20%;
-	float: right;
+	position: fixed;
+	right: 0;
+	top: 12rem;
 }
 
 .steps-detailed {
-	text-align: center;
-	width: 60%;
-	float: left;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.steps-detailed div {
+	height: 800px;
+	border: 1px solid white;
+	margin-bottom: 4rem;
+}
+
+.steps-detailed span {
+	font-size: 3rem;
 }
 
 .steps-list li {
@@ -1038,6 +1053,13 @@ h5 {
 .body-blue {
 	background-color: #5baafa;
 }
+
+
+
+
+
+
+
 
 .fade-in {
 	-webkit-animation: fade-in 600ms linear;
