@@ -96,6 +96,41 @@ $( ".iphone-container" ).click(function() {
 	$(".mobile-container").show();
 });
 
+$( ".research" ).click(function() {
+	$( ".process-detail" ).text( "research Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus, numquam! Laboriosam earum, ratione illo culpa nam dolores corporis eos necessitatibus natus similique consectetur minus voluptatum alias. Eligendi, placeat, dolor." );
+	$(".svg-research").addClass("icon-bubble").removeClass("icon-bubble-disappear");
+	$(this).css("color", "#fde876");
+	$(".idea").css("color", "white");
+	$(".svg-bright").addClass("icon-bubble-disappear");
+});
+
+$( ".idea" ).click(function() {
+	$( ".process-detail" ).text( "text txt" );
+	$(".svg-research").addClass("icon-bubble-disappear");
+	$(this).css("color", "#fde876");
+	$(".research").css("color", "white");
+	$(".svg-bright").removeClass("icon-bubble-disappear").addClass("icon-bubble");
+});
+
+$( ".idea" ).click(function() {
+	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
+});
+
+$( ".sketch" ).click(function() {
+	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
+});
+
+$( ".design" ).click(function() {
+	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
+});
+
+$( ".develop" ).click(function() {
+	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
+});
+
+$( ".launch" ).click(function() {
+	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
+});
 
 
 

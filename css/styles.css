@@ -1004,76 +1004,87 @@ h5 {
 	overflow: visible;
 }
 
-.about-body a {
-	color: white;
+.definitions {
+	width: 100%;
+	text-align: center;
+	font-size: 2rem;
+	height: 12rem;
 }
 
-.steps-nav {
-	position: fixed;
-	width: 20%;
-	left: 0;
-	top: 12rem;
-}
-
-.about-nav {
-	width: 20%;
-	position: fixed;
-	right: 0;
-	top: 12rem;
-}
-
-.steps-detailed {
-	width: 50%;
+.process {
+	width: 80%;
+	margin-top: 4rem;
 	margin: 0 auto;
 }
 
-.steps-detailed div {
-	height: 800px;
-	border: 1px solid white;
-	margin-bottom: 4rem;
+.process ul {
+	width: 100%;
+	margin: 0 auto;
 }
 
-.steps-detailed span {
+.process ul li {
+	display: inline-block;
+	width: 16.25%;
+	text-align: center;
 	font-size: 3rem;
+	cursor: pointer;
 }
 
-.steps-list li {
-	display: block;
+.process ul li:hover {
+	color: #fde876;
+	transition: 300ms;
 }
 
-.steps-icon {
-	width: 4rem;
+.process ul li:nth-child(1) {
+	color: #fde876;
 }
 
-.anim {
-	background-color: #5baafa;
-	border-radius: 10vw;
-	position: absolute;
- 	left:0;
-    right:0;
-    bottom: 15vw;
-    margin-left:auto;
-    margin-right:auto;
-	z-index: 5;
+.process-icon-faded {
+	opacity: 0;
 }
 
-.work {
+.icon-bulb {
+
+}
+
+.icon-magnify {
 	opacity: 1;
-	z-index: 55555;
-	background-color: #5baafa;
-	width: 100vw;
-	height: 100vw;
-	transition: all 500ms;
-	padding-bottom: 6rem;
 }
 
-.body-blue {
-	background-color: #5baafa;
+.svg-container {
+	opacity: 0;
 }
 
+.svg-bright {
+	opacity: 1;
+}
 
+.icon-bubble {
+	-webkit-animation: icon-bubble 300ms linear;
+	-webkit-animation-delay: 0ms;
+	-webkit-animation-fill-mode: forwards;
+}
 
+.icon-bubble-disappear {
+	-webkit-animation: icon-bubble-disappear 300ms linear;
+	-webkit-animation-delay: 0ms;
+	-webkit-animation-fill-mode: forwards;
+	opacity: 0;
+}
 
+.process-detail {
+	width: 45%;
+	padding-left: 5%;
+	font-weight: 300;
+	line-height: 1.4;
+	margin: 0 auto;
+	margin-top: 5rem;
+}
+
+.process-icon {
+	width: 54px;
+	margin-bottom: 1rem;
+}
 
 
 
@@ -1121,6 +1132,19 @@ h5 {
 .fade-out {
 	-webkit-animation: fade-out 1200ms linear;
 }
+
+@-webkit-keyframes icon-bubble {
+  0%   { transform: scale(0); opacity: 1; }
+  80% { transform: scale(1.2); opacity: 1;}
+  100% { transform: scale(1); opacity: 1;}
+}
+
+@-webkit-keyframes icon-bubble-disappear {
+  0%   { transform: scale(1); opacity: 1; }
+  40% { transform: scale(1.2); opacity: 1;}
+  100% { transform: scale(0); opacity: 1;}
+}
+
 
 @-webkit-keyframes NAME-YOUR-ANIMATIONN {
   0%   { transform: scale(0); opacity: 1; }
