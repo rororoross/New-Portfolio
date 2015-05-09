@@ -17,6 +17,14 @@ $( ".drawer-menu" ).click(function() {
 	$(".drawer-container").removeClass("visible-element");
 });
 
+$(".row-favorites").click(function() {
+	$(".favorites-container").fadeIn(300);
+	$(".drawer").toggleClass("drawer-expand");
+	$(".drawer-container").hide();
+	$(".overlay").toggleClass("overlay-display");
+	$(".bus-menu").show();
+});
+
 $( ".route-button-link" ).click(function() {
 	$(".routes").toggleClass("routes-expand");
 	$(".route-button").toggleClass("routes-button-raise");

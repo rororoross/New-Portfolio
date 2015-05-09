@@ -430,12 +430,11 @@ h5 {
 
 #phone-background {
 	background-image: url(../img/phone-bg-3.png);
-	width: 386px;
-	height: 808px;
+	width: 336px;
+	height: 717px;
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
-	bottom: 0;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0%;
@@ -445,22 +444,14 @@ h5 {
 }
 
 #phone-screen {
-	width: 335px;
-	height: 584px;
+	width: 292px;
+	height: 507px;
 	background-color: #fff;
 	position: absolute;
 	top: 113px;
-	left: 27px;
+	left: 23px;
 }
 /* Phone Stylings */
-
-#bus-header {
-	background-color: #34b262;
-	width: 100%;
-	height: 46px;
-	padding: 0;
-	z-index: 5;
-}
 
 #phone-head {
 	text-align: center;
@@ -469,13 +460,11 @@ h5 {
 	margin-right: 25%;
 }
 
-
-
 /* Phone Stylings */
 #bus-header {
 	background-color: #34b262;
 	width: 100%;
-	height: 58px;
+	height: 48px;
 	padding: 0;
 	z-index: 6;
 	-webkit-box-shadow: 0px 3px 5px -3px rgba(0, 0, 0, 1);
@@ -547,7 +536,7 @@ h5 {
 .routes-expand {
 	position: absolute;
 	bottom: 0px;
-	height: 400px;
+	height: 344px;
 	transition: all 300ms;
 	transition-timing-function: ease-in-out;
 }
@@ -589,7 +578,7 @@ h5 {
 	background-color: #34b262;
 	border-radius: 24px;
 	position: absolute;
-	bottom: 378px;
+	bottom: 319px;
 	right: 18px;
 	-webkit-box-shadow: 2px 3px 8px 0px rgba(0, 0, 0, 0.5);
 	-moz-box-shadow:    2px 3px 8px 0px rgba(0, 0, 0, 0.5);
@@ -656,9 +645,9 @@ h5 {
 
 /* Icons */
 .bus-menu {
-	width: 32px;
-	margin-top: 13px;
-	margin-left: 13px;
+	width: 28px;
+	margin-top: 10px;
+	margin-left: 10px;
 	position: absolute;
 	z-index: 15;
 	transition: margin-left 300ms;
@@ -668,33 +657,33 @@ h5 {
 }
 
 #bus-logo {
-	width: 36px;
+	width: 24px;
 	position: absolute;
 	margin: 0 auto;
 	left: 0;
 	right: 0;
-	top: 8px;
+	top: 10px;
 }
 
 #bus-star {
-	width: 36px;
+	width: 32px;
 	position: absolute;
 	right: 42px;
-	top: 12px;
+	top: 10px;
 }
 
 #bus-search {
-	width: 24px;
+	width: 20px;
 	position: absolute;
 	right: 12px;
-	top: 18px;
+	top: 17px;
 }
 
 #nav-icon-one {
 	width: 12px;
 	transform: rotate(33deg);
 	position: absolute;
-	left: 24px;
+	left: 20px;
 	top: 10px;
 }
 
@@ -730,9 +719,9 @@ h5 {
 /* Drawer Styles */
 .drawer {
 	width: 0px;
-	height: 584px;
-	top: 227px;
-	left: 108px;
+	height: 509px;
+	top: 113px;
+	left: 22px;
 	position: absolute;
 	background-color: #fff;
 	z-index: 11;
@@ -748,15 +737,15 @@ h5 {
 
 .drawer-container {
 	position: relative;
-	width: 290px;
+	width: 267px;
 	height: 584px;
 	visibility: hidden;
 }
 
 .drawer-expand {
-	width: 290px;
-	left: 108px;
-	top: 227px;
+	width: 267px;
+	left: 22px;
+	top: 113px;
 	position: absolute;
 	transition: all 200ms;
 	opacity: 1;
@@ -771,12 +760,12 @@ h5 {
 }
 
 .overlay {
-	width: 335px;
-	height: 584px;
+	width: 293px;
+	height: 508px;
 	background-color: rgba(0,0,0,0.6);
 	position: absolute;
-	top: 227px;
-	left: 108px;
+	top: 114px;
+	left: 22px;
 	opacity: 0;
 	transition: all 300ms;
 	z-index: 0;
@@ -893,6 +882,21 @@ h5 {
 	z-index: 20;
 	width: 32px;
 	cursor: pointer;
+}
+
+.row-favorites {
+	cursor: pointer;
+}
+
+.favorites-container {
+	width: 293px;
+	height: 458px;
+	background-color: white;
+	z-index: 10;
+	position: absolute;
+	top: 161px;
+	left: 23px;
+	color: black;
 	display: none;
 }
 
@@ -903,7 +907,7 @@ h5 {
 }
 
 .mobile-container {
-	margin-top: 10rem;
+	margin-top: 4rem;
 	opacity: 0;
 	display: none;
 
