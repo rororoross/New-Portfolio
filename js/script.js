@@ -96,9 +96,10 @@ $( ".iphone-container" ).click(function() {
 	$(".mobile-container").show();
 });
 
+
 $( ".research" ).click(function() {
 	$( ".process-detail" ).text( "research Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus, numquam! Laboriosam earum, ratione illo culpa nam dolores corporis eos necessitatibus natus similique consectetur minus voluptatum alias. Eligendi, placeat, dolor." );
-	$(".svg-research").addClass("icon-bubble").removeClass("icon-bubble-disappear");
+	$(".svg-research").addClass("icon-bubble");
 	$(this).css("color", "#fde876");
 	$(".idea").css("color", "white");
 	$(".svg-bright").addClass("icon-bubble-disappear");
