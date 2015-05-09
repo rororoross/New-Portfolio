@@ -10,7 +10,7 @@
 </head>
     <body class="red-bg">
         <header>
-            <p>Ross Fenrick | <span>Front-end developer</span></p>
+            <p>Ross Fenrick | <span>Front-end Developer</span></p>
             <nav>
                 <a href="#"><img id="menu" src="img/menu.svg" alt=""></a>
                 <ul class="nav-list" class="show-menu">
@@ -202,7 +202,7 @@
             </ul>
             <p class="app-info-p">This started as purely a visual design project to experiment with Google's Material Design language. I had a lot of ideas for interactions and architecture while designing it so I decided to code a prototype to explore them further. Made from scratch as always.</p>
             </section>
-        <div id="phone-background">
+        <div class="phone-background">
             <p id="phone-head">interactive prototype</p>
             <div id="phone-screen">
             <div id="bus-header">
@@ -305,17 +305,17 @@
                         <p class="row-name fav-row">Favorites</p>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="drawer-row">
+                    <div class="drawer-row row-routes">
                         <svg xmlns="http://www.w3.org/2000/svg" class="drawer-icon drawer-route"  viewBox="0 0 48 48">
                             <path d="M43.41 22.59l-18-18c-.78-.78-2.05-.78-2.82 0l-18 18c-.78.78-.78 2.05 0 2.83l18 17.99v.01c.78.78 2.05.78 2.83 0l18-18c.78-.79.78-2.05-.01-2.83zm-15.41 6.41v-5h-8v6h-4v-8c0-1.11.89-2 2-2h10v-5l7 7-7 7z" fill="#2e2e2e"/>
                             <path d="M0 0h48v48h-48z" fill="none"/>
                         </svg>
 
                         </svg>
-                        <p class="row-name row-routes">Routes</p>
+                        <p class="row-name route-name-row">Routes</p>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="drawer-row">
+                    <div class="drawer-row row-map">
                         <svg xmlns="http://www.w3.org/2000/svg" class="drawer-icon drawer-map" viewBox="0 0 48 48">
                             <path d="M41 6c-.11 0-.21.01-.31.05l-10.69 4.15-12-4.2-11.27 3.8c-.42.14-.73.5-.73.96v30.24c0 .55.45 1 1 1 .11 0 .21-.01.31-.05l10.69-4.15 12 4.2 11.28-3.79c.42-.15.72-.51.72-.97v-30.24c0-.55-.45-1-1-1zm-11 32l-12-4.21v-23.79l12 4.21v23.79z" fill="#2e2e2e"/>
                             <path d="M0 0h48v48h-48z" fill="none"/>
@@ -324,7 +324,7 @@
                         <p class="row-name">Map</p>
                     </div>
                     <div class="clearfix"></div>
-                    <div class="drawer-row">
+                    <div class="drawer-row row-qr-code">
                         <svg version="1.1" id="Capa_1" class="drawer-icon drawer-qr" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                          width="29.938px" height="29.938px" viewBox="0 0 29.938 29.938" style="enable-background:new 0 0 29.938 29.938;"
                          xml:space="preserve">
@@ -384,8 +384,20 @@
                 </div>
                 </div>
                 <div class="overlay"></div>
-                <div class="favorites-container">
+                <div class="screen-container screen-favorites">
                     favorites
+                </div>
+
+                <div class="screen-container screen-routes">
+                    routes
+                </div>
+
+                <div class="screen-container screen-map">
+                    map
+                </div>
+
+                <div class="screen-container screen-qr-code">
+                    QR Code
                 </div>
 
 

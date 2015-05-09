@@ -3,26 +3,52 @@ $( "#menu" ).click(function() {
 });
 
 $( ".bus-menu" ).click(function() {
-	$(this).addClass("display-none");
+	$(this).hide();
 	$(".drawer").toggleClass("drawer-expand");
 	$(".overlay").toggleClass("overlay-display");
 	$(".drawer-menu").addClass("display-block");
-	$(".drawer-container").addClass("visible-element");
+	$(".drawer-container").show();
+	$(".screen-container").hide();
+});
+
+$(".row-favorites").click(function() {
+	$(".screen-favorites").fadeIn(300);
+	$(".drawer").toggleClass("drawer-expand");
+	$(".drawer-container").hide();
+	$(".overlay").toggleClass("overlay-display");
+	$(".bus-menu").show();
+});
+
+$(".row-routes").click(function() {
+	$(".screen-routes").fadeIn(300);
+	$(".drawer").toggleClass("drawer-expand");
+	$(".drawer-container").hide();
+	$(".overlay").toggleClass("overlay-display");
+	$(".bus-menu").show();
+});
+
+$(".row-map").click(function() {
+	$(".screen-map").fadeIn(300);
+	$(".drawer").toggleClass("drawer-expand");
+	$(".drawer-container").hide();
+	$(".overlay").toggleClass("overlay-display");
+	$(".bus-menu").show();
+});
+
+$(".row-qr-code").click(function() {
+	$(".screen-map").fadeIn(300);
+	$(".drawer").toggleClass("drawer-expand");
+	$(".drawer-container").hide();
+	$(".overlay").toggleClass("overlay-display");
+	$(".bus-menu").show();
 });
 
 $( ".drawer-menu" ).click(function() {
 	$(".drawer").toggleClass("drawer-expand");
 	$(".overlay").toggleClass("overlay-display");
 	$(".bus-menu").removeClass("display-none");
-	$(".drawer-container").removeClass("visible-element");
-});
-
-$(".row-favorites").click(function() {
-	$(".favorites-container").fadeIn(300);
-	$(".drawer").toggleClass("drawer-expand");
-	$(".drawer-container").hide();
-	$(".overlay").toggleClass("overlay-display");
-	$(".bus-menu").show();
+	$(".drawer-container").show();
+	$(".screen-container").hide();
 });
 
 $( ".route-button-link" ).click(function() {
@@ -55,6 +81,7 @@ $( ".mac-container" ).click(function() {
 	$(".web-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
 	$("header").addClass("work-header");
+	$(".iphone-container").addClass("iphone-min-slide")
 });
 
 $( ".iphone-container" ).click(function() {
@@ -66,10 +93,8 @@ $( ".iphone-container" ).click(function() {
 	$("body").addClass("work-bg");
 	$("header").addClass("work-header");
 	$(".web-container").hide();
-	$(".mobile-container").show().delay(1500);
+	$(".mobile-container").show();
 });
-
-
 
 
 
