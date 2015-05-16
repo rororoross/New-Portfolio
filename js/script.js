@@ -2,6 +2,7 @@ $( "#menu" ).click(function() {
 	$(".nav-list").toggleClass("show-menu");
 });
 
+// MCTS Bus App
 $( ".bus-menu" ).click(function() {
 	$(this).hide();
 	$(".drawer").toggleClass("drawer-expand");
@@ -56,6 +57,7 @@ $( ".route-button-link" ).click(function() {
 	$(".route-button").toggleClass("routes-button-raise");
 });
 
+// My Work
 $( ".check-out-work" ).click(function() {
 	$(".anim").addClass("plz").delay( 600 ).fadeOut( 300 );
 	$(".home").delay( 600 ).fadeOut( 300 );
@@ -97,12 +99,14 @@ $( ".iphone-container" ).click(function() {
 });
 
 
+// Process 
 $( ".research" ).click(function() {
 	$( ".process-detail" ).text( "research Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus, numquam! Laboriosam earum, ratione illo culpa nam dolores corporis eos necessitatibus natus similique consectetur minus voluptatum alias. Eligendi, placeat, dolor." );
 	$(".svg-research").addClass("icon-bubble").removeClass("icon-bubble-disappear");
 	$(this).css("color", "#fde876");
 	$(".idea").css("color", "white");
 	$(".sketch").css("color", "white");
+	$(".design").css("color", "white");
 	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
 			$( ".selected" )
             .addClass("icon-bubble-disappear");
@@ -110,6 +114,7 @@ $( ".research" ).click(function() {
 	$(".svg-research").addClass("selected");
 	$(".svg-bright").removeClass("selected");
 	$(".svg-sketch").removeClass("selected");
+	$(".svg-design").removeClass("selected");
 });
 
 $( ".sketch" ).click(function() {
@@ -118,6 +123,7 @@ $( ".sketch" ).click(function() {
 	$(this).css("color", "#fde876");
 	$(".idea").css("color", "white");
 	$(".research").css("color", "white");
+	$(".design").css("color", "white");
 	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
 			$( ".selected" )
             .addClass("icon-bubble-disappear");
@@ -125,6 +131,24 @@ $( ".sketch" ).click(function() {
 	$(".svg-sketch").addClass("selected");
 	$(".svg-bright").removeClass("selected");
 	$(".svg-research").removeClass("selected");
+	$(".svg-design").removeClass("selected");
+});
+
+$( ".design" ).click(function() {
+	$( ".process-detail" ).text( "design Llllorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus, numquam! Laboriosam earum, ratione illo culpa nam dolores corporis eos necessitatibus natus similique consectetur minus voluptatum alias. Eligendi, placeat, dolor." );
+	$(".svg-design").addClass("icon-bubble").removeClass("icon-bubble-disappear");
+	$(this).css("color", "#fde876");
+	$(".idea").css("color", "white");
+	$(".research").css("color", "white");
+	$(".sketch").css("color", "white");
+	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
+			$( ".selected" )
+            .addClass("icon-bubble-disappear");
+	}
+	$(".svg-design").addClass("selected");
+	$(".svg-bright").removeClass("selected");
+	$(".svg-research").removeClass("selected");
+	$(".svg-sketch").removeClass("selected");
 });
 
 $( ".idea" ).click(function() {
@@ -139,14 +163,15 @@ $( ".idea" ).click(function() {
 	$(".svg-bright").addClass("selected");
 	$(".svg-research").removeClass("selected");
 	$(".svg-sketch").removeClass("selected");
+	$(".svg-design").removeClass("selected");
 });
+
+
+
+
 
 $( ".idea" ).click(function() {
-	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
-});
-
-$( ".design" ).click(function() {
-	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
+	$( ".process-detail" ).text( "idea Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
 });
 
 $( ".develop" ).click(function() {
