@@ -56,7 +56,7 @@ $( ".route-button-link" ).click(function() {
 	$(".route-button").toggleClass("routes-button-raise");
 });
 
-$( "button" ).click(function() {
+$( ".check-out-work" ).click(function() {
 	$(".anim").addClass("plz").delay( 600 ).fadeOut( 300 );
 	$(".home").delay( 600 ).fadeOut( 300 );
 	$(".mac-container").addClass("fade-in");
@@ -102,22 +102,46 @@ $( ".research" ).click(function() {
 	$(".svg-research").addClass("icon-bubble").removeClass("icon-bubble-disappear");
 	$(this).css("color", "#fde876");
 	$(".idea").css("color", "white");
-	$(".svg-bright").addClass("icon-bubble-disappear");
+	$(".sketch").css("color", "white");
+	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
+			$( ".selected" )
+            .addClass("icon-bubble-disappear");
+	}
+	$(".svg-research").addClass("selected");
+	$(".svg-bright").removeClass("selected");
+	$(".svg-sketch").removeClass("selected");
+});
+
+$( ".sketch" ).click(function() {
+	$( ".process-detail" ).text( "sketch Llllorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus, numquam! Laboriosam earum, ratione illo culpa nam dolores corporis eos necessitatibus natus similique consectetur minus voluptatum alias. Eligendi, placeat, dolor." );
+	$(".svg-sketch").addClass("icon-bubble").removeClass("icon-bubble-disappear");
+	$(this).css("color", "#fde876");
+	$(".idea").css("color", "white");
+	$(".research").css("color", "white");
+	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
+			$( ".selected" )
+            .addClass("icon-bubble-disappear");
+	}
+	$(".svg-sketch").addClass("selected");
+	$(".svg-bright").removeClass("selected");
+	$(".svg-research").removeClass("selected");
 });
 
 $( ".idea" ).click(function() {
 	$( ".process-detail" ).text( "text txt" );
-	$(".svg-research").addClass("icon-bubble-disappear");
 	$(this).css("color", "#fde876");
 	$(".research").css("color", "white");
 	$(".svg-bright").removeClass("icon-bubble-disappear").addClass("icon-bubble");
+	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
+			$( ".selected" )
+            .addClass("icon-bubble-disappear");
+	}
+	$(".svg-bright").addClass("selected");
+	$(".svg-research").removeClass("selected");
+	$(".svg-sketch").removeClass("selected");
 });
 
 $( ".idea" ).click(function() {
-	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
-});
-
-$( ".sketch" ).click(function() {
 	$( ".process-detail" ).text( "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto facere mollitia maiores, odio quis voluptate! Natus quibusdam officiis ea doloribus ipsam rerum odit, quidem facilis ullam sed sapiente. Minus, facere." );
 });
 

@@ -1055,6 +1055,14 @@ h5 {
 	opacity: 0;
 }
 
+.svg-research {
+	transform: scale(0);
+}
+
+.svg-sketch {
+	transform: scale(0);
+}
+
 .svg-bright {
 	opacity: 1;
 }
@@ -1068,7 +1076,7 @@ h5 {
 .icon-bubble-disappear {
 	-webkit-animation: icon-bubble-disappear 300ms linear;
 	-webkit-animation-delay: 0ms;
-	-webkit-animation-fill-mode: forwards;
+	
 	opacity: 0;
 }
 
