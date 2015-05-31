@@ -78,7 +78,7 @@ $( ".work-link" ).click(function() {
 $( ".mac-container" ).click(function() {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
-	$("main").css("padding-top", "5vh");
+	$("main").addClass("main-padder");
 	$(".mac").addClass("current-border");
 	$(".web-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
@@ -89,7 +89,7 @@ $( ".mac-container" ).click(function() {
 $( ".iphone-container" ).click(function() {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
-	$("main").css("padding-top", "5vh");
+	$("main").addClass("main-padder");
 	$(".iphone").addClass("current-border");
 	$(".mobile-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
@@ -98,6 +98,22 @@ $( ".iphone-container" ).click(function() {
 	$(".mobile-container").show();
 });
 
+$( ".design" ).click(function() {
+	$( ".process-detail" ).text( "design Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, minus, numquam! Laboriosam earum, ratione illo culpa nam dolores corporis eos necessitatibus natus similique consectetur minus voluptatum alias. Eligendi, placeat, dolor." );
+	$(".svg-design").addClass("icon-bubble").removeClass("icon-bubble-disappear");
+	$(this).css("color", "#fde876");
+	$(".idea").css("color", "white");
+	$(".sketch").css("color", "white");
+	$(".research").css("color", "white");
+	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
+			$( ".selected" )
+            .addClass("icon-bubble-disappear");
+	}
+	$(".svg-design").addClass("selected");
+	$(".svg-bright").removeClass("selected");
+	$(".svg-sketch").removeClass("selected");
+	$(".svg-research").removeClass("selected");
+});
 
 // Process 
 $( ".research" ).click(function() {
@@ -155,6 +171,8 @@ $( ".idea" ).click(function() {
 	$( ".process-detail" ).text( "text txt" );
 	$(this).css("color", "#fde876");
 	$(".research").css("color", "white");
+	$(".sketch").css("color", "white");
+	$(".design").css("color", "white");
 	$(".svg-bright").removeClass("icon-bubble-disappear").addClass("icon-bubble");
 	if ( $( ".svg-container" ).hasClass( "selected" ) ) {
 			$( ".selected" )
