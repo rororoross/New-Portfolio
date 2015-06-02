@@ -276,35 +276,88 @@
                                     </div>
                                 </div> <!--End of routes-->
                             </div> <!-- End of mcts-home-screen-->
+
+                            <div class="mcts-favorites-screen">
+                                <div class="favorites-header">
+                                    <p>Favorites</p>
+                                </div>
+
+                                <div class="favorite-button fav-add">
+                                    <img src="img/ic_add_48px.svg" alt="" id="addfavorite">
+                                </div>
+
+                                <div class="fav-routes-container">
+                                    <div class="route-row">
+                                        <div class="route-number"><p>10</p></div>
+                                        <p class="route-name fav-name">Humboldt & Vienna</p>
+                                        <p class="route-stop">Arrives in 8 minutes</p>
+                                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                                        <img src="img/arrow492.svg" alt="" class="route-arrow">
+                                    </div>
+                                    <div class="route-row">
+                                        <div class="route-number"><p>30</p></div>
+                                        <p class="route-name fav-name">Van Buren & Kilbourn</p>
+                                        <p class="route-stop">Approaching now</p>
+                                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                                        <img src="img/arrow492.svg" alt="" class="route-arrow">
+                                    </div>
+                                    <div class="route-row">
+                                        <div class="route-number"><p>15</p></div>
+                                        <p class="route-name fav-name">Milwaukee & Kilbourn</p>
+                                        <p class="route-stop">Arrives in 15 minutes</p>
+                                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                                        <img src="img/arrow492.svg" alt="" class="route-arrow">
+                                    </div>
+                                    <div class="route-row">
+                                        <div class="route-number"><p>14</p></div>
+                                        <p class="route-name fav-name">Wisconsin & Cass</p>
+                                        <p class="route-stop">Arrives in 2 minutes</p>
+                                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                                        <img src="img/arrow492.svg" alt="" class="route-arrow">
+                                    </div>
+                                    <div class="route-row">
+                                        <div class="route-number"><p>57</p></div>
+                                        <p class="route-name fav-name">92nd & Grantosa</p>
+                                        <p class="route-stop">Arrives in 6 minutes</p>
+                                        <img src="img/ic_access_time_48px.svg" alt="" class="route-timer">
+                                        <img src="img/arrow492.svg" alt="" class="route-arrow">
+                                    </div>
+                                </div>
+                            </div>
+
+                            
+                                    
+                               
+
                             <div class="main-nav">
                                 <ul>
                                     <li class="mcts-home">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon" viewBox="0 0 48 48">
-                                        <path d="M20 40v-12h8v12h10v-16h6l-20-18-20 18h6v16z" fill="#34b262"/>
+                                        <path class="home-changefill" d="M20 40v-12h8v12h10v-16h6l-20-18-20 18h6v16z" fill="#34b262"/>
                                         <path d="M0 0h48v48h-48z" fill="none"/>
                                         </svg>
-                                        <p>Home</p>
+                                        <p class="nav-p home-p">Home</p>
                                     </li>
                                     <li class="mcts-favorites">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon icon-large" viewBox="0 0 44 40">
-                                        <path d="M24 28.6l7.42 5.4-2.84-8.72 7.42-5.28h-9.1l-2.9-9-2.9 9h-9.1l7.42 5.28-2.83 8.72z" fill="#838383"/>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon icon-large nav-favorites " viewBox="0 0 44 40">
+                                        <path class="changefill"d="M24 28.6l7.42 5.4-2.84-8.72 7.42-5.28h-9.1l-2.9-9-2.9 9h-9.1l7.42 5.28-2.83 8.72z" fill="#838383"/>
                                         <path d="M0 0h48v48h-48z" fill="none"/>
                                         </svg>
-                                        <p>Favorites</p>
+                                        <p class="nav-p fav-p">Favorites</p>
                                     </li>
                                     <li class="mcts-routes">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon icon-small" viewBox="0 0 48 48">
                                         <path d="M43.41 22.59l-18-18c-.78-.78-2.05-.78-2.82 0l-18 18c-.78.78-.78 2.05 0 2.83l18 17.99v.01c.78.78 2.05.78 2.83 0l18-18c.78-.79.78-2.05-.01-2.83zm-15.41 6.41v-5h-8v6h-4v-8c0-1.11.89-2 2-2h10v-5l7 7-7 7z" fill="#838383"/>
                                         <path d="M0 0h48v48h-48z" fill="none"/>
                                         </svg>
-                                        <p>Routes</p>
+                                        <p class="nav-p">Routes</p>
                                     </li>
                                     <li class="mcts-map">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="nav-icon icon-small" viewBox="0 0 48 48">
                                         <path d="M41 6c-.11 0-.21.01-.31.05l-10.69 4.15-12-4.2-11.27 3.8c-.42.14-.73.5-.73.96v30.24c0 .55.45 1 1 1 .11 0 .21-.01.31-.05l10.69-4.15 12 4.2 11.28-3.79c.42-.15.72-.51.72-.97v-30.24c0-.55-.45-1-1-1zm-11 32l-12-4.21v-23.79l12 4.21v23.79z" fill="#838383"/>
                                         <path d="M0 0h48v48h-48z" fill="none"/>
                                         </svg>
-                                        <p>Map</p>
+                                        <p class="nav-p">Map</p>
                                     </li>
                                 </ul>
                             </div> <!--End of main-nav-->
