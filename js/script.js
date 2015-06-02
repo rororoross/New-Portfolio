@@ -57,6 +57,25 @@ $( ".route-button-link" ).click(function() {
 	$(".route-button").toggleClass("routes-button-raise");
 });
 
+$(".mcts-home").click(function() {
+	$(".mcts-home-screen").show();
+});
+
+$(".mcts-favorites").click(function() {
+	$(".mcts-home-screen").hide();
+});
+
+
+$(".mcts-routes").click(function() {
+	$(".mcts-home-screen").hide();
+});
+
+
+$(".mcts-map").click(function() {
+	$(".mcts-home-screen").hide();
+});
+
+
 // My Work
 $( ".check-out-work" ).click(function() {
 	$(".anim").addClass("plz").delay( 600 ).fadeOut( 300 );
@@ -83,7 +102,7 @@ $( ".mac-container" ).click(function() {
 	$(".web-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
 	$("header").addClass("work-header");
-	$(".iphone-container").addClass("iphone-min-slide")
+	$(".iphone-container").addClass("iphone-min-slide");
 });
 
 $( ".iphone-container" ).click(function() {
