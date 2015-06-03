@@ -29,7 +29,7 @@ body {
 header {
 	font-weight: 500;
 	position: fixed;
-	top: 1px;
+	top: 0px;
 	width: 100%;
 	z-index: 9999999;
 }
@@ -648,7 +648,14 @@ h5 {
 	margin-top: 40px;
 }
 
+// Routes Screen
+.mcts-routes-screen {
+	color: black;
+}
 
+.mcts-map-screen {
+	color: black;
+}
 
 
 /* Route Row */
@@ -667,7 +674,7 @@ h5 {
 	height: 24px;
 	background-color: #34b262;
 	border-radius: 12px;
-	font-size: 13px;
+	font-size: 11px;
 	text-align: center;
 	color: white;
 	float: left;
@@ -676,7 +683,7 @@ h5 {
 }
 
 .route-number p {
-	padding-top: 5px;
+	padding-top: 7px;
 	font-weight: 500;
 }
 
@@ -685,7 +692,7 @@ h5 {
 }
 
 .route-name, .route-stop {
-	padding-left: 16px;
+	padding-left: 18px;
 	float: left;
 	width: 40%;
 }
@@ -774,7 +781,7 @@ h5 {
 	transform: rotate(90deg);
 	position: absolute;
 	left: 49px;
-	top: 10px;
+	top: 9px;
 }
 
 #find-location {

@@ -60,30 +60,63 @@ $( ".route-button-link" ).click(function() {
 $(".mcts-home").click(function() {
 	$(".mcts-home-screen").show();
 	$(".mcts-favorites-screen").hide();
+	$(".mcts-routes-screen").hide();
+	$(".mcts-map-screen").hide();
 	$("#addfavorite").hide();
 	$(".home-changefill").attr("fill","#34b262");
 	$(".home-p").css("color", "#34b262");
 	$(".fav-p").css("color", "#868686");
+	$(".routes-p").css("color", "#868686");
 	$(".changefill").attr("fill","#868686");
+	$(".routes-changefill").attr("fill","#868686");
+	$(".map-changefill").attr("fill","#868686");
+	$(".map-p").css("color", "#868686");
 });
 
 $(".mcts-favorites").click(function() {
 	$(".mcts-favorites-screen").show();
 	$(".mcts-home-screen").hide();
+	$(".mcts-map-screen").hide();
+	$(".mcts-routes-screen").hide();
 	$(".changefill").attr("fill","#34b262");
 	$(".home-changefill").attr("fill","#868686");
+	$(".routes-changefill").attr("fill","#868686");
+	$(".map-changefill").attr("fill","#868686");
 	$(".fav-p").css("color", "#34b262");
 	$(".home-p").css("color", "#868686");
+	$(".routes-p").css("color", "#868686");
+	$(".map-p").css("color", "#868686");
 });
 
-
 $(".mcts-routes").click(function() {
+	$(".mcts-routes-screen").show();
 	$(".mcts-home-screen").hide();
+	$(".mcts-favorites-screen").hide();
+	$(".mcts-map-screen").hide();
+	$(".routes-changefill").attr("fill","#34b262");
+	$(".home-changefill").attr("fill","#868686");
+	$(".changefill").attr("fill","#868686");
+	$(".map-changefill").attr("fill","#868686");
+	$(".routes-p").css("color", "#34b262");
+	$(".home-p").css("color", "#868686");
+	$(".fav-p").css("color", "#868686");
+	$(".map-p").css("color", "#868686");
 });
 
 
 $(".mcts-map").click(function() {
+	$(".mcts-map-screen").show();
+	$(".mcts-routes-screen").hide();
 	$(".mcts-home-screen").hide();
+	$(".mcts-favorites-screen").hide();
+	$(".map-changefill").attr("fill","#34b262");
+	$(".home-changefill").attr("fill","#868686");
+	$(".changefill").attr("fill","#868686");
+	$(".routes-changefill").attr("fill","#868686");
+	$(".map-p").css("color", "#34b262");
+	$(".home-p").css("color", "#868686");
+	$(".fav-p").css("color", "#868686");
+	$(".routes-p").css("color", "#868686");
 });
 
 
