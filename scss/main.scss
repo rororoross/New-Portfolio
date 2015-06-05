@@ -1,58 +1,9 @@
-@import 'example-directory/import-me';
-@import 'example-directory/meyer-reset';
-
-$blue: #5baafa;
-$dark-blue: #0243df;
-$red: #ff5151;
-$yellow: #ffff00;
-$light-yellow: #fde876;
-$green: #34b262;
-
-body { 
-	font-family: 'Roboto', sans-serif;
-	color: white;
-	overflow: hidden;
-	background-color: #ff5151;
-}
-
-.work-bg {
-	background-color: #5baafa;
-	overflow: visible;
-	overflow-x: hidden;
-}
-
-.work-header {
-	background-color: #5baafa;
-	height: 40px;
-}
-
-header {
-	font-weight: 500;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	z-index: 9999999;
-}
-
-header p {
-	float: left;
-	padding: 1rem;
-}
-
-header p span {
-	font-weight: 400;
-}
-
-nav {
-	right: 0;
-	top: 0;
-	float: right;
-	padding: 1rem;
-}
-
-nav ul li {
-	display: inline;
-}
+@import 'partials/meyer-reset';
+@import 'partials/mcts';
+@import 'partials/home';
+@import 'theme/colors';
+@import 'theme/typography';
+@import 'theme/grids';
 
 .pie {
 	margin: 0 auto;
@@ -635,12 +586,15 @@ h5 {
 
 .fav-add {
 	background-color: $dark-blue;
+	width: 42px;
+	height: 42px;
+	top: 60px;
 }
 
 #addfavorite {
 	width: 24px;
 	margin: 0 auto;
-	padding-top: 12px;
+	padding-top: 9px;
 	display: block;
 }
 
