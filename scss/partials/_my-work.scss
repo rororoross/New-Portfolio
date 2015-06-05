@@ -1,10 +1,67 @@
 .work-bg {
-	background-color: #5baafa;
+	background-color: $blue;
 	overflow: visible;
 	overflow-x: hidden;
 }
 
 .work-header {
-	background-color: #5baafa;
+	background-color: $blue;
 	height: 40px;
+}
+
+.my-work-body {
+	background-color: $blue;
+}
+
+.active {
+	color: #ffff00;
+}
+
+.mac-container, .iphone-container, .animation-container {
+	float: left;
+	width: 33%;
+	opacity: 0;
+	transition: all 300ms;
+}
+
+.work-action-container-fix {
+	width: auto;
+	margin: 2rem;
+	transition: all 700ms;
+}
+
+.mac-container:hover, .iphone-container:hover, .animation-container:hover {
+	transform: translateY(-8px);
+	transition: all 300ms;
+}
+
+.mac, .iphone, .animation {
+	margin: 0 auto;
+	display: block;
+	transition: all 700ms;
+	width: 28%;
+	cursor: pointer;
+}
+
+.mac {
+	width: 70%;
+}
+
+.current-border {
+	padding-bottom: 0.5rem;
+	border-bottom: 2px solid yellow;
+	transition-delay: 400ms;
+}
+
+.work-action {
+	width: 30px;
+	transform: translateY(-200px);
+	transition: all 700ms;
+}
+
+.work-action-mac {
+	width: 60px;
+	transform: translateY(-200px);
+	transition: all 700ms;
+	transition-timing-function: ease-in-out;
 }
