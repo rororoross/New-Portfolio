@@ -1,12 +1,12 @@
 @import 'partials/meyer-reset';
-@import 'partials/about';
-@import 'partials/mcts';
-@import 'partials/home';
-@import 'partials/my-work';
 @import 'theme/colors';
 @import 'theme/typography';
 @import 'theme/grids';
 @import 'theme/buttons-links';
+@import 'partials/about';
+@import 'partials/mcts';
+@import 'partials/home';
+@import 'partials/my-work';
 
 h3 {
 	text-align: center;
@@ -46,7 +46,7 @@ h4 {
 }
 
 h5 {
-	color: #ffff00;
+	color: $yellow;
 	font-weight: 500;
 	padding-left: 12px;
 	padding-top: 4px;
@@ -63,7 +63,7 @@ h5 {
 }
 
 .app-specs li span {
-	color: #ffff00;
+	color: $yellow;
 }
 
 .app-info-p {
@@ -137,7 +137,7 @@ h5 {
 
 /* Phone Stylings */
 #bus-header {
-	background-color: #34b262;
+	background-color: $green;
 	width: 100%;
 	height: 48px;
 	padding: 0;
@@ -223,7 +223,7 @@ h5 {
 #near-you {
 	height: 45px;
 	width: 100%;
-	background-color: #0243df;
+	background-color: $dark-blue;
 	font-size: 14px;
 	font-weight: 600;
 	border-bottom: 1px solid #999999;
@@ -237,7 +237,7 @@ h5 {
 .route-button {
 	width: 48px;
 	height: 48px;
-	background-color: #34b262;
+	background-color: $green;
 	border-radius: 24px;
 	position: absolute;
 	bottom: 214px;
@@ -254,7 +254,7 @@ h5 {
 .routes-button-raise {
 	width: 48px;
 	height: 48px;
-	background-color: #34b262;
+	background-color: $green;
 	border-radius: 24px;
 	position: absolute;
 	bottom: 338px;
@@ -333,7 +333,7 @@ h5 {
 .favorite-button {
 	width: 48px;
 	height: 48px;
-	background-color: #34b262;
+	background-color: $green;
 	border-radius: 50%;
 	position: absolute;
 	top: 58px;
@@ -389,7 +389,7 @@ h5 {
 .route-number {
 	width: 24px;
 	height: 24px;
-	background-color: #34b262;
+	background-color: $green;
 	border-radius: 12px;
 	font-size: 11px;
 	text-align: center;
@@ -523,7 +523,7 @@ h5 {
 #drawer-header {
 	width: 100%;
 	height: 58px;
-	background-color: #34b262;
+	background-color: $green;
 	position: relative;
 }
 
@@ -617,7 +617,7 @@ h5 {
 }
 
 .row-name-top, .row-name {
-	color: #34b262;
+	color: $green;
 	float: left;
 	padding-top: 8px;
 	font-weight: 600;
@@ -775,7 +775,7 @@ h5 {
 }
 
 .see-it-live:hover a {
-	color: #5baafa;
+	color: $blue;
 }
 
 .web-info-p {
@@ -827,12 +827,12 @@ h5 {
 }
 
 .process ul li:hover {
-	color: #fde876;
+	color: $light-yellow;
 	transition: 300ms;
 }
 
 .process ul li:nth-child(1) {
-	color: #fde876;
+	color: $light-yellow;
 }
 
 .process-icon-faded {
@@ -891,7 +891,7 @@ h5 {
 }
 
 .anim {
-	background-color: #5baafa;
+	background-color: $blue;
 	border-radius: 10vw;
 	position: absolute;
  	left:0;
@@ -905,7 +905,7 @@ h5 {
 .work {
 	opacity: 1;
 	z-index: 55555;
-	background-color: #5baafa;
+	background-color: $blue;
 	width: 100vw;
 	height: 100vw;
 	transition: all 500ms;
@@ -913,7 +913,7 @@ h5 {
 }
 
 .body-blue {
-	background-color: #5baafa;
+	background-color: $blue;
 }
 
 
@@ -999,8 +999,8 @@ h5 {
 }
 
 @-webkit-keyframes blue-bg {
-  0%   { background-color: #5baafa;}
-  100% { background-color: #5baafa;} 
+  0%   { background-color: $blue;}
+  100% { background-color: $blue;} 
 }
 
 @-webkit-keyframes fade-out {
