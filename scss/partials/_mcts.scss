@@ -66,9 +66,9 @@
 	border-bottom: 1px solid black;
 	color: #4d4d4d;
 
-	p {
-	padding-top: 10px;
-	}
+		p {
+		padding-top: 10px;
+		}
 }
 
 #destination {
@@ -76,10 +76,10 @@
 	margin: 0 auto;
 	height: 34px;
 
-	p {
-	padding-top: 10px;
-	color: #c4c2c2;
-	}
+		p {
+		padding-top: 10px;
+		color: #c4c2c2;
+		}
 }
 
 #map {
@@ -118,11 +118,11 @@
 	font-size: 14px;
 	font-weight: 600;
 	border-bottom: 1px solid #999999;
-}
 
-#near-you p {
+	p {
 	padding-left: 54px;
 	padding-top: 14px;
+	}
 }
 
 .route-button {
@@ -168,12 +168,11 @@
 	ul {
 		width: 100%;
 
-	}
-
-	li {
-		width: 25%;
-		display: inline-block;
-		cursor: pointer;
+		li {
+			width: 25%;
+			display: inline-block;
+			cursor: pointer;
+		}
 	}
 }
 
@@ -318,4 +317,41 @@
 	font-size: 10px;
 	padding-top: 4px;
 	color: #999999;
+}
+
+#nav-icon-one {
+	width: 12px;
+	transform: rotate(33deg);
+	position: absolute;
+	left: 20px;
+	top: 10px;
+}
+
+#swapvert {
+	width: 24px;
+	position: absolute;
+	right: 8px;
+	top: 20px;
+}
+
+.route-timer {
+	width: 12px;
+	position: absolute;
+	right: 20px;
+	bottom: 14px;
+}
+
+.route-arrow {
+	width: 9px;
+	transform: rotate(90deg);
+	position: absolute;
+	left: 49px;
+	top: 9px;
+}
+
+#find-location {
+	width: 24px;
+	margin: 0 auto;
+	display: block;
+	padding-top: 12px;
 }
