@@ -65,3 +65,76 @@
 	transition: all 700ms;
 	transition-timing-function: ease-in-out;
 }
+
+.work-container {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 6rem;
+	transition: all 700ms;
+	transition-timing-function: ease-in-out;
+}
+
+.work-container-add {
+	width: 15%;
+	margin: 0 auto;
+	margin-top: 0rem;
+	transition: all 700ms;
+}
+
+/* App Details */
+.app-info {
+	float: right;
+	margin-top: 0px;
+	margin-right: 0px;
+	width: 700px;
+	height: 600px;
+	position: relative;
+}
+
+.app-specs {
+	padding-left: 12px;
+	padding-top: 2px;
+}
+
+.app-specs li {
+	padding: 2px;
+	font-weight: 500;
+}
+
+.app-specs li span {
+	color: $yellow;
+}
+
+.app-info-p {
+	width: 66%;
+	float: right;
+	padding-right: 7rem;
+	padding-top: 2rem;
+	line-height: 1.5rem;
+	font-weight: 500;
+}
+
+.github-icon {
+	width: 37px;
+	height: 36px;
+	position: absolute;
+	right: 100px;
+	top: 2px;
+	background-image: url(../img/github-icon.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.github-icon:hover {
+	background-image: url(../img/github-icon-yellow.png);
+	cursor: pointer;
+	transition: all 500ms;
+}
+
+.git-home {
+	position: absolute;
+	right: 1rem;
+	bottom: 1rem;
+	top: auto;
+}

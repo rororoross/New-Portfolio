@@ -12,14 +12,18 @@ header {
 	width: 100%;
 	z-index: 9999999;
 
-	p {
-	float: left;
-	padding: 1rem;
+		p {
+		float: left;
+		padding: 1rem;
+		text-align: left;
+		position: absolute;
+		top: 1.6rem;
+		left: 1rem;	
 
-		span {
-		font-weight: 400;
+			span {
+			font-weight: 400;
+			}
 		}
-	}
 }
 
 nav {
@@ -28,9 +32,9 @@ nav {
 	float: right;
 	padding: 1rem;
 
-	ul li {
-	display: inline;
-	}
+		ul li {
+		display: inline;
+		}
 }
 
 .pie {
@@ -102,36 +106,29 @@ main {
 		margin: 0;
 		display: table;
 
-		li {
-		height: 25vh;
-		box-sizing: border-box;
-		border-bottom: 2px solid white;
-		width: 1600px;
-		vertical-align: middle;
-		display: table-cell;
-		-webkit-transition: all 500ms;
-		}
+			li {
+			height: 25vh;
+			box-sizing: border-box;
+			border-bottom: 2px solid white;
+			width: 1600px;
+			vertical-align: middle;
+			display: table-cell;
+			-webkit-transition: all 500ms;
+			}
 
-		li:hover {
-		background-color: #ffffff;
-		transition: all 0.5s;
-		color: #ff5151;
-		}
+				li:hover {
+				background-color: #ffffff;
+				transition: all 0.5s;
+				color: #ff5151;
+				}
 
-		a {
-		color: white;
-		}
+			a {
+			color: white;
+			}
 	}
 
 	nav {
 		float: none;
-	}
-
-	header p {
-		text-align: left;
-		position: absolute;
-		top: 1.6rem;
-		left: 1rem;	
 	}
 
 	.pie {

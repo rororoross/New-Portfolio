@@ -1,4 +1,4 @@
-h1, h2 {
+h1, h2, h3 {
 	text-align: center;
 	font-size: 3rem;
 	font-weight: 500;
@@ -8,4 +8,21 @@ h1, h2 {
 h2 {
 	font-size: 2rem;
 	padding-top: 1rem;
+}
+
+h3 {
+	font-size: 1rem;
+	padding-top: 1rem;
+}
+
+h4 {
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+h5 {
+	color: $yellow;
+	font-weight: 500;
+	padding-left: 12px;
+	padding-top: 4px;
 }

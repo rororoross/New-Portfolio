@@ -5,32 +5,32 @@ button {
 	margin: 0 auto;
 	margin-top: 5rem;
 	display: block;
-}
 
-.check-out-work {
-	-webkit-animation: btn-hover 2600ms infinite;
-	-webkit-transition-timing-function: ease;
-}
-
-button a {
-	color: $yellow;
-	font-size: 1.2rem;
-	font-weight: 500;
-	text-decoration: none;
+		a {
+		color: $yellow;
+		font-size: 1.2rem;
+		font-weight: 500;
+		text-decoration: none;
+		}
 }
 
 button:hover {
 	background-color: $yellow;
 	transition: 0.5s;
 	cursor: pointer;
-}
 
-button:hover a {
-	color: $red;
-	transition: 0.5s;
+		a {
+		color: $red;
+		transition: 0.5s;
+		}
 }
 
 a {
 	text-decoration: none;
 	color: white;
+}
+
+.check-out-work {
+	-webkit-animation: btn-hover 2600ms infinite;
+	-webkit-transition-timing-function: ease;
 }
