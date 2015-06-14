@@ -8,43 +8,6 @@
 @import 'partials/home';
 @import 'partials/my-work';
 
-#nav-icon-one {
-	width: 12px;
-	transform: rotate(33deg);
-	position: absolute;
-	left: 20px;
-	top: 10px;
-}
-
-#swapvert {
-	width: 24px;
-	position: absolute;
-	right: 8px;
-	top: 20px;
-}
-
-.route-timer {
-	width: 12px;
-	position: absolute;
-	right: 20px;
-	bottom: 14px;
-}
-
-.route-arrow {
-	width: 9px;
-	transform: rotate(90deg);
-	position: absolute;
-	left: 49px;
-	top: 9px;
-}
-
-#find-location {
-	width: 24px;
-	margin: 0 auto;
-	display: block;
-	padding-top: 12px;
-}
-
 /* transfer.html */
 .web-container {
 	margin-top: 10rem;

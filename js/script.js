@@ -55,7 +55,9 @@ $( ".drawer-menu" ).click(function() {
 $( ".route-button-link" ).click(function() {
 	$(".routes").toggleClass("routes-expand");
 	$(".route-button").toggleClass("routes-button-raise");
+	$(".bus-subheader").toggleClass("subheader-move");
 });
+
 
 $(".mcts-home").click(function() {
 	$(".mcts-home-screen").show();
