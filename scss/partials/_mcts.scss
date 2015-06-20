@@ -119,7 +119,7 @@
 	font-size: 14px;
 	font-weight: 600;
 	border-bottom: 1px solid #999999;
-
+	
 	p {
 	padding-left: 54px;
 	padding-top: 14px;
@@ -313,17 +313,25 @@
 		color: white;
 		font-size: 22px;
 		font-weight: 700;
-		padding-top: 8px;
+		padding-top: 10px;
 	}
 
 	.route-stop {
 		color: white;
 		font-size: 12px;
+		width: 60%;
 	}
 }
 
+.arrival-place-icon {
+	width: 28px;
+	position: absolute;
+	right: 2px;
+	bottom: 4px;
+}
+
 .route-name {
-	margin-top: 3px;
+	margin-top: 8px;
 	font-weight: 900;
 	color: #333333;
 }
@@ -335,11 +343,11 @@
 }
 
 .fav-name {
-	font-size: 16px;
+	font-size: 14px;
 	font-weight: 700;
 	width: 60%;
 	color: white;
-	padding-top: 12px;
+	padding-top: 8px;
 }
 
 .route-time {
@@ -356,6 +364,38 @@
 	padding-top: 4px;
 	color: #333333;
 }
+
+.route-arrival {
+	height: 136px;
+	clear: both;
+	width: 95%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	border: 1px solid #cccccc;
+	border-top: 1px solid $dark-blue;
+	margin-top: -4px;
+	position: relative;
+}
+
+.arrival-stop, .arrival-time {
+	font-size: 14px;
+	font-weight: 700;
+	color: #333333;
+	padding-top: 6px;
+	margin-left: 60px;
+}
+
+.arrival-stop:first-of-type {
+	margin-top: 6px;
+}
+
+.arrival-time {
+	color: #999999;
+	font-size: 12px;
+	padding-top: 2px;
+	margin-bottom: 4px;
+}
+
 
 #nav-icon-one {
 	width: 12px;
