@@ -58,7 +58,6 @@ $( ".route-button-link" ).click(function() {
 	$(".bus-subheader").toggleClass("subheader-move");
 });
 
-
 $(".mcts-home").click(function() {
 	$(".mcts-home-screen").show();
 	$(".mcts-favorites-screen").hide();
