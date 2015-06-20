@@ -295,13 +295,35 @@
 }
 
 .mcts-favorites-screen {
+
+	.route-row {
+		height: 64px;
+		background: blue;
+		border-radius: 4px;
+		margin: 0 auto;
+		margin-top: 6px;
+		width: 95%;
+	}
+
+	.route-row:before {
+		border-bottom: none;
+	}
+
 	.route-number {
-		background-color: red;
+		color: white;
+		font-size: 22px;
+		font-weight: 700;
+		padding-top: 8px;
+	}
+
+	.route-stop {
+		color: white;
+		font-size: 12px;
 	}
 }
 
 .route-name {
-	margin-top: 7px;
+	margin-top: 3px;
 	font-weight: 900;
 	color: #333333;
 }
@@ -313,9 +335,11 @@
 }
 
 .fav-name {
-	font-size: 14px;
-	font-weight: 600;
-	width: 48%;
+	font-size: 16px;
+	font-weight: 700;
+	width: 60%;
+	color: white;
+	padding-top: 12px;
 }
 
 .route-time {
