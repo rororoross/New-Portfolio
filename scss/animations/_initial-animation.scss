@@ -1,12 +1,11 @@
 .animate-container {
 	width: 280px;
-	height: 298px;
+	height: 299px;
 	cursor: pointer;
 	position: relative;
 	margin: 0 auto;
 	display: block;
 }
-
 
 .left-bar, .right-bar {
 	width: 6px;
@@ -26,6 +25,18 @@
 	right: 0;
 	top: 120px;
 	animation: right-bar 3000ms infinite;
+}
+
+.left-bar-small {
+	
+}
+
+.right-bar-small {
+	
+}
+
+.ball-small {
+
 }
 
 .ball {
@@ -61,5 +72,8 @@
   50% { transform: translateX(-122px)translateY(100px);}
   75% { transform: translateX(136px)translateY(100px);}
   100% { transform: translateX(-122px)translateY(0px);}
-
 }
+
+
+
+

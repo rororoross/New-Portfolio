@@ -147,11 +147,12 @@ $( ".mac-container" ).click(function() {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
 	$("main").addClass("main-padder");
-	$(".mac").addClass("current-border");
+	$(".animate-container").addClass("animate-container-small");
 	$(".web-container").addClass("web-container-transition");
 	$("body").addClass("work-bg");
 	$("header").addClass("work-header");
-	$(".iphone-container").addClass("iphone-min-slide");
+	$(".mac").addClass("mac-resize").addClass("current-border");
+	$(".iphone").addClass("iphone-resize");
 });
 
 $( ".iphone-container" ).click(function() {

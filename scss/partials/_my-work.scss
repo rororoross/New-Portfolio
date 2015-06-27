@@ -44,13 +44,24 @@
 }
 
 .mac {
-	width: 70%;
+	width: 356px;
+}
+
+.iphone {
+	width: 150px;
+}
+
+.mac-resize {
+	width: 55px;
+}
+
+.iphone-resize {
+	width: 27px;
 }
 
 .current-border {
 	padding-bottom: 0.5rem;
 	border-bottom: 2px solid yellow;
-	transition-delay: 400ms;
 }
 
 .work-action {
