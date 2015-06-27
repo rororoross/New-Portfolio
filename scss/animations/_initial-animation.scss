@@ -1,7 +1,7 @@
 .animate-container {
 	width: 280px;
-	height: 260px;
-	border: 1px solid black;
+	height: 298px;
+	cursor: pointer;
 	position: relative;
 	margin: 0 auto;
 	display: block;
@@ -18,14 +18,14 @@
 
 .left-bar {
 	left: 0;
-	top: 210px;
-	animation: left-bar 1600ms infinite;
+	top: 180px;
+	animation: left-bar 3000ms infinite;
 }
 
 .right-bar {
 	right: 0;
 	top: 120px;
-	animation: right-bar 1600ms infinite;
+	animation: right-bar 3000ms infinite;
 }
 
 .ball {
@@ -35,25 +35,31 @@
 	position: absolute;
 	left: 130px;
 	top: 120px;
-	animation: ball 1600ms infinite;
+	animation: ball 3000ms infinite;
+	animation-timing-function: linear;
 }
 
-
-
 @keyframes right-bar {
-  0%  { transform: translateY(0px);}
-  50% { transform: translateY(-120px);}
-  100% { transform: translateY(0px);}
+  0%  { transform: translateY(-60px);}
+  25% { transform: translateY(96px);}
+  50% { transform: translateY(-60px);}
+  75% { transform: translateY(96px);}
+  100% { transform: translateY(-60px);}
 }
 
 @keyframes left-bar {
-  0%  { transform: translateY(-110px);}
-  50% { transform: translateY(0px);}
-  100% { transform: translateY(-110px);}
+  0%  { transform: translateY(-80px);}
+  25% { transform: translateY(0px);}
+  50% { transform: translateY(22px);}
+  75% { transform: translateY(-56px);}
+  100% { transform: translateY(-80px);}
 }
 
 @keyframes ball {
   0%  { transform: translateX(-122px)translateY(0px);}
-  50% { transform: translateX(136px)translateY(-100px);}
-  100% { transform: translateX(-122px);}
+  25% { transform: translateX(136px)translateY(100px);}
+  50% { transform: translateX(-122px)translateY(100px);}
+  75% { transform: translateX(136px)translateY(100px);}
+  100% { transform: translateX(-122px)translateY(0px);}
+
 }
