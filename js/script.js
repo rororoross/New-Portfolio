@@ -120,6 +120,10 @@ $(".mcts-map").click(function() {
 	$(".routes-p").css("color", "#868686");
 });
 
+$(".route-row").click(function() {
+	$(this).next.toggle();
+});
+
 
 // My Work
 $( ".check-out-work" ).click(function() {

@@ -303,6 +303,7 @@
 		margin: 0 auto;
 		margin-top: 6px;
 		width: 95%;
+		cursor: pointer;
 	}
 
 	.route-row:before {
@@ -325,21 +326,22 @@
 
 .arrival-place-icon {
 	width: 28px;
-	position: absolute;
-	right: 2px;
-	bottom: 4px;
+	float: right;
+	bottom: 16px;
+	position: relative;
 }
-
 .route-name {
 	margin-top: 8px;
 	font-weight: 900;
 	color: #333333;
+	position: relative;
 }
 
 .route-name, .route-stop {
 	padding-left: 18px;
 	float: left;
 	width: 40%;
+	position: relative;
 }
 
 .fav-name {
@@ -348,6 +350,7 @@
 	width: 60%;
 	color: white;
 	padding-top: 8px;
+	position: relative;
 }
 
 .route-time {
@@ -357,12 +360,14 @@
 	color: #4d4d4d;
 	padding-right: 20px;
 	padding-top: 4px;
+	position: relative;
 }
 
 .route-stop {
 	font-size: 10px;
 	padding-top: 4px;
 	color: #333333;
+	position: relative;
 }
 
 .route-arrival {
@@ -375,6 +380,12 @@
 	border-top: 1px solid $dark-blue;
 	margin-top: -4px;
 	position: relative;
+	display: none;
+	transition: all 300ms;
+}
+
+.route-height {
+	transition: all 300ms;
 }
 
 .arrival-stop, .arrival-time {
