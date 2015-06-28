@@ -28,10 +28,15 @@ nav {
 	top: 0;
 	float: right;
 	padding: 1rem;
+	width: auto;
 
 		ul li {
 		display: inline;
 		}
+}
+
+.nav-icon {
+	display: none;
 }
 
 .pie {
@@ -59,98 +64,4 @@ main {
 	display: none;
 	position: absolute;
 	z-index: 10;
-}
-
-@media screen and (max-width:528px) {
-	#menu {
-		display: block;
-		right: 0.25rem;
-		top: 0.25rem;
-	}
-
-	header {
-		padding: 0;
-	}
-
-	.nav-list {
-		width: 100%;
-		padding: 0;
-		float: none;
-		text-align: center;
-		height: 0;
-		-webkit-transition: all 1s;
-		display: none;
-
-		li {
-		width: 100%;
-		display: block;
-		padding: 0;
-		vertical-align: middle;
-		display: table-cell;
-		height: 25vh;
-		}
-	}
-
-	.show-menu {
-		opacity: 1;
-		height: auto;
-		-webkit-transition: all 500ms;
-		width: 100%;
-		padding: 0;
-		position: absolute;
-		height: auto;
-		background-color: #ff5151;
-		margin: 0;
-		display: table;
-
-			li {
-			height: 25vh;
-			box-sizing: border-box;
-			border-bottom: 2px solid white;
-			width: 1600px;
-			vertical-align: middle;
-			display: table-cell;
-			-webkit-transition: all 500ms;
-			}
-
-				li:hover {
-				background-color: #ffffff;
-				transition: all 0.5s;
-				color: #ff5151;
-				}
-
-			a {
-			color: white;
-			}
-	}
-
-	nav {
-		float: none;
-	}
-
-	.pie {
-		width: 50%;
-	}
-
-	main {
-		padding-top: 6rem;
-	}
-
-	h1 {
-		font-size: 1.33rem;
-		width: 90%;
-		margin: 0 auto;
-	}
-
-	h2 {
-		font-size: 1rem;
-	}
-
-	.nav-list span {
-		display: none;
-	}
-
-	button {
-		margin-top: 3rem;
-	}
 }

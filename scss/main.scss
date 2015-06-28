@@ -229,6 +229,7 @@
 	height: 100vw;
 	transition: all 500ms;
 	padding-bottom: 6rem;
+	display: none;
 }
 
 .body-blue {
@@ -366,7 +367,92 @@
 	}
 }
 
+@media screen and (max-width: 460px) {
 
+	main {
+		padding-top: 6rem;
+	}
+
+	.pie {
+		width: 25%;
+	}
+
+	h1 {
+		font-size: 1.1rem;
+		padding-top: 1rem;
+	}
+
+	h2 {
+		font-size: 1rem;
+		padding-top: 0.6rem;
+	}
+
+	.ibm-logo {
+		width: 48px;
+	}
+
+	.git-home {
+		display: none;
+	}
+
+	.nav-list span {
+		display: none;
+	}
+
+	.icon-home {
+		color: #ffff00;
+	}
+	
+	.check-out-work {
+		padding: 1rem 1.2rem 1rem 1.2rem;
+		border: 3px solid #ffff00;
+
+		a {
+			font-size: 14px;
+		}
+	}
+
+	.nav-icon {
+		width: 24px;
+		padding-bottom: 1px;
+		display: block;
+	}
+
+	header {
+		position: fixed;
+		bottom: 0;
+		top: auto;
+		width: 100%;
+
+		nav {
+			padding: 4px 0;
+			float: none;
+			margin: 0 auto;
+			right: auto;
+			top: auto;
+			width: auto;
+			display: block;
+			border-top: 2px solid white;
+		}
+			.nav-list li {
+				display: inline-block;
+				width: 23%;
+				padding: 0.5%;
+				padding-bottom: 4px;
+				text-align: center;
+				font-size: 11px;
+			}
+		
+		p {
+			position: fixed;
+			top: 0;
+			float: none;
+			text-align: center;
+			width: 100%;
+			padding: 0.6rem 0;
+		}
+	}
+}
 
 
 
