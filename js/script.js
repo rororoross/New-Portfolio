@@ -147,7 +147,8 @@ $( ".mac-container" ).click(function() {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
 	$("main").addClass("main-padder");
-	$(".web-container").addClass("web-container-transition");
+	$(".web-container").show().addClass("web-container-transition");
+	$(".mobile-container").hide();
 	$("body").addClass("work-bg");
 	$("header").addClass("work-header");
 	$(".mac").addClass("mac-resize").addClass("current-border");
@@ -169,7 +170,28 @@ $( ".iphone-container" ).click(function() {
 	$("header").addClass("work-header");
 	$(".web-container").hide();
 	$(".mobile-container").show();
-	$(".animate-container").addClass("animate-resize");
+	$(".animate-container").addClass("animate-container-resize");
+	$(".left-bar").addClass("left-bar-resize");
+	$(".right-bar").addClass("right-bar-resize");
+	$(".ball").addClass("ball-resize");
+});
+
+$(".animation-container").click(function() {
+	$(".work-container").addClass("work-container-add");
+	$("h3").hide();
+	$("main").addClass("main-padder");
+	$(".iphone").addClass("iphone-resize");
+	$(".mac").addClass("mac-resize");
+	$(".mobile-container").addClass("web-container-transition");
+	$("body").addClass("work-bg");
+	$("header").addClass("work-header");
+	$(".web-container").hide();
+	$(".mobile-container").hide();
+	$(".animation-work").show().addClass("web-container-transition");
+	$(".animate-container").addClass("animate-container-resize").addClass("current-border");
+	$(".left-bar").addClass("left-bar-resize");
+	$(".right-bar").addClass("right-bar-resize");
+	$(".ball").addClass("ball-resize");
 });
 
 $( ".design" ).click(function() {
