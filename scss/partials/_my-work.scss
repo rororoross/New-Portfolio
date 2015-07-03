@@ -187,3 +187,18 @@
 	left: auto;
 	transform: rotate(90deg);
 }
+
+.back-to-top {
+	text-align: center;
+	margin: 0 auto;
+	display: block;
+	margin-top: 8rem;
+	margin-bottom: 2rem;
+	transition: all 300ms;
+}
+
+#web-link {
+	position: absolute;
+	top: 0;
+	transition: all 300ms;
+}
