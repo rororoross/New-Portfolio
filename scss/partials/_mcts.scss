@@ -8,7 +8,7 @@
 	height: 717px;
 	background-repeat: no-repeat;
 	background-size: 100%;
-	position: absolute;
+	position: relative;
 	margin-left: auto;
 	margin-right: auto;
 	left: 0%;
@@ -31,6 +31,8 @@
 #phone-head {
 	text-align: center;
 	font-weight: 500;
+	width: 336px;
+	margin: 0 auto;
 }
 
 /* Phone Stylings */
@@ -185,7 +187,7 @@
 	text-align: center;
 }
 
-.nav-icon {
+.mcts-icon {
 	width: 24px;
 	display: block;
 	margin: 0 auto;

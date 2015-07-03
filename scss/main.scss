@@ -17,6 +17,10 @@
 	padding-bottom: 5px;
 }
 
+article {
+	position: relative;
+}
+
 
 /* transfer.html */
 .web-container {
@@ -416,6 +420,7 @@
 		width: 24px;
 		padding-bottom: 1px;
 		display: block;
+		margin: 0 auto;
 	}
 
 	header {
