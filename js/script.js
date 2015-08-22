@@ -148,6 +148,7 @@ $( ".check-out-work" ).click(function() {
 	$(".mac-container").addClass("fade-in");
 	$(".iphone-container").addClass("fade-in-two");
 	$(".animation-container").addClass("fade-in");
+	$("body").addClass("body-blue");
 });
 
 $( ".work-link" ).click(function() {

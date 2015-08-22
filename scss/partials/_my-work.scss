@@ -44,7 +44,7 @@
 }
 
 .mac {
-	width: 356px;
+	width: 376px;
 }
 
 .iphone {
@@ -79,6 +79,7 @@
 
 .work-container {
 	width: 80%;
+	max-width: 1900px;
 	margin: 0 auto;
 	margin-top: 6rem;
 	transition: all 700ms;
@@ -86,9 +87,9 @@
 }
 
 .work-container-add {
-	width: 15%;
+	width: 20%;
 	margin: 0 auto;
-	margin-top: 0rem;
+	margin-top: 1rem;
 	transition: all 700ms;
 }
 
@@ -202,3 +203,94 @@
 	top: 0;
 	transition: all 300ms;
 }
+
+@media screen and (max-width: 1600px) {
+	.work-container {
+		width: 90%;
+	}
+
+	.work-container-add {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 1500px) {
+	.mac {
+		width: 240px;
+	}
+
+	.iphone {
+		width: 96px;
+	}
+
+	.mac-resize {
+		width: 55px;
+	}
+
+	.iphone-resize {
+		width: 27px;
+	}
+
+	.work-container-add {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.mac {
+		width: 100px;
+	}
+
+	.iphone {
+		width: 40px;
+	}
+
+	.mac-resize {
+		width: 55px;
+	}
+
+	.iphone-resize {
+		width: 27px;
+	}
+
+	.work-container-add {
+		width: 45%;
+		min-width: 400px;
+	}
+
+
+	// .work-container {
+	// 	margin-top: 0;
+	// }
+
+	// main {
+	// 	padding-top: 100px;
+	// }
+	// .mac-container, .iphone-container, .animation-container {
+	// 	width: 100%;
+	// 	margin-bottom: 2rem;
+	// }
+}
+
+@media screen and (max-width: 540px) {
+	.mac {
+		width: 40px;
+	}
+
+	.iphone {
+		width: 16px;
+	}
+
+	.work-container-add {
+		width: 95%;
+		min-width: 0px;
+	}
+}
+
+.mac-resize {
+		width: 55px;
+	}
+
+	.iphone-resize {
+		width: 27px;
+	}

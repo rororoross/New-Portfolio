@@ -1,6 +1,6 @@
 .animate-container {
 	width: 280px;
-	height: 299px;
+	height: 316px;
 	cursor: pointer;
 	position: relative;
 	margin: 0 auto;
@@ -117,6 +117,90 @@
   100% { transform: translateX(-21px)translateY(-10px);}
 }
 
+@media screen and (max-width: 1500px) {
+	.animate-container {
+		height: 202px;
+	}
+
+	.animate-container-resize {
+		width: 80px;
+		height: 56px;
+	}
 
 
+	.left-bar, .right-bar, .ball {
+		top: 60px;
+	}
 
+	.left-bar {
+		top: 120px;
+	}
+
+	.left-bar-resize {
+	width: 3px;
+	height: 16px;
+	top: 8px;
+	animation: left-bar-resize 2200ms infinite;
+	animation-timing-function: linear;
+	}
+
+	.right-bar-resize {
+		width: 3px;
+		height: 16px;
+		top: 4px;
+		animation: right-bar-resize 2200ms infinite;
+		animation-timing-function: linear;
+	}
+
+
+	.ball-resize {
+		width: 3px;
+		height: 3px;
+		top: 5px;
+		left: 26px;
+		animation: ball-resize 2200ms infinite;
+		animation-timing-function: linear;
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	
+	.animate-container {
+		width: 80px;
+		height: 84px;
+	}
+
+	.left-bar {
+		width: 3px;
+		height: 16px;
+		top: 8px;
+		animation: left-bar-resize 2200ms infinite;
+		animation-timing-function: linear;
+	}
+
+	.right-bar {
+		width: 3px;
+		height: 16px;
+		top: 4px;
+		animation: right-bar-resize 2200ms infinite;
+		animation-timing-function: linear;
+	}
+
+	.ball {
+		width: 3px;
+		height: 3px;
+		top: 5px;
+		left: 26px;
+		animation: ball-resize 2200ms infinite;
+		animation-timing-function: linear;
+	}
+}
+
+@media screen and (max-width: 540px) {
+
+	.animate-container {
+		height: 34px;
+		top: -12px;
+	}
+}
