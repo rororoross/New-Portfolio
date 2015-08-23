@@ -67,9 +67,9 @@ $( ".drawer-menu" ).click(function() {
 	$(".screen-container").hide();
 });
 
-$( ".route-button-link" ).click(function() {
+$( ".route-button" ).click(function() {
 	$(".routes").toggleClass("routes-expand");
-	$(".route-button").toggleClass("routes-button-raise");
+	$(this).toggleClass("routes-button-raise");
 	$(".bus-subheader").toggleClass("subheader-move");
 });
 

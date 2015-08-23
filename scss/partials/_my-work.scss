@@ -234,9 +234,40 @@
 	.work-container-add {
 		width: 35%;
 	}
+
+	.app-info {
+		width: 50%;
+	}
+
+	.app-info-p {
+		width: 80%;
+		float: left;
+		padding: 2rem 0 0 0;
+	}
 }
 
+@media screen and (max-width: 1060px) {
+	.phone-prototype {
+		float: none;
+	}
 
+	.app-info {
+		margin: 0 auto;
+		float: none;
+		clear: both;
+		width: 66%;
+
+		h4 {
+			margin-top: 2rem;
+		}
+	}
+
+	.app-info-p {
+		width: 100%;
+	}
+
+
+}
 
 @media screen and (max-width: 900px) {
 	.mac {
