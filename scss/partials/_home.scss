@@ -5,6 +5,10 @@ body {
 	background-color: #ff5151;
 }
 
+.scroll-vis {
+	overflow: scroll;
+}
+
 header {
 	font-weight: 500;
 	position: fixed;
@@ -56,7 +60,7 @@ main {
 .home {
 	background-color: #ff5151;
 	width: 100vw;
-	height: 100vw;
+	height: 100vh;
 }
 
 // Responsive Menu

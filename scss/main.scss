@@ -24,8 +24,11 @@ article {
 
 /* transfer.html */
 .web-container {
+	margin: 0 auto;
 	margin-top: 10rem;
 	transform:translateY(1200px);
+	max-width: 2000px;
+	display: none;
 }
 
 .mobile-container {
@@ -48,7 +51,7 @@ article {
 .web-container-transition {
 	transform:translateY(0px);
 	transition: 800ms;
-	transition-delay: 0ms;
+	transition-delay: 440ms;
 }
 
 .monitor-transfer {
@@ -69,9 +72,24 @@ article {
 	margin-top: 2rem;
 }
 
-.column-1, .column-2 {
+.column-1 {
 	width: 50%;
 	float: left;
+}
+
+.column-2 {
+	width: 50%;
+	float: right;
+}
+
+.even-work {
+	.column-1 {
+		float: right;
+	}
+
+	.column-2 {
+		float: left;
+	}
 }
 
 .web-work {
@@ -219,7 +237,7 @@ article {
 	position: absolute;
  	left:0;
     right:0;
-    bottom: 15vw;
+    bottom: 35vh;
     margin-left:auto;
     margin-right:auto;
 	z-index: 5;
@@ -229,8 +247,8 @@ article {
 	opacity: 1;
 	z-index: 55555;
 	background-color: $blue;
-	width: 100vw;
-	height: 100vw;
+	
+	
 	transition: all 500ms;
 	padding-bottom: 6rem;
 	display: none;
@@ -263,7 +281,7 @@ article {
 .plz {
 	width: 20vw;
 	height: 20vw;
-	-webkit-animation: NAME-YOUR-ANIMATIONN 800ms linear;
+	-webkit-animation: expander 700ms linear;
 	-webkit-animation-fill-mode: forwards;
 	z-index: 5;
 }
@@ -272,7 +290,7 @@ article {
 	width: 120vw;
 	height: 120vw;
 	background-color: #fff;
-	-webkit-animation: NAME-YOUR-ANIMATIONN 1200ms linear;
+	-webkit-animation: expander 1200ms linear;
 	bottom: -87vw;
 	right: -40vw;
 	position: absolute;
@@ -298,9 +316,20 @@ article {
 }
 
 
-@-webkit-keyframes NAME-YOUR-ANIMATIONN {
+@-webkit-keyframes expander {
   0%   { transform: scale(0); opacity: 1; }
   100% { transform: scale(8.5); opacity: 1; z-index: 5;}
+}
+
+@media screen and (max-width: 600px) {
+	@-webkit-keyframes expander {
+	  0%   { transform: scale(0); opacity: 1; }
+	  100% { transform: scale(15); opacity: 1; z-index: 5;}
+	}
+
+	.anim {
+    	bottom: 45vh;
+	}
 }
 
 	
@@ -369,7 +398,57 @@ article {
 	.main-padder {
 		padding-top: 6vh;
 	}
+
+	.github-icon {
+		right: 40px;
+	}
+
+	.see-it-live {
+		margin-top: 60px;
+	}
+
+	.web-info-p {
+		width: 100%;
+	}
 }
+
+@media screen and (max-width: 1200px) {
+	.github-icon {
+		right: 0px;
+	}
+}
+
+@media screen and (max-width: 1060px) {
+	.column-1, .column-2 {
+		width: 100%;
+	}
+
+	.column-2 {
+		margin-top: 4rem;
+	}
+
+	.web-info {
+		margin-right: 0;
+		width: 66%;
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+
+	.web-work {
+		margin-top: 2rem;
+	}
+
+	.web-container {
+		margin-top: 4rem;
+	}
+
+	.monitor-transfer {
+		width: 33%;
+	}
+}
+
+
 
 @media screen and (max-width: 1000px) {
 	h1 {
@@ -386,6 +465,24 @@ article {
 
 	.ibm-logo {
 		width: 60px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.web-info {
+		width: 80%;
+	}
+
+	.column-2 {
+		margin-top: 2rem;
+	}
+
+	.see-it-live {
+		margin-top: 20px;
+	}
+
+	.web-work {
+		margin-top: 5rem;
 	}
 }
 
@@ -410,11 +507,11 @@ article {
 	}
 
 	.pie {
-		width: 25%;
+		width: 35%;
 	}
 
 	h1 {
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 		padding-top: 1rem;
 	}
 
@@ -424,7 +521,8 @@ article {
 	}
 
 	.ibm-logo {
-		width: 48px;
+		width: 42px;
+		padding-bottom: 3px;
 	}
 
 	.git-home {
@@ -455,6 +553,33 @@ article {
 		margin: 0 auto;
 	}
 
+	.web-info {
+		width: 90%;
+	}
+
+	.github-icon {
+		display: none;
+	}
+
+	.column-2 {
+		margin-top: 1rem;
+	}
+
+	h4 {
+		font-size: 1.2rem;
+		text-align: center;
+	}
+
+	h5 {
+		text-align: center;
+	}
+
+	.web-info-p {
+		text-align: justify;
+	}
+
+
+
 	header {
 		position: fixed;
 		bottom: 0;
@@ -462,7 +587,7 @@ article {
 		width: 100%;
 
 		nav {
-			padding: 4px 0;
+			padding: 0px 0;
 			float: none;
 			margin: 0 auto;
 			right: auto;
@@ -490,7 +615,11 @@ article {
 	}
 }
 
+@media screen and (max-width: 648px) {
 
+
+
+}
 
 
 .clearfix {

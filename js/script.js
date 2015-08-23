@@ -160,7 +160,7 @@ $( ".work-link" ).click(function() {
 	$(".mobile-container").show();
 });
 
-$( ".mac-container" ).click(function() {
+$( ".mac-container" ).on('click touchend', function(e) {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
 	$("main").addClass("main-padder");
@@ -174,9 +174,11 @@ $( ".mac-container" ).click(function() {
 	$(".left-bar").addClass("left-bar-resize");
 	$(".right-bar").addClass("right-bar-resize");
 	$(".ball").addClass("ball-resize");
+	$("body").addClass("scroll-vis");
 });
 
-$( ".iphone-container" ).click(function() {
+
+$( ".iphone-container" ).on('click touchend', function(e) {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
 	$("main").addClass("main-padder");
@@ -193,7 +195,7 @@ $( ".iphone-container" ).click(function() {
 	$(".ball").addClass("ball-resize");
 });
 
-$(".animation-container").click(function() {
+$(".animation-container").on('click touchend', function(e) {
 	$(".work-container").addClass("work-container-add");
 	$("h3").hide();
 	$("main").addClass("main-padder");
