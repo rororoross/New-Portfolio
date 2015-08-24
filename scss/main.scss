@@ -613,9 +613,11 @@ article {
 	}
 }
 
-@media screen and (max-width: 648px) {
+@media screen and (max-width: 340px) {
 
-
+	header .nav-list li {
+		width: 22%;
+	}
 
 }
 

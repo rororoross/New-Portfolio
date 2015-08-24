@@ -486,7 +486,70 @@
 	}
 }
 
+@media screen and (max-width: 400px) {
+	.phone-background {
+		width: 286px;
+		height: 667px;
+	}
 
+	#phone-screen {
+		width: 248px;
+		height: 432px;
+		top: 153px;
+		left: 20px;
+	}
+
+	.route-number {
+		margin-left: 15px;
+	}
+
+	.route-name, .route-stop {
+		padding-left: 16px;
+		width: 40%;
+	}
+
+	.route-name {
+		margin-top: 8px;
+		font-size: 10px;
+	}
+
+	.route-stop {
+		font-size: 9px;
+		padding-top: 4px;
+	}
+
+	.route-time {
+		font-size: 9px;
+		padding-right: 14px;
+		padding-top: 4px;
+	}
+
+	.mcts-icon {
+		width: 22px;
+	}
+
+	.icon-large {
+		width: 34px;
+	}
+
+	.nav-p {
+		font-size: 0.6rem;
+	}
+
+	#nav-icon-one {
+		left: 10px;
+		top: 9px;
+	}
+
+	#swapvert {
+		right: 2px;
+		top: 21px;
+	}
+
+	h5 {
+		font-size: 0.9rem;
+	}
+}
 
 
 
