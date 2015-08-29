@@ -1,5 +1,3 @@
-
-
 $( '#menu' ).click(function() {
 	$('.nav-list').toggleClass('show-menu');
 });
@@ -20,6 +18,13 @@ $(function() {
 });
 
 // MCTS Bus App
+
+$( ".route-button" ).click(function() {
+	$(".routes").toggleClass("routes-expand");
+	$(this).toggleClass("routes-button-raise");
+	$(".bus-subheader").toggleClass("subheader-move");
+});
+
 $( '.bus-menu' ).click(function() {
 	$(this).hide();
 	$('.drawer').toggleClass('drawer-expand');

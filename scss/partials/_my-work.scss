@@ -128,12 +128,18 @@
 	width: 37px;
 	height: 36px;
 	position: absolute;
-	right: 100px;
+	right: 0px;
 	top: 2px;
 	background-image: url(../img/github-icon.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
+}
+
+.mobile-container {
+	.github-icon {
+		right: 80px;
+	}
 }
 
 .github-icon:hover {
