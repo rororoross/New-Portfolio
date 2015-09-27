@@ -7,9 +7,13 @@ My goal as always is to do everything with vanilla HTML, CSS & JavaScript. This 
 - gulp
 - Sass
 
+#### Installation
 ```
 git clone
+
 npm install
+
 npm start
+
 gulp
 ```
