@@ -1,6 +1,29 @@
 body { 
 	font-family: 'Roboto', sans-serif;
-	color: white;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	color: $white;
 	overflow: hidden;
-	background-color: #ff5151;
+	background-color: $red;
+}
+
+.pie {
+	margin: 0 auto;
+	width: 12.5%;
+	display: block;
+}
+
+main {
+	padding-top: 15vh;
+}
+
+.main-padder {
+	padding-top: 5vh;
+}
+
+.ibm-logo {
+	width: 76px;
+	vertical-align: middle;
+	padding-left: 6px;
+	padding-bottom: 5px;
 }
