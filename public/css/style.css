@@ -75,7 +75,7 @@ button {
   display: block;
   color: #ffff00;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
   transition: 200ms ease-in-out; }
 
@@ -90,8 +90,6 @@ a {
 .check-out-work:hover {
   background-color: #ffff00;
   transition: 200ms ease-in-out;
-  -webkit-transform: scale(1.33);
-          transform: scale(1.33);
   cursor: pointer;
   color: #ff5151; }
 
@@ -198,6 +196,8 @@ footer {
     padding-bottom: 1px;
     display: block;
     margin: 0 auto; }
+  .icon-home {
+    color: #ffff00; }
   header {
     position: fixed;
     bottom: 0;
@@ -229,6 +229,49 @@ footer {
 @media screen and (max-width: 340px) {
   header .nav-list li {
     width: 22%; } }
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2.4rem; }
+  h2 {
+    font-size: 1.8rem; }
+  .pie {
+    width: 18%; }
+  .ibm-logo {
+    width: 60px; } }
+
+@media screen and (max-width: 780px) {
+  .pie {
+    width: 160px; }
+  h1 {
+    font-size: 2rem; }
+  h2 {
+    font-size: 1.6rem; } }
+
+@media screen and (max-width: 648px) {
+  main {
+    padding-top: 6rem; }
+  .pie {
+    width: 35%; }
+  h1 {
+    font-size: 1.8rem;
+    padding-top: 1rem; }
+  h2 {
+    font-size: 1.2rem;
+    padding-top: 0.6rem; }
+  .ibm-logo {
+    width: 42px;
+    padding-bottom: 3px; } }
+
+@media screen and (max-width: 532px) {
+  h1 {
+    font-size: 1.1rem; }
+  h2 {
+    font-size: 0.9rem; } }
+
+@media screen and (max-width: 648px) {
+  footer {
+    display: none; } }
 
 #animate {
   width: 800px;

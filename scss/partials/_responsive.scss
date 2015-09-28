@@ -1,6 +1,5 @@
 // header & navigation
 @media screen and (max-width: 648px) {
-
 	.nav-list span {
 		display: none;
 	}
@@ -10,6 +9,10 @@
 		padding-bottom: 1px;
 		display: block;
 		margin: 0 auto;
+	}
+
+	.icon-home {
+		color: #ffff00;
 	}
 
 	header {
@@ -48,9 +51,85 @@
 }
 
 @media screen and (max-width: 340px) {
-
 	header .nav-list li {
 		width: 22%;
 	}
+}
 
+// homepage
+@media screen and (max-width: 1000px) {
+	h1 {
+		font-size: 2.4rem;
+	}
+
+	h2 {
+		font-size: 1.8rem;
+	}
+
+	.pie {
+		width: 18%;
+	}
+
+	.ibm-logo {
+		width: 60px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.pie {
+		width: 160px;
+	}
+
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 648px) {
+	main {
+		padding-top: 6rem;
+	}
+
+	.pie {
+		width: 35%;
+	}
+
+	h1 {
+		font-size: 1.8rem;
+		padding-top: 1rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+		padding-top: 0.6rem;
+	}
+
+	.ibm-logo {
+		width: 42px;
+		padding-bottom: 3px;
+	}
+}
+
+@media screen and (max-width: 532px) {
+	h1 {
+		font-size: 1.1rem;
+	}
+
+	h2 {
+		font-size: 0.9rem;
+	}
+
+}
+
+
+
+// footer
+@media screen and (max-width: 648px) {
+	footer {
+		display: none;
+	}
 }
