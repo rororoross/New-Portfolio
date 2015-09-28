@@ -1,0 +1,56 @@
+// header & navigation
+@media screen and (max-width: 648px) {
+
+	.nav-list span {
+		display: none;
+	}
+
+	.nav-icon {
+		width: 24px;
+		padding-bottom: 1px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	header {
+		position: fixed;
+		bottom: 0;
+		top: auto;
+		width: 100%;
+
+		nav {
+			padding: 0px 0;
+			float: none;
+			margin: 0 auto;
+			right: auto;
+			top: auto;
+			width: auto;
+			display: block;
+		}
+			.nav-list li {
+				display: inline-block;
+				width: 23%;
+				padding: 0.5%;
+				padding-bottom: 4px;
+				text-align: center;
+				font-size: 11px;
+			}
+		
+		p {
+			position: fixed;
+			top: 0;
+			float: none;
+			text-align: center;
+			width: 100%;
+			padding: 0.6rem 0;
+		}
+	}
+}
+
+@media screen and (max-width: 340px) {
+
+	header .nav-list li {
+		width: 22%;
+	}
+
+}

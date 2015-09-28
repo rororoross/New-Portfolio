@@ -1,14 +1,11 @@
 @import 'partials/reset';
-
-body {
-	background: white;
-}
-
-header {
-	width: 100%;
-	height: 100px;
-	background: #ccc;
-}
+@import 'theme/colors';
+@import 'theme/typography';
+@import 'theme/buttons-links';
+@import 'partials/home';
+@import 'partials/header';
+@import 'partials/footer';
+@import 'partials/responsive';
 
 #animate {
 	width: 800px;

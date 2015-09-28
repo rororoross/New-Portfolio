@@ -1,0 +1,33 @@
+header {
+	font-weight: 500;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 9999999;
+
+		p {
+		float: left;
+		padding: 1rem;
+		text-align: left;
+
+			span {
+			font-weight: 400;
+			}
+		}
+}
+
+nav {
+	right: 0;
+	top: 0;
+	float: right;
+	padding: 1rem;
+	width: auto;
+
+		ul li {
+			display: inline;
+		}
+}
+
+.nav-icon {
+	display: none;
+}
