@@ -53,9 +53,4 @@ app.use(function(err, req, res, next) {
   });
 });
 
-app.get('/', function(req, res) {
-  res.sendfile(views + '/public/index.html');
-});
-
-
 module.exports = app;
