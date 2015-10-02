@@ -1,7 +1,13 @@
-button {
+a {
+	text-decoration: none;
+	color: white;
+}
+
+.check-out-work {
 	background-color: rgba(0,0,0,0);
 	border: 4px solid $yellow;
-	padding: 1rem 1.6rem 1rem 1.6rem;
+	padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+	width: 186px;
 	margin: 0 auto;
 	margin-top: 5rem;
 	display: block;
@@ -9,14 +15,8 @@ button {
 	font-size: 1.2rem;
 	font-weight: 700;
 	text-decoration: none;
+	text-align: center;
 	transition: 200ms ease-in-out;
-}
-a {
-	text-decoration: none;
-	color: white;
-}
-
-.check-out-work {
 	-webkit-animation: btn-hover 2600ms infinite;
 	-webkit-transition-timing-function: ease;
 }

@@ -66,10 +66,15 @@ h5 {
   padding-left: 12px;
   padding-top: 4px; }
 
-button {
+a {
+  text-decoration: none;
+  color: white; }
+
+.check-out-work {
   background-color: transparent;
   border: 4px solid #ffff00;
-  padding: 1rem 1.6rem 1rem 1.6rem;
+  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
+  width: 186px;
   margin: 0 auto;
   margin-top: 5rem;
   display: block;
@@ -77,13 +82,8 @@ button {
   font-size: 1.2rem;
   font-weight: 700;
   text-decoration: none;
-  transition: 200ms ease-in-out; }
-
-a {
-  text-decoration: none;
-  color: white; }
-
-.check-out-work {
+  text-align: center;
+  transition: 200ms ease-in-out;
   -webkit-animation: btn-hover 2600ms infinite;
   -webkit-transition-timing-function: ease; }
 
@@ -92,28 +92,6 @@ a {
   transition: 200ms ease-in-out;
   cursor: pointer;
   color: #ff5151; }
-
-@-webkit-keyframes btn-hover {
-  0% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); }
-  50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px); }
-  100% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); } }
-
-@keyframes btn-hover {
-  0% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); }
-  50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px); }
-  100% {
-    -webkit-transform: translateY(2px);
-            transform: translateY(2px); } }
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -140,12 +118,39 @@ main {
   padding-left: 6px;
   padding-bottom: 5px; }
 
+@-webkit-keyframes btn-hover {
+  0% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  50% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px); }
+  100% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); } }
+
+@keyframes btn-hover {
+  0% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  50% {
+    -webkit-transform: translateY(-3px);
+            transform: translateY(-3px); }
+  100% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); } }
+
 header {
   font-weight: 500;
   position: fixed;
   top: 0px;
   width: 100%;
-  z-index: 9999999; }
+  z-index: 9999999;
+  -webkit-transform: translateY(-40px);
+          transform: translateY(-40px);
+  -webkit-animation: slideDown 540ms ease-out;
+  -webkit-animation-delay: 120ms;
+  -webkit-animation-fill-mode: forwards; }
   header p {
     float: left;
     padding: 1rem;
@@ -165,12 +170,38 @@ nav {
 .nav-icon {
   display: none; }
 
+@-webkit-keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px); }
+  40% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
+@keyframes slideDown {
+  0% {
+    -webkit-transform: translateY(-40px);
+            transform: translateY(-40px); }
+  40% {
+    -webkit-transform: translateY(2px);
+            transform: translateY(2px); }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0); } }
+
 footer {
-  width: 100%;
   height: 36px;
   position: absolute;
   bottom: 0.8rem;
-  right: 0.8rem; }
+  right: 0.8rem;
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+  -webkit-animation: slideLeft 540ms ease-out;
+  -webkit-animation-delay: 320ms;
+  -webkit-animation-fill-mode: forwards; }
 
 .github-icon {
   width: 36px;
@@ -187,6 +218,28 @@ footer {
 
 .mobile-container .github-icon {
   right: 80px; }
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); }
+  40% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(60px);
+            transform: translateX(60px); }
+  40% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px); }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0); } }
 
 @media screen and (max-width: 648px) {
   .nav-list span {
@@ -288,53 +341,61 @@ footer {
           transform: translateX(1500px); }
 
 .animate {
-  -webkit-animation: coming-in 440ms linear;
-          animation: coming-in 440ms linear;
-  -webkit-animation-delay: 150ms;
-          animation-delay: 150ms;
+  -webkit-animation: coming-in 840ms ease;
+          animation: coming-in 840ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
 .some-animation {
-  -webkit-animation: heading-out 440ms linear;
-          animation: heading-out 440ms linear; }
+  -webkit-animation: heading-out 500ms ease-in;
+          animation: heading-out 500ms ease-in; }
 
 @-webkit-keyframes coming-in {
   0% {
     -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-    opacity: 0; }
+            transform: translateX(1500px); }
+  50% {
+    -webkit-transform: translateX(-24px);
+            transform: translateX(-24px); }
+  80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px); }
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1; } }
+            transform: translateX(0px); } }
 
 @keyframes coming-in {
   0% {
     -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-    opacity: 0; }
+            transform: translateX(1500px); }
+  50% {
+    -webkit-transform: translateX(-24px);
+            transform: translateX(-24px); }
+  80% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px); }
   100% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1; } }
+            transform: translateX(0px); } }
 
 @-webkit-keyframes heading-out {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1; }
+            transform: translateX(0px); }
+  40% {
+    -webkit-transform: translateX(-42px);
+            transform: translateX(-42px); }
   100% {
     -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-    opacity: 0; } }
+            transform: translateX(1500px); } }
 
 @keyframes heading-out {
   0% {
     -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-    opacity: 1; }
+            transform: translateX(0px); }
+  40% {
+    -webkit-transform: translateX(-42px);
+            transform: translateX(-42px); }
   100% {
     -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-    opacity: 0; } }
+            transform: translateX(1500px); } }

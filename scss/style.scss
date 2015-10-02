@@ -23,21 +23,23 @@
 }
 
 .animate {
-	animation: coming-in 440ms linear;
-	animation-delay: 150ms;
+	animation: coming-in 840ms ease;
 	animation-fill-mode: forwards;
 }
 
 .some-animation {
-	animation: heading-out 440ms linear;
+	animation: heading-out 500ms ease-in;
 }
 
 @keyframes coming-in {
-  0%   { transform: translateX(1500px); opacity: 0;}
-  100% { transform: translateX(0px);  opacity: 1;}
+  0%   { transform: translateX(1500px);}
+  50% { transform: translateX(-24px);}
+  80% { transform: translateX(2px);}
+  100% { transform: translateX(0px);}
 }
 
 @keyframes heading-out {
-  0%   { transform: translateX(0px); opacity: 1;}
-  100% { transform: translateX(1500px); opacity: 0;}
+  0%   { transform: translateX(0px);}
+  40%   { transform: translateX(-42px);}
+  100% { transform: translateX(1500px);}
 }

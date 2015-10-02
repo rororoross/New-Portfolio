@@ -1,9 +1,12 @@
 footer {
-	width: 100%;
 	height: 36px;
 	position: absolute;
 	bottom: 0.8rem;
 	right: 0.8rem;
+	transform: translateX(60px);
+	-webkit-animation: slideLeft 540ms ease-out;
+	-webkit-animation-delay: 320ms;
+	-webkit-animation-fill-mode: forwards;
 }
 
 
@@ -26,4 +29,10 @@ footer {
 	.github-icon {
 		right: 80px;
 	}
+}
+
+@keyframes slideLeft {
+	0% { transform: translateX(60px); }
+	40% { transform: translateX(-2px); }
+	100% { transform: translateX(0); }
 }

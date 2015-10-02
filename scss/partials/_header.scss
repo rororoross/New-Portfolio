@@ -4,7 +4,11 @@ header {
 	top: 0px;
 	width: 100%;
 	z-index: 9999999;
-
+	transform: translateY(-40px);
+	-webkit-animation: slideDown 540ms ease-out;
+	-webkit-animation-delay: 120ms;
+	-webkit-animation-fill-mode: forwards;
+	
 		p {
 		float: left;
 		padding: 1rem;
@@ -30,4 +34,10 @@ nav {
 
 .nav-icon {
 	display: none;
+}
+
+@keyframes slideDown {
+	0% { transform: translateY(-40px); }
+	40% { transform: translateY(2px); }
+	100% { transform: translateY(0); }
 }
