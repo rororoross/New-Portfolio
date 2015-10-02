@@ -1,36 +1,39 @@
 .blue-bg {
 	background: $blue;
 }
-.work-layout {
-	.mac-container, .iphone-container, .animation-container {
-		-webkit-animation: bubble 800ms ease-out;
-		-webkit-animation-delay: 10ms;
-		-webkit-animation-fill-mode: forwards;
-		transform: scale(0);
-	}
-}
 
 .work-container {
 		margin-top: 200px;
-		transition: all 300ms;
+		transition: all 500ms;
 	}
 .mac-container, .iphone-container, .animation-container {
+	-webkit-animation: bubble 800ms ease-out;
+	// -webkit-animation-delay: 10ms;
+	-webkit-animation-fill-mode: forwards;
+	transform: scale(0);
 	float: left;
 	width: 33%;
 	cursor: pointer;
-
 }
 
 .mac-container {
-	-webkit-animation-delay: 210ms;
+	// -webkit-animation-delay: 210ms;
 }
 
 .animation-container {
-	-webkit-animation-delay: 150ms;
+	// -webkit-animation-delay: 150ms;
 }
 
-.bubble {
+.work-action-container-fix {
+	width: auto;
+	margin: 2rem;
+	transition: all 700ms;
+}
 
+.web-container-transition {
+	transform:translateY(0px);
+	transition: 800ms;
+	transition-delay: 440ms;
 }
 
 .mac:hover, .iphone:hover {
@@ -54,11 +57,22 @@
 	width: 150px;
 }
 
+.mac-resize {
+	width: 55px;
+}
 
+.iphone-resize {
+	width: 27px;
+}
 
+.work-container-add {
+	width: 20%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	transition: all 700ms;
+}
 
-
-// Animations animation
+// Animation container
 .animate-container {
 	width: 280px;
 	height: 316px;

@@ -13,17 +13,16 @@ $(function() {
   });
 });
 
-$( '.check-out-work' ).click(function() {
+$('.check-out-work').click(function() {
 	$('.anim').addClass('plz');
 	$('.home').delay( 600 ).fadeOut( 300 );
 	$('.work').show();
 	$('.mac-container').addClass('fade-in');
 	$('.iphone-container').addClass('fade-in-two');
 	$('.animation-container').addClass('fade-in');
-	console.log('butt stuff');
 });
 
-$( '.work-link' ).click(function() {
+$('.work-link').click(function() {
 	$('.anim').addClass('plz').delay( 600 ).fadeOut( 300 );
 	$('.home').delay( 600 ).fadeOut( 300 );
 	$('.mac-container').addClass('fade-in');
@@ -32,7 +31,22 @@ $( '.work-link' ).click(function() {
 	$('.mobile-container').show();
 });
 
-
+$('.mac-container').on('click touchend', function(e) {
+	$('.work-container').addClass('work-container-add');
+	$('h3').hide();
+	$('main').addClass('main-padder');
+	$('.web-container').show().addClass('web-container-transition');
+	$('.mobile-container').hide();
+	$('body').addClass('work-bg');
+	$('header').addClass('work-header');
+	$('.mac').addClass('mac-resize').addClass('current-border');
+	$('.iphone').addClass('iphone-resize');
+	$('.animate-container').addClass('animate-container-resize');
+	$('.left-bar').addClass('left-bar-resize');
+	$('.right-bar').addClass('right-bar-resize');
+	$('.ball').addClass('ball-resize');
+	$('body').addClass('scroll-vis');
+});
 
 $("#butts").click(function(){
 	$(".animate").toggleClass("some-animation");
