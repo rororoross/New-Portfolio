@@ -28,8 +28,47 @@ main {
 	padding-bottom: 5px;
 }
 
+.anim {
+	background-color: $blue;
+	border-radius: 10vw;
+	position: absolute;
+ 	left:0;
+  right:0;
+  bottom: 35vh;
+  margin-left:auto;
+  margin-right:auto;
+	z-index: 5;
+}
+
+.plz {
+	width: 20vw;
+	height: 20vw;
+	-webkit-animation: expander 700ms linear;
+	-webkit-animation-fill-mode: forwards;
+	z-index: 5;
+}
+
 @keyframes btn-hover {
   0%   { transform: translateY(2px);  }
   50%  { transform: translateY(-3px); }
   100%  { transform: translateY(2px); }
+}
+
+@-webkit-keyframes expander {
+  0%   { transform: scale(0); opacity: 1; }
+  100% { transform: scale(8.5); opacity: 1; z-index: 5;}
+}
+
+// Media Queries
+@media screen and (max-width: 600px) {
+	@-webkit-keyframes expander {
+	  0%   { transform: scale(0); opacity: 1; }
+	  100% { transform: scale(15); opacity: 1; z-index: 5;}
+	}
+
+	.anim {
+    	bottom: 45vh;
+	}
+
+
 }

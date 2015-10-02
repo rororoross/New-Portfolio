@@ -4,10 +4,6 @@ header {
 	top: 0px;
 	width: 100%;
 	z-index: 9999999;
-	transform: translateY(-40px);
-	-webkit-animation: slideDown 540ms ease-out;
-	-webkit-animation-delay: 120ms;
-	-webkit-animation-fill-mode: forwards;
 	
 		p {
 		float: left;
@@ -18,6 +14,15 @@ header {
 			font-weight: 400;
 			}
 		}
+}
+
+.home {
+	header {
+		transform: translateY(-40px);
+		-webkit-animation: slideDown 540ms ease-out;
+		-webkit-animation-delay: 120ms;
+		-webkit-animation-fill-mode: forwards;
+	}
 }
 
 nav {

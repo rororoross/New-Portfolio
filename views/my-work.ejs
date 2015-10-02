@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
   <head><% include partials/head.ejs %></head>
-  <body>
+  <body class="blue-bg">
   	<% include partials/layout/header.ejs %>
-  	<main>
-    <a href="/work-2" id="butts">try this on for size</a>
-      <div id="animate" class="animate">
-        <p>Hey look some of my work.</p>
-      </div>
+  	<section class="work-container">
+      <article class="mac-container">
+        <img src="img/mac.png" alt="" class="mac">
+        <h3 class="web-header">Web</h3>
+      </article>
 
-  		
-  	</main>
+      <article class="iphone-container">
+        <img src="img/iphone.png" alt="" class="iphone">
+        <h3>Mobile</h3>
+      </article>
+
+      <article class="animation-container">
+        <div class="animate-container">
+          <div class="left-bar"></div>
+          <div class="ball"></div>
+          <div class="right-bar"></div>
+        </div>
+        <h3>Animations</h3>
+      </article>
+      
+    </section> <!-- end of work-container -->
     <% include partials/scripts.ejs %>
   </body>
 </html>

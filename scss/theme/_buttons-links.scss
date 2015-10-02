@@ -16,13 +16,13 @@ a {
 	font-weight: 700;
 	text-decoration: none;
 	text-align: center;
-	transition: 200ms ease-in-out;
+	transition: 300ms ease-in-out;
 	-webkit-animation: btn-hover 2600ms infinite;
 	-webkit-transition-timing-function: ease;
 }
 .check-out-work:hover {
 	background-color: $yellow;
-	transition: 200ms ease-in-out;
+	transition: 300ms ease-in-out;
 	cursor: pointer;
 	color: $red;
 }

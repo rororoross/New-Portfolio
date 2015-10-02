@@ -7,17 +7,16 @@
 @import 'partials/header';
 @import 'partials/footer';
 @import 'partials/responsive';
+@import 'partials/work';
 
 #animate {
 	width: 800px;
-	background: #999;
 	margin: 0 auto;
 	transform: translateX(1500px);
 }
 
 #animate-2 {
 	width: 800px;
-	background: #999;
 	margin: 0 auto;
 	transform: translateX(1500px);
 }
