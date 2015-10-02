@@ -374,6 +374,13 @@ footer {
 .blue-bg {
   background: #5baafa; }
 
+.work-layout .mac-container, .work-layout .iphone-container, .work-layout .animation-container {
+  -webkit-animation: bubble 800ms ease-out;
+  -webkit-animation-delay: 10ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
 .work-container {
   margin-top: 200px;
   transition: all 300ms; }
@@ -381,12 +388,7 @@ footer {
 .mac-container, .iphone-container, .animation-container {
   float: left;
   width: 33%;
-  cursor: pointer;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-animation: bubble 800ms ease-out;
-  -webkit-animation-delay: 10ms;
-  -webkit-animation-fill-mode: forwards; }
+  cursor: pointer; }
 
 .mac-container {
   -webkit-animation-delay: 210ms; }
@@ -710,6 +712,9 @@ footer {
   100% {
     -webkit-transform: translateX(-21px) translateY(-10px);
             transform: translateX(-21px) translateY(-10px); } }
+
+.web {
+  margin-top: 400px; }
 
 #animate {
   width: 800px;

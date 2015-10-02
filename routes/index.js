@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Ross Fenrick | Front End Developer' });
+  res.render('index');
 });
 
 router.get('/my-work', function(req, res, next) {
@@ -12,7 +12,10 @@ router.get('/my-work', function(req, res, next) {
 
 	router.get('/work-2', function(req, res, next) {
 	 setTimeout((function() {res.render('work-2')}), 840);
+});
 
+router.get('/web', function(req, res, next) {
+	 res.render('web');
 });
 
 module.exports = router;

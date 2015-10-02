@@ -1,20 +1,24 @@
 .blue-bg {
 	background: $blue;
 }
-
-.work-container {
-	margin-top: 200px;
-	transition: all 300ms;
+.work-layout {
+	.mac-container, .iphone-container, .animation-container {
+		-webkit-animation: bubble 800ms ease-out;
+		-webkit-animation-delay: 10ms;
+		-webkit-animation-fill-mode: forwards;
+		transform: scale(0);
+	}
 }
 
+.work-container {
+		margin-top: 200px;
+		transition: all 300ms;
+	}
 .mac-container, .iphone-container, .animation-container {
 	float: left;
 	width: 33%;
 	cursor: pointer;
-	transform: scale(0);
-	-webkit-animation: bubble 800ms ease-out;
-	-webkit-animation-delay: 10ms;
-	-webkit-animation-fill-mode: forwards;
+
 }
 
 .mac-container {
