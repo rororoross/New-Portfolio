@@ -36,12 +36,12 @@
 	}
 }
 .work-action-container-fix {
-	// width: auto;
-	// margin: 2rem;
-	// transition: 400ms;
+	width: auto;
+	margin: 2rem;
+	transition: 400ms;
 }
 
-.mac:hover, .iphone:hover, .animation:hover {
+.mac-container:hover {
 	transform: translateY(-8px);
 	transition: all 500ms;
 }
@@ -51,21 +51,19 @@
 	display: block;
 	width: 28%;
 	cursor: pointer;
+	transition: all 500ms;
 }
 
 .mac {
 	width: 376px;
-	transition: width 300ms;
 }
 
 .iphone {
 	width: 150px;
-	transition: width 300ms;
 }
 
 .mac-resize {
-	width: 55px;
-	transition: width 300ms;
+	width: 68px;
 }
 
 .iphone-resize {
@@ -82,14 +80,14 @@
 	width: 80%;
 	max-width: 1900px;
 	margin: 0 auto;
-	margin-top: 6rem;
+	transform: translateY(6rem);
 	transition: all 400ms;
 }
 
 .work-container-add {
 	width: 20%;
 	margin: 0 auto;
-	margin-top: 0rem;
+	transform: translateY(1rem);
 	transition: all 400ms;
 	transition-timing-function: ease-in;
 }

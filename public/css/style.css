@@ -400,7 +400,12 @@ footer {
 .work-layout .animation-container {
   -webkit-animation-delay: 150ms; }
 
-.mac:hover, .iphone:hover, .animation:hover {
+.work-action-container-fix {
+  width: auto;
+  margin: 2rem;
+  transition: 400ms; }
+
+.mac-container:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
   transition: all 500ms; }
@@ -409,19 +414,17 @@ footer {
   margin: 0 auto;
   display: block;
   width: 28%;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: all 500ms; }
 
 .mac {
-  width: 376px;
-  transition: width 300ms; }
+  width: 376px; }
 
 .iphone {
-  width: 150px;
-  transition: width 300ms; }
+  width: 150px; }
 
 .mac-resize {
-  width: 55px;
-  transition: width 300ms; }
+  width: 68px; }
 
 .iphone-resize {
   width: 27px;
@@ -435,13 +438,15 @@ footer {
   width: 80%;
   max-width: 1900px;
   margin: 0 auto;
-  margin-top: 6rem;
+  -webkit-transform: translateY(6rem);
+          transform: translateY(6rem);
   transition: all 400ms; }
 
 .work-container-add {
   width: 20%;
   margin: 0 auto;
-  margin-top: 0rem;
+  -webkit-transform: translateY(1rem);
+          transform: translateY(1rem);
   transition: all 400ms;
   transition-timing-function: ease-in; }
 
