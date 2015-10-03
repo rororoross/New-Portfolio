@@ -100,6 +100,7 @@ body {
   -webkit-font-smoothing: antialiased;
   color: #ffffff;
   overflow: auto;
+  overflow-x: hidden;
   background-color: #ff5151; }
 
 .home {

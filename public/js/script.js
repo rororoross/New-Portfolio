@@ -40,7 +40,7 @@ $(function() {
 	$('.mobile-container').hide();
 	$('body').addClass('work-bg');
 	$('header').addClass('work-header');
-	$('.mac').addClass('mac-resize');
+	$('.mac').addClass('mac-resize').addClass('current-border');
 	$('.iphone').addClass('iphone-resize');
 	$('.animate-container').addClass('animate-container-resize');
 	$('.left-bar').addClass('left-bar-resize');
