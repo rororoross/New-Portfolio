@@ -3,22 +3,22 @@ body {
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	color: $white;
-	overflow: hidden;
+	overflow: auto;
 	background-color: $red;
+}
+
+.home {
+	overflow: hidden;
+}
+
+.main-home {
+	padding-top: 15vh;
 }
 
 .pie {
 	margin: 0 auto;
 	width: 12.5%;
 	display: block;
-}
-
-main {
-	padding-top: 15vh;
-}
-
-.main-padder {
-	padding-top: 6vh;
 }
 
 .ibm-logo {

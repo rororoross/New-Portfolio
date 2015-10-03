@@ -5,7 +5,9 @@
 .mac-container, .iphone-container, .animation-container {
 		float: left;
 		width: 33%;
-		transition: all 300ms;
+		transition: all 800ms;
+		transition-delay: 80ms;
+		transition-timing-function: ease;
 	}
 
 	.mac-container {
@@ -21,7 +23,6 @@
 	.mac-container, .iphone-container, .animation-container {
 		float: left;
 		width: 33%;
-		transition: all 300ms;
 		-webkit-animation: bubble 800ms ease-out;
 		-webkit-animation-fill-mode: forwards;
 		transform: scale(0);
@@ -38,12 +39,14 @@
 .work-action-container-fix {
 	width: auto;
 	margin: 2rem;
-	transition: 400ms;
+	transition: 800ms;
+	transition-delay: 80ms;
+	transition-timing-function: ease;
 }
 
-.mac-container:hover {
+.mac:hover, .iphone:hover, .animation:hover {
 	transform: translateY(-8px);
-	transition: all 500ms;
+	transition: all 800ms;
 }
 
 .mac, .iphone, .animation {
@@ -51,7 +54,9 @@
 	display: block;
 	width: 28%;
 	cursor: pointer;
-	transition: all 500ms;
+	transition: all 800ms;
+	transition-delay: 80ms;
+	transition-timing-function: ease;
 }
 
 .mac {
@@ -64,11 +69,16 @@
 
 .mac-resize {
 	width: 68px;
+	transition: all 800ms;
+	transition-delay: 80ms;
+	transition-timing-function: ease;
 }
 
 .iphone-resize {
 	width: 27px;
-	transition: width 300ms;
+	transition: all 800ms;
+	transition-delay: 80ms;
+	transition-timing-function: ease;
 }
 
 .current-border {
@@ -80,16 +90,19 @@
 	width: 80%;
 	max-width: 1900px;
 	margin: 0 auto;
-	transform: translateY(6rem);
-	transition: all 400ms;
+	transform: translateY(16rem);
+	transition: all 800ms;
+	transition-delay: 80ms;
+	transition-timing-function: ease;
 }
 
 .work-container-add {
 	width: 20%;
 	margin: 0 auto;
-	transform: translateY(1rem);
-	transition: all 400ms;
-	transition-timing-function: ease-in;
+	transform: translateY(4rem);
+	transition: all 800ms;
+	transition-timing-function: ease;
+	transition-delay: 80ms;
 }
 
 

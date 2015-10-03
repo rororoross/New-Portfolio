@@ -54,7 +54,8 @@ h2 {
 h3 {
   font-size: 1rem;
   padding-top: 1rem;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 700ms; }
 
 h4 {
   font-size: 1.6rem;
@@ -98,19 +99,19 @@ body {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
   color: #ffffff;
-  overflow: hidden;
+  overflow: auto;
   background-color: #ff5151; }
+
+.home {
+  overflow: hidden; }
+
+.main-home {
+  padding-top: 15vh; }
 
 .pie {
   margin: 0 auto;
   width: 12.5%;
   display: block; }
-
-main {
-  padding-top: 15vh; }
-
-.main-padder {
-  padding-top: 6vh; }
 
 .ibm-logo {
   width: 76px;
@@ -377,7 +378,9 @@ footer {
 .mac-container, .iphone-container, .animation-container {
   float: left;
   width: 33%;
-  transition: all 300ms; }
+  transition: all 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
 .mac-container {
   -webkit-animation-delay: 210ms; }
@@ -388,7 +391,6 @@ footer {
 .work-layout .mac-container, .work-layout .iphone-container, .work-layout .animation-container {
   float: left;
   width: 33%;
-  transition: all 300ms;
   -webkit-animation: bubble 800ms ease-out;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: scale(0);
@@ -403,19 +405,23 @@ footer {
 .work-action-container-fix {
   width: auto;
   margin: 2rem;
-  transition: 400ms; }
+  transition: 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
-.mac-container:hover {
+.mac:hover, .iphone:hover, .animation:hover {
   -webkit-transform: translateY(-8px);
           transform: translateY(-8px);
-  transition: all 500ms; }
+  transition: all 800ms; }
 
 .mac, .iphone, .animation {
   margin: 0 auto;
   display: block;
   width: 28%;
   cursor: pointer;
-  transition: all 500ms; }
+  transition: all 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
 .mac {
   width: 376px; }
@@ -424,11 +430,16 @@ footer {
   width: 150px; }
 
 .mac-resize {
-  width: 68px; }
+  width: 68px;
+  transition: all 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
 .iphone-resize {
   width: 27px;
-  transition: width 300ms; }
+  transition: all 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
 .current-border {
   padding-bottom: 0.5rem;
@@ -438,17 +449,20 @@ footer {
   width: 80%;
   max-width: 1900px;
   margin: 0 auto;
-  -webkit-transform: translateY(6rem);
-          transform: translateY(6rem);
-  transition: all 400ms; }
+  -webkit-transform: translateY(16rem);
+          transform: translateY(16rem);
+  transition: all 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
 .work-container-add {
   width: 20%;
   margin: 0 auto;
-  -webkit-transform: translateY(1rem);
-          transform: translateY(1rem);
-  transition: all 400ms;
-  transition-timing-function: ease-in; }
+  -webkit-transform: translateY(4rem);
+          transform: translateY(4rem);
+  transition: all 800ms;
+  transition-timing-function: ease;
+  transition-delay: 80ms; }
 
 .animate-container {
   width: 280px;
@@ -749,17 +763,20 @@ footer {
     -webkit-transform: translateX(-21px) translateY(-10px);
             transform: translateX(-21px) translateY(-10px); } }
 
-.web {
-  margin-top: 400px; }
+.web-main {
+  padding-top: 0; }
+
+.header-hide {
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  transition: 700ms;
+  transition-delay: 100ms; }
 
 .monitor {
   width: 66%;
   margin: 0 auto;
   margin-top: 2%;
   display: block; }
-
-.web-main {
-  padding-top: 5vh; }
 
 .monitor-margin {
   margin-top: 3%; }
@@ -773,12 +790,22 @@ footer {
   float: right; }
 
 .first-column-1 {
-  -webkit-animation: slideInLeft 600ms;
-  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); }
+  -webkit-transform: translateX(-1000px);
+          transform: translateX(-1000px);
+  -webkit-animation: slideInLeft 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-fill-mode: forwards;
+  visibility: hidden; }
 
 .first-column-2 {
-  -webkit-animation: slideInRight 600ms;
-  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1); }
+  -webkit-transform: translateX(1000px);
+          transform: translateX(1000px);
+  -webkit-animation: slideInRight 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+  -webkit-animation-delay: 600ms;
+  -webkit-animation-fill-mode: forwards;
+  visibility: hidden; }
 
 .even-work .column-1 {
   float: right; }
@@ -787,7 +814,7 @@ footer {
   float: left; }
 
 .web-work {
-  margin-top: 16rem; }
+  padding-top: 14rem; }
 
 .see-it-live {
   position: relative;
@@ -821,121 +848,66 @@ footer {
 @-webkit-keyframes slideInLeft {
   0% {
     -webkit-transform: translateX(-800px);
-            transform: translateX(-800px); }
+            transform: translateX(-800px);
+    visibility: hidden; }
+  1% {
+    visibility: visible; }
   90% {
     -webkit-transform: translateX(6px);
-            transform: translateX(6px); }
+            transform: translateX(6px);
+    visibility: visible; }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+            transform: translateX(0);
+    visibility: visible; } }
 
 @keyframes slideInLeft {
   0% {
     -webkit-transform: translateX(-800px);
-            transform: translateX(-800px); }
+            transform: translateX(-800px);
+    visibility: hidden; }
+  1% {
+    visibility: visible; }
   90% {
     -webkit-transform: translateX(6px);
-            transform: translateX(6px); }
+            transform: translateX(6px);
+    visibility: visible; }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+            transform: translateX(0);
+    visibility: visible; } }
 
 @-webkit-keyframes slideInRight {
   0% {
     -webkit-transform: translateX(800px);
-            transform: translateX(800px); }
+            transform: translateX(800px);
+    visibility: hidden; }
+  1% {
+    visibility: visible; }
   90% {
     -webkit-transform: translateX(-6px);
-            transform: translateX(-6px); }
+            transform: translateX(-6px);
+    visibility: visible; }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
+            transform: translateX(0);
+    visibility: visible; } }
 
 @keyframes slideInRight {
   0% {
     -webkit-transform: translateX(800px);
-            transform: translateX(800px); }
+            transform: translateX(800px);
+    visibility: hidden; }
+  1% {
+    visibility: visible; }
   90% {
     -webkit-transform: translateX(-6px);
-            transform: translateX(-6px); }
+            transform: translateX(-6px);
+    visibility: visible; }
   100% {
     -webkit-transform: translateX(0);
-            transform: translateX(0); } }
-
-body {
-  overflow: hidden; }
-
-#animate {
-  width: 800px;
-  margin: 0 auto;
-  -webkit-transform: translateX(1500px);
-          transform: translateX(1500px); }
-
-#animate-2 {
-  width: 800px;
-  margin: 0 auto;
-  -webkit-transform: translateX(1500px);
-          transform: translateX(1500px); }
-
-.animate {
-  -webkit-animation: coming-in 840ms ease;
-          animation: coming-in 840ms ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards; }
-
-.some-animation {
-  -webkit-animation: heading-out 500ms ease-in;
-          animation: heading-out 500ms ease-in; }
+            transform: translateX(0);
+    visibility: visible; } }
 
 .clearfix {
   clear: both; }
-
-@-webkit-keyframes coming-in {
-  0% {
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px); }
-  50% {
-    -webkit-transform: translateX(-24px);
-            transform: translateX(-24px); }
-  80% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px); }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); } }
-
-@keyframes coming-in {
-  0% {
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px); }
-  50% {
-    -webkit-transform: translateX(-24px);
-            transform: translateX(-24px); }
-  80% {
-    -webkit-transform: translateX(2px);
-            transform: translateX(2px); }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); } }
-
-@-webkit-keyframes heading-out {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); }
-  40% {
-    -webkit-transform: translateX(-42px);
-            transform: translateX(-42px); }
-  100% {
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px); } }
-
-@keyframes heading-out {
-  0% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); }
-  40% {
-    -webkit-transform: translateX(-42px);
-            transform: translateX(-42px); }
-  100% {
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px); } }

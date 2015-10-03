@@ -10,44 +10,6 @@
 @import 'partials/work';
 @import 'partials/web';
 
-body {
-	overflow: hidden;
-}
-
-#animate {
-	width: 800px;
-	margin: 0 auto;
-	transform: translateX(1500px);
-}
-
-#animate-2 {
-	width: 800px;
-	margin: 0 auto;
-	transform: translateX(1500px);
-}
-
-.animate {
-	animation: coming-in 840ms ease;
-	animation-fill-mode: forwards;
-}
-
-.some-animation {
-	animation: heading-out 500ms ease-in;
-}
-
 .clearfix {
 	clear: both;
-}
-
-@keyframes coming-in {
-  0%   { transform: translateX(1500px);}
-  50% { transform: translateX(-24px);}
-  80% { transform: translateX(2px);}
-  100% { transform: translateX(0px);}
-}
-
-@keyframes heading-out {
-  0%   { transform: translateX(0px);}
-  40%   { transform: translateX(-42px);}
-  100% { transform: translateX(1500px);}
 }

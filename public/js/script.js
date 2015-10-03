@@ -31,10 +31,12 @@ $('.work-link').click(function() {
 	$('.mobile-container').show();
 });
 
-$('.mac-container').on('click touchend', function(e) {
-	$('main').addClass('main-padder');
+$(function() {
+
+	if ($('main').hasClass('web-main')){
 	$('.work-container').addClass('work-container-add');
-	$('h3').hide();
+	$('h3').addClass('header-hide');
+	$('.web-container').show().addClass('web-container-transition');
 	$('.mobile-container').hide();
 	$('body').addClass('work-bg');
 	$('header').addClass('work-header');
@@ -45,6 +47,8 @@ $('.mac-container').on('click touchend', function(e) {
 	$('.right-bar').addClass('right-bar-resize');
 	$('.ball').addClass('ball-resize');
 	$('body').addClass('scroll-vis');
+
+	}
 });
 
 $("#butts").click(function(){
