@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/my-work', function(req, res, next) {
-  setTimeout((function() {res.render('my-work')}), 620);
+  setTimeout((function() {res.render('my-work')}), 560);
 });
 
 	router.get('/work-2', function(req, res, next) {
@@ -15,6 +15,6 @@ router.get('/my-work', function(req, res, next) {
 });
 
 router.get('/web', function(req, res, next) {
-	 setTimeout((function() {res.render('web')}), 440);
+	 setTimeout((function() {res.render('web')}), 560);
 });
 module.exports = router;

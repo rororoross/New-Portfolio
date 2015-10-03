@@ -32,9 +32,9 @@ $('.work-link').click(function() {
 });
 
 $('.mac-container').on('click touchend', function(e) {
+	$('main').addClass('main-padder');
 	$('.work-container').addClass('work-container-add');
 	$('h3').hide();
-	$('main').addClass('main-padder');
 	$('.web-container').show().addClass('web-container-transition');
 	$('.mobile-container').hide();
 	$('body').addClass('work-bg');

@@ -10,6 +10,11 @@
 @import 'partials/work';
 @import 'partials/web';
 
+body {
+	overflow: visible;
+	overflow-x: hidden;
+}
+
 #animate {
 	width: 800px;
 	margin: 0 auto;
@@ -29,6 +34,10 @@
 
 .some-animation {
 	animation: heading-out 500ms ease-in;
+}
+
+.clearfix {
+	clear: both;
 }
 
 @keyframes coming-in {
