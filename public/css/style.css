@@ -447,7 +447,7 @@ footer {
   border-bottom: 2px solid yellow; }
 
 .work-container {
-  width: 80%;
+  width: 90%;
   max-width: 1900px;
   margin: 0 auto;
   -webkit-transform: translateY(16rem);
@@ -767,6 +767,9 @@ footer {
 .web-main {
   padding-top: 0; }
 
+.blue-bg::-webkit-scrollbar {
+  display: none; }
+
 .header-hide {
   -webkit-transform: scale(0);
           transform: scale(0);
@@ -778,6 +781,10 @@ footer {
   margin: 0 auto;
   margin-top: 2%;
   display: block; }
+
+.mac-web {
+  -webkit-transform: translateY(-8px);
+          transform: translateY(-8px); }
 
 .monitor-margin {
   margin-top: 3%; }

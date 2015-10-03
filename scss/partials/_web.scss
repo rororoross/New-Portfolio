@@ -2,6 +2,10 @@
 	padding-top: 0;
 }
 
+
+.blue-bg::-webkit-scrollbar {
+	display: none;
+}
 .header-hide {
 	transform: scale(0);
 	transition: 700ms;
@@ -13,6 +17,10 @@
 	margin: 0 auto;
 	margin-top: 2%;
 	display: block;
+}
+
+.mac-web {
+	transform: translateY(-8px);
 }
 
 .monitor-margin {
