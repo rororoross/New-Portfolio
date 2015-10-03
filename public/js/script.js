@@ -35,11 +35,10 @@ $('.mac-container').on('click touchend', function(e) {
 	$('main').addClass('main-padder');
 	$('.work-container').addClass('work-container-add');
 	$('h3').hide();
-	$('.web-container').show().addClass('web-container-transition');
 	$('.mobile-container').hide();
 	$('body').addClass('work-bg');
 	$('header').addClass('work-header');
-	$('.mac').addClass('mac-resize').addClass('current-border');
+	$('.mac').addClass('mac-resize');
 	$('.iphone').addClass('iphone-resize');
 	$('.animate-container').addClass('animate-container-resize');
 	$('.left-bar').addClass('left-bar-resize');

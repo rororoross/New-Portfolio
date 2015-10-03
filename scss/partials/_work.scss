@@ -36,9 +36,9 @@
 	}
 }
 .work-action-container-fix {
-	width: auto;
-	margin: 2rem;
-	transition: 400ms;
+	// width: auto;
+	// margin: 2rem;
+	// transition: 400ms;
 }
 
 .mac:hover, .iphone:hover, .animation:hover {
@@ -55,18 +55,22 @@
 
 .mac {
 	width: 376px;
+	transition: width 300ms;
 }
 
 .iphone {
 	width: 150px;
+	transition: width 300ms;
 }
 
 .mac-resize {
 	width: 55px;
+	transition: width 300ms;
 }
 
 .iphone-resize {
 	width: 27px;
+	transition: width 300ms;
 }
 
 .current-border {
@@ -74,29 +78,18 @@
 	border-bottom: 2px solid yellow;
 }
 
-.work-action {
-	width: 30px;
-	transform: translateY(-200px);
-}
-
-.work-action-mac {
-	width: 60px;
-	transform: translateY(-200px);
-	transition-timing-function: ease-in-out;
-}
-
 .work-container {
 	width: 80%;
 	max-width: 1900px;
 	margin: 0 auto;
 	margin-top: 6rem;
-	transition-timing-function: ease-in-out;
+	transition: all 400ms;
 }
 
 .work-container-add {
 	width: 20%;
 	margin: 0 auto;
-	margin-top: 1rem;
+	margin-top: 0rem;
 	transition: all 400ms;
 	transition-timing-function: ease-in;
 }
