@@ -100,7 +100,7 @@ $('.mcts-favorites').click(function() {
 	$('.fav-p').css('color', '#34b262');
 	$('.home-p').css('color', '#868686');
 	$('.routes-p').css('color', '#868686');
-	$('.map-p').css('color', '#868686');
+	$('.map-p').css('color', '#868686')
 });
 
 $('.mcts-routes').click(function() {
