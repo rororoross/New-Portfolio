@@ -430,6 +430,12 @@ footer {
 .iphone {
   width: 150px; }
 
+@media screen and (max-width: 1500px) {
+  .mac {
+    width: 251px; }
+  .iphone {
+    width: 100px; } }
+
 .mac-resize {
   width: 68px;
   transition: all 800ms;
@@ -498,6 +504,28 @@ footer {
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear; }
 
+.ball {
+  width: 6px;
+  height: 6px;
+  background: #ffffff;
+  position: absolute;
+  left: 130px;
+  top: 120px;
+  -webkit-animation: ball 3000ms infinite;
+          animation: ball 3000ms infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear; }
+
+@media screen and (max-width: 1500px) {
+  .left-bar {
+    top: 100px; }
+  .right-bar {
+    top: 40px; }
+  .ball {
+    top: 40px; }
+  .animate-container {
+    height: 211px; } }
+
 .left-bar-resize {
   width: 3px;
   height: 16px;
@@ -513,18 +541,6 @@ footer {
   top: 4px;
   -webkit-animation: right-bar-resize 2200ms infinite;
           animation: right-bar-resize 2200ms infinite;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear; }
-
-.ball {
-  width: 6px;
-  height: 6px;
-  background: #ffffff;
-  position: absolute;
-  left: 130px;
-  top: 120px;
-  -webkit-animation: ball 3000ms infinite;
-          animation: ball 3000ms infinite;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear; }
 
