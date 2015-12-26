@@ -22,4 +22,8 @@ router.get('/mobile', function(req, res, next) {
 	 res.render('mobile');
 });
 
+router.get('/about-me', function(req, res, next) {
+	 res.render('about-me');
+});
+
 module.exports = router;

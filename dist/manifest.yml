@@ -1,0 +1,9 @@
+---
+applications:
+#make sure to change the name and host attributes
+- name:      RossPortfolio2
+  host:      RossPortfolio2
+  memory:    256M
+  disk_quota: 1024M
+  buildpack: https://github.com/cloudfoundry-community/staticfile-buildpack.git
+  stack: cflinuxfs2
