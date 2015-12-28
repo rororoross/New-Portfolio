@@ -181,17 +181,16 @@ $("#butts").click(function(){
 	$(".animate").toggleClass("some-animation");
 });
 
-
 var wordSwap = [
 	"creating", 
 	"designing", 
 	"rapid prototyping", 
 	"developing"
 ], i = -1;
+
 (function f(){
 	var getWord = document.getElementById('word__change');
    i = (i + 1) % wordSwap.length;
-   getWord.innerHTML = (wordSwap[ i ]);
+   getWord.innerHTML = (wordSwap[i]);
    setTimeout(f, 2200);
 })();
-
