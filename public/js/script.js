@@ -182,10 +182,10 @@ $("#butts").click(function(){
 });
 
 var wordSwap = [
-	"creating", 
+	"developing", 
 	"designing", 
 	"rapid prototyping", 
-	"developing"
+	"creating"
 ], i = -1;
 
 (function f(){
