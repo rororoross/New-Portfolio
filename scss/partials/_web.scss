@@ -1,117 +1,24 @@
-.web-main {
-	padding-top: 0;
-}
-
 
 .blue-bg::-webkit-scrollbar {
 	display: none;
 }
-.header-hide {
-	transform: scale(0);
-	transition: 700ms;
-	transition-delay: 100ms;
-}
-
-.monitor {
-	width: 66%;
-	margin: 0 auto;
-	margin-top: 2%;
-	display: block;
-}
-
-.mac-web {
-	transform: translateY(-8px);
-}
-
-.monitor-margin {
-	margin-top: 3%;
-}
-
-.column-1 {
-	width: 50%;
-	float: left;
-}
-
-.column-2 {
-	width: 50%;
-	float: right;
-}
-
-.first-column-1 {
-	transform: translateX(-1000px);
-	-webkit-animation: slideInLeft 500ms;
-	-webkit-animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
-	-webkit-animation-delay: 600ms;
-	-webkit-animation-fill-mode: forwards;
-	visibility: hidden;
-}
-
- .first-column-2 {
- 	transform: translateX(1000px);
-	-webkit-animation: slideInRight 500ms;
-	-webkit-animation-timing-function: cubic-bezier(0.390, 0.575, 0.565, 1.000);
-	-webkit-animation-delay: 600ms;
-	-webkit-animation-fill-mode: forwards;
-	visibility: hidden;
-}
-
-.even-work {
-	.column-1 {
-		float: right;
-	}
-
-	.column-2 {
-		float: left;
-	}
-}
 
 .web-work {
-	padding-top: 14rem;
-}
+	h3 {
+		display: none;
+	}
 
-.see-it-live {
-	position: relative;
-	width: 180px;
-	padding: 1.2rem 1.6rem 1.2rem 1.6rem;
-	display: block;
-	margin: 0 auto;
-	margin-top: 108px;
-	text-align: center;
-	font-size: 1.2rem;
-	border: 4px solid $yellow;
-	transition: all 300ms ease-in-out;
-}
+	.monitor {
+		width: 300px;
+		padding: 20px;
+	}
 
-.see-it-live:hover {
-	background: $yellow;
-	color: $blue;
-	transition: all 300ms ease-in-out;
-}
+	.monitor:nth-child(2) {
+		width: 360px;
+	}
 
-.web-info-p {
-	padding-top: 2rem;
-	line-height: 1.5rem;
-	font-weight: 500;
-	width: 90%;
-}
+	.web-container {
+		clear: both
+	}
 
-.web-info {
-	float: right;
-	margin-right: 60px;
-	width: 80%;
-	position: relative;
-}
-
-@keyframes slideInLeft {
-	0% { transform: translateX(-800px); visibility: hidden; }
-	1% { visibility: visible; }
-	90% { transform: translateX(6px); visibility: visible;}
-	100% { transform: translateX(0); visibility: visible;}
-}
-
-@keyframes slideInRight {
-	0% { transform: translateX(800px); visibility: hidden; }
-	1% { visibility: visible; }
-	90% { transform: translateX(-6px); visibility: visible;}
-	100% { transform: translateX(0); visibility: visible;}
 }
