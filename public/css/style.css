@@ -527,7 +527,7 @@ footer {
   .ball {
     top: 40px; }
   .animate-container {
-    height: 211px; } }
+    height: 111px; } }
 
 .left-bar-resize {
   width: 3px;
@@ -783,158 +783,21 @@ footer {
     -webkit-transform: translateX(-21px) translateY(-10px);
             transform: translateX(-21px) translateY(-10px); } }
 
-.web-main {
-  padding-top: 0; }
-
 .blue-bg::-webkit-scrollbar {
   display: none; }
 
-.header-hide {
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  transition: 700ms;
-  transition-delay: 100ms; }
+.web-work h3 {
+  display: none; }
 
-.monitor {
-  width: 66%;
-  margin: 0 auto;
-  margin-top: 2%;
-  display: block; }
+.web-work .monitor {
+  width: 300px;
+  padding: 20px; }
 
-.mac-web {
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px); }
+.web-work .monitor:nth-child(2) {
+  width: 360px; }
 
-.monitor-margin {
-  margin-top: 3%; }
-
-.column-1 {
-  width: 50%;
-  float: left; }
-
-.column-2 {
-  width: 50%;
-  float: right; }
-
-.first-column-1 {
-  -webkit-transform: translateX(-1000px);
-          transform: translateX(-1000px);
-  -webkit-animation: slideInLeft 500ms;
-  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-fill-mode: forwards;
-  visibility: hidden; }
-
-.first-column-2 {
-  -webkit-transform: translateX(1000px);
-          transform: translateX(1000px);
-  -webkit-animation: slideInRight 500ms;
-  -webkit-animation-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
-  -webkit-animation-delay: 600ms;
-  -webkit-animation-fill-mode: forwards;
-  visibility: hidden; }
-
-.even-work .column-1 {
-  float: right; }
-
-.even-work .column-2 {
-  float: left; }
-
-.web-work {
-  padding-top: 14rem; }
-
-.see-it-live {
-  position: relative;
-  width: 180px;
-  padding: 1.2rem 1.6rem 1.2rem 1.6rem;
-  display: block;
-  margin: 0 auto;
-  margin-top: 108px;
-  text-align: center;
-  font-size: 1.2rem;
-  border: 4px solid #ffff00;
-  transition: all 300ms ease-in-out; }
-
-.see-it-live:hover {
-  background: #ffff00;
-  color: #5baafa;
-  transition: all 300ms ease-in-out; }
-
-.web-info-p {
-  padding-top: 2rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  width: 90%; }
-
-.web-info {
-  float: right;
-  margin-right: 60px;
-  width: 80%;
-  position: relative; }
-
-@-webkit-keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
-    visibility: hidden; }
-  1% {
-    visibility: visible; }
-  90% {
-    -webkit-transform: translateX(6px);
-            transform: translateX(6px);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible; } }
-
-@keyframes slideInLeft {
-  0% {
-    -webkit-transform: translateX(-800px);
-            transform: translateX(-800px);
-    visibility: hidden; }
-  1% {
-    visibility: visible; }
-  90% {
-    -webkit-transform: translateX(6px);
-            transform: translateX(6px);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible; } }
-
-@-webkit-keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(800px);
-            transform: translateX(800px);
-    visibility: hidden; }
-  1% {
-    visibility: visible; }
-  90% {
-    -webkit-transform: translateX(-6px);
-            transform: translateX(-6px);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible; } }
-
-@keyframes slideInRight {
-  0% {
-    -webkit-transform: translateX(800px);
-            transform: translateX(800px);
-    visibility: hidden; }
-  1% {
-    visibility: visible; }
-  90% {
-    -webkit-transform: translateX(-6px);
-            transform: translateX(-6px);
-    visibility: visible; }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    visibility: visible; } }
+.web-work .web-container {
+  clear: both; }
 
 #bus-app {
   padding-top: 0; }
