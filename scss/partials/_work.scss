@@ -75,6 +75,10 @@
 	.iphone {
 		width: 100px;
 	}
+
+	.animate-heading {
+		margin-top: 6.25rem;
+	}
 }
 
 .mac-resize {
@@ -113,10 +117,6 @@
 	transition: all 800ms;
 	transition-timing-function: ease;
 	transition-delay: 80ms;
-}
-
-.animate-heading {
-	margin-top: 6.25rem;
 }
 
 // Animation container

@@ -177,29 +177,6 @@ $(function() {
 	}
 });
 
-$("#butts").click(function(){
-	$(".animate").toggleClass("some-animation");
-});
-
-var getMonitor = document.querySelector(".monitor_2");
-var getMonitorxl = document.querySelector(".monitor_xl");
-var getMonitor3 = document.querySelector(".monitor_3");
-var getMonitor4 = document.querySelector(".monitor_4")
-	
-	document.querySelector(".monitor_1").addEventListener("mouseover", function() {
-		getMonitor.classList.add("monitor_2-animate");
-		getMonitorxl.classList.add("monitor_xl-animate");
-		getMonitor3.classList.add("monitor_3-animate");
-		getMonitor4.classList.add("monitor_4-animate");
-	});
-
-	document.querySelector(".monitor_1").addEventListener("mouseout", function() {
-		getMonitor.className = "monitor_2";
-		getMonitorxl.className = "monitor_xl";
-		getMonitor3.className = "monitor_3";
-		getMonitor4.className = "monitor_4";
-	});
-
 // text swapping for homepage
 var wordSwap = [
 	"developing", 

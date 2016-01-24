@@ -437,7 +437,9 @@ footer {
   .mac {
     width: 251px; }
   .iphone {
-    width: 100px; } }
+    width: 100px; }
+  .animate-heading {
+    margin-top: 6.25rem; } }
 
 .mac-resize {
   width: 68px;
@@ -473,9 +475,6 @@ footer {
   transition: all 800ms;
   transition-timing-function: ease;
   transition-delay: 80ms; }
-
-.animate-heading {
-  margin-top: 6.25rem; }
 
 .animate-container {
   width: 280px;
@@ -792,205 +791,18 @@ footer {
 .web-work h3 {
   display: none; }
 
-.web-work .web-container {
-  clear: both;
+.web-container {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  width: 100%;
   height: auto; }
 
-.web__column-1 {
-  width: 30%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: flex-end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  margin-top: 1rem; }
-  .web__column-1 .monitor_1 {
-    width: 220px;
-    height: auto;
-    display: block;
-    padding: 20px;
-    cursor: pointer;
-    -webkit-animation: slider 600ms linear;
-            animation: slider 600ms linear;
-    transition: -webkit-transform 500ms;
-    transition: transform 500ms; }
-  .web__column-1 .monitor_2 {
-    width: 180px;
-    height: auto;
-    padding: 20px;
-    padding-bottom: 2rem;
-    padding-right: 2.4rem;
-    transition: -webkit-transform 300ms;
-    transition: transform 300ms;
-    cursor: pointer;
-    -webkit-animation: slider_xl 800ms linear;
-            animation: slider_xl 800ms linear; }
+.monitor-container {
+  width: 300px; }
 
-.web__column-2 {
-  width: 40%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 1rem; }
-  .web__column-2 .monitor_xl {
-    display: block;
-    width: 540px;
-    margin: 0 auto;
-    padding-top: 8rem;
-    -webkit-animation: slider_xl 800ms ease-out;
-            animation: slider_xl 800ms ease-out; }
-
-.web__column-3 {
-  width: 30%;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 2rem; }
-  .web__column-3 .monitor_3 {
-    width: 110px;
-    height: auto;
-    padding-bottom: 2rem;
-    transition: all 500ms;
-    cursor: pointer;
-    -webkit-animation: slider_right 800ms ease-out;
-            animation: slider_right 800ms ease-out;
-    padding-left: 3rem; }
-  .web__column-3 .monitor_4 {
-    width: 110px;
-    height: auto;
-    padding-top: 3rem;
-    transition: all 500ms;
-    cursor: pointer;
-    -webkit-animation: slider_xl 1000ms ease-out;
-            animation: slider_xl 1000ms ease-out;
-    padding-left: 3rem; }
-
-.monitor_2-animate {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
-
-.monitor_xl-animate {
-  -webkit-transform: scale(0.66);
-          transform: scale(0.66);
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms; }
-
-.monitor_3-animate {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms; }
-
-.monitor_4-animate {
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-  transition: -webkit-transform 500ms;
-  transition: transform 500ms; }
-
-.monitor_1:hover {
-  -webkit-transform: scale(1.33);
-          transform: scale(1.33);
-  transition: all 500ms; }
-
-.monitor_2:hover {
-  -webkit-transform: scale(0.66);
-          transform: scale(0.66);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
-
-.monitor_2:hover .monitor_1 {
-  -webkit-transform: scale(0.66);
-          transform: scale(0.66);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
-
-.monitor_xl {
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
-
-.monitor_xl:hover {
-  -webkit-transform: scale(0.66);
-          transform: scale(0.66);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
-
-@-webkit-keyframes slider {
-  0% {
-    -webkit-transform: translateX(-1200px);
-            transform: translateX(-1200px); }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); } }
-
-@keyframes slider {
-  0% {
-    -webkit-transform: translateX(-1200px);
-            transform: translateX(-1200px); }
-  100% {
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px); } }
-
-@-webkit-keyframes slider_xl {
-  0% {
-    -webkit-transform: translateY(1200px);
-            transform: translateY(1200px); }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
-
-@keyframes slider_xl {
-  0% {
-    -webkit-transform: translateY(1200px);
-            transform: translateY(1200px); }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
-
-@-webkit-keyframes slider_right {
-  0% {
-    -webkit-transform: translateX(1200px);
-            transform: translateX(1200px); }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
-
-@keyframes slider_right {
-  0% {
-    -webkit-transform: translateX(1200px);
-            transform: translateX(1200px); }
-  100% {
-    -webkit-transform: translateY(0px);
-            transform: translateY(0px); } }
+.monitor {
+  width: 100%; }
 
 #bus-app {
   padding-top: 0; }
