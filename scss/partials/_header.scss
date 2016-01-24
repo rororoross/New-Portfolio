@@ -77,6 +77,21 @@ nav {
 	.ibm-logo {
 		width: 58px;
 	}
+
+	.home {
+		header {
+			transform: translateY(-40px);
+			animation: slideDown 540ms ease-out;
+			animation-delay: 120ms;
+			animation-fill-mode: forwards;
+		}
+	}
+
+	@keyframes slideDown {
+		0% { transform: translateY(-40px); }
+		40% { transform: translateY(2px); }
+		100% { transform: translateY(0); }
+	}
 }
 
 @media screen and (min-width: 1100px) {
@@ -96,19 +111,4 @@ nav {
 	.ibm-icon {
 		
 	}
-}
-
-.home {
-	header {
-		transform: translateY(-40px);
-		animation: slideDown 540ms ease-out;
-		animation-delay: 120ms;
-		animation-fill-mode: forwards;
-	}
-}
-
-@keyframes slideDown {
-	0% { transform: translateY(-40px); }
-	40% { transform: translateY(2px); }
-	100% { transform: translateY(0); }
 }

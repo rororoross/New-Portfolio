@@ -36,3 +36,9 @@ footer {
 	40% { transform: translateX(-2px); }
 	100% { transform: translateX(0); }
 }
+
+@media screen and (max-width: 648px) {
+	footer {
+		display: none;
+	}
+}
