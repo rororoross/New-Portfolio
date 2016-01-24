@@ -258,13 +258,13 @@ footer {
   height: 36px;
   float: right;
   cursor: pointer;
-  transition: background-image 200ms ease-in-out;
+  transition: background-image 400ms ease-in-out;
   background-image: url(../img/github-icon.svg);
   background-repeat: no-repeat; }
 
 .github-icon:hover {
   background-image: url(../img/github-icon-hover.svg);
-  transition: background-image 200ms ease-in-out; }
+  transition: background-image 400ms ease-in-out; }
 
 .mobile-container .github-icon {
   right: 80px; }
@@ -1317,31 +1317,6 @@ footer {
   padding-top: 2rem;
   line-height: 1.5rem;
   font-weight: 500; }
-
-.github-icon {
-  width: 37px;
-  height: 36px;
-  position: absolute;
-  right: 0px;
-  top: 2px;
-  background-image: url(../img/github-icon.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.mobile-container .github-icon {
-  right: 80px; }
-
-.github-icon:hover {
-  background-image: url(../img/github-icon-yellow.png);
-  cursor: pointer;
-  transition: all 500ms; }
-
-.git-home {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  top: auto; }
 
 .mobile-container article:nth-child(2) .app-info {
   float: left;

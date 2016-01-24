@@ -15,14 +15,14 @@ footer {
 	height: 36px;
 	float: right;
 	cursor: pointer;
-	transition: background-image 200ms ease-in-out;
+	transition: background-image 400ms ease-in-out;
 	background-image: url(../img/github-icon.svg);
 	background-repeat: no-repeat;
 }
 
 .github-icon:hover {
   background-image: url(../img/github-icon-hover.svg);
-  transition: background-image 200ms ease-in-out;
+  transition: background-image 400ms ease-in-out;
 }
 
 .mobile-container {

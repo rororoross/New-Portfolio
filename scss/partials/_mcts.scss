@@ -582,37 +582,6 @@
 	font-weight: 500;
 }
 
-.github-icon {
-	width: 37px;
-	height: 36px;
-	position: absolute;
-	right: 0px;
-	top: 2px;
-	background-image: url(../img/github-icon.png);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-.mobile-container {
-	.github-icon {
-		right: 80px;
-	}
-}
-
-.github-icon:hover {
-	background-image: url(../img/github-icon-yellow.png);
-	cursor: pointer;
-	transition: all 500ms;
-}
-
-.git-home {
-	position: absolute;
-	right: 1rem;
-	bottom: 1rem;
-	top: auto;
-}
-
 .mobile-container {
 	article:nth-child(2) {
 		.app-info {
