@@ -44,8 +44,7 @@ table {
 h1, h2, h3 {
   text-align: center;
   font-size: 3rem;
-  font-weight: 500;
-  padding-top: 2rem; }
+  font-weight: 500; }
 
 h2 {
   font-size: 2rem;
@@ -109,7 +108,7 @@ body {
 .home {
   overflow: hidden; }
 
-.main-home {
+.main__home {
   padding-top: 15vh; }
 
 .pie {
@@ -188,37 +187,95 @@ body {
   .anim {
     bottom: 45vh; } }
 
+.home__heading {
+  font-size: 1.33rem;
+  padding-top: 1rem; }
+
+.home__subheading {
+  font-size: .9rem;
+  padding-top: .4rem; }
+
+.ibm-logo {
+  width: 42px;
+  padding-bottom: .2rem; }
+
+.pie {
+  width: 110px; }
+
 header {
-  font-weight: 500;
+  font-weight: 500; }
+
+.header__title {
+  text-align: center;
+  padding-top: .8rem; }
+
+nav {
   position: fixed;
-  top: 0px;
-  width: 100%;
-  z-index: 9999999; }
-  header p {
+  bottom: 0;
+  width: 100%; }
+
+.nav__list span {
+  display: none; }
+
+.nav__list-item {
+  display: inline-block;
+  width: 23%;
+  padding: 0.5% 0.5% 8px 0.5%;
+  text-align: center;
+  font-size: 11px; }
+
+.nav__icon {
+  width: 24px;
+  padding-bottom: 1px;
+  display: block;
+  margin: 0 auto; }
+
+.active__home {
+  color: #ffff00; }
+
+@media screen and (min-width: 640px) {
+  nav {
+    float: right;
+    bottom: auto;
+    position: relative;
+    width: auto;
+    padding: .8rem; }
+  .header__title {
     float: left;
-    padding: 1rem;
-    text-align: left; }
-    header p span {
-      font-weight: 400; }
+    width: auto;
+    padding: .8rem; }
+  .nav__list-item {
+    font-size: 1rem;
+    width: auto;
+    padding: 0 .4rem 0 .4rem; }
+  .nav__icon {
+    display: none; }
+  .pie {
+    width: 220px; }
+  .home__heading {
+    font-size: 2rem; }
+  .home__subheading {
+    font-size: 1.4rem;
+    padding-top: .8rem; }
+  .ibm-logo {
+    width: 58px; } }
+
+@media screen and (min-width: 1100px) {
+  .pie {
+    width: 240px; }
+  .home__heading {
+    font-size: 3rem;
+    padding-top: 1.4rem; } }
 
 .home header {
   -webkit-transform: translateY(-40px);
           transform: translateY(-40px);
   -webkit-animation: slideDown 540ms ease-out;
+          animation: slideDown 540ms ease-out;
   -webkit-animation-delay: 120ms;
-  -webkit-animation-fill-mode: forwards; }
-
-nav {
-  right: 0;
-  top: 0;
-  float: right;
-  padding: 1rem;
-  width: auto; }
-  nav ul li {
-    display: inline; }
-
-.nav-icon {
-  display: none; }
+          animation-delay: 120ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 @-webkit-keyframes slideDown {
   0% {
@@ -290,87 +347,6 @@ footer {
   100% {
     -webkit-transform: translateX(0);
             transform: translateX(0); } }
-
-@media screen and (max-width: 648px) {
-  .nav-list span {
-    display: none; }
-  .nav-icon {
-    width: 24px;
-    padding-bottom: 1px;
-    display: block;
-    margin: 0 auto; }
-  .icon-home {
-    color: #ffff00; }
-  header {
-    position: fixed;
-    bottom: 0;
-    top: auto;
-    width: 100%; }
-    header nav {
-      padding: 0px 0;
-      float: none;
-      margin: 0 auto;
-      right: auto;
-      top: auto;
-      width: auto;
-      display: block; }
-    header .nav-list li {
-      display: inline-block;
-      width: 23%;
-      padding: 0.5%;
-      padding-bottom: 4px;
-      text-align: center;
-      font-size: 11px; }
-    header p {
-      position: fixed;
-      top: 0;
-      float: none;
-      text-align: center;
-      width: 100%;
-      padding: 0.6rem 0; } }
-
-@media screen and (max-width: 340px) {
-  header .nav-list li {
-    width: 22%; } }
-
-@media screen and (max-width: 1000px) {
-  h1 {
-    font-size: 2.4rem; }
-  h2 {
-    font-size: 1.8rem; }
-  .pie {
-    width: 18%; }
-  .ibm-logo {
-    width: 60px; } }
-
-@media screen and (max-width: 780px) {
-  .pie {
-    width: 160px; }
-  h1 {
-    font-size: 2rem; }
-  h2 {
-    font-size: 1.6rem; } }
-
-@media screen and (max-width: 648px) {
-  main {
-    padding-top: 6rem; }
-  .pie {
-    width: 35%; }
-  h1 {
-    font-size: 1.8rem;
-    padding-top: 1rem; }
-  h2 {
-    font-size: 1.2rem;
-    padding-top: 0.6rem; }
-  .ibm-logo {
-    width: 42px;
-    padding-bottom: 3px; } }
-
-@media screen and (max-width: 532px) {
-  h1 {
-    font-size: 1.1rem; }
-  h2 {
-    font-size: 0.9rem; } }
 
 @media screen and (max-width: 648px) {
   footer {

@@ -1,44 +1,110 @@
 header {
 	font-weight: 500;
-	position: fixed;
-	top: 0px;
-	width: 100%;
-	z-index: 9999999;
-	
-		p {
-		float: left;
-		padding: 1rem;
-		text-align: left;
+}
 
-			span {
-			font-weight: 400;
-			}
-		}
+.header__title {
+	text-align: center;
+	padding-top: .8rem;
+}
+
+nav {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+
+.nav__list span {
+	display: none;
+}
+
+.nav__list-item {
+	display: inline-block;
+	width: 23%;
+	padding: 0.5% 0.5% 8px 0.5%;
+	text-align: center;
+	font-size: 11px;
+}
+
+.nav__icon {
+	width: 24px;
+	padding-bottom: 1px;
+	display: block;
+	margin: 0 auto;
+}
+
+.active__home {
+	color: $yellow;
+}
+
+@media screen and (min-width: 640px) {
+	nav {
+		float: right;
+		bottom: auto;
+		position: relative;
+		width: auto;
+		padding: .8rem;
+	}
+
+	.header__title {
+		float: left;
+		width: auto;
+		padding: .8rem;
+	}
+
+	.nav__list-item {
+		font-size: 1rem;
+		width: auto;
+		padding: 0 .4rem 0 .4rem;
+	}
+
+	.nav__icon {
+		display: none;
+	}
+
+	.pie {
+		width: 220px;
+	}
+
+	.home__heading {
+		font-size: 2rem;
+	}
+
+	.home__subheading {
+		font-size: 1.4rem;
+		padding-top: .8rem;
+	}
+
+	.ibm-logo {
+		width: 58px;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.pie {
+		width: 240px;
+	}
+
+	.home__heading {
+		font-size: 3rem;
+		padding-top: 1.4rem;
+	}
+
+	.home__subheading {
+
+	}
+
+	.ibm-icon {
+		
+	}
 }
 
 .home {
 	header {
 		transform: translateY(-40px);
-		-webkit-animation: slideDown 540ms ease-out;
-		-webkit-animation-delay: 120ms;
-		-webkit-animation-fill-mode: forwards;
+		animation: slideDown 540ms ease-out;
+		animation-delay: 120ms;
+		animation-fill-mode: forwards;
 	}
-}
-
-nav {
-	right: 0;
-	top: 0;
-	float: right;
-	padding: 1rem;
-	width: auto;
-
-		ul li {
-			display: inline;
-		}
-}
-
-.nav-icon {
-	display: none;
 }
 
 @keyframes slideDown {
