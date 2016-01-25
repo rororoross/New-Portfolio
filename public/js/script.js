@@ -160,7 +160,7 @@ $('.work-link').click(function() {
 $(function() {
 
 	if ($('main').hasClass('web-main')){
-	$('.work-container').addClass('work-container-add');
+	$('.work__container').addClass('work-container-add');
 	$('h3').addClass('header-hide');
 	$('.web-container').show().addClass('web-container-transition');
 	$('.mobile-container').hide();

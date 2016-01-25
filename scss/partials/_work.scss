@@ -2,40 +2,29 @@
 	background: $blue;
 }
 
-.mac-container, .iphone-container, .animation-container {
-		float: left;
-		width: 33%;
-		transition: all 800ms;
-		transition-delay: 80ms;
-		transition-timing-function: ease;
-	}
-
-	.mac-container {
-		-webkit-animation-delay: 210ms;
-	}
-
-	.animation-container {
-		-webkit-animation-delay: 150ms;
-	}
-
-.work-layout {
-
-	.mac-container, .iphone-container, .animation-container {
-		float: left;
-		width: 33%;
-		-webkit-animation: bubble 800ms ease-out;
-		-webkit-animation-fill-mode: forwards;
-		transform: scale(0);
-	}
-
-	.mac-container {
-		-webkit-animation-delay: 210ms;
-	}
-
-	.animation-container {
-		-webkit-animation-delay: 150ms;
-	}
+.work__container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: calc(100vh - 12rem);
+	width: 90%;
+	margin: 0 auto;
 }
+
+.mac-container, .iphone-container, .animation-container {
+	animation: bubble 800ms ease-out;
+	animation-fill-mode: forwards;
+	transform: scale(0);
+}
+
+.mac-container {
+	animation-delay: 210ms;
+}
+
+.animation-container {
+	animation-delay: 150ms;
+}
+
 .work-action-container-fix {
 	width: auto;
 	margin: 2rem;
@@ -98,16 +87,6 @@
 .current-border {
 	padding-bottom: 0.5rem;
 	border-bottom: 2px solid yellow;
-}
-
-.work-container {
-	width: 90%;
-	max-width: 1900px;
-	margin: 0 auto;
-	transform: translateY(16rem);
-	transition: all 800ms;
-	transition-delay: 80ms;
-	transition-timing-function: ease;
 }
 
 .work-container-add {

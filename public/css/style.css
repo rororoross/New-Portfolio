@@ -259,6 +259,8 @@ nav {
     padding-top: .8rem; }
   .ibm-logo {
     width: 58px; }
+  .nav__list span {
+    display: inline; }
   .home header {
     -webkit-transform: translateY(-40px);
             transform: translateY(-40px);
@@ -352,32 +354,35 @@ footer {
 .blue-bg {
   background: #5baafa; }
 
+.work__container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: calc(100vh - 12rem);
+  width: 90%;
+  margin: 0 auto; }
+
 .mac-container, .iphone-container, .animation-container {
-  float: left;
-  width: 33%;
-  transition: all 800ms;
-  transition-delay: 80ms;
-  transition-timing-function: ease; }
-
-.mac-container {
-  -webkit-animation-delay: 210ms; }
-
-.animation-container {
-  -webkit-animation-delay: 150ms; }
-
-.work-layout .mac-container, .work-layout .iphone-container, .work-layout .animation-container {
-  float: left;
-  width: 33%;
   -webkit-animation: bubble 800ms ease-out;
+          animation: bubble 800ms ease-out;
   -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-transform: scale(0);
           transform: scale(0); }
 
-.work-layout .mac-container {
-  -webkit-animation-delay: 210ms; }
+.mac-container {
+  -webkit-animation-delay: 210ms;
+          animation-delay: 210ms; }
 
-.work-layout .animation-container {
-  -webkit-animation-delay: 150ms; }
+.animation-container {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms; }
 
 .work-action-container-fix {
   width: auto;
@@ -429,16 +434,6 @@ footer {
 .current-border {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid yellow; }
-
-.work-container {
-  width: 90%;
-  max-width: 1900px;
-  margin: 0 auto;
-  -webkit-transform: translateY(16rem);
-          transform: translateY(16rem);
-  transition: all 800ms;
-  transition-delay: 80ms;
-  transition-timing-function: ease; }
 
 .work-container-add {
   width: 20%;
