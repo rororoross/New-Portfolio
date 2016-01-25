@@ -12,6 +12,7 @@
 	display: flex;
 	width: 100%;
 	height: auto;
+	margin-top: 25vh;
 }
 
 .monitor-container {
@@ -20,4 +21,34 @@
 
 .monitor {
 	width: 100%;
+}
+
+.monitor__mac {
+	width: 275px;
+}
+
+.non-animate {
+	transform: scale(1);
+	animation: none !important;
+}
+
+// .piece__still {
+// 	animation: webmove 800ms;
+// 	animation-fill-mode: forwards;
+// 	transform: scale(1);
+// }
+
+.piece__still {
+	animation: none !important;
+	transform: scale(1);
+}
+
+.work__container-animate {
+	animation: bye 600ms ease-in-out;
+	animation-fill-mode: forwards;
+}
+
+@keyframes bye {
+	0% { transform: scale(1); }
+	100% { transform: scale(0.22) translate(0, -1400px); }
 }

@@ -177,6 +177,15 @@ $(function() {
 	}
 });
 
+var getWeb = document.querySelector(".mac-container");
+var getMobile = document.querySelector(".iphone-container");
+
+(function webTransition() {
+	console.log("hey dere");
+})();
+getWeb.addEventListener("click", webTransition);
+
+
 // text swapping for homepage
 var wordSwap = [
 	"developing", 

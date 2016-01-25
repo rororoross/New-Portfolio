@@ -364,17 +364,21 @@ footer {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: calc(100vh - 12rem);
   width: 90%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  margin-top: 25vh; }
 
 .mac-container, .iphone-container, .animation-container {
-  -webkit-animation: bubble 800ms ease-out;
-          animation: bubble 800ms ease-out;
+  -webkit-animation: bubble 600ms ease-in-out;
+          animation: bubble 600ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: scale(0);
           transform: scale(0); }
+
+.web-container-transition {
+  background: blue;
+  transition: all 3000ms; }
 
 .mac-container {
   -webkit-animation-delay: 210ms;
@@ -387,53 +391,35 @@ footer {
 .work-action-container-fix {
   width: auto;
   margin: 2rem;
-  transition: 800ms;
+  transition: 2800ms;
   transition-delay: 80ms;
   transition-timing-function: ease; }
-
-.mac:hover, .iphone:hover, .animation:hover {
-  -webkit-transform: translateY(-8px);
-          transform: translateY(-8px);
-  transition: all 800ms; }
-
-.mac, .iphone, .animation {
-  margin: 0 auto;
-  display: block;
-  width: 28%;
-  cursor: pointer;
-  transition: all 800ms;
-  transition-delay: 80ms;
-  transition-timing-function: ease; }
-
-.mac {
-  width: 376px; }
-
-.iphone {
-  width: 150px; }
-
-@media screen and (max-width: 1500px) {
-  .mac {
-    width: 251px; }
-  .iphone {
-    width: 100px; }
-  .animate-heading {
-    margin-top: 6.25rem; } }
 
 .mac-resize {
   width: 68px;
-  transition: all 800ms;
+  transition: all 2800ms;
   transition-delay: 80ms;
   transition-timing-function: ease; }
 
 .iphone-resize {
   width: 27px;
-  transition: all 800ms;
+  transition: all 2800ms;
   transition-delay: 80ms;
   transition-timing-function: ease; }
 
 .current-border {
   padding-bottom: 0.5rem;
   border-bottom: 2px solid yellow; }
+
+.work-container {
+  width: 90%;
+  max-width: 1900px;
+  margin: 0 auto;
+  -webkit-transform: translateY(16rem);
+          transform: translateY(16rem);
+  transition: all 800ms;
+  transition-delay: 80ms;
+  transition-timing-function: ease; }
 
 .work-container-add {
   width: 20%;
@@ -764,13 +750,51 @@ footer {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: auto; }
+  height: auto;
+  margin-top: 25vh; }
 
 .monitor-container {
   width: 300px; }
 
 .monitor {
   width: 100%; }
+
+.monitor__mac {
+  width: 275px; }
+
+.non-animate {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-animation: none !important;
+          animation: none !important; }
+
+.piece__still {
+  -webkit-animation: none !important;
+          animation: none !important;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+.work__container-animate {
+  -webkit-animation: bye 600ms ease-in-out;
+          animation: bye 600ms ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes bye {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.22) translate(0, -1400px);
+            transform: scale(0.22) translate(0, -1400px); } }
+
+@keyframes bye {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0.22) translate(0, -1400px);
+            transform: scale(0.22) translate(0, -1400px); } }
 
 #bus-app {
   padding-top: 0; }
