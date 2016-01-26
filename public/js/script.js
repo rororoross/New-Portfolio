@@ -177,14 +177,6 @@ $(function() {
 	}
 });
 
-var getWeb = document.querySelector(".mac-container");
-var getMobile = document.querySelector(".iphone-container");
-
-(function webTransition() {
-	console.log("hey dere");
-})();
-getWeb.addEventListener("click", webTransition);
-
 
 // text swapping for homepage
 var wordSwap = [
@@ -200,5 +192,3 @@ var wordSwap = [
    getWord.innerHTML = (wordSwap[i]);
    setTimeout(f, 2200);
 })();
-
-// hover effects
