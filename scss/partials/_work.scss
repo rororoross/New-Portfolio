@@ -265,3 +265,73 @@
   75% { transform: translateX(46px)translateY(48px);}
   100% { transform: translateX(-21px)translateY(-10px);}
 }
+
+.mobile__heading {
+	padding-top: 1.4rem;
+}
+
+.animate-heading {
+	padding-top: 1.4rem;
+}
+
+@media screen and (min-width: 700px) {
+	.mac { width: 100px; }
+	.iphone { width: 40px; }
+}
+
+@media screen and (min-width: 900px) {
+	.mac { width: 160px; }
+	.iphone { width: 68px; }
+}
+
+@media screen and (min-width: 1040px) {
+	.mac { width: 180px; }
+	.iphone { width: 78px; }
+	.animate-container {
+		width: 280px;
+		height: 316px;
+	}
+
+	.left-bar, .right-bar {
+		width: 6px;
+		height: 42px;
+		background: #ffffff;
+		margin: 2px;
+		position: absolute;
+	}
+
+	.left-bar {
+		left: 0;
+		top: 180px;
+		animation: left-bar 3000ms infinite;
+	}
+
+	.right-bar {
+		right: 0;
+		top: 120px;
+		animation: right-bar 3000ms infinite;
+		animation-timing-function: linear;
+	}
+
+	.ball {
+		width: 6px;
+		height: 6px;
+		background: #ffffff;
+		position: absolute;
+		left: 130px;
+		top: 120px;
+		animation: ball 3000ms infinite;
+		animation-timing-function: linear;
+	}
+}
+
+@media screen and (min-width: 1300px) {
+	.mac {
+		width: 100%;
+	}
+
+	.iphone {
+		width: 100%;
+	}
+
+}
