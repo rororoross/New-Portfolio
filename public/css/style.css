@@ -369,16 +369,12 @@ footer {
   margin-top: 25vh; }
 
 .mac-container, .iphone-container, .animation-container {
-  -webkit-animation: bubble 600ms ease-in-out;
-          animation: bubble 600ms ease-in-out;
+  -webkit-animation: bubble 900ms ease-in-out;
+          animation: bubble 900ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-transform: scale(0);
           transform: scale(0); }
-
-.web-container-transition {
-  background: blue;
-  transition: all 3000ms; }
 
 .mac-container {
   -webkit-animation-delay: 210ms;
@@ -394,6 +390,28 @@ footer {
   transition: 2800ms;
   transition-delay: 80ms;
   transition-timing-function: ease; }
+
+.mac, .iphone, .animate-container {
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms; }
+
+.mac:hover {
+  -webkit-transform: scale(1.11) translateY(-20px);
+          transform: scale(1.11) translateY(-20px);
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms; }
+
+.iphone:hover {
+  -webkit-transform: scale(1.11) translateY(-20px);
+          transform: scale(1.11) translateY(-20px);
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms; }
+
+.animate:hover {
+  -webkit-transform: scale(1.11) translateY(-20px);
+          transform: scale(1.11) translateY(-20px);
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms; }
 
 .mac-resize {
   width: 68px;

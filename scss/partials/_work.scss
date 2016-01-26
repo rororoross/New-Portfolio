@@ -12,7 +12,7 @@
 }
 
 .mac-container, .iphone-container, .animation-container {
-	animation: bubble 600ms ease-in-out;
+	animation: bubble 900ms ease-in-out;
 	animation-fill-mode: forwards;
 	transform: scale(0);
 }
@@ -32,9 +32,23 @@
 	transition-timing-function: ease;
 }
 
-.mac-container:hover {
-	transform: scale(1.33);
-	transition: transform: 300ms;
+.mac, .iphone, .animate-container {
+	transition: transform 300ms;
+}
+
+.mac:hover {
+	transform: scale(1.11) translateY(-20px);
+	transition: transform 300ms;
+}
+
+.iphone:hover {
+	transform: scale(1.11) translateY(-20px);
+	transition: transform 300ms;
+}
+
+.animate:hover {
+	transform: scale(1.11) translateY(-20px);
+	transition: transform 300ms;
 }
 
 .mac-resize {
