@@ -868,11 +868,12 @@ footer {
   height: auto;
   margin-top: 25vh; }
 
-.monitor-container {
-  width: 300px; }
+.monitor__container {
+  -webkit-transform: translateY(-200px);
+          transform: translateY(-200px); }
 
 .monitor {
-  width: 100%; }
+  width: 300px; }
 
 .monitor__mac {
   width: 275px; }
@@ -894,8 +895,8 @@ footer {
           transform: scale(1); }
 
 .work__container-animate {
-  -webkit-animation: bye 1200ms ease-in-out;
-          animation: bye 1200ms ease-in-out;
+  -webkit-animation: bye 600ms ease-in-out;
+          animation: bye 600ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 

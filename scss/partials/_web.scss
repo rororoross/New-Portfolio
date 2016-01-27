@@ -15,12 +15,12 @@
 	margin-top: 25vh;
 }
 
-.monitor-container {
-	width: 300px;
+.monitor__container {
+	transform: translateY(-200px);
 }
 
 .monitor {
-	width: 100%;
+	width: 300px;
 }
 
 .monitor__mac {
@@ -42,7 +42,7 @@
 }
 
 .work__container-animate {
-	animation: bye 1200ms ease-in-out;
+	animation: bye 600ms ease-in-out;
 	animation-fill-mode: forwards;
 }
 
