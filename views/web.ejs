@@ -4,26 +4,29 @@
   <body class="blue-bg web-work">
   	<% include partials/layout/header.ejs %>
     <div class="clearfix"></div>
-    <section class="work__container work__container-animate">
-  <div class="mac-container piece__still">
-    <a href="/web"><img src="img/mac.png" alt="" class="mac mac__web"></a>
-    <h3 class="web-header">Web</h3>
-  </div>
+    <div class="work__container work__container-animate">
+      <div class="mac-container piece__still">
+        <a href="/web"><img src="img/mac.png" alt="" class="mac mac__web"></a>
+        <h3 class="web-header">Web</h3>
+      </div>
 
-  <div class="iphone-container non-animate">
-   <a href="/mobile"><img src="img/iphone.png" alt="" class="iphone"></a>
-    <h3>Mobile</h3>
-  </div>
+      <div class="iphone-container non-animate">
+       <a href="/mobile"><img src="img/iphone.png" alt="" class="iphone"></a>
+        <h3>Mobile</h3>
+      </div>
 
-  <div class="animation-container non-animate">
-    <div class="animate-container">
-      <div class="left-bar"></div>
-      <div class="ball"></div>
-      <div class="right-bar"></div>
+      <div class="animation-container non-animate animation__transform">
+        <div class="animate-container">
+          <div class="left-bar"></div>
+          <div class="ball"></div>
+          <div class="right-bar"></div>
+        </div>
+        <h3 class="animate-heading">Animations</h3>
+      </div>
     </div>
-    <h3 class="animate-heading">Animations</h3>
-  </div> 
-</section>
+   <!--  <div class="monitor__container">
+      <img src="img/mac.png" alt="" class="web__monitor">
+    </div> -->
     <% include partials/scripts.ejs %>
   </body>
 </html>

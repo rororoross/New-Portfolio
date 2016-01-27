@@ -366,7 +366,8 @@ footer {
           align-items: center;
   width: 100%;
   margin: 0 auto;
-  margin-top: 25vh; }
+  -webkit-transform: translateY(200px);
+          transform: translateY(200px); }
 
 .mac-container, .iphone-container, .animation-container {
   -webkit-animation: bubble 900ms ease-in-out;
@@ -396,22 +397,22 @@ footer {
   transition: transform 300ms; }
 
 .mac:hover {
-  -webkit-transform: scale(1.11) translateY(-20px);
-          transform: scale(1.11) translateY(-20px);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
+  -webkit-transform: scale(1.05) translateY(-10px);
+          transform: scale(1.05) translateY(-10px);
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms; }
 
 .iphone:hover {
-  -webkit-transform: scale(1.11) translateY(-20px);
-          transform: scale(1.11) translateY(-20px);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
+  -webkit-transform: scale(1.05) translateY(-10px);
+          transform: scale(1.05) translateY(-10px);
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms; }
 
 .animate:hover {
-  -webkit-transform: scale(1.11) translateY(-20px);
-          transform: scale(1.11) translateY(-20px);
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
+  -webkit-transform: scale(1.05) translateY(-10px);
+          transform: scale(1.05) translateY(-10px);
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms; }
 
 .mac {
   width: 70px; }
@@ -879,36 +880,43 @@ footer {
 .non-animate {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-animation: none !important;
-          animation: none !important; }
+  -webkit-animation: none;
+          animation: none; }
+
+.animation__transform {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2); }
 
 .piece__still {
-  -webkit-animation: none !important;
-          animation: none !important;
+  -webkit-animation: none;
+          animation: none;
   -webkit-transform: scale(1);
           transform: scale(1); }
 
 .work__container-animate {
-  -webkit-animation: bye 600ms ease-in-out;
-          animation: bye 600ms ease-in-out;
+  -webkit-animation: bye 1200ms ease-in-out;
+          animation: bye 1200ms ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
 @-webkit-keyframes bye {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: scale(1) translateY(200px);
+            transform: scale(1) translateY(200px); }
   100% {
-    -webkit-transform: scale(0.22) translate(0, -1400px);
-            transform: scale(0.22) translate(0, -1400px); } }
+    -webkit-transform: scale(0.22) translateY(-500px);
+            transform: scale(0.22) translateY(-500px); } }
 
 @keyframes bye {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1); }
+    -webkit-transform: scale(1) translateY(200px);
+            transform: scale(1) translateY(200px); }
   100% {
-    -webkit-transform: scale(0.22) translate(0, -1400px);
-            transform: scale(0.22) translate(0, -1400px); } }
+    -webkit-transform: scale(0.22) translateY(-500px);
+            transform: scale(0.22) translateY(-500px); } }
+
+.web__monitor {
+  width: 300px; }
 
 #bus-app {
   padding-top: 0; }

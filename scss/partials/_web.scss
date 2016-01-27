@@ -29,26 +29,28 @@
 
 .non-animate {
 	transform: scale(1);
-	animation: none !important;
+	animation: none;
 }
 
-// .piece__still {
-// 	animation: webmove 800ms;
-// 	animation-fill-mode: forwards;
-// 	transform: scale(1);
-// }
+.animation__transform {
+	transform: scale(1.2);
+}
 
 .piece__still {
-	animation: none !important;
+	animation: none;
 	transform: scale(1);
 }
 
 .work__container-animate {
-	animation: bye 600ms ease-in-out;
+	animation: bye 1200ms ease-in-out;
 	animation-fill-mode: forwards;
 }
 
 @keyframes bye {
-	0% { transform: scale(1); }
-	100% { transform: scale(0.22) translate(0, -1400px); }
+	0% { transform: scale(1) translateY(200px); }
+	100% { transform: scale(0.22) translateY(-500px); }
+}
+
+.web__monitor {
+	width: 300px;
 }

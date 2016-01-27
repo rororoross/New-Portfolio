@@ -8,7 +8,7 @@
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 25vh;
+	transform: translateY(200px);
 }
 
 .mac-container, .iphone-container, .animation-container {
@@ -37,18 +37,18 @@
 }
 
 .mac:hover {
-	transform: scale(1.11) translateY(-20px);
-	transition: transform 300ms;
+	transform: scale(1.05) translateY(-10px);
+	transition: transform 500ms;
 }
 
 .iphone:hover {
-	transform: scale(1.11) translateY(-20px);
-	transition: transform 300ms;
+	transform: scale(1.05) translateY(-10px);
+	transition: transform 500ms;
 }
 
 .animate:hover {
-	transform: scale(1.11) translateY(-20px);
-	transition: transform 300ms;
+	transform: scale(1.05) translateY(-10px);
+	transition: transform 500ms;
 }
 
 .mac {
