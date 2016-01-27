@@ -15,14 +15,6 @@
 	margin-top: 25vh;
 }
 
-.monitor__container {
-	transform: translateY(-200px);
-}
-
-.monitor {
-	width: 300px;
-}
-
 .monitor__mac {
 	width: 275px;
 }
@@ -51,6 +43,28 @@
 	100% { transform: scale(0.22) translateY(-500px); }
 }
 
+.monitor__container {
+	transform: translateY(1400px);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	width: 80%;
+	margin: 0 auto;
+	animation: monitor-move 1000ms ease-in-out;
+	animation-delay: 220ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes monitor-move {
+	0% { transform: translateY(1400px); }
+	90% { transform: translateY(-80px); }
+	100% { transform: translateY(-60px); }
+}
+
 .web__monitor {
 	width: 300px;
+}
+
+.web__piece h2 {
+	font-size: 1.2rem;
 }
