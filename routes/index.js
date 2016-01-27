@@ -26,4 +26,8 @@ router.get('/about-me', function(req, res, next) {
 	 res.render('about-me');
 });
 
+router.get('/bluemix', function(req, res, next) {
+	 res.render('bluemix');
+});
+
 module.exports = router;
