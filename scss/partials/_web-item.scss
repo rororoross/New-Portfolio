@@ -1,0 +1,19 @@
+.web__items {
+	.work__container-animate {
+		transform: scale(0.22) translateY(-500px);
+		animation: none;
+	}
+
+	h3 {
+		display: none;
+	}
+}
+
+.web__item-container {
+	transform: translateY(-100px);
+}
+
+.monitor__web-item{
+	width: 600px;
+	padding-left: 15%;
+}

@@ -1562,5 +1562,22 @@ footer {
   width: 90px;
   padding-bottom: .8rem; }
 
+.web__items .work__container-animate {
+  -webkit-transform: scale(0.22) translateY(-500px);
+          transform: scale(0.22) translateY(-500px);
+  -webkit-animation: none;
+          animation: none; }
+
+.web__items h3 {
+  display: none; }
+
+.web__item-container {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px); }
+
+.monitor__web-item {
+  width: 600px;
+  padding-left: 15%; }
+
 .clearfix {
   clear: both; }
