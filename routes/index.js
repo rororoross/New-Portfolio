@@ -30,4 +30,12 @@ router.get('/bluemix', function(req, res, next) {
 	 res.render('bluemix');
 });
 
+router.get('/blrt', function(req, res, next) {
+	 res.render('blrt');
+});
+
+router.get('/nfl', function(req, res, next) {
+	 res.render('nfl');
+});
+
 module.exports = router;
