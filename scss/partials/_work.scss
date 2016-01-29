@@ -277,21 +277,19 @@
 @media screen and (min-width: 700px) {
 	.mac { width: 100px; }
 	.iphone { width: 40px; }
+	.animate-heading { padding-top: 3rem; }
 }
 
 @media screen and (min-width: 900px) {
 	.mac { width: 160px; }
 	.iphone { width: 68px; }
+	.animate-container { padding-top: 3.8rem; }
 }
 
 @media screen and (min-width: 1040px) {
 	.mac { width: 180px; }
 	.iphone { width: 78px; }
-	.animate-container {
-		width: 280px;
-		height: 316px;
-	}
-
+	
 	.left-bar, .right-bar {
 		width: 6px;
 		height: 42px;
@@ -323,6 +321,11 @@
 		animation: ball 3000ms infinite;
 		animation-timing-function: linear;
 	}
+
+	.animate-container { width: 280px; height: 166px; }
+	.web-header { padding-top: 2rem; }
+	.animation-container { padding-top: 0; }
+	.left-bar, .ball, .right-bar { top: 80px; }
 }
 
 @media screen and (min-width: 1300px) {

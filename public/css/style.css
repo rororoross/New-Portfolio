@@ -247,7 +247,7 @@ nav {
   .nav__list-item {
     font-size: 1rem;
     width: auto;
-    padding: 0 .4rem 0 .4rem; }
+    padding: 0 0.4rem 0 0.4rem; }
   .nav__icon {
     display: none; }
   .pie {
@@ -802,22 +802,23 @@ footer {
   .mac {
     width: 100px; }
   .iphone {
-    width: 40px; } }
+    width: 40px; }
+  .animate-heading {
+    padding-top: 3rem; } }
 
 @media screen and (min-width: 900px) {
   .mac {
     width: 160px; }
   .iphone {
-    width: 68px; } }
+    width: 68px; }
+  .animate-container {
+    padding-top: 3.8rem; } }
 
 @media screen and (min-width: 1040px) {
   .mac {
     width: 180px; }
   .iphone {
     width: 78px; }
-  .animate-container {
-    width: 280px;
-    height: 316px; }
   .left-bar, .right-bar {
     width: 6px;
     height: 42px;
@@ -846,7 +847,16 @@ footer {
     -webkit-animation: ball 3000ms infinite;
             animation: ball 3000ms infinite;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear; } }
+            animation-timing-function: linear; }
+  .animate-container {
+    width: 280px;
+    height: 166px; }
+  .web-header {
+    padding-top: 2rem; }
+  .animation-container {
+    padding-top: 0; }
+  .left-bar, .ball, .right-bar {
+    top: 80px; } }
 
 @media screen and (min-width: 1300px) {
   .mac {
