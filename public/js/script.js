@@ -179,16 +179,23 @@ $(function() {
 
 
 // text swapping for homepage
-var wordSwap = [
-	"developing", 
-	"designing", 
-	"rapid prototyping", 
-	"creating"
-], i = -1;
+// var wordSwap = [
+// 	"developing", 
+// 	"designing", 
+// 	"rapid prototyping", 
+// 	"creating"
+// ], i = -1;
 
-(function f(){
-	var getWord = document.getElementById('word__change');
-   i = (i + 1) % wordSwap.length;
-   getWord.innerHTML = (wordSwap[i]);
-   setTimeout(f, 2200);
-})();
+// (function f(){
+// 	var getWord = document.getElementById('word__change');
+//    i = (i + 1) % wordSwap.length;
+//    getWord.innerHTML = (wordSwap[i]);
+//    setTimeout(f, 2200);
+// })();
+
+if (document.body.classList.contains('work')) {
+	var getHomeLink = document.querySelector('.active__home');
+	var getWorkLink = document.querySelector('.header__link-work');
+	getHomeLink.className = "";
+	getWorkLink.classList.add("active__home");
+}
