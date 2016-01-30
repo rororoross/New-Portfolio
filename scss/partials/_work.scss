@@ -283,14 +283,26 @@
 @media screen and (min-width: 900px) {
 	.mac { width: 160px; }
 	.iphone { width: 68px; }
-	.animate-container { padding-top: 3.8rem; }
+	.animate-container { margin-top: 3rem; }
 }
 
 @media screen and (min-width: 1040px) {
 	.mac { width: 180px; }
 	.iphone { width: 78px; }
-	
-	.left-bar, .right-bar {
+	.animate-container { margin-top: 5.1rem; }
+
+}
+
+@media screen and (min-width: 1300px) {
+	.mac {
+		width: 100%;
+	}
+
+	.iphone {
+		width: 100%;
+	}
+
+		.left-bar, .right-bar {
 		width: 6px;
 		height: 42px;
 		background: #ffffff;
@@ -326,15 +338,6 @@
 	.web-header { padding-top: 2rem; }
 	.animation-container { padding-top: 0; }
 	.left-bar, .ball, .right-bar { top: 80px; }
-}
-
-@media screen and (min-width: 1300px) {
-	.mac {
-		width: 100%;
-	}
-
-	.iphone {
-		width: 100%;
-	}
-
+	.mobile__heading { padding-top: 2.15rem; }
+	.animate-heading { padding-top: 3.9rem; }
 }
