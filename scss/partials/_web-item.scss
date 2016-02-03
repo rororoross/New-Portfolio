@@ -10,10 +10,33 @@
 }
 
 .web__item-container {
-	transform: translateY(-100px);
+	transform: translateY(-140px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .monitor__web-item{
-	width: 600px;
-	padding-left: 15%;
+	width: auto;
+	height: 400px;
+	cursor: pointer;
+}
+
+.web__item-header {
+	padding-bottom: .4rem;
+}
+
+.web__item-expand {
+	color: $yellow;
+	padding-bottom: .6rem;
+}
+
+.web__item-monitor {
+	align-items: center;
+}
+
+.arrow {
+	width: 32px;
+	transform: rotate(-90deg);
 }
