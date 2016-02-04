@@ -193,9 +193,9 @@ var getNFL = document.querySelector(".project__nfl");
 getBluemix.addEventListener("click", bluemixFunc);
 
 function bluemixFunc() {
-	console.log("butt stuff");
-	getBlrt.className = "slide__left-animation";
-	getNFL.className = "slide__left-animation";
+	getBluemix.className = "web__project-bluemix-select";
+	getBlrt.className = "web-project__animate";
+	getNFL.className = "web-project__animate";
 }
 
 // text swapping for homepage

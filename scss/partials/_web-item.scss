@@ -18,8 +18,7 @@
 }
 
 .monitor__web-item{
-	width: auto;
-	height: 400px;
+	width: 399px;
 	cursor: pointer;
 }
 
@@ -35,7 +34,6 @@
 .web__item-monitor {
 	display: flex;
 	align-items: center;
-	width: 600px;
 }
 
 .arrow {
@@ -57,4 +55,27 @@
 	padding-top: 1rem;
 	max-width: 800px;
 	line-height: 1.6;
+}
+
+.web__item-header, .web__item-expand, .arrow, {
+	opacity: 0;
+	animation: fade-in 500ms linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade-in {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+.web__item-content {
+	transform: translateY(1000px);
+	animation: slide-up 800ms linear;
+	animation-delay: 100ms;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slide-up {
+	0% { transform: translateY(1000px); }
+	100% { transform: translateY(0px); }
 }

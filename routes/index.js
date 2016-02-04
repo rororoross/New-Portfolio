@@ -23,7 +23,7 @@ router.get('/about-me', function(req, res, next) {
 });
 
 router.get('/bluemix', function(req, res, next) {
-	setTimeout((function() {res.render('bluemix')}), 500);
+	setTimeout((function() {res.render('bluemix')}), 330);
 });
 
 router.get('/blrt', function(req, res, next) {

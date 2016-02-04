@@ -72,8 +72,13 @@
 	font-size: 1.2rem;
 }
 
-.slide__left-animation {
+.web-project__animate {
 	animation: anti-bubble 300ms linear;
+	animation-fill-mode: forwards;
+}
+
+.web__project-bluemix-select {
+	animation: bluemix-select 300ms linear;
 	animation-fill-mode: forwards;
 }
 
@@ -81,3 +86,9 @@
 	0% { transform: scale(1); }
 	100% { transform: scale(0); }
 }
+
+@keyframes bluemix-select {
+	0% { transform: scale(1); }
+	100% { transform: scale(1.33) translateY(-9px); }
+}
+
