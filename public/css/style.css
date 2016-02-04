@@ -1616,14 +1616,32 @@ footer {
   padding-bottom: .6rem; }
 
 .web__item-monitor {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
       -ms-flex-align: center;
-          align-items: center; }
+          align-items: center;
+  width: 600px; }
 
 .arrow {
   width: 32px;
   -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg); }
+          transform: rotate(-90deg);
+  padding: .6rem;
+  cursor: pointer; }
+
+.arrow:nth-of-type(3) {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+.web__item-subheading {
+  padding-bottom: 1rem; }
+
+.web__item-content {
+  padding-top: 1rem;
+  max-width: 800px;
+  line-height: 1.6; }
 
 .clearfix {
   clear: both; }
