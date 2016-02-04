@@ -7,35 +7,31 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/my-work', function(req, res, next) {
-  setTimeout((function() {res.render('my-work')}), 560);
-});
-
-	router.get('/work-2', function(req, res, next) {
-	 setTimeout((function() {res.render('work-2')}), 840);
+  setTimeout((function() {res.render('my-work')}), 500);
 });
 
 router.get('/web', function(req, res, next) {
-	 res.render('web');
+	res.render('web');
 });
 
 router.get('/mobile', function(req, res, next) {
-	 res.render('mobile');
+	res.render('mobile');
 });
 
 router.get('/about-me', function(req, res, next) {
-	 res.render('about-me');
+	res.render('about-me');
 });
 
 router.get('/bluemix', function(req, res, next) {
-	 res.render('bluemix');
+	setTimeout((function() {res.render('bluemix')}), 500);
 });
 
 router.get('/blrt', function(req, res, next) {
-	 res.render('blrt');
+	res.render('blrt');
 });
 
 router.get('/nfl', function(req, res, next) {
-	 res.render('nfl');
+	res.render('nfl');
 });
 
 module.exports = router;

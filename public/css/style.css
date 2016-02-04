@@ -976,6 +976,28 @@ footer {
 .web__piece h2 {
   font-size: 1.2rem; }
 
+.slide__left-animation {
+  -webkit-animation: anti-bubble 300ms linear;
+          animation: anti-bubble 300ms linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes anti-bubble {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); } }
+
+@keyframes anti-bubble {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0); } }
+
 #bus-app {
   padding-top: 0; }
 

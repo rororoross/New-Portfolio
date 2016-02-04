@@ -71,3 +71,13 @@
 .web__piece h2 {
 	font-size: 1.2rem;
 }
+
+.slide__left-animation {
+	animation: anti-bubble 300ms linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes anti-bubble {
+	0% { transform: scale(1); }
+	100% { transform: scale(0); }
+}

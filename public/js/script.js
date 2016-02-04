@@ -185,6 +185,19 @@ if (document.body.classList.contains('work')) {
 	getWorkLink.classList.add("active__home");
 }
 
+var getBluemix = document.querySelector(".project__bluemix");
+var getBlrt = document.querySelector(".project__blrt");
+var getNFL = document.querySelector(".project__nfl");
+
+
+getBluemix.addEventListener("click", bluemixFunc);
+
+function bluemixFunc() {
+	console.log("butt stuff");
+	getBlrt.className = "slide__left-animation";
+	getNFL.className = "slide__left-animation";
+}
+
 // text swapping for homepage
 var wordSwap = [
 	"developing", 
