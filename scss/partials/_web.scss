@@ -38,21 +38,24 @@
 	animation-fill-mode: forwards;
 }
 
+.web__piece-bubble {
+	animation: bubble 900ms ease-in-out;
+	animation-fill-mode: forwards;
+	animation-delay: 300ms;
+	transform: scale(0);
+}
+
 @keyframes bye {
 	0% { transform: scale(1) translateY(200px); }
 	100% { transform: scale(0.22) translateY(-500px); }
 }
 
 .monitor__container {
-	transform: translateY(1400px);
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	width: 80%;
 	margin: 0 auto;
-	animation: monitor-move 1000ms ease-in-out;
-	animation-delay: 220ms;
-	animation-fill-mode: forwards;
 }
 
 @keyframes monitor-move {
