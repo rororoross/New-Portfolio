@@ -1732,5 +1732,15 @@ footer {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } }
 
+.blur {
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+  transition: -webkit-filter 300ms, filter 300ms; }
+
+.blur-extra {
+  -webkit-filter: blur(25px);
+          filter: blur(25px);
+  transition: -webkit-filter 300ms, filter 300ms; }
+
 .clearfix {
   clear: both; }

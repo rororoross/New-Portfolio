@@ -185,17 +185,32 @@ if (document.body.classList.contains('work')) {
 	getWorkLink.classList.add("active__home");
 }
 
+// web select view animations
 var getBluemix = document.querySelector(".project__bluemix");
 var getBlrt = document.querySelector(".project__blrt");
 var getNFL = document.querySelector(".project__nfl");
 
-
-getBluemix.addEventListener("click", bluemixFunc);
+// getBluemix.addEventListener("click", bluemixFunc);
 
 function bluemixFunc() {
 	getBluemix.className = "web__project-bluemix-select";
 	getBlrt.className = "web-project__animate";
 	getNFL.className = "web-project__animate";
+}
+
+// bluemix expand animations
+if (document.body.classList.contains('bluemix')) {
+	var getBluemixmonitor = document.querySelector(".monitor__web-item");
+	var getHeader = document.querySelector("header");
+	var getWorkSelect = document.querySelector(".work__container");
+
+
+	getBluemixmonitor.addEventListener("click", bluemixExpand);
+
+	function bluemixExpand() {
+		getHeader.classList.add("blur");
+		getWorkSelect.classList.add("blur-extra");
+	}
 }
 
 // text swapping for homepage

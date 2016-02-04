@@ -79,3 +79,13 @@
 	0% { transform: translateY(1000px); }
 	100% { transform: translateY(0px); }
 }
+
+.blur {
+	filter: blur(5px);
+	transition: filter 300ms;
+}
+
+.blur-extra {
+	filter: blur(25px);
+	transition: filter 300ms;
+}
