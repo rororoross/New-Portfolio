@@ -12,12 +12,13 @@
 }
 
 .mac-container, .iphone-container, .animation-container {
-	animation: bubble 900ms ease-in-out;
+	animation: bubble 900ms;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
 	animation-fill-mode: forwards;
 	transform: scale(0);
 }
 .mac-container {
-	animation-delay: 210ms;
+	animation-delay: 260ms;
 }
 
 .animation-container {
@@ -302,25 +303,13 @@
 		width: 100%;
 	}
 
-		.left-bar, .right-bar {
+	.left-bar, .right-bar {
 		width: 6px;
 		height: 42px;
+		top: 40px;
 		background: #ffffff;
 		margin: 2px;
 		position: absolute;
-	}
-
-	.left-bar {
-		left: 0;
-		top: 180px;
-		animation: left-bar 3000ms infinite;
-	}
-
-	.right-bar {
-		right: 0;
-		top: 120px;
-		animation: right-bar 3000ms infinite;
-		animation-timing-function: linear;
 	}
 
 	.ball {
@@ -334,10 +323,23 @@
 		animation-timing-function: linear;
 	}
 
-	.animate-container { width: 280px; height: 166px; }
+	.animate-container { width: 280px; height: 166px; margin-top: 3rem;}
 	.web-header { padding-top: 2rem; }
 	.animation-container { padding-top: 0; }
-	.left-bar, .ball, .right-bar { top: 80px; }
+	.left-bar, .ball, .right-bar { top: 0px; }
 	.mobile__heading { padding-top: 2.15rem; }
-	.animate-heading { padding-top: 3.9rem; }
+	.animate-heading { padding-top: 6.5rem; }
+
+	.left-bar {
+		left: 0;
+		top: 40px;
+		animation: left-bar 3000ms infinite;
+	}
+
+	.right-bar {
+		right: 0;
+		top: 0px;
+		animation: right-bar 3000ms infinite;
+		animation-timing-function: linear;
+	}
 }
