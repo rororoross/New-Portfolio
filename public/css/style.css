@@ -1746,5 +1746,37 @@ footer {
           filter: blur(25px);
   transition: -webkit-filter 300ms, filter 300ms; }
 
+.web__project-view {
+  position: absolute;
+  width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 100px;
+  opacity: 1;
+  -webkit-animation: 1500ms view-piece linear;
+          animation: 1500ms view-piece linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms; }
+
+@-webkit-keyframes view-piece {
+  0% {
+    width: 360px;
+    position: fixed; }
+  100% {
+    width: 100vw;
+    position: fixed; } }
+
+@keyframes view-piece {
+  0% {
+    width: 360px;
+    position: fixed; }
+  100% {
+    width: 100vw;
+    position: fixed; } }
+
 .clearfix {
   clear: both; }

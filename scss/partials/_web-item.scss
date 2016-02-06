@@ -89,3 +89,31 @@
 	filter: blur(25px);
 	transition: filter 300ms;
 }
+
+.web__project-view {
+	position: absolute;
+	width: 360px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	top: 100px;
+	opacity: 1;
+	animation: 1500ms view-piece linear;
+	animation-fill-mode: forwards;
+	animation-delay: 500ms;
+}
+
+@keyframes view-piece {
+	0% { width: 360px; position: fixed;}
+	100% { width: 100vw; position: fixed;}
+}
+
+// .web__project-view {
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100vw;
+// 	height: auto;
+// 	animation: fade-in 500ms linear;
+// }
