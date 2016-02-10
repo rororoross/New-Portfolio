@@ -39,7 +39,8 @@
 }
 
 .web__piece-bubble {
-	animation: bubble 900ms ease-in-out;
+	animation: bubble 900ms;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
 	animation-fill-mode: forwards;
 	animation-delay: 300ms;
 	transform: scale(0);
