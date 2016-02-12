@@ -82,12 +82,12 @@
 
 .blur {
 	filter: blur(5px);
-	transition: filter 300ms;
+	transition: filter 100ms;
 }
 
 .blur-extra {
 	filter: blur(25px);
-	transition: filter 300ms;
+	transition: filter 100ms;
 }
 
 .web__project-view {
@@ -97,17 +97,17 @@
 	margin-right: auto;
 	left: 0;
 	right: 0;
-	top: 100px;
+	top: 280px;
 	opacity: 1;
-	display: none;
-	animation: 1500ms view-piece linear;
+	animation: 800ms view-piece;
 	animation-fill-mode: forwards;
-	animation-delay: 500ms;
+	animation-delay: 0ms;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
 }
 
 @keyframes view-piece {
 	0% { width: 360px; position: fixed;}
-	100% { width: 100vw; position: fixed;}
+	100% { width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75);}
 }
 
 // .web__project-view {

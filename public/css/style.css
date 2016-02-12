@@ -1741,12 +1741,12 @@ footer {
 .blur {
   -webkit-filter: blur(5px);
           filter: blur(5px);
-  transition: -webkit-filter 300ms, filter 300ms; }
+  transition: -webkit-filter 100ms, filter 100ms; }
 
 .blur-extra {
   -webkit-filter: blur(25px);
           filter: blur(25px);
-  transition: -webkit-filter 300ms, filter 300ms; }
+  transition: -webkit-filter 100ms, filter 100ms; }
 
 .web__project-view {
   position: absolute;
@@ -1755,31 +1755,36 @@ footer {
   margin-right: auto;
   left: 0;
   right: 0;
-  top: 100px;
+  top: 280px;
   opacity: 1;
-  display: none;
-  -webkit-animation: 1500ms view-piece linear;
-          animation: 1500ms view-piece linear;
+  -webkit-animation: 800ms view-piece;
+          animation: 800ms view-piece;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms; }
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245);
+          animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245); }
 
 @-webkit-keyframes view-piece {
   0% {
     width: 360px;
     position: fixed; }
   100% {
-    width: 100vw;
-    position: fixed; } }
+    width: 77vw;
+    position: fixed;
+    top: 8vh;
+    box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); } }
 
 @keyframes view-piece {
   0% {
     width: 360px;
     position: fixed; }
   100% {
-    width: 100vw;
-    position: fixed; } }
+    width: 77vw;
+    position: fixed;
+    top: 8vh;
+    box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); } }
 
 .clearfix {
   clear: both; }

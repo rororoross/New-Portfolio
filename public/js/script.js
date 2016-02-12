@@ -206,30 +206,34 @@ if (document.body.classList.contains('bluemix')) {
 	var getBluemixmonitor = document.querySelector(".monitor__web-item");
 	var getHeader = document.querySelector("header");
 	var getWorkSelect = document.querySelector(".work__container");
+
 	getBluemixmonitor.addEventListener("click", bluemixExpand);
 
 	function bluemixExpand() {
 		getHeader.classList.add("blur");
 		getWorkSelect.classList.add("blur-extra");
+		var makeOnboard = document.createElement("img");
+		makeOnboard.src = "../img/bluemix-onboard.jpg";
+		makeOnboard.className = "web__project-view";
+		document.body.appendChild(makeOnboard);
+		// var test = document.createElement("p");
+		// test.innerHTML = "herp derp";
+		// document.getElementById("bluemix-body").appendChild(test);
 		console.log("butts");
 	}
-
-	// expand image
-	var makeOnboard = document.createElement("img");
-	makeOnboard.src = "../img/bluemix-onboard.jpg";
 }
 
 // text swapping for homepage
-var wordSwap = [
-	"developing", 
-	"designing", 
-	"rapid prototyping", 
-	"creating"
-], i = -1;
+// var wordSwap = [
+// 	"developing", 
+// 	"designing", 
+// 	"rapid prototyping", 
+// 	"creating"
+// ], i = -1;
 
-(function f(){
-var getWord = document.getElementById('word__change');
-   i = (i + 1) % wordSwap.length;
-   getWord.innerHTML = (wordSwap[i]);
-   setTimeout(f, 2200);
-})();
+// (function f(){
+// var getWord = document.getElementById('word__change');
+//    i = (i + 1) % wordSwap.length;
+//    getWord.innerHTML = (wordSwap[i]);
+//    setTimeout(f, 2200);
+// })();
