@@ -1715,10 +1715,8 @@ footer {
 .web__item-content {
   -webkit-transform: translateY(1000px);
           transform: translateY(1000px);
-  -webkit-animation: slide-up 800ms linear;
-          animation: slide-up 800ms linear;
-  -webkit-animation-delay: 100ms;
-          animation-delay: 100ms;
+  -webkit-animation: slide-up 600ms linear;
+          animation: slide-up 600ms linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
@@ -1757,12 +1755,10 @@ footer {
   right: 0;
   top: 280px;
   opacity: 1;
-  -webkit-animation: 800ms view-piece;
-          animation: 800ms view-piece;
+  -webkit-animation: 500ms view-piece;
+          animation: 500ms view-piece;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 0ms;
-          animation-delay: 0ms;
   -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245);
           animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245); }
 
