@@ -185,32 +185,38 @@ if (document.body.classList.contains('work')) {
 	getWorkLink.classList.add("active__home");
 }
 
+
+if (document.body.classList.contains('web-work')) {
 // web select view animations
-var getBluemix = document.querySelector(".project__bluemix");
-var getBlrt = document.querySelector(".project__blrt");
-var getNFL = document.querySelector(".project__nfl");
+	var getBluemix = document.querySelector(".project__bluemix");
+	var getBlrt = document.querySelector(".project__blrt");
+	var getNFL = document.querySelector(".project__nfl");
 
-// getBluemix.addEventListener("click", bluemixFunc);
+	getBluemix.addEventListener("click", bluemixFunc);
 
-function bluemixFunc() {
-	getBluemix.className = "web__project-bluemix-select";
-	getBlrt.className = "web-project__animate";
-	getNFL.className = "web-project__animate";
+	function bluemixFunc() {
+		getBluemix.className = "web__project-bluemix-select";
+		getBlrt.className = "web-project__animate";
+		getNFL.className = "web-project__animate";
+	}
 }
 
-// bluemix expand animations
+// bluemix expand
 if (document.body.classList.contains('bluemix')) {
 	var getBluemixmonitor = document.querySelector(".monitor__web-item");
 	var getHeader = document.querySelector("header");
 	var getWorkSelect = document.querySelector(".work__container");
-
-
 	getBluemixmonitor.addEventListener("click", bluemixExpand);
 
 	function bluemixExpand() {
 		getHeader.classList.add("blur");
 		getWorkSelect.classList.add("blur-extra");
+		console.log("butts");
 	}
+
+	// expand image
+	var makeOnboard = document.createElement("img");
+	makeOnboard.src = "../img/bluemix-onboard.jpg";
 }
 
 // text swapping for homepage

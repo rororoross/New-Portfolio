@@ -247,7 +247,7 @@ nav {
   .nav__list-item {
     font-size: 1rem;
     width: auto;
-    padding: 0 0.4rem 0 0.4rem; }
+    padding: 0 .4rem 0 .4rem; }
   .nav__icon {
     display: none; }
   .pie {
@@ -1757,6 +1757,7 @@ footer {
   right: 0;
   top: 100px;
   opacity: 1;
+  display: none;
   -webkit-animation: 1500ms view-piece linear;
           animation: 1500ms view-piece linear;
   -webkit-animation-fill-mode: forwards;
