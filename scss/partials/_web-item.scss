@@ -108,6 +108,49 @@
 	100% { width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75);}
 }
 
+.view__button {
+	background-image: url('../img/arrow.svg');
+	background-color: rgba(0,0,0,0);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: none;
+	width: 72px;
+	height: 80px;
+	position: fixed;
+	top: 45vh;
+	left: 3vw;
+	transform: translateX(-500px) rotate(-90deg);
+	cursor: pointer;
+	outline: none;
+	animation: 340ms btn-slide;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.045);
+	animation-delay: 100ms;
+}
+
+.button__next {
+	background-image: url('../img/arrow.svg');
+	background-color: rgba(0,0,0,0);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: none;
+	width: 72px;
+	height: 80px;
+	position: fixed;
+	top: 45vh;
+	transform: rotate(-90deg);
+	cursor: pointer;
+	outline: none;
+	left: auto;
+	right: 3vw;
+	transform: rotate(90deg);
+}
+
+@keyframes btn-slide {
+	0% { transform: translateX(-500px) rotate(-90deg); }
+	100% { transform: translateX(0px) rotate(-90deg); }
+}
+
 // .web__project-view {
 // 	position: absolute;
 // 	top: 0;

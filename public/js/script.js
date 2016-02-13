@@ -212,14 +212,19 @@ if (document.body.classList.contains('bluemix')) {
 	function bluemixExpand() {
 		getHeader.classList.add("blur");
 		getWorkSelect.classList.add("blur-extra");
+
 		var makeOnboard = document.createElement("img");
 		makeOnboard.src = "../img/bluemix-onboard.jpg";
 		makeOnboard.className = "web__project-view";
 		document.body.appendChild(makeOnboard);
-		// var test = document.createElement("p");
-		// test.innerHTML = "herp derp";
-		// document.getElementById("bluemix-body").appendChild(test);
-		console.log("butts");
+
+		var makePreviousButton = document.createElement("button");
+		makePreviousButton.className = "view__button";
+		document.body.appendChild(makePreviousButton);
+
+		var makeNextButton = document.createElement("button");
+		makeNextButton.className = "button__next";
+		document.body.appendChild(makeNextButton);
 	}
 }
 
