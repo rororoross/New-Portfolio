@@ -104,8 +104,19 @@
 }
 
 @keyframes view-piece {
-	0% { width: 360px; position: fixed;}
-	100% { width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75);}
+	0% { width: 360px; position: fixed; }
+	100% { width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75); }
+}
+
+.web__view-shrink {
+	animation: 400ms view-piece-shrink;
+	animation-fill-mode: none;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
+}
+
+@keyframes view-piece-shrink {
+	0% { width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75); }
+	100% { width: 360px; box-shadow: none; }
 }
 
 .view__button {
@@ -138,17 +149,46 @@
 	height: 80px;
 	position: fixed;
 	top: 45vh;
-	transform: rotate(-90deg);
+	transform: rotate(90deg);
 	cursor: pointer;
 	outline: none;
 	left: auto;
 	right: 3vw;
-	transform: rotate(90deg);
+	transform: translateX(500px) rotate(90deg);
+	animation: 340ms btn-slide-next;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.045);
+	animation-delay: 100ms;
 }
 
 @keyframes btn-slide {
 	0% { transform: translateX(-500px) rotate(-90deg); }
 	100% { transform: translateX(0px) rotate(-90deg); }
+}
+
+@keyframes btn-slide-next {
+	0% { transform: translateX(500px) rotate(90deg); }
+	100% { transform: translateX(0px) rotate(90deg); }
+}
+
+.close__icon {
+	background-image: url('../img/icon-close.svg');
+	background-color: rgba(0,0,0,0);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	border: none;
+	width: 50px;
+	height: 50px;
+	position: fixed;
+	top: 3vh;
+	right: 3vw;
+	outline: none;
+	cursor: pointer;
+}
+
+@keyframes btn-slide-next {
+	0% { transform: translateX(500px) rotate(90deg); }
+	100% { transform: translateX(0px) rotate(90deg); }
 }
 
 // .web__project-view {

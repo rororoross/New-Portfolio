@@ -217,6 +217,7 @@ if (document.body.classList.contains('bluemix')) {
 		makeOnboard.src = "../img/bluemix-onboard.jpg";
 		makeOnboard.className = "web__project-view";
 		document.body.appendChild(makeOnboard);
+		var getOnboard = document.querySelector(".web__project-view");
 
 		var makePreviousButton = document.createElement("button");
 		makePreviousButton.className = "view__button";
@@ -225,7 +226,21 @@ if (document.body.classList.contains('bluemix')) {
 		var makeNextButton = document.createElement("button");
 		makeNextButton.className = "button__next";
 		document.body.appendChild(makeNextButton);
+
+		var makeClose = document.createElement("button");
+		makeClose.className = "close__icon";
+		document.body.appendChild(makeClose);
+
+		var getClose = document.querySelector(".close__icon");
+
+			getClose.addEventListener("click", bluemixShrink);
+
+				function bluemixShrink() {
+					getOnboard.classList.add("web__view-shrink");
+				}
 	}
+
+
 }
 
 // text swapping for homepage

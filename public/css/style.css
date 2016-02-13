@@ -1782,6 +1782,34 @@ footer {
     top: 8vh;
     box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); } }
 
+.web__view-shrink {
+  -webkit-animation: 400ms view-piece-shrink;
+          animation: 400ms view-piece-shrink;
+  -webkit-animation-fill-mode: none;
+          animation-fill-mode: none;
+  -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245);
+          animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245); }
+
+@-webkit-keyframes view-piece-shrink {
+  0% {
+    width: 77vw;
+    position: fixed;
+    top: 8vh;
+    box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); }
+  100% {
+    width: 360px;
+    box-shadow: none; } }
+
+@keyframes view-piece-shrink {
+  0% {
+    width: 77vw;
+    position: fixed;
+    top: 8vh;
+    box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); }
+  100% {
+    width: 360px;
+    box-shadow: none; } }
+
 .view__button {
   background-image: url("../img/arrow.svg");
   background-color: transparent;
@@ -1816,14 +1844,22 @@ footer {
   height: 80px;
   position: fixed;
   top: 45vh;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   cursor: pointer;
   outline: none;
   left: auto;
   right: 3vw;
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg); }
+  -webkit-transform: translateX(500px) rotate(90deg);
+          transform: translateX(500px) rotate(90deg);
+  -webkit-animation: 340ms btn-slide-next;
+          animation: 340ms btn-slide-next;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.045);
+          animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.045);
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms; }
 
 @-webkit-keyframes btn-slide {
   0% {
@@ -1840,6 +1876,44 @@ footer {
   100% {
     -webkit-transform: translateX(0px) rotate(-90deg);
             transform: translateX(0px) rotate(-90deg); } }
+
+@-webkit-keyframes btn-slide-next {
+  0% {
+    -webkit-transform: translateX(500px) rotate(90deg);
+            transform: translateX(500px) rotate(90deg); }
+  100% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg); } }
+
+@keyframes btn-slide-next {
+  0% {
+    -webkit-transform: translateX(500px) rotate(90deg);
+            transform: translateX(500px) rotate(90deg); }
+  100% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg); } }
+
+.close__icon {
+  background-image: url("../img/icon-close.svg");
+  background-color: transparent;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border: none;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 3vh;
+  right: 3vw;
+  outline: none;
+  cursor: pointer; }
+
+@keyframes btn-slide-next {
+  0% {
+    -webkit-transform: translateX(500px) rotate(90deg);
+            transform: translateX(500px) rotate(90deg); }
+  100% {
+    -webkit-transform: translateX(0px) rotate(90deg);
+            transform: translateX(0px) rotate(90deg); } }
 
 .clearfix {
   clear: both; }
