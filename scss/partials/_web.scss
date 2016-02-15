@@ -39,8 +39,8 @@
 }
 
 .web__piece-bubble {
-	animation: bubble 900ms;
-	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
+	animation: bubble 600ms;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.115);
 	animation-fill-mode: forwards;
 	animation-delay: 300ms;
 	transform: scale(0);
@@ -55,8 +55,9 @@
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
+	transform: translateY(-80px);
 }
 
 @keyframes monitor-move {
