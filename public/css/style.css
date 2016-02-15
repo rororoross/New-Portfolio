@@ -1771,7 +1771,7 @@ footer {
   100% {
     width: 77vw;
     position: fixed;
-    top: 8vh;
+    top: 12vh;
     box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); } }
 
 @keyframes view-piece {
@@ -1781,7 +1781,7 @@ footer {
   100% {
     width: 77vw;
     position: fixed;
-    top: 8vh;
+    top: 12vh;
     box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); } }
 
 .web__view-shrink {

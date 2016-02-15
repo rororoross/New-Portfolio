@@ -232,11 +232,18 @@ if (document.body.classList.contains('bluemix')) {
 		document.body.appendChild(makeClose);
 
 		var getClose = document.querySelector(".close__icon");
+		var getPreviousButton = document.querySelector(".view__button");
+		var getNextButton = document.querySelector(".button__next");
 
 			getClose.addEventListener("click", bluemixShrink);
 
 				function bluemixShrink() {
+					getClose.style.display = "none";
 					getOnboard.classList.add("web__view-shrink");
+					getPreviousButton.style.display = "none";
+					getNextButton.style.display = "none";
+					getHeader.className = ("");
+					getWorkSelect.className = ("work__container work__container-animate");
 				}
 	}
 
