@@ -1787,30 +1787,38 @@ footer {
 .web__view-shrink {
   -webkit-animation: 400ms view-piece-shrink;
           animation: 400ms view-piece-shrink;
-  -webkit-animation-fill-mode: none;
-          animation-fill-mode: none;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
   -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245);
           animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245); }
 
 @-webkit-keyframes view-piece-shrink {
   0% {
+    visibility: visible;
     width: 77vw;
     position: fixed;
     top: 8vh;
     box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); }
-  100% {
+  99% {
+    visibility: visible;
     width: 360px;
-    box-shadow: none; } }
+    box-shadow: none; }
+  100% {
+    visibility: hidden; } }
 
 @keyframes view-piece-shrink {
   0% {
+    visibility: visible;
     width: 77vw;
     position: fixed;
     top: 8vh;
     box-shadow: 0px 0px 53px 9px rgba(0, 0, 0, 0.75); }
-  100% {
+  99% {
+    visibility: visible;
     width: 360px;
-    box-shadow: none; } }
+    box-shadow: none; }
+  100% {
+    visibility: hidden; } }
 
 .view__button {
   background-image: url("../img/arrow.svg");

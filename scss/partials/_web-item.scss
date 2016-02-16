@@ -110,13 +110,14 @@
 
 .web__view-shrink {
 	animation: 400ms view-piece-shrink;
-	animation-fill-mode: none;
+	animation-fill-mode: forwards;
 	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
 }
 
 @keyframes view-piece-shrink {
-	0% { width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75); }
-	100% { width: 360px; box-shadow: none; }
+	0% { visibility: visible; width: 77vw; position: fixed; top: 8vh; box-shadow: 0px 0px 53px 9px rgba(0,0,0,0.75); }
+	99% { visibility: visible; width: 360px; box-shadow: none; }
+	100% { visibility: hidden; }
 }
 
 .view__button {
