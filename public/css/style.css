@@ -1741,12 +1741,14 @@ footer {
 .blur {
   -webkit-filter: blur(5px);
           filter: blur(5px);
-  transition: -webkit-filter 100ms, filter 100ms; }
+  transition: -webkit-filter 100ms, filter 100ms;
+  pointer-events: none; }
 
 .blur-extra {
   -webkit-filter: blur(25px);
           filter: blur(25px);
-  transition: -webkit-filter 100ms, filter 100ms; }
+  transition: -webkit-filter 100ms, filter 100ms;
+  pointer-events: none; }
 
 .web__project-view {
   position: absolute;
@@ -1915,7 +1917,39 @@ footer {
   top: 3vh;
   right: 3vw;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-animation: 240ms close-appear;
+          animation: 240ms close-appear;
+  -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.045);
+          animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.045);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
+@-webkit-keyframes close-appear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes close-appear {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0); }
+  70% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
 
 @keyframes btn-slide-next {
   0% {

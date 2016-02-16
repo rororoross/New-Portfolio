@@ -82,11 +82,13 @@
 .blur {
 	filter: blur(5px);
 	transition: filter 100ms;
+	pointer-events: none;
 }
 
 .blur-extra {
 	filter: blur(25px);
 	transition: filter 100ms;
+	pointer-events: none;
 }
 
 .web__project-view {
@@ -185,6 +187,17 @@
 	right: 3vw;
 	outline: none;
 	cursor: pointer;
+	animation: 240ms close-appear;
+	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.045);
+	animation-fill-mode: forwards;
+	animation-delay: 200ms;
+	transform: scale(0);
+}
+
+@keyframes close-appear {
+	0% { transform: scale(0); }
+	70% { transform: scale(1.1); }
+	100% { transform: scale(1); }
 }
 
 @keyframes btn-slide-next {

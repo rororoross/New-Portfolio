@@ -219,14 +219,17 @@ if (document.body.classList.contains('bluemix')) {
 		document.body.appendChild(makeOnboard);
 		var getOnboard = document.querySelector(".web__project-view");
 
+		// make previous arrow button for expanded view
 		var makePreviousButton = document.createElement("button");
 		makePreviousButton.className = "view__button";
 		document.body.appendChild(makePreviousButton);
 
+		// make next arrow button for expanded view
 		var makeNextButton = document.createElement("button");
 		makeNextButton.className = "button__next";
 		document.body.appendChild(makeNextButton);
 
+		// make close button for expanded view
 		var makeClose = document.createElement("button");
 		makeClose.className = "close__icon";
 		document.body.appendChild(makeClose);
@@ -235,16 +238,18 @@ if (document.body.classList.contains('bluemix')) {
 		var getPreviousButton = document.querySelector(".view__button");
 		var getNextButton = document.querySelector(".button__next");
 
-			getClose.addEventListener("click", bluemixShrink);
+		// event for close button
+		getClose.addEventListener("click", bluemixShrink);
 
-				function bluemixShrink() {
-					getClose.style.display = "none";
-					getOnboard.classList.add("web__view-shrink");
-					getPreviousButton.style.display = "none";
-					getNextButton.style.display = "none";
-					getHeader.className = ("");
-					getWorkSelect.className = ("work__container work__container-animate");
-				}
+			function bluemixShrink() {
+				console.log("butt stuff");
+				getClose.style.display = "none";
+				getOnboard.classList.add("web__view-shrink");
+				getPreviousButton.style.display = "none";
+				getNextButton.style.display = "none";
+				getHeader.className = ("");
+				getWorkSelect.className = ("work__container work__container-animate");
+			}
 	}
 
 
