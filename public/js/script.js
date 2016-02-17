@@ -251,8 +251,6 @@ if (document.body.classList.contains('bluemix')) {
 				getWorkSelect.className = ("work__container work__container-animate");
 			}
 	}
-
-
 }
 
 // text swapping for homepage

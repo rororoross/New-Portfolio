@@ -2,6 +2,18 @@
 	padding-top: 0;
 }
 
+.phone-prototype {
+	transform: translateY(-200px);
+}
+
+.lorem {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2rem;
+	line-height: 1.4;
+}
+
 .phone-background {
 	background-image: url(../img/phone-bg-3.png);
 	width: 336px;
@@ -465,10 +477,10 @@
 }
 
 @media screen and (max-width: 1500px) {
-	.phone-prototype {
-		width: 50%;
-		float: left;
-	}
+	// .phone-prototype {
+	// 	width: 50%;
+	// 	float: left;
+	// }
 
 	.phone-background {
 		margin: 0 auto;
@@ -481,9 +493,9 @@
 }
 
 @media screen and (max-width: 1060px) {
-	.phone-prototype {
-		width: 100%;
-	}
+	// .phone-prototype {
+	// 	width: 100%;
+	// }
 }
 
 @media screen and (max-width: 400px) {
@@ -557,6 +569,7 @@
 	margin-top: 30px;
 	width: 700px;
 	position: relative;
+	transform: translateY(-130px);
 }
 
 .app-specs {
@@ -575,7 +588,7 @@
 
 .app-info-p {
 	width: 66%;
-	float: right;
+	float: left;
 	padding-right: 7rem;
 	padding-top: 2rem;
 	line-height: 1.5rem;
