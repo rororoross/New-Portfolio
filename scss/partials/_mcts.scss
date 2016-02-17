@@ -3,7 +3,15 @@
 }
 
 .phone-prototype {
-	transform: translateY(-200px);
+	transform: translateY(4000px);
+	animation: 500ms mobile-slide;
+	animation-fill-mode: forwards;
+	animation-delay: 120ms;
+}
+
+@keyframes mobile-slide {
+	0% { transform: translateY(4000px); }
+	100% { transform: translateY(-200px); }
 }
 
 .lorem {
