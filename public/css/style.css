@@ -247,7 +247,7 @@ nav {
   .nav__list-item {
     font-size: 1rem;
     width: auto;
-    padding: 0 0.4rem 0 0.4rem; }
+    padding: 0 .4rem 0 .4rem; }
   .nav__icon {
     display: none; }
   .pie {
@@ -1076,7 +1076,8 @@ footer {
   left: 0%;
   right: 0;
   background-position: center bottom;
-  z-index: 15; }
+  z-index: 15;
+  cursor: url(../img/cursor.png) 39 39, auto; }
 
 #phone-screen {
   width: 292px;
@@ -1184,7 +1185,6 @@ footer {
   bottom: 206px;
   right: 18px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  cursor: pointer;
   z-index: 10;
   transition: all 400ms;
   transition-timing-function: ease-in-out; }
@@ -1198,7 +1198,6 @@ footer {
   bottom: 412px;
   right: 18px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  cursor: pointer;
   z-index: 10;
   transition: all 400ms;
   transition-timing-function: ease-in-out; }
@@ -1215,9 +1214,8 @@ footer {
   .main-nav ul {
     width: 100%; }
     .main-nav ul li {
-      width: 25%;
-      display: inline-block;
-      cursor: pointer; }
+      width: 23.9%;
+      display: inline-block; }
 
 .nav-p {
   color: #868686;
@@ -1260,7 +1258,6 @@ footer {
   top: 58px;
   left: 16px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  cursor: pointer;
   z-index: 10;
   transition: all 300ms;
   transition-timing-function: ease-in-out; }
@@ -1321,8 +1318,7 @@ footer {
   border-radius: 4px;
   margin: 0 auto;
   margin-top: 6px;
-  width: 95%;
-  cursor: pointer; }
+  width: 95%; }
 
 .mcts-favorites-screen .route-row:before {
   border-bottom: none; }
