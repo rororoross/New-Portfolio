@@ -3,7 +3,7 @@
   <head><% include partials/head.ejs %></head>
   <body class="blue-bg">
     <% include partials/layout/header.ejs %>
-    <div class="work__container work__container-animate">
+    <div class="work__container work__container-still">
       <div class="mac-container piece__still">
         <a href="/web"><img src="img/mac.png" alt="" class="mac mac__web"></a>
       </div>
@@ -26,14 +26,8 @@
     <div id="phone-screen">
       <div class="mcts-home-screen">
         <div class="bus-subheader">
-          <svg xmlns="http://www.w3.org/2000/svg" id="nav-icon-one" viewBox="0 0 48 48">
-            <path d="M0 0h48v48h-48z" fill="none"/>
-            <path d="M24 4l-15 36.59 1.41 1.41 13.59-6 13.59 6 1.41-1.41z" fill="#34b262"/>
-          </svg>
-          <img src="img/mcts-icon-swap.svg" alt="" id="swapvert">
           <div id="location-container">
-            <div id="my-location"><p>My location</p></div>
-            <div id="destination"><p>Choose destination...</p></div>
+            <div id="destination"><p>Where are you headed?</p></div>
           </div>
         </div>
         <div id="map">
@@ -90,74 +84,7 @@
       </div> <!-- End of mcts-home-screen-->
 
     <div class="mcts-favorites-screen">
-    <div class="favorites-header">
-    <p>Favorites</p>
-    </div>
-
-    <div class="favorite-button fav-add">
-    <img src="img/ic_add_48px.svg" alt="" id="addfavorite">
-    </div>
-
-    <div class="fav-routes-container">
-    <div class="route-row-container">
-    <div class="route-row">
-    <div class="route-number"><p>10</p></div>
-    <p class="route-name fav-name">Humboldt & Vienna</p>
-    <p class="route-stop">Arrives in 8 minutes</p>
-    </div>
-    </div>
-    <div class="route-arrival">
-    <p class="arrival-stop">Santa Monica & Silver Spring</p>
-    <p class="arrival-time">Approaching</p>
-    <p class="arrival-stop">Santa Monica & Birch</p>
-    <p class="arrival-time">Less than 2 min</p>
-    <p class="arrival-stop">Santa Monica & Lexington</p>
-    <p class="arrival-time">Arriving in 5 minutes</p>
-    <img class="arrival-place-icon" src="img/ic_place_48px.svg" alt="">
-    </div>
-    <div class="route-row">
-    <div class="route-number"><p>30</p></div>
-    <p class="route-name fav-name">Van Buren & Kilbourn</p>
-    <p class="route-stop">Approaching now</p>
-    </div>
-    <div class="route-arrival">
-    <p class="arrival-stop">Santa Monica & Silver Spring</p>
-    <p class="arrival-time">Approaching</p>
-    <p class="arrival-stop">Santa Monica & Birch</p>
-    <p class="arrival-time">Less than 2 min</p>
-    <p class="arrival-stop">Santa Monica & Lexington</p>
-    <p class="arrival-time">Arriving in 5 minutes</p>
-    <img class="arrival-place-icon" src="img/ic_place_48px.svg" alt="">
-    </div>
-    <div class="route-row">
-    <div class="route-number"><p>15</p></div>
-    <p class="route-name fav-name">Milwaukee & Kilbourn</p>
-    <p class="route-stop">Arrives in 15 minutes</p>
-    </div>
-    <div class="route-arrival">
-    <p class="arrival-stop">Santa Monica & Silver Spring</p>
-    <p class="arrival-time">Approaching</p>
-    <p class="arrival-stop">Santa Monica & Birch</p>
-    <p class="arrival-time">Less than 2 min</p>
-    <p class="arrival-stop">Santa Monica & Lexington</p>
-    <p class="arrival-time">Arriving in 5 minutes</p>
-    <img class="arrival-place-icon" src="img/ic_place_48px.svg" alt="">
-    </div>
-    <div class="route-row">
-    <div class="route-number"><p>14</p></div>
-    <p class="route-name fav-name">Wisconsin & Cass</p>
-    <p class="route-stop">Arrives in 2 minutes</p>
-    </div>
-    <div class="route-arrival">
-    <p class="arrival-stop">Santa Monica & Silver Spring</p>
-    <p class="arrival-time">Approaching</p>
-    <p class="arrival-stop">Santa Monica & Birch</p>
-    <p class="arrival-time">Less than 2 min</p>
-    <p class="arrival-stop">Santa Monica & Lexington</p>
-    <p class="arrival-time">Arriving in 5 minutes</p>
-    <img class="arrival-place-icon" src="img/ic_place_48px.svg" alt="">
-    </div>
-    </div>
+    
     </div> <!--End of favorites-screen-->
 
     <div class="mcts-routes-screen">
