@@ -369,6 +369,10 @@ footer {
   -webkit-transform: translateY(200px);
           transform: translateY(200px); }
 
+.work__container-still {
+  -webkit-transform: scale(0.22) translateY(-500px);
+          transform: scale(0.22) translateY(-500px); }
+
 .mac-container, .iphone-container, .animation-container {
   -webkit-animation: bubble 900ms;
           animation: bubble 900ms;
@@ -1106,14 +1110,14 @@ footer {
 
 .bus-subheader {
   background-color: #fff;
-  width: 94%;
-  height: 68px;
+  width: 90%;
+  height: 32px;
   z-index: 1;
   position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 8px;
+  top: 10px;
   color: black;
   font-size: 12px;
   border: 1px solid #cdcdcd;
@@ -1134,12 +1138,13 @@ footer {
     padding-top: 10px; }
 
 #destination {
-  width: 75%;
   margin: 0 auto;
   height: 34px; }
   #destination p {
     padding-top: 10px;
-    color: #c4c2c2; }
+    padding-left: 16px;
+    color: #bbb;
+    font-size: 13px; }
 
 #map {
   width: 100%;
@@ -1235,47 +1240,6 @@ footer {
 .icon-small {
   width: 22px;
   padding-bottom: 2px; }
-
-.mcts-favorites-screen {
-  overflow: hidden;
-  display: none; }
-
-.favorites-header {
-  background-color: #34b262;
-  width: 100%;
-  height: 82px; }
-
-.favorites-header p {
-  font-size: 1.3rem;
-  padding: 42px 0 0 82px; }
-
-.favorite-button {
-  width: 48px;
-  height: 48px;
-  background-color: #34b262;
-  border-radius: 50%;
-  position: absolute;
-  top: 58px;
-  left: 16px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  z-index: 10;
-  transition: all 300ms;
-  transition-timing-function: ease-in-out; }
-
-.fav-add {
-  background-color: #0243df;
-  width: 42px;
-  height: 42px;
-  top: 60px; }
-
-#addfavorite {
-  width: 24px;
-  margin: 0 auto;
-  padding-top: 9px;
-  display: block; }
-
-.fav-routes-container {
-  margin-top: 40px; }
 
 .mcts-routes-screen {
   color: black; }

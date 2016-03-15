@@ -173,9 +173,10 @@ $(function() {
 	$('.right-bar').addClass('right-bar-resize');
 	$('.ball').addClass('ball-resize');
 	$('body').addClass('scroll-vis');
-
 	}
 });
+
+
 
 // adding active states to header links
 if (document.body.classList.contains('work')) {
@@ -183,6 +184,25 @@ if (document.body.classList.contains('work')) {
 	var getWorkLink = document.querySelector('.header__link-work');
 	getHomeLink.className = "";
 	getWorkLink.classList.add("active__home");
+
+	var getWorkContainers = document.querySelectorAll(".work_piece");
+	var i;
+	for (i = 0; i < getWorkContainers.length; i++) {
+		getWorkContainers[i].addEventListener("click", addAnimation);
+	}
+
+		function addAnimation() {
+			console.log('whaaa');
+			var getWork = document.querySelector(".work__container");
+			getWork.classList.add("work__container-animate");
+			var getHeadings = document.getElementsByTagName("h3");
+			var x;
+			for (x = 0; x < getHeadings.length; x++) {
+				getHeadings[x].style.display = "none";
+			}
+		}
+
+
 }
 
 
@@ -191,6 +211,10 @@ if (document.body.classList.contains('web-work')) {
 	var getBluemix = document.querySelector(".project__bluemix");
 	var getBlrt = document.querySelector(".project__blrt");
 	var getNFL = document.querySelector(".project__nfl");
+
+	setTimeout(function() {
+		console.log('ayy lmao');
+	}, 1400);
 
 	getBluemix.addEventListener("click", bluemixFunc);
 
