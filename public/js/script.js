@@ -255,9 +255,9 @@ if (document.body.classList.contains('bluemix')) {
 
 // text swapping for homepage
 // var wordSwap = [
-// 	"developing", 
-// 	"designing", 
-// 	"rapid prototyping", 
+// 	"developing",
+// 	"designing",
+// 	"rapid prototyping",
 // 	"creating"
 // ], i = -1;
 
