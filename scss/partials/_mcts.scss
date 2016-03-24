@@ -112,7 +112,7 @@
 
 #map {
 	width: 100%;
-	height: 350px;
+	height: 390px;
 	z-index: 5;
 	background-image: url(../img/map.jpg);
 	background-size: cover;
@@ -125,7 +125,7 @@
 	background-color: #fff;
 	box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.15);
 	position: absolute;
-	bottom: -136px;
+	bottom: -216px;
 	overflow: hidden;
 	transition: all 400ms;
 	transition-timing-function: ease-in-out;
@@ -157,7 +157,7 @@
 	background-color: $green;
 	border-radius: 24px;
 	position: absolute;
-	bottom: 206px;
+	bottom: 126px;
 	right: 18px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 	z-index: 10;
@@ -224,6 +224,93 @@
 
 // Favorites Screen
 
+.mcts-header {
+	background: $green;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.mcts-heading {
+	font-size: 1.2rem;
+}
+
+.header-icon {
+	width: 28px;
+	padding: 0 8px 0 8px;
+}
+
+.icon-gear {
+	width: 24px;
+}
+
+.icon-walk {
+	width: 16px;
+}
+
+.mcts-favorites-row {
+	height: 60px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+.route-number-favorites {
+	width: 25%;
+	height: 100%;
+	display: flex;
+}
+
+.route-number-lg {
+	color: $dark-blue;
+	font-weight: 600;
+	font-size: 2.4rem;
+	text-align: center;
+	align-self: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.route-name-favorites {
+	width: 75%;
+	height: 70%;
+}
+
+.route-street {
+	font-size: 1rem;
+	font-weight: 800;
+	color: #1c1c1c;
+	text-align: left;
+	display: inline-block;
+	margin: 0;
+	padding: 12px 0 0 0;
+}
+
+.route-street-eta {
+	color: #999999;
+	font-size: 0.6rem;
+	font-weight: 600;
+	padding-left: 6px;
+}
+
+.route-eta {
+	height: 30%;
+	
+}
+
+.street-start {
+	color: #1c1c1c;
+	font-weight: 700;
+	font-size: .8rem;
+}
+
+.stop-name-favorites {
+	color: #666666;
+	font-weight: 500;
+	font-size: .7rem;
+}
 
 // Routes Screen
 .mcts-routes-screen {
