@@ -192,7 +192,6 @@ if (document.body.classList.contains('work')) {
 	}
 
 		function addAnimation() {
-			console.log('whaaa');
 			var getWork = document.querySelector(".work__container");
 			getWork.classList.add("work__container-animate");
 			var getHeadings = document.getElementsByTagName("h3");
@@ -201,8 +200,6 @@ if (document.body.classList.contains('work')) {
 				getHeadings[x].style.display = "none";
 			}
 		}
-
-
 }
 
 

@@ -22,6 +22,10 @@ router.get('/about-me', function(req, res, next) {
 	res.render('about-me');
 });
 
+router.get('/get-in-touch', function(req, res, next) {
+	res.render('get-in-touch');
+});
+
 router.get('/bluemix', function(req, res, next) {
 	setTimeout((function() {res.render('bluemix')}), 330);
 });

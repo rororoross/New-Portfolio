@@ -247,7 +247,7 @@ nav {
   .nav__list-item {
     font-size: 1rem;
     width: auto;
-    padding: 0 0.4rem 0 0.4rem; }
+    padding: 0 .4rem 0 .4rem; }
   .nav__icon {
     display: none; }
   .pie {
@@ -1712,6 +1712,32 @@ footer {
   display: block;
   width: 90px;
   padding-bottom: .8rem; }
+
+.get-in-touch {
+  background: #00B4A0; }
+
+.get-in-touch-container {
+  padding-top: 160px; }
+
+.get-in-touch-heading {
+  font-size: 2rem; }
+
+.get-in-touch-icons-container {
+  max-width: 440px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  margin: 0 auto;
+  padding-top: 38px; }
+
+.get-in-touch-icon {
+  width: 42px; }
 
 .web__items .work__container-animate {
   -webkit-transform: scale(0.22) translateY(-500px);
