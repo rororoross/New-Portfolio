@@ -100,6 +100,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
   color: #ffffff;
   overflow: auto;
   overflow-x: hidden;
@@ -1667,57 +1668,58 @@ footer {
   margin-bottom: 2rem;
   transition: all 300ms; }
 
-.about-me main {
-  color: #fff; }
+.about-me {
+  background: #9855D4; }
+  .about-me .nav__list {
+    background: #9855D4; }
 
-.about-me__header {
-  height: 360px; }
-  .about-me__header .about-me__nav {
-    display: block;
-    padding-top: 70px;
-    text-align: center; }
-  .about-me__header .about-me__nav-item {
-    display: inline;
-    font-size: 2.2rem;
-    font-weight: 600;
-    padding: 0 1.2rem 0 1.2rem;
-    opacity: 0.5; }
-  .about-me__header .about-me__nav-item-active {
-    opacity: 1; }
+.about-me::-webkit-scrollbar {
+  display: none; }
 
-.article__content {
-  max-width: 700px;
-  margin: 0 auto;
-  line-height: 1.6; }
+.about-me-container {
+  padding-top: 60px;
+  padding-left: 5%;
+  padding-bottom: 80px;
+  max-width: 90%; }
+  .about-me-container h1 {
+    font-size: 2.4rem;
+    text-align: left;
+    padding-bottom: 6px; }
+  .about-me-container p {
+    line-height: 1.4; }
+  .about-me-container a {
+    text-decoration: underline; }
+  .about-me-container a:hover {
+    color: white; }
+  .about-me-container .section-intro {
+    padding-bottom: 24px; }
+  .about-me-container .where-section, .about-me-container .how-section {
+    padding-top: 80px; }
+  .about-me-container ul {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 16px;
+    line-height: 1.4; }
 
-.how__nav {
-  display: block;
-  width: 1080px;
-  margin: 0 auto;
-  padding-top: 60px; }
+@media screen and (min-width: 500px) {
+  .about-me-container {
+    padding-top: 180px;
+    padding-left: 15vw;
+    padding-bottom: 200px;
+    max-width: 600px; }
+  .where-section, .how-section {
+    padding-top: 100px; } }
 
-.how__nav-item {
-  display: inline;
-  text-align: center;
-  float: left;
-  padding: 0 3.5rem 0 3.5rem;
-  font-weight: 600;
-  font-size: 1.4rem;
-  opacity: 0.5; }
-
-.how__nav-item-active {
-  opacity: 1; }
-
-.how__nav-item-icon {
-  display: block;
-  width: 90px;
-  padding-bottom: .8rem; }
+@media screen and (min-width: 640px) {
+  .about-me-container ul {
+    width: auto; } }
 
 .get-in-touch {
   background: #00B4A0; }
 
 .get-in-touch-container {
-  padding-top: 160px; }
+  padding-top: 80px; }
 
 .get-in-touch-heading {
   font-size: 2rem; }
@@ -1738,6 +1740,10 @@ footer {
 
 .get-in-touch-icon {
   width: 42px; }
+
+@media screen and (min-width: 640px) {
+  .get-in-touch-container {
+    padding-top: 160px; } }
 
 .web__items .work__container-animate {
   -webkit-transform: scale(0.22) translateY(-500px);

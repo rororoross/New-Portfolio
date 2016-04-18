@@ -1,73 +1,71 @@
 .about-me {
-	// background: $light-blue;
+	background: #9855D4;
 
-	main {
-			color: #fff;
+	.nav__list {
+		background: #9855D4;
 	}
 }
 
-.about-me__header {
-	// background-image: url('../img/about-me-how.jpg');
-	height: 360px;
-
-	.about-me__nav {
-		display: block;
-		padding-top: 70px;
-		text-align: center;
-	}
-
-	.about-me__nav-item {
-		display: inline;
-		font-size: 2.2rem;
-		font-weight: 600;
-		padding: 0 1.2rem 0 1.2rem;
-		opacity: 0.5;
-	}
-
-	.about-me__nav-item-active {
-		opacity: 1;
-	}
+.about-me::-webkit-scrollbar {
+	display: none;
 }
 
-.article__content {
-	max-width: 700px;
-	margin: 0 auto;
-	line-height: 1.6;
-}
-
-.about-me__how-nav a {
-	
-}
-
-.how__nav {
-	display: block;
-	width: 1080px;
-	margin: 0 auto;
+.about-me-container {
 	padding-top: 60px;
+	padding-left: 5%;
+	padding-bottom: 80px;
+	max-width: 90%;
+
+	h1 {
+		font-size: 2.4rem;
+		text-align: left;
+		padding-bottom: 6px;
+	}
+
+	p {
+		line-height: 1.4;
+	}
+
+	a {
+		text-decoration: underline;
+	}
+
+	a:hover {
+		color: white;
+	}
+
+	.section-intro {
+		padding-bottom: 24px;
+	}
+
+	.where-section, .how-section {
+		padding-top: 80px;
+	}
+
+	ul {
+		width: 100%;
+		display: inline-block;
+		vertical-align: top;
+		padding-left: 16px;
+		line-height: 1.4;
+	}
 }
 
-.how__nav-item {
-	display: inline;
-	text-align: center;
-	float: left;
-	padding: 0 3.5rem 0 3.5rem;
-	font-weight: 600;
-	font-size: 1.4rem;
-	opacity: 0.5;
+@media screen and (min-width: 500px ) {
+	.about-me-container {
+		padding-top: 180px;
+		padding-left: 15vw;
+		padding-bottom: 200px;
+		max-width: 600px;
+	}
+
+	.where-section, .how-section {
+		padding-top: 100px;
+	}
 }
 
-.how__nav-item-active {
-	opacity: 1;
+@media screen and (min-width: 640px) {
+	.about-me-container ul {
+		width: auto;
+	}
 }
-
-.how__nav-item-icon {
-	display: block;
-	width: 90px;
-	padding-bottom: .8rem;
-}
-
-
-
-
-
-

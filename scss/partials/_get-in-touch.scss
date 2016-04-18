@@ -3,7 +3,7 @@
 }
 
 .get-in-touch-container {
-	padding-top: 160px;
+	padding-top: 80px;
 }
 
 .get-in-touch-heading {
@@ -21,4 +21,10 @@
 
 .get-in-touch-icon {
 	width: 42px;
+}
+
+@media screen and (min-width: 640px) {
+	.get-in-touch-container {
+		padding-top: 160px;
+	}
 }
