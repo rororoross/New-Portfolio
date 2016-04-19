@@ -26,6 +26,10 @@ router.get('/get-in-touch', function(req, res, next) {
 	res.render('get-in-touch');
 });
 
+router.get('/animations', function(req, res, next) {
+	res.render('animations');
+});
+
 router.get('/bluemix', function(req, res, next) {
 	setTimeout((function() {res.render('bluemix')}), 330);
 });

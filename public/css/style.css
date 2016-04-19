@@ -1745,6 +1745,16 @@ footer {
   .get-in-touch-container {
     padding-top: 160px; } }
 
+.animations {
+  background: #5baafa; }
+
+.animations-container {
+  padding-top: 140px; }
+  .animations-container img {
+    width: 140px; }
+  .animations-container .animation-desktop {
+    width: 300px; }
+
 .web__items .work__container-animate {
   -webkit-transform: scale(0.22) translateY(-500px);
           transform: scale(0.22) translateY(-500px);
