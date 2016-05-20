@@ -1269,7 +1269,7 @@ footer {
   width: 16px; }
 
 .mcts-favorites-row {
-  height: 60px;
+  height: 64px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1328,12 +1328,27 @@ footer {
 .street-start {
   color: #1c1c1c;
   font-weight: 700;
-  font-size: .8rem; }
+  font-size: .7rem;
+  display: inline; }
+
+.street-start-time {
+  color: #666666;
+  font-size: .6rem;
+  font-weight: 700;
+  padding-left: 4px; }
 
 .stop-name-favorites {
   color: #666666;
   font-weight: 500;
-  font-size: .7rem; }
+  font-size: .7rem;
+  padding-top: 1px; }
+
+.bus-arrival {
+  color: #4d4d4d;
+  font-size: .7rem;
+  font-weight: 400;
+  display: inline;
+  padding-left: 18px; }
 
 .mcts-routes-screen {
   color: black; }

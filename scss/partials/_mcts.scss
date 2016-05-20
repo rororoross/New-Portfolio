@@ -98,7 +98,7 @@
 }
 
 #destination {
-	
+
 	margin: 0 auto;
 	height: 34px;
 
@@ -144,7 +144,7 @@
 	font-size: 14px;
 	font-weight: 600;
 	border-bottom: 1px solid #999999;
-	
+
 	p {
 	padding-left: 54px;
 	padding-top: 14px;
@@ -250,7 +250,7 @@
 }
 
 .mcts-favorites-row {
-	height: 60px;
+	height: 64px;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -297,19 +297,36 @@
 
 .route-eta {
 	height: 30%;
-	
+
 }
 
 .street-start {
 	color: #1c1c1c;
 	font-weight: 700;
-	font-size: .8rem;
+	font-size: .7rem;
+	display: inline;
+}
+
+.street-start-time {
+	color: #666666;
+	font-size: .6rem;
+	font-weight: 700;
+	padding-left: 4px;
 }
 
 .stop-name-favorites {
 	color: #666666;
 	font-weight: 500;
 	font-size: .7rem;
+	padding-top: 1px;
+}
+
+.bus-arrival {
+	color: #4d4d4d;
+	font-size: .7rem;
+	font-weight: 400;
+	display: inline;
+	padding-left: 18px;
 }
 
 // Routes Screen
@@ -349,7 +366,7 @@
 	float: left;
 	margin-left: 18px;
 	margin-top: 9px;
-	
+
 	p {
 		padding-top: 2px;
 		font-weight: 900;
