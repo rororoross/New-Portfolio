@@ -1242,9 +1242,12 @@ footer {
   width: 22px;
   padding-bottom: 2px; }
 
+.mcts-container {
+  padding-top: 14px; }
+
 .mcts-header {
   background: #34b262;
-  height: 60px;
+  height: 50px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1256,7 +1259,8 @@ footer {
           justify-content: space-between; }
 
 .mcts-heading {
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  color: white; }
 
 .header-icon {
   width: 28px;
@@ -1266,7 +1270,7 @@ footer {
   width: 24px; }
 
 .icon-walk {
-  width: 16px; }
+  width: 12px; }
 
 .mcts-favorites-row {
   height: 64px;
@@ -1341,7 +1345,7 @@ footer {
   color: #666666;
   font-weight: 500;
   font-size: .7rem;
-  padding-top: 1px; }
+  padding-top: 2px; }
 
 .bus-arrival {
   color: #4d4d4d;
@@ -1611,6 +1615,36 @@ footer {
   h5 {
     font-size: 0.9rem; } }
 
+.select-route {
+  color: #0243df;
+  text-align: center;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 14px; }
+
+.routes-list {
+  margin-top: 14px; }
+
+.route-list-name {
+  padding: 12px; }
+
+.route-list-name:nth-child(even) {
+  background: #f3f3f3; }
+
+.route-list-number {
+  color: #0243df;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  width: 20px;
+  margin-left: 7px; }
+
+.route-list-street {
+  display: inline;
+  font-size: 13px;
+  font-weight: 600;
+  margin-left: 14px; }
+
 /* App Details */
 .app-info {
   float: right;
@@ -1682,6 +1716,9 @@ footer {
   margin-top: 8rem;
   margin-bottom: 2rem;
   transition: all 300ms; }
+
+.hidden {
+  visibility: hidden; }
 
 .about-me {
   background: #9855D4; }
