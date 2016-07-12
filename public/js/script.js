@@ -179,7 +179,7 @@ $(function() {
 // See Routes Direction
 var getRouteList = document.querySelectorAll(".route-list-name"), i;
 for (i = 0; i < getRouteList.length; ++i) {
-  getRouteList[i].style.backgroundColor = "green";
+  // getRouteList[i].style.backgroundColor = "green";
 }
 // getRouteList.addEventListener("click", routeDetails);
 // function routeDetails() {
@@ -213,9 +213,9 @@ if (document.body.classList.contains('work')) {
 
 if (document.body.classList.contains('web-work')) {
 // web select view animations
-	var getBluemix = document.querySelector(".project__bluemix");
-	var getBlrt = document.querySelector(".project__blrt");
-	var getNFL = document.querySelector(".project__nfl");
+	var getBluemix = document.querySelector(".project__two");
+	var getBlrt = document.querySelector(".project__one");
+	var getNFL = document.querySelector(".project__three");
 
 	setTimeout(function() {
 		console.log('ayy lmao');

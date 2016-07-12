@@ -375,22 +375,26 @@ footer {
           transform: scale(0.22) translateY(-500px); }
 
 .mac-container, .iphone-container, .animation-container {
-  -webkit-animation: bubble 900ms;
-          animation: bubble 900ms;
-  -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245);
-          animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.245);
+  -webkit-animation: bubble 1000ms;
+          animation: bubble 1000ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform: scale(0);
-          transform: scale(0); }
+  -webkit-transform: translateY(1000px);
+          transform: translateY(1000px); }
 
 .mac-container {
-  -webkit-animation-delay: 260ms;
-          animation-delay: 260ms; }
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms; }
 
-.animation-container {
+.iphone-container {
   -webkit-animation-delay: 150ms;
           animation-delay: 150ms; }
+
+.animation-container {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms; }
 
 .work-action-container-fix {
   width: auto;
@@ -579,25 +583,25 @@ footer {
 
 @-webkit-keyframes bubble {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px); }
+  60% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
 
 @keyframes bubble {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  70% {
-    -webkit-transform: scale(1.1);
-            transform: scale(1.1); }
+    -webkit-transform: translateY(1000px);
+            transform: translateY(1000px); }
+  60% {
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px); }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1); } }
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px); } }
 
 @-webkit-keyframes right-bar {
   0% {
@@ -923,16 +927,26 @@ footer {
           animation-fill-mode: forwards; }
 
 .web__piece-bubble {
-  -webkit-animation: bubble 600ms;
-          animation: bubble 600ms;
-  -webkit-animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.115);
-          animation-timing-function: cubic-bezier(0, 0.645, 0.385, 1.115);
+  -webkit-animation: bubble 1000ms;
+          animation: bubble 1000ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
-  -webkit-transform: scale(0);
-          transform: scale(0); }
+  -webkit-transform: translateY(1000px);
+          transform: translateY(1000px); }
+
+.project__one {
+  -webkit-animation-delay: 50ms;
+          animation-delay: 50ms; }
+
+.project__two {
+  -webkit-animation-delay: 150ms;
+          animation-delay: 150ms; }
+
+.project__three {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms; }
 
 @-webkit-keyframes bye {
   0% {
@@ -1041,30 +1055,36 @@ footer {
   padding-top: 0; }
 
 .phone-prototype {
-  -webkit-transform: translateY(1000px);
-          transform: translateY(1000px);
-  -webkit-animation: 500ms mobile-slide;
-          animation: 500ms mobile-slide;
+  -webkit-transform: translateY(2000px);
+          transform: translateY(2000px);
+  -webkit-animation: 1300ms mobile-slide;
+          animation: 1300ms mobile-slide;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 120ms;
-          animation-delay: 120ms; }
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out; }
 
 @-webkit-keyframes mobile-slide {
   0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px); }
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px); }
+  70% {
+    -webkit-transform: translateY(-184px);
+            transform: translateY(-184px); }
   100% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px); } }
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px); } }
 
 @keyframes mobile-slide {
   0% {
-    -webkit-transform: translateY(1000px);
-            transform: translateY(1000px); }
+    -webkit-transform: translateY(2000px);
+            transform: translateY(2000px); }
+  70% {
+    -webkit-transform: translateY(-184px);
+            transform: translateY(-184px); }
   100% {
-    -webkit-transform: translateY(-200px);
-            transform: translateY(-200px); } }
+    -webkit-transform: translateY(-180px);
+            transform: translateY(-180px); } }
 
 .lorem {
   width: 50%;
@@ -1164,16 +1184,17 @@ footer {
   z-index: 1;
   background-color: #fff;
   box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.15);
-  position: absolute;
-  bottom: -216px;
   overflow: hidden;
-  transition: all 400ms;
-  transition-timing-function: ease-in-out; }
+  transition: all 240ms;
+  transition-timing-function: ease-out;
+  -webkit-transform: translateY(-110px);
+          transform: translateY(-110px); }
 
 .routes-expand {
-  transition: all 400ms;
-  transition-timing-function: ease-in-out;
-  bottom: 66px; }
+  transition: all 240ms;
+  transition-timing-function: ease-out;
+  -webkit-transform: translateY(-310px);
+          transform: translateY(-310px); }
 
 #near-you {
   height: 45px;
@@ -1190,14 +1211,15 @@ footer {
   width: 48px;
   height: 48px;
   background-color: #34b262;
-  border-radius: 24px;
-  position: absolute;
-  bottom: 126px;
-  right: 18px;
+  border-radius: 50%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
-  z-index: 10;
-  transition: all 400ms;
-  transition-timing-function: ease-in-out; }
+  transition: all 240ms;
+  transition-timing-function: ease-out;
+  -webkit-transform: translateY(-134px);
+          transform: translateY(-134px);
+  margin-left: 230px;
+  position: absolute;
+  z-index: 10; }
 
 .routes-button-raise {
   width: 48px;
@@ -1205,12 +1227,12 @@ footer {
   background-color: #34b262;
   border-radius: 24px;
   position: absolute;
-  bottom: 412px;
-  right: 18px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   z-index: 10;
-  transition: all 400ms;
-  transition-timing-function: ease-in-out; }
+  -webkit-transform: translateY(-334px);
+          transform: translateY(-334px);
+  transition: all 240ms;
+  transition-timing-function: ease-out; }
 
 .main-nav {
   width: 100%;

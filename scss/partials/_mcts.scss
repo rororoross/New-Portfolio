@@ -3,15 +3,17 @@
 }
 
 .phone-prototype {
-	transform: translateY(1000px);
-	animation: 500ms mobile-slide;
+	transform: translateY(2000px);
+	animation: 1300ms mobile-slide;
 	animation-fill-mode: forwards;
-	animation-delay: 120ms;
+	animation-timing-function: ease-in-out;
+	// animation-delay: 120ms;
 }
 
 @keyframes mobile-slide {
-	0% { transform: translateY(1000px); }
-	100% { transform: translateY(-200px); }
+	0% { transform: translateY(2000px); }
+	70% { transform: translateY(-184px); }
+	100% { transform: translateY(-180px); }
 }
 
 .lorem {
@@ -124,17 +126,16 @@
 	z-index: 1;
 	background-color: #fff;
 	box-shadow: 0px -2px 1px 0px rgba(0, 0, 0, 0.15);
-	position: absolute;
-	bottom: -216px;
 	overflow: hidden;
-	transition: all 400ms;
-	transition-timing-function: ease-in-out;
+	transition: all 240ms;
+	transition-timing-function: ease-out;
+	transform: translateY(-110px);
 }
 
 .routes-expand {
-	transition: all 400ms;
-	transition-timing-function: ease-in-out;
-	bottom: 66px;
+	transition: all 240ms;
+	transition-timing-function: ease-out;
+	transform: translateY(-310px);
 }
 
 #near-you {
@@ -155,14 +156,14 @@
 	width: 48px;
 	height: 48px;
 	background-color: $green;
-	border-radius: 24px;
-	position: absolute;
-	bottom: 126px;
-	right: 18px;
+	border-radius: 50%;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	transition: all 240ms;
+	transition-timing-function: ease-out;
+	transform: translateY(-134px);
+	margin-left: 230px;
+	position: absolute;
 	z-index: 10;
-	transition: all 400ms;
-	transition-timing-function: ease-in-out;
 }
 
 .routes-button-raise {
@@ -171,12 +172,11 @@
 	background-color: $green;
 	border-radius: 24px;
 	position: absolute;
-	bottom: 412px;
-	right: 18px;
 	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
 	z-index: 10;
-	transition: all 400ms;
-	transition-timing-function: ease-in-out;
+	transform: translateY(-334px);
+	transition: all 240ms;
+	transition-timing-function: ease-out;
 }
 
 .main-nav {

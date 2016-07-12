@@ -11,7 +11,7 @@ router.get('/my-work', function(req, res, next) {
 });
 
 router.get('/web', function(req, res, next) {
-	setTimeout((function() {res.render('web')}), 380);
+	setTimeout((function() {res.render('web')}), 250);
 });
 
 router.get('/mobile', function(req, res, next) {

@@ -39,12 +39,25 @@
 }
 
 .web__piece-bubble {
-	animation: bubble 600ms;
-	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.115);
+	animation: bubble 1000ms;
+	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	animation-delay: 300ms;
-	transform: scale(0);
+	transform: translateY(1000px);
 }
+
+.project__one {
+	animation-delay: 50ms;
+}
+
+.project__two {
+	animation-delay: 150ms;
+}
+
+.project__three {
+	animation-delay: 250ms;
+}
+
+
 
 @keyframes bye {
 	0% { transform: scale(1) translateY(200px); }
@@ -93,4 +106,3 @@
 	0% { transform: scale(1); }
 	100% { transform: scale(1.33) translateY(51px); }
 }
-

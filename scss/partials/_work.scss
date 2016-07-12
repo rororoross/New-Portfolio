@@ -16,17 +16,21 @@
 }
 
 .mac-container, .iphone-container, .animation-container {
-	animation: bubble 900ms;
-	animation-timing-function: cubic-bezier(0.000, 0.645, 0.385, 1.245);
+	animation: bubble 1000ms;
+	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	transform: scale(0);
+	transform: translateY(1000px);
 }
 .mac-container {
-	animation-delay: 260ms;
+	animation-delay: 50ms;
+}
+
+.iphone-container {
+	animation-delay: 150ms;
 }
 
 .animation-container {
-	animation-delay: 150ms;
+	animation-delay: 250ms;
 }
 
 .work-action-container-fix {
@@ -218,9 +222,9 @@
 }
 
 @keyframes bubble {
-	0% { transform: scale(0); }
-	70% { transform: scale(1.1); }
-	100% { transform: scale(1); }
+	0% { transform: translateY(1000px); }
+	60% { transform: translateY(-50px); }
+	100% { transform: translateY(0px); }
 }
 
 @keyframes right-bar {
