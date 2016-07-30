@@ -15,7 +15,7 @@ router.get('/web', function(req, res, next) {
 });
 
 router.get('/mobile', function(req, res, next) {
-	res.render('mobile');
+	setTimeout((function() {res.render('mobile')}), 250);
 });
 
 router.get('/about-me', function(req, res, next) {
@@ -27,19 +27,12 @@ router.get('/get-in-touch', function(req, res, next) {
 });
 
 router.get('/animations', function(req, res, next) {
-	res.render('animations');
+	setTimeout((function() {res.render('animations')}), 250);
 });
 
 router.get('/bluemix', function(req, res, next) {
 	setTimeout((function() {res.render('bluemix')}), 330);
 });
 
-router.get('/blrt', function(req, res, next) {
-	res.render('blrt');
-});
-
-router.get('/nfl', function(req, res, next) {
-	res.render('nfl');
-});
 
 module.exports = router;

@@ -1,12 +1,20 @@
 .animations {
 	background: $blue;
+
+	.web-header, .mobile-header, .animate-heading {
+		display: none;
+	}
 }
 
 .animations-container {
 	padding-top: 140px;
 
-	img {
-		width: 120px;
+	.web-header {
+		display: none;
+	}
+
+	.animation-gif {
+		width: 300px;
 	}
 
 	.animation-desktop {

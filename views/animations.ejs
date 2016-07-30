@@ -3,9 +3,33 @@
   <head><% include partials/head.ejs %></head>
   <body class="animations">
   	<% include partials/layout/header.ejs %>
-		<div class="animations-container">
-			<img src="img/animation-hello-2.png" alt="">
-			<img  class="animation-desktop" src="img/animation-think.png" alt="">
-		</div>
+    <% include partials/layout/work-heading.ejs %>
+    <div class="clearfix"></div>
+    <div class="monitor__container">
+      <a class="web__piece-bubble project__one" href="/getting-started">
+        <div class="web__piece">
+          <img src="img/getting-started-mac-2.gif" alt="" class="web__monitor">
+        </div>
+      </a>
+      <a class="web__piece-bubble project__two" href="/login">
+        <div class="web__piece">
+          <img src="img/login-rec-12.gif" alt="" class="web__monitor">
+        </div>
+      </a>
+      <a class="web__piece-bubble project__three" href="/chatbot">
+        <div class="web__piece">
+          <img src="img/getting-started-mac-2.gif"  alt="" class="web__monitor">
+        </div>
+      </a>
+    </div>
+
+
+
+		<!-- <div class="animations-container">
+      <img class="animation-gif" src="img/getting-started-mac-2.gif" alt="">
+			<img class="animation-gif" src="img/login-rec-12.gif"  alt="">
+			<img class="animation-gif" src="img/getting-started-mac-2.gif"  alt="">
+		</div> -->
+
 	</body>
 </html>
