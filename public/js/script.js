@@ -1,76 +1,28 @@
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 600);
-        return false;
-      }
-    }
-  });
-});
+// Home - Text Swapping
+if (document.body.classList.contains('home')) {
 
-// MCTS Bus App
+  var wordSwap = [
+    "developing",
+    "designing",
+    "rapid prototyping",
+    "creating"
+  ], i = -1;
 
+  (function f(){
+
+  var getWord = document.getElementById('word__change');
+     i = (i + 1) % wordSwap.length;
+     getWord.innerHTML = (wordSwap[i]);
+     setTimeout(f, 1800);
+  })();
+}
+
+// Mobile - Prototype
 $( ".route-button" ).click(function() {
 	$(".routes").toggleClass("routes-expand");
 	$(this).toggleClass("routes-button-raise");
 	$(".bus-subheader").toggleClass("subheader-move");
 });
-
-// $( '.bus-menu' ).click(function() {
-// 	$(this).hide();
-// 	$('.drawer').toggleClass('drawer-expand');
-// 	$('.overlay').toggleClass('overlay-display');
-// 	$('.drawer-menu').addClass('display-block');
-// 	$('.drawer-container').show();
-// 	$('.screen-container').hide();
-// });
-//
-// $('.row-favorites').click(function() {
-// 	$('.screen-favorites').fadeIn(300);
-// 	$('.drawer').toggleClass('drawer-expand');
-// 	$('.drawer-container').hide();
-// 	$('.overlay').toggleClass('overlay-display');
-// 	$('.bus-menu').show();
-// });
-//
-// $('.row-routes').click(function() {
-// 	$('.screen-routes').fadeIn(300);
-// 	$('.drawer').toggleClass('drawer-expand');
-// 	$('.drawer-container').hide();
-// 	$('.overlay').toggleClass('overlay-display');
-// 	$('.bus-menu').show();
-// });
-//
-// $('.row-map').click(function() {
-// 	$('.screen-map').fadeIn(300);
-// 	$('.drawer').toggleClass('drawer-expand');
-// 	$('.drawer-container').hide();
-// 	$('.overlay').toggleClass('overlay-display');
-// 	$('.bus-menu').show();
-// });
-//
-// $('.row-qr-code').click(function() {
-// 	$('.screen-map').fadeIn(300);
-// 	$('.drawer').toggleClass('drawer-expand');
-// 	$('.drawer-container').hide();
-// 	$('.overlay').toggleClass('overlay-display');
-// 	$('.bus-menu').show();
-// });
-//
-// $( '.drawer-menu' ).click(function() {
-// 	$('.drawer').toggleClass('drawer-expand');
-// 	$('.overlay').toggleClass('overlay-display');
-// 	$('.bus-menu').removeClass('display-none');
-// 	$('.drawer-container').show();
-// 	$('.screen-container').hide();
-// });
-
-
 
 $('.mcts-home').click(function() {
 	$('.mcts-home-screen').show();
@@ -134,11 +86,6 @@ $('.mcts-map').click(function() {
 	$('.routes-p').css('color', '#868686');
 });
 
-// $('.route-row').click(function() {
-// 	$(this).next.toggle();
-// });
-
-
 $('.check-out-work').click(function() {
 	$('.anim').addClass('plz');
 	$('.home').delay( 600 ).fadeOut( 300 );
@@ -186,29 +133,40 @@ for (i = 0; i < getRouteList.length; ++i) {
 //   console.log("ayy lmao");
 // }
 
+var getHomeLink = document.querySelector('.active__header');
+var getWorkLink = document.querySelector('.header__link-work');
+var getAboutLink = document.querySelector('.header__link-about');
+var getTouchLink = document.querySelector('.header__link-get-in-touch');
 // adding active states to header links
 if (document.body.classList.contains('work')) {
-	var getHomeLink = document.querySelector('.active__home');
+	var getHomeLink = document.querySelector('.active__header');
 	var getWorkLink = document.querySelector('.header__link-work');
 	getHomeLink.className = "";
-	getWorkLink.classList.add("active__home");
-
-	var getWorkContainers = document.querySelectorAll(".work_piece");
-	var i;
-	for (i = 0; i < getWorkContainers.length; i++) {
-		getWorkContainers[i].addEventListener("click", addAnimation);
-	}
-
-		function addAnimation() {
-			var getWork = document.querySelector(".work__container");
-			getWork.classList.add("work__container-animate");
-			var getHeadings = document.getElementsByTagName("h3");
-			var x;
-			for (x = 0; x < getHeadings.length; x++) {
-				getHeadings[x].style.display = "none";
-			}
-		}
+	getWorkLink.classList.add("active__header");
+} else if (document.body.classList.contains('about-me')){
+  getHomeLink.className = "";
+  getAboutLink.classList.add("active__header");
+} else if (document.body.classList.contains('get-in-touch')) {
+  getHomeLink.className = "";
+  getTouchLink.classList.add("active__header");
 }
+
+	// var getWorkContainers = document.querySelectorAll(".work_piece");
+	// var i;
+	// for (i = 0; i < getWorkContainers.length; i++) {
+	// 	getWorkContainers[i].addEventListener("click", addAnimation);
+	// }
+  //
+	// 	function addAnimation() {
+	// 		var getWork = document.querySelector(".work__container");
+	// 		getWork.classList.add("work__container-animate");
+	// 		var getHeadings = document.getElementsByTagName("h3");
+	// 		var x;
+	// 		for (x = 0; x < getHeadings.length; x++) {
+	// 			getHeadings[x].style.display = "none";
+	// 		}
+	// 	}
+
 
 
 if (document.body.classList.contains('web-work')) {
@@ -281,18 +239,3 @@ if (document.body.classList.contains('bluemix')) {
 			}
 	}
 }
-
-// text swapping for homepage
-// var wordSwap = [
-// 	"developing",
-// 	"designing",
-// 	"rapid prototyping",
-// 	"creating"
-// ], i = -1;
-
-// (function f(){
-// var getWord = document.getElementById('word__change');
-//    i = (i + 1) % wordSwap.length;
-//    getWord.innerHTML = (wordSwap[i]);
-//    setTimeout(f, 2200);
-// })();

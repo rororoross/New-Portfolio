@@ -231,7 +231,7 @@ nav {
   display: block;
   margin: 0 auto; }
 
-.active__home {
+.active__header {
   color: #ffff00; }
 
 @media screen and (min-width: 650px) {
@@ -1036,16 +1036,16 @@ footer {
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.33) translateY(51px);
-            transform: scale(1.33) translateY(51px); } }
+    -webkit-transform: scale(1.33) translate(15px, 51px);
+            transform: scale(1.33) translate(15px, 51px); } }
 
 @keyframes bluemix-select {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.33) translateY(51px);
-            transform: scale(1.33) translateY(51px); } }
+    -webkit-transform: scale(1.33) translate(15px, 51px);
+            transform: scale(1.33) translate(15px, 51px); } }
 
 .mobile-work .web-header, .mobile-work .mobile-header, .mobile-work .animate-heading {
   display: none; }
