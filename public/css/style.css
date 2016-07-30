@@ -1901,8 +1901,8 @@ footer {
 
 .web__item-header, .web__item-expand, .arrow {
   opacity: 0;
-  -webkit-animation: fade-in 500ms linear;
-          animation: fade-in 500ms linear;
+  -webkit-animation: fade-in 500ms ease;
+          animation: fade-in 500ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
@@ -1921,8 +1921,8 @@ footer {
 .web__item-content {
   -webkit-transform: translateY(1000px);
           transform: translateY(1000px);
-  -webkit-animation: slide-up 600ms linear;
-          animation: slide-up 600ms linear;
+  -webkit-animation: slide-up 800ms ease;
+          animation: slide-up 800ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 

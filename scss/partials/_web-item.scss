@@ -59,7 +59,7 @@
 
 .web__item-header, .web__item-expand, .arrow, {
 	opacity: 0;
-	animation: fade-in 500ms linear;
+	animation: fade-in 500ms ease;
 	animation-fill-mode: forwards;
 }
 
@@ -70,7 +70,7 @@
 
 .web__item-content {
 	transform: translateY(1000px);
-	animation: slide-up 600ms linear;
+	animation: slide-up 800ms ease;
 	animation-fill-mode: forwards;
 }
 

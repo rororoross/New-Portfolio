@@ -151,21 +151,21 @@ if (document.body.classList.contains('work')) {
   getTouchLink.classList.add("active__header");
 }
 
-	// var getWorkContainers = document.querySelectorAll(".work_piece");
-	// var i;
-	// for (i = 0; i < getWorkContainers.length; i++) {
-	// 	getWorkContainers[i].addEventListener("click", addAnimation);
-	// }
-  //
-	// 	function addAnimation() {
-	// 		var getWork = document.querySelector(".work__container");
-	// 		getWork.classList.add("work__container-animate");
-	// 		var getHeadings = document.getElementsByTagName("h3");
-	// 		var x;
-	// 		for (x = 0; x < getHeadings.length; x++) {
-	// 			getHeadings[x].style.display = "none";
-	// 		}
-	// 	}
+	var getWorkContainers = document.querySelectorAll(".work_piece");
+	var i;
+	for (i = 0; i < getWorkContainers.length; i++) {
+		getWorkContainers[i].addEventListener("click", addAnimation);
+	}
+
+		function addAnimation() {
+			var getWork = document.querySelector(".work__container");
+			getWork.classList.add("work__container-animate");
+			var getHeadings = document.getElementsByTagName("h3");
+			var x;
+			for (x = 0; x < getHeadings.length; x++) {
+				getHeadings[x].style.display = "none";
+			}
+		}
 
 
 
