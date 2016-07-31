@@ -6,16 +6,29 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-router.get('/my-work', function(req, res, next) {
-  setTimeout((function() {res.render('my-work')}), 500);
+router.get('/my-work/', function(req, res, next) {
+  setTimeout((function() {res.render('my-work/')}), 500);
 });
 
-router.get('/web', function(req, res, next) {
-	setTimeout((function() {res.render('web')}), 250);
+router.get('/my-work/web/', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/')}), 250);
 });
 
-router.get('/mobile', function(req, res, next) {
-	setTimeout((function() {res.render('mobile')}), 250);
+router.get('/my-work/web/web-onboarding', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-onboarding')}), 250);
+});
+
+router.get('/my-work/web/web-get-started', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-get-started')}), 330);
+});
+
+router.get('/my-work/web/web-chatbot', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-chatbot')}), 330);
+});
+
+
+router.get('/my-work/mobile', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/mobile/')}), 250);
 });
 
 router.get('/about-me', function(req, res, next) {
@@ -26,12 +39,20 @@ router.get('/get-in-touch', function(req, res, next) {
 	res.render('get-in-touch');
 });
 
-router.get('/animations', function(req, res, next) {
-	setTimeout((function() {res.render('animations')}), 250);
+router.get('/my-work/animations', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/animations/')}), 250);
 });
 
-router.get('/bluemix', function(req, res, next) {
-	setTimeout((function() {res.render('bluemix')}), 330);
+router.get('/animation-get-started', function(req, res, next) {
+	setTimeout((function() {res.render('animation-get-started')}), 330);
+});
+
+router.get('/animation-login', function(req, res, next) {
+	setTimeout((function() {res.render('animation-login')}), 250);
+});
+
+router.get('/animation-chatbot', function(req, res, next) {
+	setTimeout((function() {res.render('animation-chatbot')}), 250);
 });
 
 

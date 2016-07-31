@@ -95,7 +95,7 @@ $('.check-out-work').click(function() {
 	$('.animation-container').addClass('fade-in');
 });
 
-$('.work-link').click(function() {
+$('.header__link-work').click(function() {
 	$('.anim').addClass('plz').delay( 600 ).fadeOut( 300 );
 	$('.home').delay( 600 ).fadeOut( 300 );
 	$('.mac-container').addClass('fade-in');

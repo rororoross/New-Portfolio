@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../global/head.ejs %></head>
+  <body class="blue-bg mobile-work">
+    <% include ../global/header.ejs %>
+    <% include ../work-heading.ejs %>
+<div class="phone-prototype">
+  <h2>Bus Tracker App</h2>
+  <p id="phone-head">interactive prototype</p>
+  <div class="phone-background">
+    <div id="phone-screen">
+      <div class="mcts-home-screen">
+        <div class="bus-subheader">
+          <div id="location-container">
+            <div id="destination"><p>Where are you headed?</p></div>
+          </div>
+        </div>
+        <div id="map">
+        </div>
+        <div class="route-button">
+          <img src="img/mcts-icon-routes.svg" alt="" id="find-location">
+        </div>
+        <div class="routes">
+          <div id="near-you"><p>Stops near you</p></div>
+          <div class="route-row">
+            <div class="route-number"><p>30</p></div>
+            <p class="route-name">UWM via Maryland</p>
+            <p class="route-stop">Van Buren & Kilbourn</p>
+            <p class="route-time">Due in 5 minutes</p>
+          </div>
+          <div class="route-row">
+            <div class="route-number"><p>10</p></div>
+            <p class="route-name">Bayshore</p>
+            <p class="route-stop">Prospect & Wells</p>
+            <p class="route-time">Due in 8 minutes</p>
+          </div>
+          <div class="route-row">
+            <div class="route-number"><p>15</p></div>
+            <p class="route-name">Downtown</p>
+            <p class="route-stop">Wisconsin & Cass</p>
+            <p class="route-time">Due in 1 minutes</p>
+          </div>
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>45</p></div>
+            <p class="route-name">Boytel</p>
+            <p class="route-stop">Wisconsin & Cass</p>
+            <p class="route-time">Due in 9 minutes</p>
+          </div>
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>20</p></div>
+            <p class="route-name">Bayview</p>
+            <p class="route-stop">Wisconsin & Cass</p>
+            <p class="route-time">Due in 3 minutes</p>
+          </div>
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>60</p></div>
+            <p class="route-name">Grafton</p>
+            <p class="route-stop">Maryland & Downer</p>
+            <p class="route-time">Due in 10 minutes</p>
+          </div>
+
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>20</p></div>
+            <p class="route-name">Pabst</p>
+            <p class="route-stop">Water & Beer</p>
+            <p class="route-time">Due in 33 minutes</p>
+          </div>
+        </div> <!--End of routes-->
+      </div> <!-- End of mcts-home-screen-->
+
+    <div class="mcts-favorites-screen">
+      <header class="mcts-header">
+        <img src="img/icon-add.svg" alt="" class="header-icon">
+        <h1 class="mcts-heading">Favorites</h1>
+        <img src="img/icon-settings.svg" alt="" class="header-icon icon-gear">
+      </header>
+      <div class="mcts-container">
+        <div class="mcts-favorites-row">
+          <div class="route-number-favorites">
+            <p class="route-number-lg">10</p>
+          </div>
+          <div class="route-name-favorites">
+            <h2 class="route-street">Brookfield Square</h2>
+            <p class="stop-name-favorites">Prospect & Brady</p>
+          </div>
+          <div class="route-eta">
+            <p class="street-start"><img src="img/icon-walk.svg" alt="" class="icon-walk"> Prospect</p><span class="street-start-time">8 min</span>
+            <p class="bus-arrival">Due in 12 minutes</p>
+          </div>
+        </div>
+
+        <div class="mcts-favorites-row">
+          <div class="route-number-favorites">
+            <p class="route-number-lg">15</p>
+          </div>
+          <div class="route-name-favorites">
+            <h2 class="route-street">Shorewood</h2>
+            <p class="stop-name-favorites">Beverly & Oakland</p>
+          </div>
+          <div class="route-eta">
+            <p class="street-start"><img src="img/icon-walk.svg" alt="" class="icon-walk"> Beverly</p><span class="street-start-time">58 min</span>
+            <p class="bus-arrival">Due in 34 minutes</p>
+          </div>
+        </div>
+
+        <div class="mcts-favorites-row">
+          <div class="route-number-favorites">
+            <p class="route-number-lg">30</p>
+          </div>
+          <div class="route-name-favorites">
+            <h2 class="route-street">Bayview</h2>
+            <p class="stop-name-favorites">Mitchell & Florida</p>
+          </div>
+          <div class="route-eta">
+            <p class="street-start"><img src="img/icon-walk.svg" alt="" class="icon-walk"> Mitchell</p><span class="street-start-time">33 min</span>
+            <p class="bus-arrival">Due in 20 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div> <!--End of favorites-screen-->
+
+    <div class="mcts-routes-screen">
+      <header class="mcts-header">
+        <img src="img/icon-add.svg" alt="" class="header-icon hidden">
+        <h1 class="mcts-heading">Routes</h1>
+        <img src="img/icon-settings.svg" alt="" class="header-icon icon-gear">
+      </header>
+      <p class="select-route">Select a route</p>
+      <div class="routes-list">
+        <div class="route-list-name">
+          <p class="route-list-number">6</p>
+          <p class="route-list-street">Holton - Kinnickinnic</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">9</p>
+          <p class="route-list-street">New Berlin Industrial Park</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">12</p>
+          <p class="route-list-street">Teutonia - Hampton</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">14</p>
+          <p class="route-list-street">Humboldt - Forest Home</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">17</p>
+          <p class="route-list-street">Oakland - Maryland</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">20</p>
+          <p class="route-list-street">Cass - Downer</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">25</p>
+          <p class="route-list-street">Cramer - Beverly</p>
+        </div>
+      </div>
+    </div>
+    <div class="mcts-map-screen">
+    map screen
+    </div>
+
+    <div class="main-nav">
+    <ul>
+    <li class="mcts-home">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mcts-icon" viewBox="0 0 48 48">
+    <path class="home-changefill" d="M20 40v-12h8v12h10v-16h6l-20-18-20 18h6v16z" fill="#34b262"/>
+    <path d="M0 0h48v48h-48z" fill="none"/>
+    </svg>
+    <p class="nav-p home-p">Home</p>
+    </li>
+    <li class="mcts-favorites">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mcts-icon icon-large nav-favorites " viewBox="0 0 44 40">
+    <path class="changefill"d="M24 28.6l7.42 5.4-2.84-8.72 7.42-5.28h-9.1l-2.9-9-2.9 9h-9.1l7.42 5.28-2.83 8.72z" fill="#838383"/>
+    <path d="M0 0h48v48h-48z" fill="none"/>
+    </svg>
+    <p class="nav-p fav-p">Favorites</p>
+    </li>
+    <li class="mcts-routes">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mcts-icon icon-small nav-routes" viewBox="0 0 48 48">
+    <path class="routes-changefill" d="M43.41 22.59l-18-18c-.78-.78-2.05-.78-2.82 0l-18 18c-.78.78-.78 2.05 0 2.83l18 17.99v.01c.78.78 2.05.78 2.83 0l18-18c.78-.79.78-2.05-.01-2.83zm-15.41 6.41v-5h-8v6h-4v-8c0-1.11.89-2 2-2h10v-5l7 7-7 7z" fill="#838383"/>
+    <path d="M0 0h48v48h-48z" fill="none"/>
+    </svg>
+    <p class="nav-p routes-p">Routes</p>
+    </li>
+    <li class="mcts-map">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mcts-icon icon-small" viewBox="0 0 48 48">
+    <path class="map-changefill" d="M41 6c-.11 0-.21.01-.31.05l-10.69 4.15-12-4.2-11.27 3.8c-.42.14-.73.5-.73.96v30.24c0 .55.45 1 1 1 .11 0 .21-.01.31-.05l10.69-4.15 12 4.2 11.28-3.79c.42-.15.72-.51.72-.97v-30.24c0-.55-.45-1-1-1zm-11 32l-12-4.21v-23.79l12 4.21v23.79z" fill="#838383"/>
+    <path d="M0 0h48v48h-48z" fill="none"/>
+    </svg>
+    <p class="nav-p map-p">Map</p>
+    </li>
+    </ul>
+    </div> <!--End of main-nav-->
+    </div> <!--End of phone-screen-->
+  </div> <!--End of phone-background-->
+  <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto fugiat autem nisi accusamus a, saepe? Nulla, quae, minus, necessitatibus dolore explicabo veritatis pariatur vel doloribus quo dolor cupiditate numquam ut. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, officiis voluptate voluptatem repudiandae non? Adipisci, voluptatum eos consequuntur aliquid, reprehenderit voluptatibus eveniet velit iure hic sapiente reiciendis alias laborum molestiae?</p>
+</div>
+
+<!-- <section class="app-info">
+<a href="http://github.com/rossfenrick/New-Portfolio" target="_blank"><div class="github-icon"></div></a>
+<h4>Bus Tracker App</h4>
+<h5>Personal Project (Design, UX, Front End)</h5>
+<ul class="app-specs">
+<li><span>*</span> HTML</li>
+<li><span>*</span> CSS3</li>
+<li><span>*</span> jQuery</li>
+<li><span>*</span> Photoshop</li>
+</ul>
+<p class="app-info-p">This started as purely a visual design project to experiment with Google's Material Design language. I had a lot of ideas for interactions and architecture while designing it so I decided to code a prototype to explore them further. Made from scratch as always.</p>
+</section> -->
+
+<!--  <div class="clearfix"></div>
+<article class="mobile-pad">
+
+<div class="phone-background">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+class="mobile-arrow" viewBox="0 0 404.308 404.309" style="enable-background:new 0 0 404.308 404.309;"
+xml:space="preserve">
+<g>
+<path d="M404.308,303.229H0L202.157,101.08L404.308,303.229z" fill="#ffffff"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+class="mobile-arrow" viewBox="0 0 404.308 404.309" style="enable-background:new 0 0 404.308 404.309;"
+xml:space="preserve">
+<g>
+<path d="M404.308,303.229H0L202.157,101.08L404.308,303.229z" fill="#ffffff"/>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>
+<div id="phone-screen">
+</div>
+</div> -->
+    <% include partials/scripts.ejs %>
+  </body>
+</html>
