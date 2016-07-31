@@ -1036,16 +1036,16 @@ footer {
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.33) translateY(61px);
-            transform: scale(1.33) translateY(61px); } }
+    -webkit-transform: scale(1.33) translateY(71px);
+            transform: scale(1.33) translateY(71px); } }
 
 @keyframes bluemix-select {
   0% {
     -webkit-transform: scale(1);
             transform: scale(1); }
   100% {
-    -webkit-transform: scale(1.33) translateY(61px);
-            transform: scale(1.33) translateY(61px); } }
+    -webkit-transform: scale(1.33) translateY(71px);
+            transform: scale(1.33) translateY(71px); } }
 
 .mobile-work .web-header, .mobile-work .mobile-header, .mobile-work .animate-heading {
   display: none; }

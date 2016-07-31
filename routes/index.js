@@ -43,16 +43,16 @@ router.get('/my-work/animations', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/animations/')}), 250);
 });
 
-router.get('/animation-get-started', function(req, res, next) {
-	setTimeout((function() {res.render('animation-get-started')}), 330);
+router.get('/my-work/animations/animation-get-started', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/animations/animation-get-started')}), 330);
 });
 
-router.get('/animation-login', function(req, res, next) {
-	setTimeout((function() {res.render('animation-login')}), 250);
+router.get('/my-work/animations/animation-login', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/animations/animation-login')}), 250);
 });
 
-router.get('/animation-chatbot', function(req, res, next) {
-	setTimeout((function() {res.render('animation-chatbot')}), 250);
+router.get('/my-work/animations/animation-chatbot', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/animations/animation-chatbot')}), 250);
 });
 
 
