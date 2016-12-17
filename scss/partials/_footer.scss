@@ -7,21 +7,22 @@ footer {
 	-webkit-animation: slideLeft 540ms ease-out;
 	-webkit-animation-delay: 320ms;
 	-webkit-animation-fill-mode: forwards;
+	max-width: 2000px;
 }
 
 
 .github-icon {
-	width: 36px;
-	height: 36px;
+	width: 46px;
+	height: 46px;
 	float: right;
 	cursor: pointer;
 	transition: background-image 400ms ease-in-out;
-	background-image: url(../img/github-icon.svg);
+	background-image: url(../img/icon-linkedin.svg);
 	background-repeat: no-repeat;
 }
 
 .github-icon:hover {
-  background-image: url(../img/github-icon-hover.svg);
+  background-image: url(../img/icon-linkedin.svg);
   transition: background-image 400ms ease-in-out;
 }
 

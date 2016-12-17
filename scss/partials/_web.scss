@@ -39,14 +39,19 @@
 }
 
 .web__piece-bubble {
-	animation: bubble 1000ms;
+	animation: fades 440ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	transform: translateY(1000px);
+	opacity: 0;
 }
 
 .project__one {
 	animation-delay: 50ms;
+}
+
+.project__selected {
+	opacity: 0;
+	transition: all 240ms;
 }
 
 .project__two {

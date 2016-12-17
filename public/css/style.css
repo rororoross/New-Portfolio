@@ -104,7 +104,9 @@ body {
   color: #ffffff;
   overflow: auto;
   overflow-x: hidden;
-  background-color: #ff5151; }
+  background-color: #ff5151;
+  max-width: 2000px;
+  margin: 0 auto; }
 
 .home {
   overflow: hidden; }
@@ -248,7 +250,7 @@ nav {
   .nav__list-item {
     font-size: 1rem;
     width: auto;
-    padding: 0 0.4rem 0 0.4rem; }
+    padding: 0 .4rem 0 .4rem; }
   .nav__icon {
     display: none; }
   .pie {
@@ -308,19 +310,20 @@ footer {
           transform: translateX(60px);
   -webkit-animation: slideLeft 540ms ease-out;
   -webkit-animation-delay: 320ms;
-  -webkit-animation-fill-mode: forwards; }
+  -webkit-animation-fill-mode: forwards;
+  max-width: 2000px; }
 
 .github-icon {
-  width: 36px;
-  height: 36px;
+  width: 46px;
+  height: 46px;
   float: right;
   cursor: pointer;
   transition: background-image 400ms ease-in-out;
-  background-image: url(../img/github-icon.svg);
+  background-image: url(../img/icon-linkedin.svg);
   background-repeat: no-repeat; }
 
 .github-icon:hover {
-  background-image: url(../img/github-icon-hover.svg);
+  background-image: url(../img/icon-linkedin.svg);
   transition: background-image 400ms ease-in-out; }
 
 .mobile-container .github-icon {
@@ -367,22 +370,24 @@ footer {
           align-items: center;
   width: 100%;
   margin: 0 auto;
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px); }
+  -webkit-transform: translateY(220px);
+          transform: translateY(220px); }
 
 .work__container-still {
   -webkit-transform: scale(0.22) translateY(-500px);
           transform: scale(0.22) translateY(-500px); }
 
 .mac-container, .iphone-container, .animation-container {
-  -webkit-animation: bubble 1000ms;
-          animation: bubble 1000ms;
+  -webkit-animation: fades 440ms;
+          animation: fades 440ms;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform: translateY(1000px);
-          transform: translateY(1000px); }
+  opacity: 0; }
+
+.work__container-still .mac-container, .work__container-still .iphone-container, .work__container-still .animation-container {
+  opacity: 1; }
 
 .mac-container {
   -webkit-animation-delay: 50ms;
@@ -405,25 +410,29 @@ footer {
 
 .mac, .iphone, .animate-container {
   transition: -webkit-transform 300ms;
-  transition: transform 300ms; }
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms; }
 
 .mac:hover {
   -webkit-transform: scale(1.05) translateY(-18px);
           transform: scale(1.05) translateY(-18px);
   transition: -webkit-transform 500ms;
-  transition: transform 500ms; }
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms; }
 
 .iphone:hover {
   -webkit-transform: scale(1.05) translateY(-18px);
           transform: scale(1.05) translateY(-18px);
   transition: -webkit-transform 500ms;
-  transition: transform 500ms; }
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms; }
 
 .animate:hover {
   -webkit-transform: scale(1.05) translateY(-18px);
           transform: scale(1.05) translateY(-18px);
   transition: -webkit-transform 500ms;
-  transition: transform 500ms; }
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms; }
 
 .mac {
   width: 70px; }
@@ -598,6 +607,50 @@ footer {
   100% {
     -webkit-transform: translateY(0px);
             transform: translateY(0px); } }
+
+@-webkit-keyframes fades {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); } }
+
+@keyframes fades {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); } }
+
+@-webkit-keyframes fadesmobile {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px); } }
+
+@keyframes fadesmobile {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(-160px);
+            transform: translateY(-160px); } }
+
+@-webkit-keyframes fadeopacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeopacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 
 @-webkit-keyframes right-bar {
   0% {
@@ -923,18 +976,21 @@ footer {
           animation-fill-mode: forwards; }
 
 .web__piece-bubble {
-  -webkit-animation: bubble 1000ms;
-          animation: bubble 1000ms;
+  -webkit-animation: fades 440ms;
+          animation: fades 440ms;
   -webkit-animation-timing-function: ease-in-out;
           animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-transform: translateY(1000px);
-          transform: translateY(1000px); }
+  opacity: 0; }
 
 .project__one {
   -webkit-animation-delay: 50ms;
           animation-delay: 50ms; }
+
+.project__selected {
+  opacity: 0;
+  transition: all 240ms; }
 
 .project__two {
   -webkit-animation-delay: 150ms;
@@ -1054,14 +1110,17 @@ footer {
   padding-top: 0; }
 
 .phone-prototype {
-  -webkit-transform: translateY(2000px);
-          transform: translateY(2000px);
-  -webkit-animation: 1300ms mobile-slide;
-          animation: 1300ms mobile-slide;
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
+  -webkit-animation: fadesmobile 440ms;
+          animation: fadesmobile 440ms;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out; }
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 120ms;
+          animation-delay: 120ms;
+  opacity: 0; }
 
 @-webkit-keyframes mobile-slide {
   0% {
@@ -1845,9 +1904,15 @@ footer {
 .web__items h3 {
   display: none; }
 
+.web__items ul {
+  list-style: initial; }
+
+.web__items ul li {
+  font-weight: 600; }
+
 .web__item-container {
-  -webkit-transform: translateY(-140px);
-          transform: translateY(-140px);
+  -webkit-transform: translateY(-180px);
+          transform: translateY(-180px);
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1859,7 +1924,13 @@ footer {
           align-items: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-animation: fadeopacity 440ms;
+          animation: fadeopacity 440ms;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
 
 .monitor__web-item {
   width: 399px;
@@ -1867,7 +1938,11 @@ footer {
           transform: scale(1.05);
   cursor: pointer; }
 
-.web__item-header {
+.award {
+  padding: .5rem 0 2rem 0; }
+
+.web__item-par-heading {
+  font-size: 1.4rem;
   padding-bottom: .4rem; }
 
 .web__item-expand {
@@ -1894,7 +1969,8 @@ footer {
           transform: rotate(90deg); }
 
 .web__item-subheading {
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  text-align: left; }
 
 .web__item-content {
   padding-top: 1rem;
@@ -1907,6 +1983,10 @@ footer {
           animation: fade-in 500ms ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
+
+.guide__image {
+  width: 100%;
+  padding: 1rem 0 1rem 0; }
 
 @-webkit-keyframes fade-in {
   0% {
@@ -1947,13 +2027,17 @@ footer {
 .blur {
   -webkit-filter: blur(5px);
           filter: blur(5px);
-  transition: -webkit-filter 100ms, filter 100ms;
+  transition: -webkit-filter 100ms;
+  transition: filter 100ms;
+  transition: filter 100ms, -webkit-filter 100ms;
   pointer-events: none; }
 
 .blur-extra {
   -webkit-filter: blur(25px);
           filter: blur(25px);
-  transition: -webkit-filter 100ms, filter 100ms;
+  transition: -webkit-filter 100ms;
+  transition: filter 100ms;
+  transition: filter 100ms, -webkit-filter 100ms;
   pointer-events: none; }
 
 .web__project-view {

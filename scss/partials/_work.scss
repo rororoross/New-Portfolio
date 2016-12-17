@@ -8,7 +8,7 @@
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
-	transform: translateY(200px);
+	transform: translateY(220px);
 }
 
 .work__container-still {
@@ -16,10 +16,16 @@
 }
 
 .mac-container, .iphone-container, .animation-container {
-	animation: bubble 1000ms;
+	animation: fades 440ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
-	transform: translateY(1000px);
+	opacity: 0;
+}
+
+.work__container-still {
+	.mac-container, .iphone-container, .animation-container {
+		opacity: 1;
+	}
 }
 .mac-container {
 	animation-delay: 50ms;
@@ -225,6 +231,21 @@
 	0% { transform: translateY(1000px); }
 	60% { transform: translateY(-50px); }
 	100% { transform: translateY(0px); }
+}
+
+@keyframes fades {
+	0% { opacity: 0; }
+	100% { opacity: 1; transform: translateY(20px); }
+}
+
+@keyframes fadesmobile {
+	0% { opacity: 0; }
+	100% { opacity: 1; transform: translateY(-160px); }
+}
+
+@keyframes fadeopacity {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 @keyframes right-bar {

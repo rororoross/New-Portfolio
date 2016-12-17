@@ -170,22 +170,17 @@ if (document.body.classList.contains('work')) {
 
 
 if (document.body.classList.contains('web-work')) {
-// web select view animations
-	var getBluemix = document.querySelector(".project__two");
-	var getBlrt = document.querySelector(".project__one");
-	var getNFL = document.querySelector(".project__three");
+  var getProjects = document.querySelectorAll(".project");
+  var i;
+  for (i = 0; i < getProjects.length; i++) {
+    getProjects[i].addEventListener("click", addFade);
+  }
 
-	setTimeout(function() {
-		console.log('ayy lmao');
-	}, 1400);
-
-	getBluemix.addEventListener("click", bluemixFunc);
-
-	function bluemixFunc() {
-		getBluemix.className = "web__project-bluemix-select";
-		getBlrt.className = "web-project__animate";
-		getNFL.className = "web-project__animate";
-	}
+    function addFade() {
+      var getMonitorContainer = document.querySelector(".monitor__container")
+      console.log("hey dere");
+        getMonitorContainer.classList.add("project__selected");
+    }
 }
 
 // bluemix expand

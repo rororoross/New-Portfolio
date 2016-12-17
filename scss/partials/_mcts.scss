@@ -9,11 +9,12 @@
 }
 
 .phone-prototype {
-	transform: translateY(2000px);
-	animation: 1300ms mobile-slide;
+	transform: translateY(-180px);
+	animation: fadesmobile 440ms;
 	animation-fill-mode: forwards;
 	animation-timing-function: ease-in-out;
-	// animation-delay: 120ms;
+	animation-delay: 120ms;
+	opacity: 0;
 }
 
 @keyframes mobile-slide {

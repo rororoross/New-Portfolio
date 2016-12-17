@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/my-work/', function(req, res, next) {
-  setTimeout((function() {res.render('my-work/')}), 500);
+  setTimeout((function() {res.render('my-work/')}), 600);
 });
 
 router.get('/my-work/web/', function(req, res, next) {
@@ -19,7 +19,7 @@ router.get('/my-work/web/web-onboarding', function(req, res, next) {
 });
 
 router.get('/my-work/web/web-get-started', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-get-started')}), 330);
+	setTimeout((function() {res.render('my-work/web/web-get-started')}), 100);
 });
 
 router.get('/my-work/web/web-chatbot', function(req, res, next) {
