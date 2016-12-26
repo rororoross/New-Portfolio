@@ -16,14 +16,38 @@
 
 .about-me-container {
 	padding-top: 60px;
-	padding-left: 5%;
+	margin: 0 auto;
+	display: block;
 	padding-bottom: 80px;
 	max-width: 90%;
 
 	h1 {
-		font-size: 2.4rem;
+		font-size: 1.8rem;
 		text-align: left;
-		padding-bottom: 6px;
+		padding: 0 0 .6rem 0;
+	}
+
+	h2 {
+		font-size: 1.4rem;
+		text-align: left;
+		padding: 0 0 .2rem 0;
+	}
+
+	h3 {
+		font-size: 1.2rem;
+		text-align: left;
+		padding: 0 0 .2rem 0;
+	}
+
+	h4 {
+		font-size: .8rem;
+		padding: 0 0 1rem 0;
+	}
+
+	h5 {
+		color: $white;
+		text-align: left;
+		padding: 1rem 0 0 0;
 	}
 
 	p {
@@ -38,19 +62,21 @@
 		color: white;
 	}
 
-	.section-intro {
-		padding-bottom: 24px;
+	.skills {
+		display: block;
+		margin: 0 auto;
+		margin-top: 2rem;
 	}
 
-	.where-section, .how-section, .what-section {
-		padding-top: 80px;
+	.experience, .education {
+		margin-top: 2rem;
 	}
 
 	ul {
 		width: 100%;
 		display: inline-block;
 		vertical-align: top;
-		padding-left: 16px;
+		padding-left: 32px;
 		line-height: 1.4;
 	}
 }
@@ -58,8 +84,7 @@
 @media screen and (min-width: 500px ) {
 	.about-me-container {
 		padding-top: 140px;
-		padding-left: 15vw;
-		padding-bottom: 200px;
+		padding-bottom: 100px;
 		max-width: 600px;
 	}
 

@@ -1829,35 +1829,52 @@ footer {
 
 .about-me-container {
   padding-top: 60px;
-  padding-left: 5%;
+  margin: 0 auto;
+  display: block;
   padding-bottom: 80px;
   max-width: 90%; }
   .about-me-container h1 {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     text-align: left;
-    padding-bottom: 6px; }
+    padding: 0 0 0.6rem 0; }
+  .about-me-container h2 {
+    font-size: 1.4rem;
+    text-align: left;
+    padding: 0 0 0.2rem 0; }
+  .about-me-container h3 {
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 0 0 0.2rem 0; }
+  .about-me-container h4 {
+    font-size: .8rem;
+    padding: 0 0 1rem 0; }
+  .about-me-container h5 {
+    color: #ffffff;
+    text-align: left;
+    padding: 1rem 0 0 0; }
   .about-me-container p {
     line-height: 1.4; }
   .about-me-container a {
     text-decoration: underline; }
   .about-me-container a:hover {
     color: white; }
-  .about-me-container .section-intro {
-    padding-bottom: 24px; }
-  .about-me-container .where-section, .about-me-container .how-section, .about-me-container .what-section {
-    padding-top: 80px; }
+  .about-me-container .skills {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem; }
+  .about-me-container .experience, .about-me-container .education {
+    margin-top: 2rem; }
   .about-me-container ul {
     width: 100%;
     display: inline-block;
     vertical-align: top;
-    padding-left: 16px;
+    padding-left: 32px;
     line-height: 1.4; }
 
 @media screen and (min-width: 500px) {
   .about-me-container {
     padding-top: 140px;
-    padding-left: 15vw;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
     max-width: 600px; }
   .where-section, .how-section {
     padding-top: 100px; } }
