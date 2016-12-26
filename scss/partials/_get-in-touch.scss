@@ -1,5 +1,10 @@
 .get-in-touch {
 	background: #00B4A0;
+
+	.nav__icon-get-in-touch path {
+		fill: $yellow;
+	}
+
 }
 
 .get-in-touch-container {
@@ -10,8 +15,10 @@
 	font-size: 2rem;
 }
 
+
+
 .get-in-touch-icons-container {
-	max-width: 440px;
+	max-width: 640px;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -26,5 +33,9 @@
 @media screen and (min-width: 640px) {
 	.get-in-touch-container {
 		padding-top: 160px;
+	}
+
+	.get-in-touch-icon {
+		width: 72px;
 	}
 }

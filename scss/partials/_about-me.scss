@@ -1,6 +1,10 @@
 .about-me {
 	background: #9855D4;
 
+	.icon__about path {
+		fill: $yellow;
+	}
+
 	.nav__list {
 		background: #9855D4;
 	}

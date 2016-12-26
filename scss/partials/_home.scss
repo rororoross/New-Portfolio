@@ -13,6 +13,10 @@ body {
 
 .home {
 	overflow: hidden;
+
+	.icon__home path {
+		fill: $yellow;
+	}
 }
 
 .main__home {

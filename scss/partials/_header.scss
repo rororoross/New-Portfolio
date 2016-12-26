@@ -32,9 +32,34 @@ nav {
 	margin: 0 auto;
 }
 
-.active__header {
-	color: $yellow;
+.nav__list-item:hover path {
+		fill: $yellow;
 }
+
+.home {
+	.link-home {
+		color: $yellow;
+	}
+}
+
+.about-me {
+	.link-about {
+		color: $yellow;
+	}
+}
+
+.work {
+	.link-work {
+		color: $yellow;
+	}
+}
+
+.get-in-touch {
+	.link-get-in-touch {
+		color: $yellow;
+	}
+}
+
 
 @media screen and (min-width: 650px) {
 	nav {

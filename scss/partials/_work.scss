@@ -2,6 +2,12 @@
 	background: $blue;
 }
 
+.work {
+	.icon__work path {
+		fill: $yellow;
+	}
+}
+
 .work__container {
 	display: flex;
 	justify-content: space-around;

@@ -110,6 +110,8 @@ body {
 
 .home {
   overflow: hidden; }
+  .home .icon__home path {
+    fill: #ffff00; }
 
 .main__home {
   padding-top: 15vh; }
@@ -233,7 +235,19 @@ nav {
   display: block;
   margin: 0 auto; }
 
-.active__header {
+.nav__list-item:hover path {
+  fill: #ffff00; }
+
+.home .link-home {
+  color: #ffff00; }
+
+.about-me .link-about {
+  color: #ffff00; }
+
+.work .link-work {
+  color: #ffff00; }
+
+.get-in-touch .link-get-in-touch {
   color: #ffff00; }
 
 @media screen and (min-width: 650px) {
@@ -250,7 +264,7 @@ nav {
   .nav__list-item {
     font-size: 1rem;
     width: auto;
-    padding: 0 .4rem 0 .4rem; }
+    padding: 0 0.4rem 0 0.4rem; }
   .nav__icon {
     display: none; }
   .pie {
@@ -358,6 +372,9 @@ footer {
 .blue-bg {
   background: #5baafa; }
 
+.work .icon__work path {
+  fill: #ffff00; }
+
 .work__container {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -410,29 +427,25 @@ footer {
 
 .mac, .iphone, .animate-container {
   transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms; }
+  transition: transform 300ms; }
 
 .mac:hover {
   -webkit-transform: scale(1.05) translateY(-18px);
           transform: scale(1.05) translateY(-18px);
   transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms; }
+  transition: transform 500ms; }
 
 .iphone:hover {
   -webkit-transform: scale(1.05) translateY(-18px);
           transform: scale(1.05) translateY(-18px);
   transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms; }
+  transition: transform 500ms; }
 
 .animate:hover {
   -webkit-transform: scale(1.05) translateY(-18px);
           transform: scale(1.05) translateY(-18px);
   transition: -webkit-transform 500ms;
-  transition: transform 500ms;
-  transition: transform 500ms, -webkit-transform 500ms; }
+  transition: transform 500ms; }
 
 .mac {
   width: 70px; }
@@ -1806,6 +1819,8 @@ footer {
 
 .about-me {
   background: #9855D4; }
+  .about-me .icon__about path {
+    fill: #ffff00; }
   .about-me .nav__list {
     background: #9855D4; }
 
@@ -1853,6 +1868,8 @@ footer {
 
 .get-in-touch {
   background: #00B4A0; }
+  .get-in-touch .nav__icon-get-in-touch path {
+    fill: #ffff00; }
 
 .get-in-touch-container {
   padding-top: 80px; }
@@ -1861,7 +1878,7 @@ footer {
   font-size: 2rem; }
 
 .get-in-touch-icons-container {
-  max-width: 440px;
+  max-width: 640px;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1879,7 +1896,9 @@ footer {
 
 @media screen and (min-width: 640px) {
   .get-in-touch-container {
-    padding-top: 160px; } }
+    padding-top: 160px; }
+  .get-in-touch-icon {
+    width: 72px; } }
 
 .animations {
   background: #5baafa; }
@@ -1939,7 +1958,7 @@ footer {
   cursor: pointer; }
 
 .award {
-  padding: .5rem 0 2rem 0; }
+  padding: 0.5rem 0 2rem 0; }
 
 .web__item-par-heading {
   font-size: 1.4rem;
@@ -2027,17 +2046,13 @@ footer {
 .blur {
   -webkit-filter: blur(5px);
           filter: blur(5px);
-  transition: -webkit-filter 100ms;
-  transition: filter 100ms;
-  transition: filter 100ms, -webkit-filter 100ms;
+  transition: -webkit-filter 100ms, filter 100ms;
   pointer-events: none; }
 
 .blur-extra {
   -webkit-filter: blur(25px);
           filter: blur(25px);
-  transition: -webkit-filter 100ms;
-  transition: filter 100ms;
-  transition: filter 100ms, -webkit-filter 100ms;
+  transition: -webkit-filter 100ms, filter 100ms;
   pointer-events: none; }
 
 .web__project-view {

@@ -132,25 +132,6 @@ for (i = 0; i < getRouteList.length; ++i) {
 // function routeDetails() {
 //   console.log("ayy lmao");
 // }
-
-var getHomeLink = document.querySelector('.active__header');
-var getWorkLink = document.querySelector('.header__link-work');
-var getAboutLink = document.querySelector('.header__link-about');
-var getTouchLink = document.querySelector('.header__link-get-in-touch');
-// adding active states to header links
-if (document.body.classList.contains('work')) {
-	var getHomeLink = document.querySelector('.active__header');
-	var getWorkLink = document.querySelector('.header__link-work');
-	getHomeLink.className = "";
-	getWorkLink.classList.add("active__header");
-} else if (document.body.classList.contains('about-me')){
-  getHomeLink.className = "";
-  getAboutLink.classList.add("active__header");
-} else if (document.body.classList.contains('get-in-touch')) {
-  getHomeLink.className = "";
-  getTouchLink.classList.add("active__header");
-}
-
 	var getWorkContainers = document.querySelectorAll(".work_piece");
 	var i;
 	for (i = 0; i < getWorkContainers.length; i++) {
