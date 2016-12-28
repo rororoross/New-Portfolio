@@ -46,14 +46,17 @@ body {
 
 .anim {
 	background-color: $blue;
-	border-radius: 10vw;
+	width: 3rem;
+	height: 3rem;
+	opacity: 0;
+	border-radius: 50%;
+	align-self: center;
 	position: absolute;
- 	left:0;
-  right:0;
-  bottom: 35vh;
-  margin-left:auto;
-  margin-right:auto;
-	z-index: 5;
+	top: 49vh;
+	z-index: 9999999;
+	transform: translateZ(0);
+	-webkit-backface-visibility: hidden;
+	transform: translateZ(0) scale(1.0, 1.0);
 }
 
 .plz {
@@ -63,6 +66,19 @@ body {
 	-webkit-animation-fill-mode: forwards;
 	z-index: 5;
 }
+
+.circle-expand {
+	animation: circleExpand 520ms;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes circleExpand {
+	0% { transform: scale(1) translateZ(0); }
+	1% { opacity: 1; }
+	100% { transform: scale(40) translateZ(0); opacity: 1; }
+}
+
 
 @keyframes btn-hover {
   0%   { transform: translateY(2px);  }

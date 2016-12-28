@@ -20,8 +20,8 @@ a:hover {
 	text-decoration: none;
 	text-align: center;
 	transition: 300ms ease-in-out;
-	-webkit-animation: btn-hover 2600ms infinite;
-	-webkit-transition-timing-function: ease;
+	animation: btn-hover 2600ms infinite;
+	transition-timing-function: ease;
 }
 .check-out-work:hover {
 	background-color: $yellow;

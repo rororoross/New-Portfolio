@@ -86,6 +86,13 @@ $('.mcts-map').click(function() {
 	$('.routes-p').css('color', '#868686');
 });
 
+var getCircle = document.querySelector(".anim");
+var getButton = document.querySelector(".check-out-work");
+getButton.onclick = circleAnimation;
+function circleAnimation() {
+  getCircle.classList.add("circle-expand");
+}
+
 // $('.check-out-work').click(function() {
 // 	$('.anim').addClass('plz');
 // 	$('.home').delay( 600 ).fadeOut( 300 );

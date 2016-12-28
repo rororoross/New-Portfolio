@@ -89,7 +89,8 @@ a:hover {
   text-align: center;
   transition: 300ms ease-in-out;
   -webkit-animation: btn-hover 2600ms infinite;
-  -webkit-transition-timing-function: ease; }
+          animation: btn-hover 2600ms infinite;
+  transition-timing-function: ease; }
 
 .check-out-work:hover {
   background-color: #ffff00;
@@ -143,14 +144,21 @@ body {
 
 .anim {
   background-color: #5baafa;
-  border-radius: 10vw;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0;
+  border-radius: 50%;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 35vh;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 5; }
+  top: 49vh;
+  z-index: 9999999;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0) scale(1, 1);
+          transform: translateZ(0) scale(1, 1); }
 
 .plz {
   width: 20vw;
@@ -158,6 +166,34 @@ body {
   -webkit-animation: expander 700ms linear;
   -webkit-animation-fill-mode: forwards;
   z-index: 5; }
+
+.circle-expand {
+  -webkit-animation: circleExpand 520ms;
+          animation: circleExpand 520ms;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+
+@-webkit-keyframes circleExpand {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0); }
+  1% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(40) translateZ(0);
+            transform: scale(40) translateZ(0);
+    opacity: 1; } }
+
+@keyframes circleExpand {
+  0% {
+    -webkit-transform: scale(1) translateZ(0);
+            transform: scale(1) translateZ(0); }
+  1% {
+    opacity: 1; }
+  100% {
+    -webkit-transform: scale(40) translateZ(0);
+            transform: scale(40) translateZ(0);
+    opacity: 1; } }
 
 @-webkit-keyframes btn-hover {
   0% {
@@ -334,12 +370,12 @@ nav {
               transform: translateY(0); } } }
 
 @media screen and (min-width: 1100px) {
-  .pie {
+  .home .pie {
     width: 240px; }
-  .home__heading {
+  .home .home__heading {
     font-size: 3rem;
     padding-top: 1.4rem; }
-  .ibm-logo {
+  .home .ibm-logo {
     padding-bottom: 5px;
     padding-left: 4px; } }
 
@@ -398,8 +434,8 @@ footer {
           align-items: center;
   width: 100%;
   margin: 0 auto;
-  -webkit-transform: translateY(220px);
-          transform: translateY(220px); }
+  -webkit-transform: translateY(180px);
+          transform: translateY(180px); }
 
 .work__container-still {
   -webkit-transform: scale(0.22) translateY(-500px);
