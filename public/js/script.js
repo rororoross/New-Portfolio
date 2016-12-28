@@ -86,14 +86,14 @@ $('.mcts-map').click(function() {
 	$('.routes-p').css('color', '#868686');
 });
 
-$('.check-out-work').click(function() {
-	$('.anim').addClass('plz');
-	$('.home').delay( 600 ).fadeOut( 300 );
-	$('.work').show();
-	$('.mac-container').addClass('fade-in');
-	$('.iphone-container').addClass('fade-in-two');
-	$('.animation-container').addClass('fade-in');
-});
+// $('.check-out-work').click(function() {
+// 	$('.anim').addClass('plz');
+// 	$('.home').delay( 600 ).fadeOut( 300 );
+// 	$('.work').show();
+// 	$('.mac-container').addClass('fade-in');
+// 	$('.iphone-container').addClass('fade-in-two');
+// 	$('.animation-container').addClass('fade-in');
+// });
 
 $('.header__link-work').click(function() {
 	$('.anim').addClass('plz').delay( 600 ).fadeOut( 300 );

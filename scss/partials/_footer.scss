@@ -1,6 +1,5 @@
 footer {
-	height: 36px;
-	position: absolute;
+	position: fixed;
 	bottom: 0.8rem;
 	right: 0.8rem;
 	transform: translateX(60px);
@@ -11,26 +10,7 @@ footer {
 }
 
 
-.github-icon {
-	width: 46px;
-	height: 46px;
-	float: right;
-	cursor: pointer;
-	transition: background-image 400ms ease-in-out;
-	background-image: url(../img/icon-linkedin.svg);
-	background-repeat: no-repeat;
-}
 
-.github-icon:hover {
-  background-image: url(../img/icon-linkedin.svg);
-  transition: background-image 400ms ease-in-out;
-}
-
-.mobile-container {
-	.github-icon {
-		right: 80px;
-	}
-}
 
 @keyframes slideLeft {
 	0% { transform: translateX(60px); }

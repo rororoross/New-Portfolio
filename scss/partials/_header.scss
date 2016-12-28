@@ -1,13 +1,17 @@
 header {
-	font-weight: 500;
+	width: 100%;
+	// display: flex;
 }
 
 .header__title {
 	text-align: center;
+	align-self: center;
+	width: 100%;
 	padding-top: .8rem;
 }
 
 nav {
+	display: flex;
 	position: fixed;
 	bottom: 0;
 	width: 100%;
@@ -17,8 +21,14 @@ nav {
 	display: none;
 }
 
+.nav__list {
+	display: flex;
+	width: 100%;
+}
+
 .nav__list-item {
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
 	width: 23%;
 	padding: 0.5% 0.5% 8px 0.5%;
 	text-align: center;
@@ -62,17 +72,29 @@ nav {
 
 
 @media screen and (min-width: 650px) {
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
 	nav {
-		float: right;
 		bottom: auto;
 		position: relative;
 		width: auto;
 		padding: .8rem;
+		align-self: flex-end;
+	}
+
+	.nav__list {
+		display: flex;
+		width: auto;
+		align-self: flex-end;
 	}
 
 	.header__title {
-		float: left;
 		width: auto;
+		align-self: flex-start;
 		padding: .8rem;
 	}
 
@@ -133,11 +155,8 @@ nav {
 		padding-top: 1.4rem;
 	}
 
-	.home__subheading {
-
-	}
-
-	.ibm-icon {
-
+	.ibm-logo {
+		padding-bottom: 5px;
+		padding-left: 4px;
 	}
 }
