@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/my-work/', function(req, res, next) {
-  setTimeout((function() {res.render('my-work/')}), 200);
+  setTimeout((function() {res.render('my-work/')}), 320);
 });
 
 router.get('/my-work/web/', function(req, res, next) {

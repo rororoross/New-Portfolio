@@ -1,4 +1,4 @@
-// Home - Text Swapping
+// Home Page
 if (document.body.classList.contains('home')) {
 
   var wordSwap = [
@@ -13,9 +13,38 @@ if (document.body.classList.contains('home')) {
   var getWord = document.getElementById('word__change');
      i = (i + 1) % wordSwap.length;
      getWord.innerHTML = (wordSwap[i]);
-     setTimeout(f, 1800);
+     setTimeout(f, 1600);
   })();
+
+  // Circle Animation
+  var getCircle = document.querySelector(".anim");
+  var getButton = document.querySelector(".check-out-work");
+  getButton.onclick = circleAnimation;
+  function circleAnimation() {
+    getCircle.classList.add("circle-expand");
+  }
 }
+
+// Work Page
+if (document.body.classList.contains('work')) {
+  var getWorkPieces = document.querySelectorAll(".work__piece");
+  var i;
+	for (i = 0; i < getWorkPieces.length; i++) {
+		getWorkPieces[i].addEventListener("click", workPieceAnimation);
+	}
+
+		function workPieceAnimation() {
+      var workContainer = document.querySelector(".work__container");
+      workContainer.classList.add("work__container-transformer");
+      var workContainerSpans = document.querySelectorAll("work__piece-span");
+      var i;
+    	for (i = 0; i < workContainerSpans.length; i++) {
+        workContainerSpans[i].classList.add("coolcool");
+      }
+}
+
+}
+
 
 // Mobile - Prototype
 $( ".route-button" ).click(function() {
@@ -86,31 +115,6 @@ $('.mcts-map').click(function() {
 	$('.routes-p').css('color', '#868686');
 });
 
-var getCircle = document.querySelector(".anim");
-var getButton = document.querySelector(".check-out-work");
-getButton.onclick = circleAnimation;
-function circleAnimation() {
-  getCircle.classList.add("circle-expand");
-}
-
-// $('.check-out-work').click(function() {
-// 	$('.anim').addClass('plz');
-// 	$('.home').delay( 600 ).fadeOut( 300 );
-// 	$('.work').show();
-// 	$('.mac-container').addClass('fade-in');
-// 	$('.iphone-container').addClass('fade-in-two');
-// 	$('.animation-container').addClass('fade-in');
-// });
-
-$('.header__link-work').click(function() {
-	$('.anim').addClass('plz').delay( 600 ).fadeOut( 300 );
-	$('.home').delay( 600 ).fadeOut( 300 );
-	$('.mac-container').addClass('fade-in');
-	$('.iphone-container').addClass('fade-in-two');
-	$('.animation-container').addClass('fade-in');
-	$('.mobile-container').show();
-});
-
 $(function() {
 
 	if ($('main').hasClass('web-main')){
@@ -139,21 +143,21 @@ for (i = 0; i < getRouteList.length; ++i) {
 // function routeDetails() {
 //   console.log("ayy lmao");
 // }
-	var getWorkContainers = document.querySelectorAll(".work_piece");
-	var i;
-	for (i = 0; i < getWorkContainers.length; i++) {
-		getWorkContainers[i].addEventListener("click", addAnimation);
-	}
-
-		function addAnimation() {
-			var getWork = document.querySelector(".work__container");
-			getWork.classList.add("work__container-animate");
-			var getHeadings = document.getElementsByTagName("h3");
-			var x;
-			for (x = 0; x < getHeadings.length; x++) {
-				getHeadings[x].style.display = "none";
-			}
-		}
+	// var getWorkContainers = document.querySelectorAll(".work_piece");
+	// var i;
+	// for (i = 0; i < getWorkContainers.length; i++) {
+	// 	getWorkContainers[i].addEventListener("click", addAnimation);
+	// }
+  //
+	// 	function addAnimation() {
+	// 		var getWork = document.querySelector(".work__container");
+	// 		getWork.classList.add("work__container-animate");
+	// 		var getHeadings = document.getElementsByTagName("h3");
+	// 		var x;
+	// 		for (x = 0; x < getHeadings.length; x++) {
+	// 			getHeadings[x].style.display = "none";
+	// 		}
+	// 	}
 
 
 

@@ -1,8 +1,6 @@
-.blue-bg {
-	background: $blue;
-}
-
 .work {
+	background: $blue;
+
 	.icon__work path {
 		fill: $yellow;
 	}
@@ -13,64 +11,72 @@
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
-	margin: 0 auto;
-	transform: translateY(180px);
-}
-
-.work__container-still {
-	transform: scale(0.22) translateY(-500px);
-}
-
-.mac-container, .iphone-container, .animation-container {
 	animation: fades 440ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
 
-.work__container-still {
-	.mac-container, .iphone-container, .animation-container {
-		opacity: 1;
+.work__container-transformer {
+	display: flex;
+	align-self: center;
+	justify-content: space-around;
+	align-items: center;
+	animation: workContainerAnimation 340ms ease-in-out;
+	animation-fill-mode: forwards;
+
+	.work__piece-span {
+		animation: fadeout 200ms;
 	}
-}
-.mac-container {
-	animation-delay: 50ms;
+
 }
 
-.iphone-container {
-	animation-delay: 150ms;
+.work__container-transformed {
+	display: flex;
+	align-self: center;
+	justify-content: space-around;
+	align-items: center;
+	transform: translateY(-90px) scale(.25);
+	opacity: 1;
+
+	.work__piece-span {
+		animation: fadeout 200ms;
+		animation-fill-mode: forwards;
+	}
+
 }
 
-.animation-container {
-	animation-delay: 250ms;
+@keyframes workContainerAnimation {
+	0% { transform: translateY(160px) scale(1); opacity: 1;}
+	100% { transform: translateY(-90px) scale(.25); opacity: 1; }
 }
 
-.work-action-container-fix {
-	width: auto;
-	margin: 2rem;
-	transition: 2800ms;
-	transition-delay: 80ms;
-	transition-timing-function: ease;
+
+.work__piece-link {
+	display: inline-block;
+	text-align: center;
 }
 
 .mac, .iphone, .animate-container {
 	transition: transform 300ms;
+	padding-bottom: 2rem;
+	display: block;
 }
 
-.mac:hover {
-	transform: scale(1.05) translateY(-18px);
-	transition: transform 500ms;
-}
-
-.iphone:hover {
-	transform: scale(1.05) translateY(-18px);
-	transition: transform 500ms;
-}
-
-.animate:hover {
-	transform: scale(1.05) translateY(-18px);
-	transition: transform 500ms;
-}
+// .mac:hover {
+// 	transform: scale(1.05) translateY(-18px);
+// 	transition: transform 500ms;
+// }
+//
+// .iphone:hover {
+// 	transform: scale(1.05) translateY(-18px);
+// 	transition: transform 500ms;
+// }
+//
+// .animate:hover {
+// 	transform: scale(1.05) translateY(-18px);
+// 	transition: transform 500ms;
+// }
 
 .mac {
 	width: 70px;
@@ -101,25 +107,6 @@
 	border-bottom: 2px solid yellow;
 }
 
-.work-container {
-	width: 90%;
-	max-width: 1900px;
-	margin: 0 auto;
-	transform: translateY(16rem);
-	transition: all 800ms;
-	transition-delay: 80ms;
-	transition-timing-function: ease;
-}
-
-.work-container-add {
-	width: 20%;
-	margin: 0 auto;
-	transform: translateY(4rem);
-	transition: all 800ms;
-	transition-timing-function: ease;
-	transition-delay: 80ms;
-}
-
 // Animation container
 .animate-container {
 	width: 280px;
@@ -141,30 +128,6 @@
 	background: #ffffff;
 	margin: 2px;
 	position: absolute;
-}
-
-.left-bar {
-	left: 0;
-	top: 180px;
-	animation: left-bar 3000ms infinite;
-}
-
-.right-bar {
-	right: 0;
-	top: 120px;
-	animation: right-bar 3000ms infinite;
-	animation-timing-function: linear;
-}
-
-.ball {
-	width: 6px;
-	height: 6px;
-	background: #ffffff;
-	position: absolute;
-	left: 130px;
-	top: 120px;
-	animation: ball 3000ms infinite;
-	animation-timing-function: linear;
 }
 
 .animate-container {
@@ -200,13 +163,6 @@
 	animation: ball-resize 2200ms infinite;
 	animation-timing-function: linear;
 }
-
-// @media screen and (max-width: 1500px) {
-// 	.left-bar { top: 100px; }
-// 	.right-bar { top: 40px; }
-// 	.ball { top: 40px; }
-// 	.animate-container { height: 111px; }
-// }
 
 .left-bar-resize {
 	width: 3px;
@@ -233,15 +189,9 @@
 	animation-timing-function: linear;
 }
 
-@keyframes bubble {
-	0% { transform: translateY(1000px); }
-	60% { transform: translateY(-50px); }
-	100% { transform: translateY(0px); }
-}
-
 @keyframes fades {
-	0% { opacity: 0; }
-	100% { opacity: 1; transform: translateY(20px); }
+	0% { opacity: 0; transform: translateY(140px)}
+	100% { opacity: 1; transform: translateY(160px); }
 }
 
 @keyframes fadesmobile {
@@ -252,6 +202,11 @@
 @keyframes fadeopacity {
 	0% { opacity: 0; }
 	100% { opacity: 1; }
+}
+
+@keyframes fadeout {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
 }
 
 @keyframes right-bar {
@@ -302,11 +257,7 @@
   100% { transform: translateX(-21px)translateY(-10px);}
 }
 
-.mobile__heading {
-	padding-top: 1.4rem;
-}
-
-.animate-heading {
+.mobile__heading, .animate-heading {
 	padding-top: 1.4rem;
 }
 
@@ -314,19 +265,20 @@
 	.mac { width: 100px; }
 	.iphone { width: 40px; }
 	.animate-heading { padding-top: 3rem; }
+	.animate-container { padding-bottom: 3.8rem; }
 }
 
 @media screen and (min-width: 900px) {
 	.mac { width: 160px; }
 	.iphone { width: 68px; }
-	.animate-container { margin-top: 3rem; }
+	.animate-container { margin-top: 3rem; padding-bottom: 4.8rem; }
+
 }
 
 @media screen and (min-width: 1040px) {
 	.mac { width: 180px; }
-	.iphone { width: 78px; }
-	.animate-container { margin-top: 5.1rem; }
-
+	.iphone { width: 78px; padding-bottom: 1.1rem;}
+	.animate-container { margin-top: 5.1rem; padding-bottom: 2.8rem; }
 }
 
 @media screen and (min-width: 1300px) {
@@ -336,6 +288,11 @@
 
 	.iphone {
 		width: 100%;
+		padding-bottom: 1.8rem;
+	}
+
+	.animate-container {
+		padding-bottom: 5.6rem;
 	}
 
 	.left-bar, .right-bar {

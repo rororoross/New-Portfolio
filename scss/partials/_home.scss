@@ -54,64 +54,22 @@ body {
 	position: absolute;
 	top: 49vh;
 	z-index: 9999999;
-	transform: translateZ(0);
 	-webkit-backface-visibility: hidden;
-	transform: translateZ(0) scale(1.0, 1.0);
-}
-
-.plz {
-	width: 20vw;
-	height: 20vw;
-	-webkit-animation: expander 700ms linear;
-	-webkit-animation-fill-mode: forwards;
-	z-index: 5;
 }
 
 .circle-expand {
 	animation: circleExpand 520ms;
 	animation-fill-mode: forwards;
-
 }
 
 @keyframes circleExpand {
-	0% { transform: scale(1) translateZ(0); }
-	1% { opacity: 1; }
+	0% { transform: scale(1); }
+	1% { opacity: 1;}
 	100% { transform: scale(40) translateZ(0); opacity: 1; }
 }
-
 
 @keyframes btn-hover {
   0%   { transform: translateY(2px);  }
   50%  { transform: translateY(-3px); }
   100%  { transform: translateY(2px); }
 }
-
-@-webkit-keyframes expander {
-  0%   { transform: scale(0); opacity: 1; }
-  100% { transform: scale(8.5); opacity: 1; z-index: 5;}
-}
-
-// @media screen and (max-width: 600px) {
-// 	@-webkit-keyframes expander {
-// 	  0%   { transform: scale(0); opacity: 1; }
-// 	  100% { transform: scale(15); opacity: 1; z-index: 5;}
-// 	}
-//
-// 	.anim {
-//     	bottom: 45vh;
-// 	}
-// }
-//
-// .home__heading {
-// 	font-size: 1.33rem;
-// 	padding-top: 1rem;
-// }
-//
-// .home__subheading {
-// 	font-size: .9rem;
-// 	padding-top: .4rem;
-// }
-//
-// .pie {
-// 	width: 110px;
-// }

@@ -1,31 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head><% include ../global/head.ejs %></head>
-  <body class="blue-bg work-layout work">
+  <body class="work">
   	<% include ../global/header.ejs %>
-    <main>
-      <div class="clearfix"></div>
         <div class="work__container">
-          <div class="mac-container work_piece">
-            <a href="/my-work/web"><img src="img/mac.png" alt="" class="mac"></a>
-            <h3 class="web-header">Web</h3>
+          <div class="mac-container work__piece">
+            <a class="work__piece-link" href="/my-work/web"><img src="img/mac.png" alt="" class="mac">
+            <span class="work__piece-span">Web</span></a>
           </div>
 
-          <div class="iphone-container work_piece">
-           <a href="/my-work/mobile"><img src="img/iphone.png" alt="" class="iphone"></a>
-            <h3 class="mobile__heading">Mobile Design</h3>
+          <div class="iphone-container work__piece">
+           <a class="work__piece-link" href="/my-work/mobile"><img src="img/iphone.png" alt="" class="iphone">
+           <span class="work__piece-span">Mobile Design</span></a>
           </div>
 
-          <div class="animation-container work_piece">
-            <a href="/my-work/animations"><div class="animate-container">
+          <div class="animation-container work__piece">
+            <a class="work__piece-link" href="/my-work/animations"><div class="animate-container">
               <div class="left-bar"></div>
               <div class="ball"></div>
               <div class="right-bar"></div>
-            </div></a>
-            <h3 class="animate-heading">Animations</h3>
+            </div><span class="work__piece-span">Animations</span></a>
         </div>
       </div>
-    </main>
     <% include ../global/scripts.ejs %>
   </body>
 </html>
