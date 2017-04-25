@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../../global/head.ejs %></head>
+  <body class="blue-bg web__items bluemix">
+  <% include ../../global/header.ejs %>
+  <% include ../work-heading.ejs %>
+
+  	<div class="web__item-container">
+  		<h1 class="web__item-header">IBM Container Service</h1>
+      <p class="web__item-text award">Design workshop to release in 4 months</p>
+
+  		<!-- <p class="web__item-expand">Click to view</p> -->
+  		<div class="web__item-monitor">
+  			<!-- <img src="../../img/arrow.svg" alt="" class="arrow"> -->
+  			<img src="../../img/monitor-kube.png" alt=""class="monitor__web-item">
+  			<!-- <img src="../../img/arrow.svg" alt="" class="arrow"> -->
+			</div>
+      <!-- <img class="web__project-view" src="img/bluemix-onboard.jpg" alt=""> -->
+			<div class="web__item-content" id="bluemix-body">
+				<h2 class="web__item-subheading">How we went from post-it notes to production</h2>
+				<p class="web__item-text">
+In late November I was approached to join a new team that would be focusing on Container Orchestration technology, mainly Kubernetes. Oh, and they needed to launch the entire thing in 4 months. The two things I love most about being a designer are shipping product and learning new things, so I decided to join the team.</br>
+        </br>
+        <p class="web__item-text">
+          I was familiar with containers but I had never heard of Kubernetes, so I spent my first few weeks almost solely learning, reading and watching videos on the technology. Having coding experience definitely helped here. Being familiar with the terminal I was able to do things like create containers and deploy an app to a cluster without being overwhelmed. There’s no better way to learn than by doing!
+        </br></br>
+        <h4 class="web__item-par-heading">Workshop</h4>
+        <p class="web__item-text">
+          Since we we're a brand new team the first thing we wanted to do was a Design Thinking Workshop. This allowed us to get everyone (VP, Marketing, Engineers, Product Manager, and Design) in a room together to begin defining our experience. Us designers are based in Austin, TX while the rest of the team is in Raleigh, NC, so it was also a good opportunity to put faces to Slack avatars.
+				</p></br>
+        <p class="web__item-text">
+          We had about a day and a half, and in that time we did Empathy Mapping, Scenario mapping (based on the CLI experience at the time), Need Statements, Writing Hills, and making an Experience Based Roadmap. In the research we did the week before we had tentatively decided on two main personas, Brad and Josh. In a nutshell, Brad was more repsonsible for the development of apps inside the cluster, while Josh's main concerns are more with the cluster itself.
+        </p>
+        </br>
+        <p class="web__item-text">
+          <img class="workshop__photo" src="../../img/workshop-scenario.jpg" alt="">
+          </br></br>
+          Going through the Scenario Mapping helped everyone not just understand what a user is actually doing, but why they are, how they feel about it, and when they would do certain tasks. This was also a great time to pick the brains
+          of our engineers to understand the architectural decisions they've made and if they truly align with user needs.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Scenario mapping combined with empathy mapping allowed us as a team to view our users not just as job titles and techincal roles, but as real people with thoughts and feelings. Discussing what they say, do, think and feel humanizes our users and helps us understand their feelings.
+        </p>
+        </br>
+        <p class="web__item-text">
+          After going through several of these design exercies we then wrote our hills. If you're not familiar with Hills, you can read about them <a href="https://www.ibm.com/design/thinking/keys/hills/" target="_blank">here</a>.
+          In short, Hills turn users’ needs into project goals, helping your team align around a common understanding of the intended outcomes to achieve.
+          The three hills we decided on we're centered around Creating, Managing, and Deploying. These would act as our "North Star" in the coming months.
+        </p>
+        </br>
+        <p class="web__item-text">
+          1) Josh, a lead developer, can create a Kubernetes cluster and attach persistent storage for his developers to use. He has a clear understanding of cost during this process.
+        </br></br>
+        2) Josh can view the overall health of the nodes of the cluster. He can scale the nodes as well as update the version of Kubernetes.
+        </br></br>
+        3) Brad can access the cluster and add pod workloads. He can make claims against the attached storage.
+        </p>
+        </br>
+        <p class="web__item-text">
+          We then used the rest of the workshop to scope our "minimum delightful experience" based on the user journeys we had gone through. We got a rough idea of what we needed to accomplish in each of the next 3 months before our public beta release. Getting everyone on the same page and thinking about our users got us prepared for the work ahead.
+        </p>
+        </br>
+        <h4 class="web__item-par-heading">UX & User Testing</h4>
+      </br>
+      <h4 class="web__item-par-heading">Visual Design</h4>
+      </br>
+      <h4 class="web__item-par-heading">Front End Development</h4>
+      </br>
+      <h4 class="web__item-par-heading">Analytics</h4>
+
+			</div>
+  	</div>
+  <% include ../../global/scripts.ejs %>
+  </body>
+</html>

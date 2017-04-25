@@ -14,8 +14,8 @@ router.get('/my-work/web/', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/web/')}), 250);
 });
 
-router.get('/my-work/web/web-onboarding', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-onboarding')}), 250);
+router.get('/my-work/web/web-container-service', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-container-service')}), 250);
 });
 
 router.get('/my-work/web/web-get-started', function(req, res, next) {
