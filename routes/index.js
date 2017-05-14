@@ -22,8 +22,8 @@ router.get('/my-work/web/web-get-started', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/web/web-get-started')}), 100);
 });
 
-router.get('/my-work/web/web-chatbot', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-chatbot')}), 330);
+router.get('/my-work/web/web-framer', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-framer')}), 330);
 });
 
 

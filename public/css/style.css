@@ -1846,9 +1846,10 @@ footer {
   .about-me-container h1 {
     font-size: 1.8rem;
     text-align: left;
-    padding: 0 0 .6rem 0; }
+    padding: 0 0 .8rem 0; }
   .about-me-container h2 {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     text-align: left;
     padding: 0 0 .2rem 0; }
   .about-me-container h3 {
@@ -1860,8 +1861,10 @@ footer {
     padding: 0 0 1rem 0; }
   .about-me-container h5 {
     color: #ffffff;
+    font-weight: 700;
+    font-size: 1.1rem;
     text-align: left;
-    padding: 1rem 0 0 0; }
+    padding: 1rem 0 0.4rem 0; }
   .about-me-container p {
     line-height: 1.4; }
   .about-me-container a {
@@ -1883,7 +1886,7 @@ footer {
 
 @media screen and (min-width: 500px) {
   .about-me-container {
-    padding-top: 140px;
+    padding-top: 100px;
     padding-bottom: 100px;
     max-width: 600px; }
   .where-section, .how-section {
