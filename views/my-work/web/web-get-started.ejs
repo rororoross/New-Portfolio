@@ -34,22 +34,39 @@
 				</p></br>
         <h4 class="web__item-par-heading">Content First Design</h4>
         <p class="web__item-text">
-				For the majority of the project it was myself designing and developing, while working with a product manager. We were grateful to get content from a developer that we could use as a starting off point for our guide.
+				I thought this would be an interesting piece for my portfolio because it's a bit different than most projects I've worked on. There wasn't a whole lot of need for visual design, but it was interesting to design content-first. A lot of this project revolved around analytics and A/B testing, which really made me look at my work differently. For the majority of the project it was myself designing and developing, while working with a product manager. We were grateful to get content from a developer that we could use as a starting off point for our guide.
         <img src="../../img/guide-content.png" class="guide__image">
         I wanted to focus on the content before I even started any interface design. The first draft of the guide was 4,000 words and would over 17 minutes just to read, let alone complete.
       </br></br>I cut that down to 800 words, focusing just on the essentials. Now that I had edited it down to a reasonable time, I was ready to do some user testing with just the word document. I really wanted to make sure the content was perfect before jumping into the design and coding stages.
 
-    </br></br>In total I did 5 user tests with developers, in a round of 2, 2 and 1, with editing and making changes in between.
+    </br></br>In total I did 5 user tests with developers, in a round of 2, 2 and 1, with editing and making changes in between. I was only testing the content, there was no UI yet.
     I learned lots of things, some bad and some good.
     One thing I consistently saw was how excited people would get when they had a quick, successful experience.
-    This instilled confidence and they wanted to do more with the product.
+    This instilled confidence and they wanted to do more with the product. We had users deploying a Node.js app in ~10 minutes, which was great.
         </p>
       </br>
         <h4 class="web__item-par-heading">Design and Implementation</h4>
-        <p class="web__item-text">
-
-        </p>
-			</div>
+        <p class="web__item-text">We really wanted to move quickly with this project, which is why we just focused on one guide for one language. Our plan was to use the (hopefully positive) results from our analytics to then make a case for more resources and time to really expand the project. I worked in 2 week sprints and we ended up being in production in about a month.</p>
+      </br><p class="web__item-text">Through the user testing I had done I had found users really wanted to focus on the steps at-hand, but they still wanted to understand why they had to do certain things, or what certain terms meant. I decided to use the main section for the required steps, and the side section for additional information.</p>
+    </br>
+        <img class="workshop__photo" src="../../img/ibm-screen-5.png" alt="">
+      </br></br>
+        <p class="web__item-text">I actually didn't spend much time at all in Sketch for this project, as I did almost all the design work right in the browser. After coding all the content up, making it responsive, we were ready to test our hypothesis.</p>
+        <p class="web__item-text">For our analytics tools we used Optimizely, Segment, Amplitude and Intercom. We used Optimizely to split the traffic of brand new users, and sent half an Intercom message with a link to our Node guide.</p>
+      </br>
+        <img class="workshop__photo" src="../../img/ibm-screen-6.png" alt="">
+      </br></br>
+        <p class="web__item-text">We let the test run for a few weeks so we could get enough numbers for statistical significance. It was exciting to come to work everyday and use Amplitude to see how our test was doing. What we ended up finding was that users would be much more productive if they were shown our guide! </p>
+      </br>
+        <ul>
+          <li>38% more likely to be a productive user (deploy an app or a service)</li>
+          <li>40% more likely to provision a service</li>
+          <li>50% more likely to create an app</li>
+        </ul>
+      </br>
+      <p class="web__item-text">We then used these results to gather the resources required to make more guides for more languages. We got the guides into our documentation, and now the guide I made is getting ~30 GitHub clones a day, and is in our top 10 most popular repos. In total 9 guides were made, and they average about 1,000 unique clones every week. That's almost 25,000 a year.</p>
+    </br><p class="web__item-text">So one designer and a product manager spent one month on a project that ended up empowering 25,000 users a year. This project really showed me how important (and cool) analytics can be with design. Being able to show the impact you can make on a product and use that to create a better user experience is something I think about with every project I start now.</p>
+      </div>
   	</div>
   <% include ../../global/scripts.ejs %>
   </body>

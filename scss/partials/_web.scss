@@ -8,12 +8,7 @@
 	}
 }
 
-.web-container {
-	display: flex;
-	width: 100%;
-	height: auto;
-	margin-top: 25vh;
-}
+
 
 .monitor__mac {
 	width: 275px;
@@ -36,6 +31,10 @@
 .work__container-animate {
 	animation: bye 400ms ease-in-out;
 	animation-fill-mode: forwards;
+}
+
+.web__piece {
+	padding-top: 40px;
 }
 
 .web__piece-bubble {
@@ -71,11 +70,12 @@
 
 .monitor__container {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
 	margin: 0 auto;
-	transform: translateY(-240px);
+	transform: translateY(0px);
 }
 
 @keyframes monitor-move {
@@ -85,7 +85,10 @@
 }
 
 .web__monitor {
-	width: 300px;
+	width: 70%;
+	max-width: 420px;
+	margin: 0 auto;
+	display: block;
 }
 
 .web__piece h2 {

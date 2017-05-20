@@ -1,5 +1,6 @@
 .work {
 	background: $blue;
+	padding-bottom: 120px;
 
 	.icon__work path {
 		fill: $yellow;
@@ -8,6 +9,10 @@
 
 .blue-bg {
 	background: $blue;
+
+	nav {
+		background: $blue;
+	}
 }
 
 .work__container {
@@ -19,6 +24,7 @@
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 	opacity: 0;
+	margin-top: 60px;
 }
 
 .work__container-transformer {
@@ -40,19 +46,20 @@
 	align-self: center;
 	justify-content: space-around;
 	align-items: center;
-	transform: translateY(-90px) scale(.25);
+	transform: translateY(20px) scale(.85);
 	opacity: 1;
+	max-width: 400px;
+	margin: 0 auto;
 
 	.work__piece-span {
-		animation: fadeout 200ms;
-		animation-fill-mode: forwards;
+		display: none;
 	}
 
 }
 
 @keyframes workContainerAnimation {
 	0% { transform: translateY(160px) scale(1); opacity: 1;}
-	100% { transform: translateY(-90px) scale(.25); opacity: 1; }
+	100% { transform: translateY(-160px) scale(.25); opacity: 1; }
 }
 
 
@@ -195,7 +202,7 @@
 
 @keyframes fades {
 	0% { opacity: 0; transform: translateY(140px)}
-	100% { opacity: 1; transform: translateY(160px); }
+	100% { opacity: 1; transform: translateY(20px); }
 }
 
 @keyframes fadesmobile {
@@ -277,12 +284,55 @@
 	.iphone { width: 68px; }
 	.animate-container { margin-top: 3rem; padding-bottom: 4.8rem; }
 
+	.work__container-transformed {
+		.mac {
+			width: 100px;
+		}
+		.iphone {
+			width: 40px;
+		}
+		.animate-container {
+			width: 100px;
+			padding-bottom: 4rem;
+		}
+
+		.left-bar {
+			left: 0;
+			top: 8px;
+			width: 3px;
+			height: 16px;
+			animation: left-bar-resize 2200ms infinite;
+			animation-timing-function: linear;
+		}
+
+		.right-bar {
+			right: 0;
+			top: 4px;
+			width: 3px;
+			height: 16px;
+			animation: right-bar-resize 2200ms infinite;
+			animation-timing-function: linear;
+		}
+
+		.ball {
+			width: 3px;
+			height: 3px;
+			background: #ffffff;
+			position: absolute;
+			left: 26px;
+			top: 5px;
+			animation: ball-resize 2200ms infinite;
+			animation-timing-function: linear;
+		}
+	}
+
 }
 
 @media screen and (min-width: 1040px) {
 	.mac { width: 180px; }
 	.iphone { width: 78px; padding-bottom: 1.1rem;}
 	.animate-container { margin-top: 5.1rem; padding-bottom: 2.8rem; }
+	.work__container { margin-top: 140px; }
 }
 
 @media screen and (min-width: 1300px) {
@@ -295,9 +345,13 @@
 		padding-bottom: 1.8rem;
 	}
 
-	.animate-container {
-		padding-bottom: 5.6rem;
+	.work__container-transformed {
+		.animate-container {
+			padding-bottom: 0rem;
+		}
 	}
+
+
 
 	.left-bar, .right-bar {
 		width: 6px;
@@ -319,7 +373,7 @@
 		animation-timing-function: linear;
 	}
 
-	.animate-container { width: 280px; height: 166px; margin-top: 3rem;}
+	.animate-container { width: 280px; height: 166px; margin-top: 3rem; padding-bottom: 5.8rem;}
 	.web-header { padding-top: 2rem; }
 	.animation-container { padding-top: 0; }
 	.left-bar, .ball, .right-bar { top: 0px; }
@@ -337,5 +391,12 @@
 		top: 0px;
 		animation: right-bar 3000ms infinite;
 		animation-timing-function: linear;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.work__container-transformed {
+			transform: translateY(20px) scale(1);
+			max-width: 400px;
 	}
 }

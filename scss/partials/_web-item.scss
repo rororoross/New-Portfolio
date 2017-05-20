@@ -10,6 +10,7 @@
 
 	ul {
 		list-style: initial;
+		list-style-position: inside;
 	}
 	ul li {
 		font-weight: 600;
@@ -17,32 +18,39 @@
 }
 
 .web__item-container {
-	transform: translateY(-180px);
+	transform: translateY(20px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	animation: fadeopacity 440ms;
+	max-width: 95%;
+	margin: 0 auto;
+	padding-bottom: 80px;
+	animation: fadeopacity 140ms;
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 }
 
 .monitor__web-item{
-	width: 399px;
+	width: 80%;
+	margin: 0 auto;
+	display: block;
 	transform: scale(1.05);
 	cursor: pointer;
 }
 
 .web__item-header {
-	// padding-bottom: 2rem;
+	font-size: 1.4rem;
 }
 
 .award {
 	padding: .5rem 0 2rem 0;
+	text-align: center;
+	line-height: 1.2;
 }
 
 .web__item-par-heading {
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	padding-bottom: .4rem;
 }
 
@@ -80,6 +88,7 @@
 .web__item-subheading {
 	padding-bottom: 1rem;
 	text-align: center;
+	font-size: 1.1rem;
 }
 
 .web__item-content {
@@ -95,12 +104,16 @@
 }
 
 .guide__image {
-	width: 100%;
+	max-width: 90%;
+	margin: 0 auto;
+	display: block;
 	padding: 1rem 0 1rem 0;
 }
 
 .workshop__photo {
-	max-width: 800px;
+	max-width: 90%;
+	margin: 0 auto;
+	display: block;
 }
 
 @keyframes fade-in {
@@ -243,6 +256,58 @@
 @keyframes btn-slide-next {
 	0% { transform: translateX(500px) rotate(90deg); }
 	100% { transform: translateX(0px) rotate(90deg); }
+}
+
+@media screen and (min-width: 500px) {
+	.web__item-header {
+		font-size: 2rem;
+	}
+
+	.web__item-subheading {
+		font-size: 1.3rem;
+	}
+
+}
+
+@media screen and (min-width: 720px) {
+
+	.monitor__container {
+		flex-direction: row;
+	}
+
+	.web__monitor {
+		width: 80%;
+	}
+
+	.web__piece h2 {
+		font-size: 1rem;
+	}
+
+	.web__item-subheading {
+		font-size: 1.6rem;
+	}
+
+	.web__item-par-heading {
+		font-size: 1.4rem;
+	}
+
+}
+
+@media screen and (min-width: 1000px) {
+
+
+	.web__item-header {
+		font-size: 2.6rem;
+	}
+
+	.web__item-subheading {
+		font-size: 1.6rem;
+	}
+
+	.web__item-par-heading {
+		font-size: 1.4rem;
+	}
+
 }
 
 // .web__project-view {
