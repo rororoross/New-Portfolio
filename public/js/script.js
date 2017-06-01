@@ -25,6 +25,14 @@ if (document.body.classList.contains('home')) {
   }
 }
 
+  // Nav Links
+  // var getAbout = document.querySelector(".link-about");
+  // var getHomeContainer = document.querySelector(".home__container");
+  // getAbout.onclick = aboutAnimation;
+  // function aboutAnimation() {
+  //   getHomeContainer.classList.add("hometoabout");
+  // }
+
 // Work Page
 if (document.body.classList.contains('work')) {
   var getWorkPieces = document.querySelectorAll(".work__piece");
@@ -45,94 +53,147 @@ if (document.body.classList.contains('work')) {
 
 }
 
-
 // Mobile - Prototype
-$( ".route-button" ).click(function() {
-	$(".routes").toggleClass("routes-expand");
-	$(this).toggleClass("routes-button-raise");
-	$(".bus-subheader").toggleClass("subheader-move");
-});
 
-$('.mcts-home').click(function() {
-	$('.mcts-home-screen').show();
-	$('.mcts-favorites-screen').hide();
-	$('.mcts-routes-screen').hide();
-	$('.mcts-map-screen').hide();
-	$('#addfavorite').hide();
-	$('.home-changefill').attr('fill','#34b262');
-	$('.home-p').css('color', '#34b262');
-	$('.fav-p').css('color', '#868686');
-	$('.routes-p').css('color', '#868686');
-	$('.changefill').attr('fill','#868686');
-	$('.routes-changefill').attr('fill','#868686');
-	$('.map-changefill').attr('fill','#868686');
-	$('.map-p').css('color', '#868686');
-});
+  // Main CTA button
+  var routeButton = document.querySelector(".route-button");
+  var routes = document.querySelector(".routes");
+  var busSubheader = document.querySelector(".bus-subheader");
 
-$('.mcts-favorites').click(function() {
-	$('.mcts-favorites-screen').show();
-	$('.mcts-home-screen').hide();
-	$('.mcts-map-screen').hide();
-	$('.mcts-routes-screen').hide();
-	$('.changefill').attr('fill','#34b262');
-	$('.home-changefill').attr('fill','#868686');
-	$('.routes-changefill').attr('fill','#868686');
-	$('.map-changefill').attr('fill','#868686');
-	$('.fav-p').css('color', '#34b262');
-	$('.home-p').css('color', '#868686');
-	$('.routes-p').css('color', '#868686');
-	$('.map-p').css('color', '#868686')
-});
+  routeButton.addEventListener("click", function()
+    {
+      routes.classList.toggle("routes-expand");
+      this.classList.toggle("routes-button-raise");
+      busSubheader.classList.toggle("subheader-move");
+    }, false);
 
-$('.mcts-routes').click(function() {
-	$('.mcts-routes-screen').show();
-	$('.mcts-home-screen').hide();
-	$('.mcts-favorites-screen').hide();
-	$('.mcts-map-screen').hide();
-	$('.routes-changefill').attr('fill','#34b262');
-	$('.home-changefill').attr('fill','#868686');
-	$('.changefill').attr('fill','#868686');
-	$('.map-changefill').attr('fill','#868686');
-	$('.routes-p').css('color', '#34b262');
-	$('.home-p').css('color', '#868686');
-	$('.fav-p').css('color', '#868686');
-	$('.map-p').css('color', '#868686');
-});
+  // Home Tab
+  var home = document.querySelector(".mcts-home");
+  var homeScreen = document.querySelector(".mcts-home-screen");
+  var favorites = document.querySelector(".mcts-favorites");
+  var favoritesScreen = document.querySelector(".mcts-favorites-screen");
+  var routesTab = document.querySelector(".mcts-routes");
+  var routesScreen = document.querySelector(".mcts-routes-screen");
+  var mapsTab = document.querySelector(".mcts-map");
+  var mapsScreen = document.querySelector(".mcts-map-screen");
+
+  var homeFill = document.querySelector(".home-changefill");
+  var routeFill = document.querySelector(".changefill");
+
+  home.addEventListener('click', function(){
+    homeScreen.style.display = "block";
+    favoritesScreen.style.display = "none";
+    routesScreen.style.display = "none";
+    homeFill.style.fill = "#34b262";
+    console.log("homes");
+
+  }, false);
+
+  favorites.addEventListener('click', function(){
+    favoritesScreen.style.display = "block";
+    homeScreen.style.display = "none";
+    routesScreen.style.display = "none";
+    mapsScreen.style.display = "none";
+    routeFill.style.fill = "#34b262";
+    console.log("favs");
+  }, false);
+
+  routesTab.addEventListener('click', function(){
+    routesScreen.style.display = "block";
+    homeScreen.style.display = "none";
+    favoritesScreen.style.display = "none";
+    mapsScreen.style.dispaly = "none";
+    console.log("routes");
+  }, false);
+
+  mapsTab.addEventListener('click', function(){
+    mapsScreen.style.display = "block";
+    homeScreen.style.display = "none";
+    favoritesScreen.style.display = "none";
+    routesScreen.style.display = "none";
+    console.log("maps");
+  }, false);
+
+// $('.mcts-home').click(function() {
+// 	$('.mcts-home-screen').show();
+// 	$('.mcts-favorites-screen').hide();
+// 	$('.mcts-routes-screen').hide();
+// 	$('.mcts-map-screen').hide();
+// 	$('#addfavorite').hide();
+// 	$('.home-changefill').attr('fill','#34b262');
+// 	$('.home-p').css('color', '#34b262');
+// 	$('.fav-p').css('color', '#868686');
+// 	$('.routes-p').css('color', '#868686');
+// 	$('.changefill').attr('fill','#868686');
+// 	$('.routes-changefill').attr('fill','#868686');
+// 	$('.map-changefill').attr('fill','#868686');
+// 	$('.map-p').css('color', '#868686');
+// });
+
+// $('.mcts-favorites').click(function() {
+// 	$('.mcts-favorites-screen').show();
+// 	$('.mcts-home-screen').hide();
+// 	$('.mcts-map-screen').hide();
+// 	$('.mcts-routes-screen').hide();
+// 	$('.changefill').attr('fill','#34b262');
+// 	$('.home-changefill').attr('fill','#868686');
+// 	$('.routes-changefill').attr('fill','#868686');
+// 	$('.map-changefill').attr('fill','#868686');
+// 	$('.fav-p').css('color', '#34b262');
+// 	$('.home-p').css('color', '#868686');
+// 	$('.routes-p').css('color', '#868686');
+// 	$('.map-p').css('color', '#868686')
+// });
+//
+// $('.mcts-routes').click(function() {
+// 	$('.mcts-routes-screen').show();
+// 	$('.mcts-home-screen').hide();
+// 	$('.mcts-favorites-screen').hide();
+// 	$('.mcts-map-screen').hide();
+// 	$('.routes-changefill').attr('fill','#34b262');
+// 	$('.home-changefill').attr('fill','#868686');
+// 	$('.changefill').attr('fill','#868686');
+// 	$('.map-changefill').attr('fill','#868686');
+// 	$('.routes-p').css('color', '#34b262');
+// 	$('.home-p').css('color', '#868686');
+// 	$('.fav-p').css('color', '#868686');
+// 	$('.map-p').css('color', '#868686');
+// });
 
 
-$('.mcts-map').click(function() {
-	$('.mcts-map-screen').show();
-	$('.mcts-routes-screen').hide();
-	$('.mcts-home-screen').hide();
-	$('.mcts-favorites-screen').hide();
-	$('.map-changefill').attr('fill','#34b262');
-	$('.home-changefill').attr('fill','#868686');
-	$('.changefill').attr('fill','#868686');
-	$('.routes-changefill').attr('fill','#868686');
-	$('.map-p').css('color', '#34b262');
-	$('.home-p').css('color', '#868686');
-	$('.fav-p').css('color', '#868686');
-	$('.routes-p').css('color', '#868686');
-});
+// $('.mcts-map').click(function() {
+// 	$('.mcts-map-screen').show();
+// 	$('.mcts-routes-screen').hide();
+// 	$('.mcts-home-screen').hide();
+// 	$('.mcts-favorites-screen').hide();
+// 	$('.map-changefill').attr('fill','#34b262');
+// 	$('.home-changefill').attr('fill','#868686');
+// 	$('.changefill').attr('fill','#868686');
+// 	$('.routes-changefill').attr('fill','#868686');
+// 	$('.map-p').css('color', '#34b262');
+// 	$('.home-p').css('color', '#868686');
+// 	$('.fav-p').css('color', '#868686');
+// 	$('.routes-p').css('color', '#868686');
+// });
 
-$(function() {
-
-	if ($('main').hasClass('web-main')){
-	$('.work__container').addClass('work-container-add');
-	$('h3').addClass('header-hide');
-	$('.web-container').show().addClass('web-container-transition');
-	$('.mobile-container').hide();
-	$('body').addClass('work-bg');
-	$('header').addClass('work-header');
-	$('.mac').addClass('mac-resize').addClass('current-border');
-	$('.iphone').addClass('iphone-resize');
-	$('.animate-container').addClass('animate-container-resize');
-	$('.left-bar').addClass('left-bar-resize');
-	$('.right-bar').addClass('right-bar-resize');
-	$('.ball').addClass('ball-resize');
-	$('body').addClass('scroll-vis');
-	}
-});
+// $(function() {
+//
+// 	if ($('main').hasClass('web-main')){
+// 	$('.work__container').addClass('work-container-add');
+// 	$('h3').addClass('header-hide');
+// 	$('.web-container').show().addClass('web-container-transition');
+// 	$('.mobile-container').hide();
+// 	$('body').addClass('work-bg');
+// 	$('header').addClass('work-header');
+// 	$('.mac').addClass('mac-resize').addClass('current-border');
+// 	$('.iphone').addClass('iphone-resize');
+// 	$('.animate-container').addClass('animate-container-resize');
+// 	$('.left-bar').addClass('left-bar-resize');
+// 	$('.right-bar').addClass('right-bar-resize');
+// 	$('.ball').addClass('ball-resize');
+// 	$('body').addClass('scroll-vis');
+// 	}
+// });
 
 // See Routes Direction
 var getRouteList = document.querySelectorAll(".route-list-name"), i;

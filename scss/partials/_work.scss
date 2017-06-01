@@ -1,5 +1,9 @@
 .work {
-	background: $blue;
+	// background: $blue;
+	background: #FEAC5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	padding-bottom: 120px;
 
 	.icon__work path {
@@ -8,10 +12,17 @@
 }
 
 .blue-bg {
-	background: $blue;
+	// background: $blue;
+	background: #FEAC5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 
 	nav {
-		background: $blue;
+		background: #FEAC5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	}
 }
 
@@ -203,11 +214,6 @@
 @keyframes fades {
 	0% { opacity: 0; transform: translateY(140px)}
 	100% { opacity: 1; transform: translateY(20px); }
-}
-
-@keyframes fadesmobile {
-	0% { opacity: 0; }
-	100% { opacity: 1; transform: translateY(-160px); }
 }
 
 @keyframes fadeopacity {

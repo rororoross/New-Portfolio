@@ -32,7 +32,7 @@ router.get('/my-work/mobile', function(req, res, next) {
 });
 
 router.get('/about-me', function(req, res, next) {
-	res.render('about-me');
+  res.render('about-me');
 });
 
 router.get('/get-in-touch', function(req, res, next) {

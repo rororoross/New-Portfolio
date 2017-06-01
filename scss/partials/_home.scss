@@ -7,7 +7,14 @@ body {
 	color: $white;
 	overflow: auto;
 	overflow-x: hidden;
-	background-color: $red;
+	background-size: cover;
+	min-height: 100%;
+	// background-color: $red;
+	// background: #CB356B;  /* fallback for old browsers */
+		// background: -webkit-linear-gradient(to bottom, #BD3F32, #CB356B);  /* Chrome 10-25, Safari 5.1-6 */
+		// background: linear-gradient(to bottom right, #BD3F32, #CB356B) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+		background: -webkit-linear-gradient(to right, #8e44ad, #c0392b);  /* Chrome 10-25, Safari 5.1-6 */
+		background: linear-gradient(to bottom right, #8e44ad, #c0392b) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	max-width: 2000px;
 	margin: 0 auto;
 }
@@ -16,10 +23,39 @@ body {
 	display: flex;
 	flex-direction: column;
 
+
+
+		@keyframes aboutbg {
+			0% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+
 	.icon__home path {
 		fill: $yellow;
 	}
+
+
 }
+
+.home__container {
+	display: flex;
+	flex-direction: column;
+	animation: fillin 400ms ease-in;
+	animation-fill-mode: forwards;
+
+}
+
+.hometoabout {
+	// animation: homeabout 160ms ease;
+	// animation-fill-mode: forwards;
+	// background: linear-gradient(to bottom right, #DD2476, #FF512F) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: aboutbg 200ms;
+	}
+
+// @keyframes homeabout {
+// 	0% {opacity: 0; }
+// 	100% {opacity: 1;}
+// }
 
 .pie {
 	align-self: center;
@@ -49,7 +85,11 @@ body {
 }
 
 .anim {
-	background-color: $blue;
+	// background-color: $blue;
+	background: #FEAC5E;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 	width: 3rem;
 	height: 3rem;
 	opacity: 0;
