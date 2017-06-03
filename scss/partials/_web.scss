@@ -49,8 +49,9 @@
 }
 
 .project__selected {
-	opacity: 0;
-	transition: all 240ms;
+	// opacity: 0;
+	// transition: all 240ms;
+	animation: fadeout 180ms;
 }
 
 .project__two {
@@ -61,6 +62,10 @@
 	animation-delay: 250ms;
 }
 
+@keyframes fadeout {
+	0% { opacity: 1; }
+	100% { opacity: 0; }
+}
 
 
 @keyframes bye {

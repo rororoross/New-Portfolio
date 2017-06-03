@@ -1087,8 +1087,8 @@ footer {
           animation-delay: 50ms; }
 
 .project__selected {
-  opacity: 0;
-  transition: all 240ms; }
+  -webkit-animation: fadeout 180ms;
+          animation: fadeout 180ms; }
 
 .project__two {
   -webkit-animation-delay: 150ms;
@@ -1097,6 +1097,12 @@ footer {
 .project__three {
   -webkit-animation-delay: 250ms;
           animation-delay: 250ms; }
+
+@keyframes fadeout {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 
 @-webkit-keyframes bye {
   0% {
