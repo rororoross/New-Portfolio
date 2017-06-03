@@ -141,9 +141,8 @@ if (document.body.classList.contains('web-work')) {
     getProjects[i].addEventListener("click", addFade);
   }
 
-    function addFade() {
-      console.log("heyyyy");
-      var getMonitorContainer = document.querySelector(".monitor__container")
-        getMonitorContainer.classList.add("project__selected");
-    }
+  function addFade() {
+    var getMonitorContainer = document.querySelector(".monitor__container")
+      getMonitorContainer.classList.add("project__selected");
+  }
 }
