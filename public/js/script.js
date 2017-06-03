@@ -79,39 +79,92 @@ if (document.body.classList.contains('work')) {
 
   var homeFill = document.querySelector(".home-changefill");
   var routeFill = document.querySelector(".changefill");
+  var screenList = document.querySelectorAll(".screen");
+  var i;
+  var iconList = document.querySelectorAll(".changefill");
+  var navHome = document.querySelector(".nav-home");
+  var navFavorites = document.querySelector(".nav-favorites");
+  var navRoutes = document.querySelector(".nav-routes");
+  var navMap = document.querySelector(".nav-map");
+  var navList = document.querySelectorAll(".nav-p");
+  var homeP = document.querySelector(".home-p");
+  var favP = document.querySelector
 
   home.addEventListener('click', function(){
+    for (i = 0; i < screenList.length; i++) {
+      screenList[i].style.display = "none";
+    }
     homeScreen.style.display = "block";
-    favoritesScreen.style.display = "none";
-    routesScreen.style.display = "none";
-    homeFill.style.fill = "#34b262";
-    console.log("homes");
+
+    for (i = 0; i < iconList.length; i++) {
+      iconList[i].style.fill = "#838383";
+    }
+    navHome.style.fill="#34b262";
+
+    for (i = 0; i < iconList.length; i++) {
+      navList[i].style.color = "#838383";
+    }
+    homeP.style.color="#34b262";
+
+    // homeScreen.style.display = "block";
+    // favoritesScreen.style.display = "none";
+    // routesScreen.style.display = "none";
+    // homeFill.style.fill = "#34b262";
+    // console.log("homes");
 
   }, false);
 
+
   favorites.addEventListener('click', function(){
+    for (i = 0; i < screenList.length; i++) {
+      screenList[i].style.display = "none";
+    }
     favoritesScreen.style.display = "block";
-    homeScreen.style.display = "none";
-    routesScreen.style.display = "none";
-    mapsScreen.style.display = "none";
-    routeFill.style.fill = "#34b262";
-    console.log("favs");
+
+    for (i = 0; i < iconList.length; i++) {
+      iconList[i].style.fill = "#838383";
+    }
+    navFavorites.style.fill="#34b262";
+    // favoritesScreen.style.display = "block";
+    // homeScreen.style.display = "none";
+    // routesScreen.style.display = "none";
+    // mapsScreen.style.display = "none";
+    // routeFill.style.fill = "#34b262";
+    // console.log("favs");
   }, false);
 
   routesTab.addEventListener('click', function(){
+    for (i = 0; i < screenList.length; i++) {
+      screenList[i].style.display = "none";
+    }
     routesScreen.style.display = "block";
-    homeScreen.style.display = "none";
-    favoritesScreen.style.display = "none";
-    mapsScreen.style.dispaly = "none";
-    console.log("routes");
+
+    for (i = 0; i < iconList.length; i++) {
+      iconList[i].style.fill = "#838383";
+    }
+    navRoutes.style.fill="#34b262";
+    // routesScreen.style.display = "block";
+    // homeScreen.style.display = "none";
+    // favoritesScreen.style.display = "none";
+    // mapsScreen.style.dispaly = "none";
+    // console.log("routes");
   }, false);
 
   mapsTab.addEventListener('click', function(){
+    for (i = 0; i < screenList.length; i++) {
+      screenList[i].style.display = "none";
+    }
     mapsScreen.style.display = "block";
-    homeScreen.style.display = "none";
-    favoritesScreen.style.display = "none";
-    routesScreen.style.display = "none";
-    console.log("maps");
+
+    for (i = 0; i < iconList.length; i++) {
+      iconList[i].style.fill = "#838383";
+    }
+    navMap.style.fill="#34b262";
+    // mapsScreen.style.display = "block";
+    // homeScreen.style.display = "none";
+    // favoritesScreen.style.display = "none";
+    // routesScreen.style.display = "none";
+    // console.log("maps");
   }, false);
 
 // $('.mcts-home').click(function() {

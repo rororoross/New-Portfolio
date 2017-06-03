@@ -1440,6 +1440,9 @@ footer {
   display: block;
   text-align: center; }
 
+.home-p {
+  color: #34b262; }
+
 .mcts-icon {
   width: 24px;
   display: block;
