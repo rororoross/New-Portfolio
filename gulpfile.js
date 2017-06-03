@@ -47,7 +47,7 @@ gulp.task('img', () =>
   gulp.src('img/**.*')
     .pipe(gulp.dest('public/img')));
 
-gulp.task('styles', function(){
+gulp.task('sass', function(){
   gulp.src('scss/**/*.scss')
     .pipe(sass({
       outputStyle: 'compressed'
@@ -56,11 +56,11 @@ gulp.task('styles', function(){
     .pipe(browserSync.stream())
 	});
 
-gulp.task('default', ['styles', 'js', 'img', 'browser-sync'], function(){
+gulp.task('default', ['sass', 'js', 'img', 'browser-sync'], function(){
 	gulp.watch(SOURCE.scss, ['sass']);
 	gulp.watch(SOURCE.ejs, ['bs-reload']);
 	gulp.watch(SOURCE.js, ['bs-reload']);
 	gulp.watch(SOURCE.js, ['bs-reload']);
 });
 
-gulp.task('build', ['img', 'styles', 'js']);
+gulp.task('build', ['img', 'sass', 'js']);

@@ -1,9 +1,8 @@
 .mobile-work {
+	padding-bottom: 100px;
 	.web-header, .mobile-header, .animate-heading {
 		display: none;
 	}
-
-	padding-bottom: 100px
 }
 
 #bus-app {
@@ -67,7 +66,6 @@
 	overflow: hidden;
 }
 
-/* Phone Stylings */
 #phone-head {
 	text-align: center;
 	font-weight: 500;
@@ -75,7 +73,6 @@
 	margin: 0 auto;
 }
 
-/* Phone Stylings */
 #bus-header {
 	background-color: $green;
 	width: 100%;
@@ -567,11 +564,6 @@
 }
 
 @media screen and (max-width: 1500px) {
-	// .phone-prototype {
-	// 	width: 50%;
-	// 	float: left;
-	// }
-
 	.phone-background {
 		margin: 0 auto;
 		display: block;
@@ -580,12 +572,6 @@
 		font-weight: 500;
 		text-align: center;
 	}
-}
-
-@media screen and (max-width: 1060px) {
-	// .phone-prototype {
-	// 	width: 100%;
-	// }
 }
 
 @media screen and (max-width: 400px) {
@@ -689,9 +675,6 @@
 	font-weight: 600;
 	margin-left: 14px;
 }
-
-
-
 
 /* App Details */
 .app-info {

@@ -1,63 +1,24 @@
 .about-me {
-	// background: #9855D4;
-	// background: #FF512F;  /* fallback for old browsers */
-	// background: #FF512F;  /* fallback for old browsers */
-	// background: -webkit-linear-gradient(to right, #DD2476, #FF512F);  /* Chrome 10-25, Safari 5.1-6 */
-	// background: linear-gradient(to bottom right, #DD2476, #FF512F) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 	background: #159957;  /* fallback for old browsers */
-	background: -webkit-linear-gradient(to right, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to bottom right, #155799, #159957) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-// background: linear-gradient(to bottom right, #8e44ad, #c0392b) fixed;
-	// animation: aboutbg 1200ms ease;
-	// background: linear-gradient(to bottom right, #DD2476, #FF512F) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-// background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,0));
-	// animation-fill-mode: forwards;
-	// -webkit-backface-visibility: hidden;
-	// background-size: 200% 200%;
-
-	// &:before {
-	//     border-radius: inherit;
-	//     background: linear-gradient(to bottom right, #8e44ad, #c0392b) fixed;
-	//     content: '';
-	//     display: block;
-	//     height: 100%;
-	//     position: absolute;
-	//     top: 0; left: 0;
-	//     opacity: 1;
-	//     width: 100%;
-	//     z-index: 100;
-	// 		animation: aboutbg 1500ms ease;
-	// 		animation-fill-mode: forwards;
-	//   }
-
-	@keyframes fillin {
-		0% {opacity: 0; }
-		100% {opacity: 1; }
-	}
-
-		@keyframes aboutbg {
-			0% { opacity: 1; }
-			100% { opacity: 0; }
-		}
+	background: -webkit-linear-gradient(to right, #155799, #159957);
+	background: linear-gradient(to bottom right, #155799, #159957) fixed;
 
 	.icon__about path {
 		fill: $yellow;
 	}
 
 	.nav__list {
-		// background: #9855D4;
-		// background: #FF512F;  /* fallback for old browsers */
-		background: linear-gradient(to bottom right, #155799, #159957) fixed; /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+		background: linear-gradient(to bottom right, #155799, #159957) fixed;
 	}
 }
 
-
 .about-me::-webkit-scrollbar {
 	display: none;
+}
+
+@keyframes fillin {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
 }
 
 .about-me-container {
