@@ -11,8 +11,8 @@ var SOURCE = {
 	scss: 'scss/**/*.scss',
 	css: 'public/css/',
 	ejs: 'views/**/*.ejs',
-	js: ['*.js', 'public/js/*.js'],
-	images: 'public/img/**/*'
+	js: 'js/*.js',
+	img: 'img/**/*'
 };
 
 var AUTOPREFIXER_BROWSERS = [
@@ -38,21 +38,29 @@ gulp.task('bs-reload', function(){
 	browserSync.reload();
 });
 
-gulp.task('scss-lint', function(){
-	gulp.src('' + SOURCE.js)
-	.pipe(scsslint());
-});
+gulp.task('js', function(){
+  gulp.src('js/*.js')
+    .pipe(gulp.dest('public/js'))
+	});
 
-gulp.task('sass', ['scss-lint'], function(){
-	gulp.src(SOURCE.scss)
-	.pipe(plumber())
-	.pipe(sass())
-	.pipe(autoprefixer({browsers: AUTOPREFIXER_BROWSERS}))
-	.pipe(gulp.dest(SOURCE.css))
-	.pipe(reload({stream:true}));
-});
+gulp.task('img', () =>
+  gulp.src('img/**.*')
+    .pipe(gulp.dest('public/img')));
 
-gulp.task('default', ['sass', 'browser-sync'], function(){
+gulp.task('styles', function(){
+  gulp.src('scss/**/*.scss')
+    .pipe(sass({
+      outputStyle: 'compressed'
+    }))
+    .pipe(gulp.dest('public/css'))
+    .pipe(browserSync.stream())
+	});
+
+gulp.task('default', ['styles', 'js', 'img', 'browser-sync'], function(){
 	gulp.watch(SOURCE.scss, ['sass']);
-	gulp.watch([SOURCE.ejs, SOURCE.js], ['bs-reload']);
+	gulp.watch(SOURCE.ejs, ['bs-reload']);
+	gulp.watch(SOURCE.js, ['bs-reload']);
+	gulp.watch(SOURCE.js, ['bs-reload']);
 });
+
+gulp.task('build', ['img', 'styles', 'js']);
