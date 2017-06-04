@@ -1,6 +1,4 @@
 .work {
-	background: #FEAC5E;
-	background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
 	background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E) fixed;
 	padding-bottom: 120px;
 
@@ -11,13 +9,10 @@
 
 .blue-bg {
 	background: #FEAC5E;
-	background: -webkit-linear-gradient(left, #4BC0C8, #C779D0, #FEAC5E);
-	background: -o-linear-gradient(left, #4BC0C8, #C779D0, #FEAC5E);
-	background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
+	background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E);
 
 	nav {
 		background: #FEAC5E;
-		background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);
 		background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E) fixed;
 	}
 }
