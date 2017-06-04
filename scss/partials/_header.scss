@@ -1,12 +1,26 @@
 header {
 	width: 100%;
+	display: flex;
 }
 
 .header__title {
 	text-align: center;
-	align-self: center;
+	width: auto;
+	align-self: flex-start;
+	padding: .8rem;
+}
+
+.site__title {
+	display: inline-block;
+	font-weight: 700;
+	text-align: center;
 	width: 100%;
-	padding-top: .8rem;
+	align-self: center;
+	padding: .8rem;
+
+	span {
+		font-weight: 400;
+	}
 }
 
 nav {
@@ -78,6 +92,10 @@ nav {
 			justify-content: space-between;
 		}
 
+		.site__title {
+			width: auto;
+		}
+
 		nav {
 			bottom: auto;
 			position: relative;
@@ -90,12 +108,6 @@ nav {
 			display: flex;
 			width: auto;
 			align-self: flex-end;
-		}
-
-		.header__title {
-			width: auto;
-			align-self: flex-start;
-			padding: .8rem;
 		}
 
 		.nav__list-item {
