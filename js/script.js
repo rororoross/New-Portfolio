@@ -134,20 +134,30 @@ navItems[3].addEventListener('click', function(){
 }, false);
 
 var iconAdd = document.querySelector(".icon-add");
+var addRoute = document.querySelector(".add__route");
+var routeSelector = document.querySelector("#route__selector");
+var stopContainer = document.querySelector(".stop__container");
 
+iconAdd.addEventListener('click', function(){
+  console.log("ayyyy");
+  addRoute.style.display = "flex";
+});
 
-
+routeSelector.addEventListener('change', function(){
+  console.log("yeah");
+  stopContainer.style.display = "block";
+});
 }
-
-if (document.body.classList.contains('web-work')) {
-  var getProjects = document.querySelectorAll(".project");
-  var i;
-  for (i = 0; i < getProjects.length; i++) {
-    getProjects[i].addEventListener("click", addFade);
-  }
-
-  function addFade() {
-    var getMonitorContainer = document.querySelector(".monitor__container")
-      getMonitorContainer.classList.add("project__selected");
-  }
-}
+//
+// if (document.body.classList.contains('web-work')) {
+//   var getProjects = document.querySelectorAll(".project");
+//   var i;
+//   for (i = 0; i < getProjects.length; i++) {
+//     getProjects[i].addEventListener("click", addFade);
+//   }
+//
+//   function addFade() {
+//     var getMonitorContainer = document.querySelector(".monitor__container")
+//       getMonitorContainer.classList.add("project__selected");
+//   }
+// }

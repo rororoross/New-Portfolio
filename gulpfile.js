@@ -61,10 +61,8 @@ gulp.task('sass', function(){
 
 gulp.task('default', ['sass', 'js', 'img', 'browser-sync'], function(){
 	gulp.watch(SOURCE.scss, ['sass']);
-	gulp.watch(SOURCE.ejs, ['ejs']);
 	gulp.watch(SOURCE.js, ['js']);
 	gulp.watch(SOURCE.png, ['img']);
-	gulp.watch(SOURCE.svg, ['img']);
 });
 
 gulp.task('build', ['img', 'sass', 'js']);
