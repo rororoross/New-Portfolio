@@ -132,6 +132,11 @@ navItems[3].addEventListener('click', function(){
   }
   navList[3].style.color="#34b262";
 }, false);
+
+var iconAdd = document.querySelector(".icon-add");
+
+
+
 }
 
 if (document.body.classList.contains('web-work')) {
