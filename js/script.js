@@ -137,6 +137,8 @@ var iconAdd = document.querySelector(".icon-add");
 var addRoute = document.querySelector(".add__route");
 var routeSelector = document.querySelector("#route__selector");
 var stopContainer = document.querySelector(".stop__container");
+var buttonContainer = document.querySelector(".add__route-button-container");
+var favoritesContainer = document.querySelector(".favorites__container");
 
 iconAdd.addEventListener('click', function(){
   console.log("ayyyy");
@@ -145,8 +147,28 @@ iconAdd.addEventListener('click', function(){
 
 routeSelector.addEventListener('change', function(){
   console.log("yeah");
-  stopContainer.style.display = "block";
+  stopContainer.style.opacity = "1";
+  buttonContainer.style.opacity = "1";
 });
+
+var addButton = document.querySelector("#add__button");
+
+addButton.addEventListener('click', function(){
+  if (stopContainer.style.opacity == "1") {
+    addRoute.style.display = "none";
+    var routeSelection = routeSelector.options[routeSelector.selectedIndex].text;
+    var createNewRoute = document.createElement('div');
+    var createRouteName = document.createElement('p');
+    var routeTxt = document.createTextNode(routeSelection);
+    favoritesContainer.appendChild(createNewRoute);
+    createNewRoute.appendChild(createRouteName);
+    createNewRoute.setAttribute("class", "mcts-favorites-row");
+    createRouteName.setAttribute("class", "stop-name-favorites");
+    createRouteName.appendChild(routeTxt);
+  }
+});
+
+
 }
 //
 // if (document.body.classList.contains('web-work')) {

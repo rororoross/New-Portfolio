@@ -53,7 +53,12 @@
 	right: 0;
 	background-position: center bottom;
 	z-index: 15;
-	cursor: url(../img/cursor.png) 39 39, auto;
+
+	* {
+		cursor: url(../img/cursor.png) 39 39, auto;
+		outline: none;
+	}
+
 }
 
 #phone-screen {
@@ -797,7 +802,7 @@
 	flex-direction: column;
 	align-self: center;
 	width: 90%;
-	height: 300px;
+	height: 236px;
 	background: white;
 	border-radius: 6px;
 
@@ -810,13 +815,13 @@
 .selectors {
 	display: flex;
 	width: 200px;
-	height: 20px;
+	height: 34px;
 	color: black;
 	margin: 0 auto;
 	border: none;
 	border-bottom: 1px solid #ddd;
-	padding-bottom: 2px;
-	margin-top: 6px;
+	// padding-bottom: 2px;
+	// margin-top: 6px;
 
 	option {
 		color: black;
@@ -824,14 +829,16 @@
 }
 
 .stop__container {
-	display: none;
+	// display: none;
+	opacity: 0.3;
 	padding-top: 24px;
 }
 
 .add__route-button-container {
 	align-self: flex-end;
-	margin-top: 32px;
+	margin-top: 18px;
 	margin-right: 24px;
+	opacity: 0.3;
 }
 
 .mcts__button {
@@ -848,4 +855,10 @@
 .mcts__button-secondary {
 	background: none;
 	color: $dark-blue;
+}
+
+.new__route-class {
+	background: #eee;
+	height: 40px;
+	width: 100%;
 }
