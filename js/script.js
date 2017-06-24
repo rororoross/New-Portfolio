@@ -3,8 +3,8 @@ if (document.body.classList.contains('home')) {
 
   var wordSwap = [
     "developing",
-    "designing",
     "prototyping",
+    "designing",
     "creating"
   ], i = -1;
 
