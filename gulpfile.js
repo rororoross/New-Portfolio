@@ -44,8 +44,8 @@ gulp.task('js', function(){
 		.pipe(browserSync.stream());
 	});
 
-gulp.task('img', function() {
-  gulp.src('img/.*')
+gulp.task('img', function(){
+  gulp.src('img/**.*')
     .pipe(gulp.dest('public/img'))
 		.pipe(browserSync.stream());
 	});
@@ -64,5 +64,4 @@ gulp.task('build', ['img', 'sass', 'js']);
 gulp.task('default', ['sass', 'js', 'img', 'browser-sync'], function(){
 	gulp.watch(SOURCE.scss, ['sass']);
 	gulp.watch([SOURCE.ejs, SOURCE.js], ['bs-reload']);
-	gulp.watch(SOURCE.png, ['img']);
 });
