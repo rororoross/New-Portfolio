@@ -59,10 +59,10 @@ gulp.task('sass', function(){
     .pipe(browserSync.stream());
 	});
 
+gulp.task('build', ['img', 'sass', 'js']);
+
 gulp.task('default', ['sass', 'js', 'img', 'browser-sync'], function(){
 	gulp.watch(SOURCE.scss, ['sass']);
-	gulp.watch(SOURCE.js, ['js']);
+	gulp.watch([SOURCE.ejs, SOURCE.js], ['bs-reload']);
 	gulp.watch(SOURCE.png, ['img']);
 });
-
-gulp.task('build', ['img', 'sass', 'js']);
