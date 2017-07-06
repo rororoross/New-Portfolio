@@ -5,8 +5,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "build": "gulp build",
-    "run-script": "gulp build",
-    "postinstall": "gulp build"
+    "run-script": "gulp build"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
