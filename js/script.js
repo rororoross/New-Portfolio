@@ -27,12 +27,6 @@ if (document.body.classList.contains('home')) {
 
 // Work Page
 if (document.body.classList.contains('work')) {
-  console.log("worky");
-  // var getWorkPieces = document.querySelectorAll(".work__piece");
-  // var i;
-	// for (i = 0; i < getWorkPieces.length; i++) {
-	// 	getWorkPieces[i].addEventListener("click", workPieceAnimation);
-	// }
   var webLinks = document.querySelectorAll(".work__piece-link");
   var getWorkContainer = document.querySelector(".work__container");
   var i;
@@ -49,11 +43,6 @@ if (document.body.classList.contains('work')) {
       getMonitorContainer.classList.add("work__container-animation-out");
     });
 }
-
-    // webLink.addEventListener('click', function(){
-    //   console.log("yeah boi!!!!");
-    //   webLink.style.backgroundColor = "#000";
-    // });
 
 	function workPieceAnimation() {
     var workContainer = document.querySelector(".work__container");
@@ -163,12 +152,10 @@ var buttonContainer = document.querySelector(".add__route-button-container");
 var favoritesContainer = document.querySelector(".favorites__container");
 
 iconAdd.addEventListener('click', function(){
-  console.log("ayyyy");
   addRoute.style.display = "flex";
 });
 
 routeSelector.addEventListener('change', function(){
-  console.log("yeah");
   stopContainer.style.opacity = "1";
   buttonContainer.style.opacity = "1";
 });
@@ -189,19 +176,4 @@ addButton.addEventListener('click', function(){
     createRouteName.appendChild(routeTxt);
   }
 });
-
-
 }
-//
-// if (document.body.classList.contains('web-work')) {
-//   var getProjects = document.querySelectorAll(".project");
-//   var i;
-//   for (i = 0; i < getProjects.length; i++) {
-//     getProjects[i].addEventListener("click", addFade);
-//   }
-//
-//   function addFade() {
-//     var getMonitorContainer = document.querySelector(".monitor__container")
-//       getMonitorContainer.classList.add("project__selected");
-//   }
-// }

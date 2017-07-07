@@ -25,15 +25,16 @@
 	justify-content: center;
 	max-width: 95%;
 	margin: 0 auto;
-	margin-top: 80px;
+	margin-top: 60px;
 	padding-bottom: 80px;
 	animation: workContainerTransformed 640ms;
 	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
 	ul li {
 		font-weight: 600;
 	}
-	
+
 }
 
 .monitor__web-item{

@@ -7,7 +7,7 @@
 	}
 }
 
-.web__items {
+.web__items, .blue-bg {
 	.work__container-transformed {
 		animation: none;
 		opacity: 1;
@@ -32,7 +32,7 @@
 	align-items: center;
 	width: 100%;
 	animation: fades 440ms;
-	animation-timing-function: ease-in-out;
+	animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 	animation-fill-mode: forwards;
 	opacity: 0;
 	margin-top: 20px;
@@ -45,6 +45,7 @@
 	align-items: center;
 	animation: workContainerAnimation 440ms ;
 	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
 	.work__piece-span {
 		animation: fadeout 200ms;
@@ -62,6 +63,7 @@
 	margin: 0 auto;
 	animation: workContainerTransformed 440ms;
 	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.455, 0.030, 0.515, 0.955);
 
 	.animate-container {
 		height: 56px;
