@@ -19,6 +19,7 @@
 
 .work__container {
 	display: flex;
+	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	width: 100%;
@@ -26,7 +27,7 @@
 	animation-timing-function: ease-in-out;
 	animation-fill-mode: forwards;
 	opacity: 0;
-	margin-top: 60px;
+	margin-top: 20px;
 }
 
 .work__container-transformer {
@@ -65,26 +66,30 @@
 }
 
 .screen__border {
-	width: 295px;
-	height: 184px;
+	// width: 295px;
+	// height: 184px;
+	width: calc(100% - 24px);
+	height: 100px;
 	background: #3A424E;
 	border-radius: 8px;
-	border: solid 16px #454E5B;
+	border: solid 12px #454E5B;
 	border-bottom-left-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
 
 .screen__bottom {
-	width: 327px;
-	height: 36px;
+	// width: 327px;
+	width: 100%;
+	height: 28px;
 	background: #ECEEEF;
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px;
 }
 
 .screen__stand {
-	width: 64px;
-	height: 32px;
+	// width: 64px;
+	width: 15%;
+	height: 26px;
 	background: #E0E3E4;
 	margin: 0 auto;
 	display: block;
@@ -92,31 +97,66 @@
 	border-bottom-left-radius: 4px;
 }
 
+.mac__device {
+	width: 200px;
+}
+
 .phone__border {
-	width: 130px;
-	height: 276px;
+	width: 110px;
+	height: 236px;
 	background: #ECEEEF;
 	border: 4px solid #D0CECE;
 	border-radius: 16px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	position: relative;
+}
+
+.phone__speaker {
+	width: 4px;
+	height: 4px;
+	border: 1px solid #D0CECE;
+	border-radius: 50%;
+	// background: #fff;
+	position: absolute;
+	margin-top: 8px;
+}
+
+.phone__speaker-wide {
+	width: 24px;
+	height: 2px;
+	border: 1px solid #D0CECE;
+	border-radius: 2px;
+	position: absolute;
+	margin-top: 18px;
 }
 
 .phone__screen {
-	width: 112px;
-	height: 196px;
+	// width: 112px;
+	width: 86%;
+	// height: 196px;
+	height: 170px;
 	background: #3A424E;
 	align-self: center;
 }
 
+.touch__id {
+	width: 16px;
+	height: 16px;
+	border: 2px solid #D0CECE;
+	border-radius: 50%;
+	position: absolute;
+	bottom: 6px;
+}
 
+.work__piece-span {
+	display: inline-block;
+	margin-top: 20px;
+}
 
-.mac-container {
-	.work__piece-span {
-		margin-top: 20px;
-		display: inline-block;
-	}
+.mac-container, .iphone-container {
+	margin-bottom: 40px;
 }
 
 
@@ -127,7 +167,6 @@
 
 .mac, .iphone, .animate-container {
 	transition: transform 300ms;
-	padding-bottom: 2rem;
 	display: block;
 }
 
@@ -167,6 +206,7 @@
 	cursor: pointer;
 	position: relative;
 	margin: 0 auto;
+	margin-top: 40px;
 	display: block;
 }
 
@@ -310,16 +350,43 @@
 }
 
 @media screen and (min-width: 700px) {
+
 	.mac { width: 100px; }
 	.iphone { width: 40px; }
 	.animate-heading { padding-top: 3rem; }
-	.animate-container { padding-bottom: 3.8rem; }
+}
+
+@media screen and (min-width: 800px) {
+	.work__container {
+		flex-direction: row;
+		margin-top: 140px;
+	}
 }
 
 @media screen and (min-width: 900px) {
+	.mac__device {
+		width: 260px;
+	}
+	.screen__border {
+		width: calc(100% - 28px);
+		height: 120px;
+		background: #3A424E;
+		border-radius: 8px;
+		border: solid 14px #454E5B;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+	}
+
+	.screen__bottom {
+		height: 32px;
+	}
+
+	.screen__stand {
+		height: 24px;
+	}
+
 	.mac { width: 160px; }
 	.iphone { width: 68px; }
-	.animate-container { margin-top: 3rem; padding-bottom: 4.8rem; }
 
 	.work__container-transformed {
 		.mac {
@@ -330,7 +397,6 @@
 		}
 		.animate-container {
 			width: 100px;
-			padding-bottom: 4rem;
 		}
 
 		.left-bar {
@@ -366,13 +432,31 @@
 }
 
 @media screen and (min-width: 1040px) {
+	.phone__border {
+		width: 130px;
+		height: 266px;
+	}
+
+	.mac-container, .iphone-container, .animate-container {
+		margin-bottom: 0;
+	}
+
+
+	.phone__screen {
+		width: 86%;
+		height: 200px;
+	}
+
+	.touch__id {
+		width: 16px;
+		height: 16px;
+	}
+
 	.mac { width: 180px; }
 	.iphone { width: 78px; padding-bottom: 1.1rem;}
-	.animate-container { margin-top: 5.1rem; padding-bottom: 2.8rem; }
-	.work__container { margin-top: 140px; }
 }
 
-@media screen and (min-width: 1300px) {
+// @media screen and (min-width: 1300px) {
 	.mac {
 		width: 100%;
 	}
@@ -408,7 +492,7 @@
 		animation-timing-function: linear;
 	}
 
-	.animate-container { width: 280px; height: 166px; margin-top: 3rem; padding-bottom: 5.8rem;}
+	.animate-container { width: 280px; height: 166px; }
 	.web-header { padding-top: 2rem; }
 	.animation-container { padding-top: 0; }
 	.left-bar, .ball, .right-bar { top: 0px; }
@@ -427,7 +511,7 @@
 		animation: right-bar 3000ms infinite;
 		animation-timing-function: linear;
 	}
-}
+// }
 
 @media screen and (min-width: 1000px) {
 	.work__container-transformed {
