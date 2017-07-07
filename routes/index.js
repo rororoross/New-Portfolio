@@ -15,15 +15,15 @@ router.get('/my-work/web/', function(req, res, next) {
 });
 
 router.get('/my-work/web/web-container-service', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-container-service')}), 250);
+	setTimeout((function() {res.render('my-work/web/web-container-service')}), 320);
 });
 
 router.get('/my-work/web/web-get-started', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-get-started')}), 100);
+	setTimeout((function() {res.render('my-work/web/web-get-started')}), 320);
 });
 
 router.get('/my-work/web/web-framer', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-framer')}), 330);
+	setTimeout((function() {res.render('my-work/web/web-framer')}), 320);
 });
 
 

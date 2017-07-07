@@ -11,6 +11,7 @@
 	.work__container-transformed {
 		animation: none;
 		opacity: 1;
+		transform: translateY(-20px);
 	}
 }
 
@@ -85,7 +86,17 @@
 
 @keyframes workContainerTransformed {
 	0% { opacity: 0; }
-	100% { opacity: 1; transform: translateY(20px); }
+	100% { opacity: 1; transform: translateY(-20px); }
+}
+
+@keyframes WorkContainerAnimationOut {
+	0% { opacity: 1; }
+	100% { opacity: 0; transform:translateY(40px); }
+}
+
+.work__container-animation-out {
+	animation: WorkContainerAnimationOut 320ms;
+	animation-fill-mode: forwards;
 }
 
 .screen__border {

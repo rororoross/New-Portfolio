@@ -12,9 +12,6 @@
 		list-style: initial;
 		list-style-position: inside;
 	}
-	ul li {
-		font-weight: 600;
-	}
 
 	.nav__list {
 		background: linear-gradient(to bottom right, #4BC0C8, #C779D0, #FEAC5E) fixed;
@@ -22,17 +19,21 @@
 }
 
 .web__item-container {
-	transform: translateY(20px);
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	max-width: 95%;
 	margin: 0 auto;
+	margin-top: 80px;
 	padding-bottom: 80px;
-	animation: fadeopacity 140ms;
-	animation-timing-function: ease-in-out;
+	animation: workContainerTransformed 640ms;
 	animation-fill-mode: forwards;
+
+	ul li {
+		font-weight: 600;
+	}
+	
 }
 
 .monitor__web-item{

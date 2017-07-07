@@ -33,12 +33,27 @@ if (document.body.classList.contains('work')) {
 	// for (i = 0; i < getWorkPieces.length; i++) {
 	// 	getWorkPieces[i].addEventListener("click", workPieceAnimation);
 	// }
-  var webLink = document.querySelector("#web-link");
+  var webLinks = document.querySelectorAll(".work__piece-link");
+  var getWorkContainer = document.querySelector(".work__container");
+  var i;
+    for (i = 0; i < webLinks.length; i++) {
+      webLinks[i].addEventListener("click", function(){
+        getWorkContainer.classList.add("work__container-animation-out");
+      });
+  }
 
-    webLink.addEventListener('click', function(){
-      console.log("yeah boi!!!!");
-      // webLink.style.backgroundColor = "#000";
+  var pieceLinks = document.querySelectorAll(".project");
+  var getMonitorContainer = document.querySelector(".monitor__container");
+  for (i = 0; i < pieceLinks.length; i++) {
+    pieceLinks[i].addEventListener("click", function(){
+      getMonitorContainer.classList.add("work__container-animation-out");
     });
+}
+
+    // webLink.addEventListener('click', function(){
+    //   console.log("yeah boi!!!!");
+    //   webLink.style.backgroundColor = "#000";
+    // });
 
 	function workPieceAnimation() {
     var workContainer = document.querySelector(".work__container");
