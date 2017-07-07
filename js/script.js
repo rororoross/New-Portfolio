@@ -27,11 +27,18 @@ if (document.body.classList.contains('home')) {
 
 // Work Page
 if (document.body.classList.contains('work')) {
-  var getWorkPieces = document.querySelectorAll(".work__piece");
-  var i;
-	for (i = 0; i < getWorkPieces.length; i++) {
-		getWorkPieces[i].addEventListener("click", workPieceAnimation);
-	}
+  console.log("worky");
+  // var getWorkPieces = document.querySelectorAll(".work__piece");
+  // var i;
+	// for (i = 0; i < getWorkPieces.length; i++) {
+	// 	getWorkPieces[i].addEventListener("click", workPieceAnimation);
+	// }
+  var webLink = document.querySelector("#web-link");
+
+    webLink.addEventListener('click', function(){
+      console.log("yeah boi!!!!");
+      // webLink.style.backgroundColor = "#000";
+    });
 
 	function workPieceAnimation() {
     var workContainer = document.querySelector(".work__container");
