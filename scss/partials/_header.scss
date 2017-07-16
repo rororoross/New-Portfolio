@@ -1,7 +1,4 @@
-header {
-	width: 100%;
-	display: flex;
-}
+
 
 .header__title {
 	text-align: center;
@@ -26,7 +23,7 @@ header {
 nav {
 	display: flex;
 	position: fixed;
-	bottom: 0;
+	bottom: 0px;
 	width: 100%;
 	z-index: 999;
 }
