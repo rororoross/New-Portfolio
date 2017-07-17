@@ -27,7 +27,6 @@ if (document.body.classList.contains('home')) {
 
 // Work Page
 if (document.body.classList.contains('work')) {
-  console.log("worky");
   // var getWorkPieces = document.querySelectorAll(".work__piece");
   // var i;
 	// for (i = 0; i < getWorkPieces.length; i++) {
