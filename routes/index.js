@@ -31,6 +31,14 @@ router.get('/my-work/mobile', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/mobile/')}), 320);
 });
 
+router.get('/my-work/mobile/mobile-prototype', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/mobile/mobile-prototype')}), 320);
+});
+
+router.get('/my-work/mobile/framer-prototype', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/mobile/framer-prototype')}), 320);
+});
+
 router.get('/about-me', function(req, res, next) {
   res.render('about-me');
 });

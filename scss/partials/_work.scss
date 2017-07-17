@@ -95,25 +95,6 @@
 		position: relative;
 	}
 
-	.phone__speaker {
-		width: 1px;
-		height: 1px;
-		border: 1px solid #D0CECE;
-		border-radius: 50%;
-		// background: #fff;
-		position: absolute;
-		margin-top: 2px;
-	}
-
-	.phone__speaker-wide {
-		width: 12px;
-		height: 1px;
-		border: 1px solid #D0CECE;
-		border-radius: 2px;
-		position: absolute;
-		margin-top: 5px;
-	}
-
 	.phone__screen {
 		// width: 112px;
 		width: 86%;
@@ -123,12 +104,22 @@
 		align-self: center;
 	}
 
+	.phone__speaker {
+		width: 2px;
+		height: 2px;
+		margin-top: 1px;
+	}
+
+	.phone__speaker-wide {
+		width: 12px;
+		height: 1px;
+		margin-top: 6px;
+	}
+
 	.touch__id {
 		width: 4px;
 		height: 4px;
 		border: 1px solid #D0CECE;
-		border-radius: 50%;
-		position: absolute;
 		bottom: 2px;
 	}
 
@@ -224,6 +215,10 @@
 	border-radius: 50%;
 	// background: #fff;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	margin-top: 8px;
 }
 
@@ -233,6 +228,10 @@
 	border: 1px solid #D0CECE;
 	border-radius: 2px;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	margin-top: 18px;
 }
 
@@ -251,6 +250,10 @@
 	border: 2px solid #D0CECE;
 	border-radius: 50%;
 	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
 	bottom: 6px;
 }
 
@@ -550,10 +553,7 @@
 		height: 200px;
 	}
 
-	.touch__id {
-		width: 16px;
-		height: 16px;
-	}
+
 
 	.mac { width: 180px; }
 	.iphone { width: 78px; padding-bottom: 1.1rem;}
