@@ -27,14 +27,11 @@ if (document.body.classList.contains('home')) {
 
 // Work Page
 if (document.body.classList.contains('work')) {
-<<<<<<< HEAD
-=======
   // var getWorkPieces = document.querySelectorAll(".work__piece");
   // var i;
 	// for (i = 0; i < getWorkPieces.length; i++) {
 	// 	getWorkPieces[i].addEventListener("click", workPieceAnimation);
 	// }
->>>>>>> development
   var webLinks = document.querySelectorAll(".work__piece-link");
   var getWorkContainer = document.querySelector(".work__container");
   var i;
