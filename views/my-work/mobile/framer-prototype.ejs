@@ -1,10 +1,268 @@
 <!DOCTYPE html>
 <html>
   <head><% include ../../global/head.ejs %></head>
-  <body class="blue-bg mobile-work">
+  <body class="blue-bg mobile-work framer-article">
     <% include ../../global/header.ejs %>
     <% include ../work-heading.ejs %>
-    <h1>framer prototype here</h1>
+    <div class="web__item-container">
+      <h1 class="web__item-header">Designing in Sketch and prototyping in Framer</h1>
+      <p class="web__item-text award">I’m going to walk through how I created a mobile app prototype, starting in Sketch and then coding in Framer.</p>
+      <h2 class="web__item-subheading">Initial UI Design</h2>
+      <div class="web__item-content">
+        <img class="framer__widescreen" src="../../img/framer-screen-1.png" alt="">
+        <p class="web__item-text">
+          With a ‘real’ project, you’ve spent time doing user research, competitive analysis, white boarding, empathy mapping, etc. Side projects like this are fun sometimes because you can just jump right into the visual design aspect without putting too much into technical or UX concerns. I generally start with some inspiration in the top left, and then continuously make new artboards while ideating. During this time I’m both fine tuning the visual aspects like typography, spacing, color and I’m getting an idea of what interactivity I will want in the prototype. It can be hard to limit myself in this phase, because there are so many possibilities and things to explore.
+        </p>
+        <img class="framer__phone" src="../../img/framer-screen-2.svg" alt="">
+        <p class="web__item-text">
+          This is what I ended up with for the homepage. I wanted to keep it fairly simple, using shadows to portray elevations and proper z-index. I chose the sans-serif Futura as the font, which I think gives off an official, reputable feeling, which aligns with an app dealing with finances. The green gradient in the header gives the otherwise grayscale color palette some life. Icons have a distinct contrast with their background for both accessibility and affordance concerns. Spacing between elements is always 10 or 15 pixels depending on hierarchy. Element headings are dark enough than their content headings for distinguishability. The header contains the most pertinent information, and I opted for bottom tab navigation instead of a hamburger menu for UX purposes. While designing both of these I planned for them to be fixed, never leaving the user’s viewport.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Once I’m happy with the design of the app, I then create a new Sketch file. This gives a general layout & progression of what will be in the prototype.
+        </p>
+        <img src="../../img/framer-screen-3.png" alt="" class="framer__widescreen">
+        <p class="web__item-text">
+          This makes it easier to visualize what I will have to code. My basic plan at this point is to make the 2nd tab (budget) show a new view, the 2nd row (food) to be expandable to show more content, and then the content will be swipeable to reveal more budget related content. If you look at the layer panel on the left, you’ll see that this Sketch file is still very unorganized. It’s very important to fix this in the next step, where I create yet another Sketch file, which I then import into Framer to begin prototyping.
+        </p>
+        <img src="../../img/framer-screen-4.png" alt="" class="framer__widescreen">
+        <p class="web__item-text">
+          This Sketch file contains everything I need to prototype what I laid about in the last section, and nothing more. If you take a look at the layer panel on the left now, you will see everything is grouped, ordered, and like with my Sass, I use BEM naming methodology (unfortunately due to tech restraints you can’t follow true BEM with Sketch import). <span>It is important to properly group and name your layers or they will be ignored in Framer.</span> If you see something in your artboard, but not in Framer, you probably didn’t put it in a group.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Now, this looks pretty messy at this point. But that’s okay, because now we can start chipping away at it in Framer.
+        </p>
+        <h2 class="web__item-subheading">Coding in Framer</h2>
+        <p class="web__item-text">Okay, first thing in Framer, let’s select iPhone 7 Plus as our device and import our Sketch file at @2x.
+        </p>
+        <img src="../../img/framer-screen-5.png" alt="" class="framer__widescreen">
+        <p class="web__item-text">
+          Looking good! Next step, let’s add the snippet ’Utils.globalLayers sketch’. This allows us to directly reference our Sketch layers (header.onTap -> instead of sketch.header.onTap ->).
+        </p>
+        </br>
+        <p class="web__item-text">
+          We have our home artboard displaying, but you can’t really do anything with it yet. Earlier I mentioned that I wanted both the header and the bottom navigation to be fixed to the viewport. To do this we add a Flow Component. From the Framer docs, “The FlowComponent helps you transition and navigate between multiple screens.”
+        </p>
+      </br>
+      <p class="web__item-text">
+        That doesn’t sound exactly like what we want to do, but the Flow Component has two useful features we’re looking for, header and footer. Let’s create a new flow component with both of those with:
+      </p>
+      </br>
+      <p class="web__item-text">
+        flow = new FlowComponent
+      </br>
+        flow.footer = nav
+      </br>
+        flow.header = header
+      </p>
+      </br>
+      <p class="web__item-text">
+        K, it should look kinda broken now but that’s cool. Let’s add flow.showNext(home_screen) to show our home screen artboard. Progress! But, the spacing looks all jacked. To fix this we need to use the Scroll Component’s contentInset function.
+      </p>
+      </br>
+      <p class="web">
+        flow.scroll.contentInset =
+        </br>
+	      bottom: 0
+      </p>
+      <img src="../../img/initial_scroll-50.gif" class="framer__phone" alt="">
+      <p class="web__item-text">
+        You should now be able to scroll up and down, with both the header and footer being fixed to the viewport.
+      </p>
+      </<br>
+      <p class="web__item-text">
+        That’s basically all the interaction we’re going to have on the homepage. In order to progress to the next screen, let’s create a onTap event on the budget item in the bottom nav.
+      </p>
+      </br>
+      <p class="web__item-text">
+        budget.onTap ->
+        </br>
+	           flow.showNext(budget_screen)
+      </p>
+      </br>
+      <p class="web__item-text">
+        We can now see our budget screen, though it’s very sloppy and unorganized looking. Let’s organize this a bit by having our add button on the bottom go above the navigation by giving it a stupid big z-index, hiding our expanded food row by giving it an opacity of zero, and then moving our final two “screens” off the view to the right.
+      </p>
+      </br>
+      <p class="web__item-text">
+        button_add.z = 9999
+        </br>
+        food_expanded.opacity = 0
+        </br>
+        budget_charts.x = 500
+        </br>
+        linked_accounts.x = 500
+      </p>
+      <img src="../../img/budget_tap-50.gif" class="framer__phone" alt="">
+      <p class="web__item-text">
+        Okay, dope, we’re getting something that looks like an actual app now.
+      </p>
+      </br>
+      <p class="web__item-text">
+        If you have an extreme eye for detail you’ll have noticed something is missing from our budget screen that was in the earlier Sketch file; the three small circles that serve as progress indicators for our budget section. Let’s create those in Framer with a for loop and give them the necessary properties:
+      </p>
+      </br>
+      <p class="web__item-text">
+        for i in [1..3]
+        </br>
+        	circle = new Layer
+          </br>
+        		size: 10
+            </br>
+        		borderRadius: 5
+            </br>
+        		backgroundColor: "#D8D8D8"
+            </br>
+        		x: i * 16
+            </br>
+        		z: 999
+            </br>
+        		y: 328
+            </br>
+        		name: "circle#{i}"
+      </p>
+      <p class="web__item-text">
+        So we have our three circles, but they’re kinda just floating out there in nowhere land. Let’s create a new layer that will serve as the parent for our circles. Place this block of code above the for loop you just created.
+      </p>
+      <pre>
+        <code>
+          circleParent = new Layer
+          	parent: budget_bg
+          	backgroundColor: null
+          	x: 174
+        </code>
+      </pre>
+      <p class="web__item-text">
+        Make sure to add the parent property to the for loop with ‘parent: circleParent’. You should now see the three circles on the budget page, but we need to add them to an array to be able to give them properties individually (we need to change their background colors from green to gray, and vice versa). Add an empty array, ‘layers = []’, before your for loop, and reference it when you’re creating the new layers ‘circle = layers[i] = new Layer’. After your for loop, add the line ‘# layers[1].backgroundColor = "#81B532”’, and you should see the first circle is now green, indicating we’re on the first of three sections.
+      </p>
+      </br>
+      <p class="web__item-text">
+        So why did we have to do all this? When you import a design from Sketch, Framer basically turns all the layers into .png’s, so there are a few things you just cannot change with code, such as background colors. This is one advantage to just designing directly in Framer.
+      </p>
+      </br>
+      <p class="web__item-text">
+        Now it’s time to start animating. Earlier I mentioned we want to be able to tap the food row and have it expand, showing more content. Let’s break this down into every event and property that we actually need to target with some pseudo code.
+      </p>
+      </br>
+      <ul>
+        <li>Tap food row.</li>
+        <li>Food row expands.</li>
+        <li>Content appears.</li>
+        <li>Tap food row again.</li>
+        <li>Food row contracts.</li>
+      </ul>
+      </br>
+      <p class="web__item-text">
+        Let’s break it down to every single thing that needs to happen, because we’re still missing a few things that actually need to happen.
+      </p>
+      </br>
+      <ul>
+        <li>Tap food row -></li>
+        <li>  Food row divider line needs to move down the Y axis</li>
+        <li>  Content needs to go from zero to one opacity</li>
+        <li>  The entire section’s background’s height needs to get larger</li>
+        <li>  The rest of the content needs to move down the Y axis to accommodate the new space</li>
+      </ul>
+      </br>
+      <p class="web__item-text">
+        We want all of these things to be animated, otherwise it will just clunky and unnatural. To do this we can make a few functions that we can call with some events. We’re going to make 5 total, one each for height, Y position, opacity, X position, and width. Let’s write the first one.
+      </p>
+      </br>
+      <code>
+        animateHeight = (layer, heightY) ->
+      </code>
+      <p class="web__item-text">
+        We give our function a name, and pass in two parameters, that will target the layer we want to animate and the height value we want to change to.
+      </p>
+      <pre>
+        <code>
+          animateHeight = (layer, heightY) ->
+          	layer.animate
+          		height: layer.height + heightY
+          		options:
+          			time: animateTime
+        </code>
+      </pre>
+      <p class="web__item-text">
+        This is the basic format our functions will follow. On the line above our function, let’s create a variable we’ll use as our default animation time with animateTime = 0.15. Create the four other functions that will let us animate Y and X positions, opacity and width.
+      </p>
+      <pre>
+        <code>
+          # Animate a layer's Y position
+          animateY = (layer, layerY) ->
+          	layer.animate
+          		y: layer.y + layerY
+          		options:
+          			time: animateTime
+
+          # Animate a layer's opacity
+          animateOpacity = (layer, layerOpacity) ->
+          	layer.animate
+          		opacity: layer.opacity + layerOpacity
+          		options:
+          			time: animateTime - .05
+
+          # Animate a layer's x position
+          animateX = (layer, layerX) ->
+          	layer.animate
+          		x: layer.x + layerX
+          		options:
+          			time: animateTime + .2
+
+          # Animate a layer's width
+          animateWidth = (layer, layerWidth) ->
+          	layer.animate
+          		width: layer.width + layerWidth
+          		options:
+          			time: animateTime + 0.6
+          			delay: 0.15
+        </code>
+      </pre>
+      <p class="web__item-text">
+        Now that we have all of our functions written out, we can start calling them with an event handler, food.onTap ->
+      </p>
+      <pre>
+        <code>
+          food.onTap ->
+	          animateHeight(budget_bg, 104)
+        </code>
+      </pre>
+      <p class="web__item-text">
+        This will animate the height of the budget section’s background when you tap on the food row.
+      </p>
+      <img src="../../img/foodtapanimateheight-50.gif" alt="" class="framer__phone">
+      <p class="web__item-text">
+        Now we can call the rest of our functions to animate the other layers
+      </p>
+      <pre>
+        <code>
+          animateY(budget_lower, 100)
+          animateY(food_divider, 100)
+          animateOpacity(food_expanded, 1)
+          for i in layers[1..3]
+          	animateY(i, 100)
+        </code>
+      </pre>
+      <p class="web__item-text">
+        So we have everything we want animating when you tap on the food row, but how do we do the reverse? If the food tab is open, and you tap it, it should then close. We’ll do this with a simple if statement. If the layer budget_bg’s height is taller than 400, animate the layer’s back to their original properties.
+      </p>
+      <pre>
+        <code>
+          if budget_bg.height > 400
+          	animateHeight(budget_bg, -100)
+          	animateY(budget_lower, -100)
+          	animateY(food_divider, -100)
+          	animateOpacity(food_expanded, -1)
+          	for i in layers[1..3]
+          		animateY(i, -100)
+        </code>
+      </pre>
+    </div>
+
+
+    </div>
+
     <% include ../../global/scripts.ejs %>
   </body>
 </html>

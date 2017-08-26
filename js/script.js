@@ -1,6 +1,7 @@
 // Home Page
 if (document.body.classList.contains('home')) {
-
+  console.log("Hi! Thanks for checking out the code! I used Sass, vanilla JS and Node.js + Express for routing and EJS for templating.");
+  console.log("Feel free to take a look around. You can see the source on my GitHub. If you have questions email me at rossfenrick@gmail.com");
   var wordSwap = [
     "developing",
     "prototyping",

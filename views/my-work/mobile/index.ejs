@@ -4,9 +4,16 @@
   <body class="blue-bg mobile-work">
     <% include ../../global/header.ejs %>
     <% include ../work-heading.ejs %>
-    <a href="mobile/mobile-prototype">link to mobile prototype</a>
-    <a href="mobile/framer-prototype">link to framer prototype</a>
-
+    <div class="monitor__container">
+      <a class="web__piece-bubble project project__one" href="mobile/mobile-prototype">
+        <img class="mobile-screens" src="../../img/mobile-mcts.png" alt="">
+        <h2>Transit app prototype</h2>
+      </a>
+      <a class="web__piece-bubble project project__two" href="mobile/framer-prototype">
+        <img class="mobile-screens" src="../../img/mobile-budget.png" alt="">
+        <h2>Budget app prototype</h2>
+      </a>
+    </div>
     <% include ../../global/scripts.ejs %>
   </body>
 </html>

@@ -1,8 +1,29 @@
-iframe {
-  width: 100%;
-  height: 800px;
-
-  body {
-    background: rgba(0,0,0,0) !important;
+.framer-article {
+  .framer__widescreen {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
   }
+
+  .framer__widescreen:nth-of-type(1) {
+    padding-top: 0;
+  }
+
+  .framer__phone {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  .web__item-text {
+    span {
+      font-weight: 700;
+    }
+  }
+
+
+
+
 }
