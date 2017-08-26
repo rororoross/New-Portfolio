@@ -48,25 +48,23 @@
       <p class="web__item-text">
         That doesn’t sound exactly like what we want to do, but the Flow Component has two useful features we’re looking for, header and footer. Let’s create a new flow component with both of those with:
       </p>
-      </br>
-      <p class="web__item-text">
-        flow = new FlowComponent
-      </br>
-        flow.footer = nav
-      </br>
-        flow.header = header
-      </p>
-      </br>
+      <pre>
+        <code>
+          flow = new FlowComponent
+          flow.footer = nav
+          flow.header = header
+        </code>
+      </pre>
       <p class="web__item-text">
         K, it should look kinda broken now but that’s cool. Let’s add flow.showNext(home_screen) to show our home screen artboard. Progress! But, the spacing looks all jacked. To fix this we need to use the Scroll Component’s contentInset function.
       </p>
-      </br>
-      <p class="web">
-        flow.scroll.contentInset =
-        </br>
-	      bottom: 0
-      </p>
-      <img src="../../img/initial_scroll-50.gif" class="framer__phone" alt="">
+      <pre>
+        <code>
+          flow.scroll.contentInset =
+          bottom: 0
+        </code>
+      </pre>
+      <img src="../../img/initial_scroll-60.gif" class="framer__phone" alt="">
       <p class="web__item-text">
         You should now be able to scroll up and down, with both the header and footer being fixed to the viewport.
       </p>
@@ -74,27 +72,24 @@
       <p class="web__item-text">
         That’s basically all the interaction we’re going to have on the homepage. In order to progress to the next screen, let’s create a onTap event on the budget item in the bottom nav.
       </p>
-      </br>
-      <p class="web__item-text">
-        budget.onTap ->
-        </br>
-	           flow.showNext(budget_screen)
-      </p>
-      </br>
+      <pre>
+        <code>
+          budget.onTap ->
+            flow.showNext(budget_screen)
+        </code>
+      </pre>
       <p class="web__item-text">
         We can now see our budget screen, though it’s very sloppy and unorganized looking. Let’s organize this a bit by having our add button on the bottom go above the navigation by giving it a stupid big z-index, hiding our expanded food row by giving it an opacity of zero, and then moving our final two “screens” off the view to the right.
       </p>
-      </br>
-      <p class="web__item-text">
-        button_add.z = 9999
-        </br>
-        food_expanded.opacity = 0
-        </br>
-        budget_charts.x = 500
-        </br>
-        linked_accounts.x = 500
-      </p>
-      <img src="../../img/budget_tap-50.gif" class="framer__phone" alt="">
+      <pre>
+        <code>
+          button_add.z = 9999
+          food_expanded.opacity = 0
+          budget_charts.x = 500
+          linked_accounts.x = 500
+        </code>
+      </pre>
+      <img src="../../img/budget_tap-70.gif" class="framer__phone" alt="">
       <p class="web__item-text">
         Okay, dope, we’re getting something that looks like an actual app now.
       </p>
@@ -102,26 +97,19 @@
       <p class="web__item-text">
         If you have an extreme eye for detail you’ll have noticed something is missing from our budget screen that was in the earlier Sketch file; the three small circles that serve as progress indicators for our budget section. Let’s create those in Framer with a for loop and give them the necessary properties:
       </p>
-      </br>
-      <p class="web__item-text">
-        for i in [1..3]
-        </br>
-        	circle = new Layer
-          </br>
-        		size: 10
-            </br>
-        		borderRadius: 5
-            </br>
-        		backgroundColor: "#D8D8D8"
-            </br>
-        		x: i * 16
-            </br>
-        		z: 999
-            </br>
-        		y: 328
-            </br>
-        		name: "circle#{i}"
-      </p>
+      <pre>
+        <code>
+          for i in [1..3]
+            circle = new Layer
+              size: 10
+              borderRadius: 5
+              backgroundColor: "#D8D8D8"
+              x: i * 16
+              z: 999
+              y: 328
+              name: "circle#{i}"
+        </code>
+      </pre>
       <p class="web__item-text">
         So we have our three circles, but they’re kinda just floating out there in nowhere land. Let’s create a new layer that will serve as the parent for our circles. Place this block of code above the for loop you just created.
       </p>
@@ -168,10 +156,11 @@
       <p class="web__item-text">
         We want all of these things to be animated, otherwise it will just clunky and unnatural. To do this we can make a few functions that we can call with some events. We’re going to make 5 total, one each for height, Y position, opacity, X position, and width. Let’s write the first one.
       </p>
-      </br>
-      <code>
-        animateHeight = (layer, heightY) ->
-      </code>
+      <pre>
+        <code>
+          animateHeight = (layer, heightY) ->
+        </code>
+      </pre>
       <p class="web__item-text">
         We give our function a name, and pass in two parameters, that will target the layer we want to animate and the height value we want to change to.
       </p>
@@ -225,13 +214,13 @@
       <pre>
         <code>
           food.onTap ->
-	          animateHeight(budget_bg, 104)
+	          animateHeight(budget_bg, 108)
         </code>
       </pre>
       <p class="web__item-text">
         This will animate the height of the budget section’s background when you tap on the food row.
       </p>
-      <img src="../../img/foodtapanimateheight-50.gif" alt="" class="framer__phone">
+      <img src="../../img/foodtapanimateheight-60.gif" alt="" class="framer__phone">
       <p class="web__item-text">
         Now we can call the rest of our functions to animate the other layers
       </p>
@@ -250,14 +239,43 @@
       <pre>
         <code>
           if budget_bg.height > 400
-          	animateHeight(budget_bg, -100)
+          	animateHeight(budget_bg, -108)
           	animateY(budget_lower, -100)
           	animateY(food_divider, -100)
           	animateOpacity(food_expanded, -1)
           	for i in layers[1..3]
-          		animateY(i, -100)
+          		animateY(i, -102)
         </code>
       </pre>
+      <img src="../../img/budget_full-100.gif" alt="" class="framer__phone">
+      <p class="web__item-text">Now we have one final event to make, when the user swipes left we want to show the next screen(s). budget_bg.onSwipeLeftEnd -></p>
+      </br>
+      <p class="web__item-text">
+        We will use a simple if else statement to decide which content to show on swipe. If the main budget’s screen x value is less than zero (ie. if it’s off to the left of the screen) we will show the screen with the credit cards (linked_accounts). Else, we will show the budget_charts layer and animate the individual charts. Also, for reach statement we need to make sure we change the colors of the progress indicators.
+      </p>
+      <pre>
+        <code>
+          budget_bg.onSwipeLeftEnd ->
+          	if budget_content.x < 0
+          		layers[2].backgroundColor = "#D8D8D8"
+          		layers[3].backgroundColor = "#81B532"
+          		animateX(budget_charts, -400)
+          		animateX(linked_accounts, -480)
+
+          	else
+          		layers[1].backgroundColor = "#D8D8D8"
+          		layers[2].backgroundColor = "#81B532"
+          		animateX(budget_charts, -480)
+          		animateX(budget_content, -400)
+          		animateWidth(line_one_progress, 200)
+          		animateWidth(line_two_progress, 240)
+          		animateWidth(line_three_progress, 130)
+        </code>
+      </pre>
+      <img src="../../img/budget_app-final-100.gif" alt="" class="framer__phone">
+      <p class="web__item-text">
+        And voila! We now have a prototype that was designed in Sketch and has scrolling, multiple screens, tap events, a fixed header and footer, and animations. Thanks for reading! You can check out the source code <a target="_blank" href="https://github.com/rossfenrick/budget-framer">here</a>. If you have any questions tweet me @rossfenrick.
+      </p>
     </div>
 
 
