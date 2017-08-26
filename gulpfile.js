@@ -12,7 +12,7 @@ var SOURCE = {
 	css: 'public/css/',
 	ejs: 'views/**/*.ejs',
 	js: 'js/*.js',
-	img: 'img/**/*'
+	img: 'img/**/*.*'
 };
 
 var AUTOPREFIXER_BROWSERS = [
@@ -50,7 +50,8 @@ gulp.task('js', function(){
 		});
 
 gulp.task('img', function(){
-  gulp.src('img/**.*')
+  gulp.src('img/**/*.*')
+		return gulp.src('img/**/*.*')
     .pipe(gulp.dest('public/img'))
 		.pipe(browserSync.stream());
 	});
