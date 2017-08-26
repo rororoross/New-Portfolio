@@ -10,7 +10,7 @@ RUN npm install
 
 # Bundle app source
 COPY . /usr/src/app
-RUN npm run-script build
+RUN npm run-script build && ls -alF public
 
 EXPOSE 3000
 CMD [ "npm", "start" ]

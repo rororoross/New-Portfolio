@@ -1,4 +1,5 @@
 .framer-article {
+  overflow-y: visible;
   @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
   code {
     font-family: 'Roboto Mono', monospace;
@@ -36,8 +37,4 @@
       font-weight: 700;
     }
   }
-
-
-
-
 }
