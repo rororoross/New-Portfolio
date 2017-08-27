@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head><% include ../../global/head.ejs %></head>
-  <body class="blue-bg web__items bluemix">
+  <body class="blue-bg web__items bluemix framer-article">
   <% include ../../global/header.ejs %>
   <% include ../work-heading.ejs %>
 
@@ -9,7 +9,7 @@
   		<h1 class="web__item-header">Prototyping for the web with Framer</h1>
   		<div class="web__item-content" id="bluemix-body">
         <p class="web__item-text">
-          Framer is a really powerful tool that can prototype anything you can think of but if you take a look at Framer’s Gallery you’ll quickly notice something:
+          You can read this article on Medium <a href="https://blog.framer.com/prototyping-for-the-web-with-framer-c619925272d5">here.</a> Framer is a really powerful tool that can prototype anything you can think of but if you take a look at Framer’s Gallery you’ll quickly notice something:
         </p>
         <img class="screen__wide" src="../../img/web-framer-1.jpeg" alt="">
         <p class="web__item-text centered">
@@ -54,15 +54,16 @@
         </h4>
         <p class="web__item-text">
           Before I start a project, I decide a few things:
-          </br>
+          </br></br>
           What am I trying to accomplish?
-          </br>
+          </br></br>
           Whether the prototype is for user testing or getting an idea conceptualized, what’s the minimum amount of work needed to get my idea across or to gain insight from testing? I’m not just being lazy 😉, this helps decide the necessary interactions, animations and screens that are needed.
         </p>
         </br>
         <p class="web__item-text">
           The more time you spend on your design the more you become attached. The more attached, the less likely you are to make the necessary changes.
         </p>
+        </br>
         <p class="web__item-text">
           Let’s use the prototype above as an example. I was working on a new project and I wanted to explore what a card based layout with ‘shuffling’ animations in between states would look like. I sketched out the basic idea I wanted to make and used that as my starting point.
         </p>
@@ -101,6 +102,7 @@
         <p class="web__item-text">
           Check out <a href="https://uxdesign.cc/create-ui-flows-using-sketch-and-framer-36b6552306b5?gi=579334b2c8f8#.uwhcoy9wp" target="_blank">Andreas’ Create UI flows using Sketch and Framer article</a> to learn more about the plugin.
         </p>
+        </br>
         <h4 class="web__item-par-heading">
           Microinteractions
         </h4>
@@ -112,6 +114,7 @@
         <p class="web__item-text">
           This is just a simple example of a quick interaction I made using a Sketch file a designer on my team had already made. Exploring interactions like this takes a matter of minutes.
         </p>
+        </br>
         <h4 class="web__item-par-heading">
           Sure, but why not just code?
         </h4>
@@ -126,6 +129,7 @@
         <p class="web__item-text">
           Another reason is freedom. The simple fact that all of my code written in Framer will be thrown away is actually kind of great. It allows me to try things I wouldn’t otherwise and to be a bit more loose with my code. I can spend 15 minutes exploring an idea and then trash it without any remorse.
         </p>
+        </br>
         <h4 class="web__item-par-heading">
           Some tips & tricks
         </h4>
@@ -146,6 +150,47 @@
         <img class="screen__wide" src="../../img/web-framer-8.png" alt="">
         <p class="web__item-text">
           It’s worth spending some time with the designers on your team to go over how to setup Sketch files to best fit the workflow and what works best for the team.
+        </p>
+        </br>
+        <p class="web__item-text">
+          When you import a Sketch file into Framer, you’ll see something like this:
+        </p>
+        <pre>
+          <code>
+            # Import file "design"
+            sketch = Framer.Importer.load("imported/design@1x")
+          </code>
+        </pre>
+        <p class="web__item-text">
+          Use this snippet to reference layers directly. No more need to reference sketch file, you can just reference layers directly:
+        </p>
+        <pre>
+          <code>
+            Utils.globalLayers sketch
+          </code>
+        </pre>
+        <p class="web__item-text">
+          Use the ‘Normal Cursor’ snippet for a normal mouse pointer:
+        </p>
+        <pre>
+          <code>
+            document.body.style.cursor = "auto"
+          </code>
+        </pre>
+        <p class="web__item-text">
+          I import my designs at @2x and then scale them down, so they’re extra crisp. Note that this doesn’t seem to get along with the ViewController module mentioned above.
+        </p>
+        <pre>
+          <code>
+            Framer.Device.contentScale = .5
+          </code>
+        </pre>
+        <p class="web__item-text">
+          Sketch and Framer use different default artboards/devices for the web. Sketch uses 1440x1024 while Framer uses 1440x900. I opt for 1440x900. Don’t think you’re restricted to 900 pixels for height though, you can easily create scrollable pages in Framer.
+        </p>
+        </br>
+        <p class="web__item-text">
+          If you have any questions tweet me <a href="https://twitter.com/rossfenrick" target="_blank">@rossfenrick</a>
         </p>
 			</div>
   	</div>

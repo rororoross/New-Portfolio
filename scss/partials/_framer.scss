@@ -32,6 +32,13 @@
     display: block;
   }
 
+  h4 {
+    a {
+      color: $yellow;
+      text-decoration: underline;
+    }
+  }
+
   .web__item-text {
     span {
       font-weight: 700;
