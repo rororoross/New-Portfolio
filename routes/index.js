@@ -26,6 +26,13 @@ router.get('/my-work/web/web-framer', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/web/web-framer')}), 320);
 });
 
+router.get('/my-work/web/web-node', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-node')}), 320);
+});
+
+router.get('/my-work/web/web-pipeline', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-pipeline')}), 320);
+});
 
 router.get('/my-work/mobile', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/mobile/')}), 320);
