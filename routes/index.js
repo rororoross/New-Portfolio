@@ -34,6 +34,10 @@ router.get('/my-work/web/web-pipeline', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/web/web-pipeline')}), 320);
 });
 
+router.get('/my-work/web/web-code101', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-code101')}), 320);
+});
+
 router.get('/my-work/mobile', function(req, res, next) {
 	setTimeout((function() {res.render('my-work/mobile/')}), 320);
 });

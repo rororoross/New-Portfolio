@@ -27,6 +27,12 @@ body {
 	.icon__home path {
 		fill: $yellow;
 	}
+
+	p {
+		text-align: center;
+		margin-top: 2rem;
+		opacity: 0.6;
+	}
 }
 
 .home__container {
@@ -56,6 +62,7 @@ body {
 
 #word__change {
 	color: $yellow;
+	font-weight: 500;
 }
 
 .home__heading {
