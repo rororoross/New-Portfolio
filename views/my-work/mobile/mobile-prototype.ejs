@@ -15,8 +15,7 @@
             <div id="destination"><p>Where are you headed?</p></div>
           </div>
         </div>
-        <div id="map">
-        </div>
+        <div id="map"></div>
         <div class="route-button">
           <img src="../../img/mcts-icon-routes.svg" alt="" id="find-location">
         </div>
@@ -71,7 +70,7 @@
     <div class="mcts-favorites-screen screen">
       <div class="favorites__container">
       <header class="mcts-header">
-        <img src="../../img/icon-add.svg" alt="" class="header-icon icon-add">
+        <img src="" alt="" class="header-icon icon-add">
         <h1 class="mcts-heading">Favorites</h1>
         <img src="../../img/icon-settings.svg" alt="" class="header-icon icon-gear">
       </header>
@@ -122,19 +121,19 @@
         <div class="add__container">
           <label for="routePicker">Select a route</label>
           <select name="routePicker" class="selectors" id="route__selector">
-            <option value="Brotel">Brotel</option>
-            <option value="Brotel">Brotel1</option>
-            <option value="Brotel">Brotel2</option>
-            <option value="Brotel">Brotel3</option>
-            <option value="Brotel">Brotel4</option>
+            <option value="Brotel">Select a route</option>
+            <option value="Brotel">Bayview</option>
+            <option value="Brotel">Fox Point</option>
+            <option value="Brotel">Third Ward</option>
+            <option value="Brotel">West Allis</option>
           </select>
           <div class="stop__container">
             <label for="stopPicker">Select a stop</label>
             <select name="stopPicker" class="selectors" id="stop__selector">
-              <option value="Brotel">34th and Boyville</option>
-              <option value="Brotel">35th and Boyville</option>
-              <option value="Brotel">36th and Boyville</option>
-              <option value="Brotel">37th and Boyville</option>
+              <option value="Brotel">34th and Lamar</option>
+              <option value="Brotel">Wisconsin and Water</option>
+              <option value="Brotel">Oklahoma and Clement</option>
+              <option value="Brotel">Mitchell and Lapham</option>
             </select>
           </div>
           <div class="add__route-button-container">
@@ -152,7 +151,7 @@
         <h1 class="mcts-heading">Routes</h1>
         <img src="../../img/icon-settings.svg" alt="" class="header-icon icon-gear">
       </header>
-      <div class="routes-list">
+      <div class="routes-list" id="route-list-one">
         <div class="route-list-name">
           <p class="route-list-number">6</p>
           <p class="route-list-street">Holton - Kinnickinnic</p>
@@ -184,7 +183,46 @@
       </div>
     </div>
     <div class="mcts-map-screen screen">
-    map screen
+      <header class="mcts-header">
+        <img src="../../img/icon-add.svg" alt="" class="header-icon hidden">
+        <h1 class="mcts-heading">Settings</h1>
+        <img src="../../img/icon-settings.svg" alt="" class="header-icon icon-gear">
+      </header>
+      <div class="row">
+        <p class="input">Cellular data</p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Location services</p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Background app refresh</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Notifications</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Microphone</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
     </div>
 
     <div class="main-nav">
@@ -227,8 +265,22 @@
     </div> <!--End of main-nav-->
     </div> <!--End of phone-screen-->
   </div> <!--End of phone-background-->
-  <p class="lorem">I have experience prototyping for mobile at IBM, but due to confidentiality of that project I can't share it publicly. So I just made this prototype on the side for fun. </p>
+  <p class="description">I have experience creating a fairly extensive prototype for mobile at IBM, but due to confidentiality of that project I can't share it publicly. So I made this prototype to show how I use web development to prototype for mobile. This is a fairly simple prototype, as there's no CRUD actions and only a handful of interactivity, but it's a solid base if I want to expand upon it in the future.</p>
 </div>
+
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.051167, lng: -87.900774},
+          zoom: 16,
+          disableDefaultUI: true
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgLUWP4Y4YzeMAsPPLSTFLTGQb26RyWgg&callback=initMap"
+    async defer></script>
     <% include ../../global/scripts.ejs %>
   </body>
 </html>
