@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head><% include ../../global/head.ejs %></head>
-  <body class="blue-bg web__items bluemix">
+  <body class="blue-bg web__items bluemix work">
   <% include ../../global/header.ejs %>
   <% include ../work-heading.ejs %>
 
@@ -12,7 +12,7 @@
   		<!-- <p class="web__item-expand">Click to view</p> -->
   		<div class="web__item-monitor">
   			<!-- <img src="../../img/arrow.svg" alt="" class="arrow"> -->
-  			<img src="../../img/monitor-kube.png" alt=""class="monitor__web-item">
+  			<img src="../../img/monitor-kube.png" alt="IBM Bluemix Container Service" class="monitor__web-item">
   			<!-- <img src="../../img/arrow.svg" alt="" class="arrow"> -->
 			</div>
       <!-- <img class="web__project-view" src="img/bluemix-onboard.jpg" alt=""> -->
@@ -22,7 +22,7 @@
 In late November I was approached to join a new team that would be focusing on Container Orchestration technology, mainly Kubernetes. Oh, and they needed to launch the entire thing in 4 months. The two things I love most about being a designer are shipping product and learning new things, so I decided to join the team.</br>
         </br>
         <p class="web__item-text">
-          I was familiar with containers but I had never heard of Kubernetes, so I spent my first few weeks almost solely learning, reading and watching videos on the technology. Having coding experience definitely helped here. Being familiar with the terminal I was able to do things like create containers and deploy an app to a cluster without being overwhelmed. There’s no better way to learn than by doing!
+          I was familiar with containers but I had never heard of Kubernetes, so I spent my first few weeks almost solely learning, reading and watching videos on the technology. Having coding experience definitely helped here. Being familiar with the terminal I was able to do things like create containers and deploy an app to a cluster without being overwhelmed. There’s no better way to learn than by doing! Kubernetes and containers are a pretty demanding domain to learn, as it can very technical. It was crucial to not only learn about our users but to have a fundamental understanding of the technology itself.
         </br></br>
         <h4 class="web__item-par-heading">Workshop</h4>
         <p class="web__item-text">
@@ -33,7 +33,14 @@ In late November I was approached to join a new team that would be focusing on C
         </p>
         </br>
         <p class="web__item-text">
-          <img class="workshop__photo" src="../../img/workshop-scenario.jpg" alt="">
+          <a href="../../img/workshop-scenario.jpg" target="_blank"><img class="workshop__photo" src="../../img/workshop-scenario.jpg" alt="Workshop scenarios"></a>
+          </br>
+          <a href="../../img/workshop-2.jpg" target="_blank"><img class="workshop__photo" src="../../img/workshop-2.jpg" alt="Workshop photo"></a>
+          </br>
+          <a href="../../img/workshop-3.jpg" target="_blank"><img class="workshop__photo" src="../../img/workshop-3.jpg" alt="Workshop photo"></a>
+          </br>
+          <a href="../../img/workshop-4.jpg" target="_blank"><img class="workshop__photo" src="../../img/workshop-4.jpg" alt="Workshop photo"></a>
+
           </br></br>
           Going through the Scenario Mapping helped everyone not just understand what a user is actually doing, but why they are, how they feel about it, and when they would do certain tasks. This was also a great time to pick the brains
           of our engineers to understand the architectural decisions they've made and if they truly align with user needs.
@@ -61,34 +68,73 @@ In late November I was approached to join a new team that would be focusing on C
           We then used the rest of the workshop to scope our "minimum delightful experience" based on the user journeys we had gone through. We got a rough idea of what we needed to accomplish in the next 3 months before our public beta release. Getting everyone on the same page and thinking about our users got us prepared for the work ahead.
         </p>
         </br>
+        <h4 class="web__item-par-heading">Information Architecture</h4>
+        <p class="web__item-text">
+          Now that we had our personas and basic user journeys decided upon, I started to map out the experience before diving into the actual interface design. This allowed our team to focus on the overall experience, and also give our engineering team an idea of the initial routes & views that would be needed for the application.
+        </p>
+        </br>
+        <a href="../../img/ia-containerworld-3.png" target="_blank"><img class="workshop__photo" src="../../img/ia-containerworld-3.png" alt="Information Architecture"></a>
+        </br>
+        <p class="web__item-text">
+          I felt it made sense to have the first flow I mapped be the user's initial flow itself: logging in and first time use. The user would go from the marketing page, to "Container World" (our nickname for our service's home view), and then jump into creating a cluster, to then seeing their cluster's details.
+        </p>
+        </br>
+        <a href="../../img/ia-containerworld-1.png" target="_blank"><img class="workshop__photo" src="../../img/ia-containerworld-1.png" alt="Information Architecture"></a>
+        </br>
+        <p class="web__item-text">We then worked together as a team to decide our MVP, and what views would be necessary to accomplish that. For our beta, we launched with Clusters and Containers, later adding Registry and then Solutions. Containers already existed within the platform, and Clusters was a no-brainer to include from the beginning.</p>
+        </br>
+        <a href="../../img/ia-containerworld-2.png" target="_blank"><img class="workshop__photo" src="../../img/ia-containerworld-2.png" alt="Information Architecture"></a>
+        </br>
+        <p class="web__item-text">
+          Finally, I created a detailed IA that included every possible scenario and path, including all the logic and necessary empty states. This would act as our vision for the future, knowing that this amount of both design and engineering work would take months to accomplish. It allowed our team, from offering management, executives, engineering, content and design to align on a path forward. We were now ready to start designing the actual experiences and interfaces necessary for the user journeys.
+        </p>
+        </br>
         <h4 class="web__item-par-heading">My Role</h4>
         <p class="web__item-text">This project really allowed me to use all my skills: visual design, user experience, prototyping and front end development. I led the UI design effort of our team of 4 people. My process generally went like this: Learn user needs with user research, sketch out some low-fidelity wireframes, use our <a href="http://carbondesignsystem.com/" target="_blank">component library</a> in Sketch to quickly create a high-fidelity UI, and then prototype with Framer or code. These assets would then be user tested with 3-5 people and I would take the feedback, iterate, and repeat.</p></br>
         <p class="web__item-text">Once we were confident with the overall direction of our designs, we would try to get in production code as quickly as possible. Having a strong background in front end development enabled me to communicate our design intent, contribute production code, and act as a sort of liasion for engineering to communicate technical limitations.</p>
       </br>
-      <h4 class="web__item-par-heading">Solving the Getting Started problem</h4>
-      <p class="web__item-text">One of our main goals in the beginning of this project was to allow a user to easily configure and create a Kubernetes cluster in our UI. Once we felt we had this experience to a point we were happy with, we moved onto our next problem. Something we consistently heard in user testing was, more or less, "Okay, I created my cluster...now what?".</p></br>
-      <p class="web__item-text">One of the big problems we had to work around was the fact that it takes awhile for a cluster to be fully ready and usable (up to 45 minutes). We needed a way to let users be productive while this time passed. Using user research conducted by our wider team and the documentation that had been created by our content team, I began to sketch out a 'getting started' experience.</p>
+      <h4 class="web__item-par-heading">Visual Design</h4>
+      <p class="web__item-text">Here are some of the screens I ended up doing the visual design for:</p>
       </br>
-      <p class="web__item-text">I identified several key things a user could accomplish to start being productive. These ranged from installing the CLI, deploying a containerized application, adding a Bluemix service, adding IP addresses, and creating persistant storage. A key finding we had from previous user testing was that people wanted to know what the exact progress was during this 45 minute wait. Our inital experience did have this information, but it was tucked away in a tab, inside of a table row. The first thing I wanted to was to bring this information front and center. I also wanted to give users some explanation of what was going on, and all the things they can do with their cluster to be successful.</p>
+      <a href="../../img/betamodal-1.png" target="_blank"><img class="workshop__photo" src="../../img/betamodal-1.png" alt="Beta Modal"></a>
       </br>
-      <p class="web__item-text">I sketched out some initial concepts in an afternoon and then jumped into Sketch. My typical Sketch file ends up with like 30 artboards, as I work through the design.</p>
+      <p class="web__item-text centered">This was the very first screen users would see when they landed on the home view of our service.</p>
       </br>
-      <img class="workshop__photo" src="../../img/gettingstarted-high-fi.png" alt="">
-      <img class="workshop__photo" src="../../img/getting-started-1.png" alt="">
-      <img class="workshop__photo" src="../../img/getting-started-2.png" alt="">
-      </br></br><p class="web__item-text">Once I was happy with the visual design and layout, I went into Framer and spent the afternoon showing how the interactions would work. I like to use Framer for rapid prototyping like this because I can import my Sketch artboards, and ideate pretty fast. At this point I'm not ready to commit to production code, and I am still feeling out how I want the interactions to look and feel.</p>
-      </br></br>
-      <img class="workshop__photo" src="../../img/gettingstarted-framer.gif" alt="">
-      </br></br><p class="web__item-text">I then worked with our content writing team to flesh out the work and begin laying out all the content we have into our UI. I'm currently in the process of writing the front end production code and planning the analytics so we can see the results of the effort.</p>
+      <a href="../../img/config-1.png" target="_blank"><img class="workshop__photo" src="../../img/config-1.png" alt="Configuration"></a>
       </br>
-      <h4 class="web__item-par-heading">Assets</h4>
-      <p class="web__item-content">Here's a few of the assets I ended up making throughout the entire process of designing our service. One of them was actually featured in the opening keynote of IBM's yearly conference. It's always a cool feeling to have your work shown in front of thousands of people 😎 </p>
+      <p class="web__item-text centered">Configuring options on a cluster</p>
       </br>
-      <img class="workshop__photo" src="../../img/ibm-screen-3.png" alt="">
-      <img class="workshop__photo" src="../../img/ibm-screen-2.png" alt="">
-      <img class="workshop__photo" src="../../img/ibm-screen-1.png" alt="">
-      <img class="workshop__photo" src="../../img/ibm-screen-4.png" alt="">
-      </div>
+      <a href="../../img/config-2.png" target="_blank"><img class="workshop__photo" src="../../img/config-2.png" alt="Configuration"></a>
+      </br>
+      <p class="web__item-text centered">Configuration upgrade screen</p>
+      </br>
+      <a href="../../img/emptystate-1.png" target="_blank"><img class="workshop__photo" src="../../img/emptystate-1.png" alt="Empty State"></a>
+      </br>
+      <p class="web__item-text centered">Example of an empty state</p>
+      </br>
+      <a href="../../img/gettingstarted-1.png" target="_blank"><img class="workshop__photo" src="../../img/gettingstarted-1.png" alt="Getting Started"></a>
+      </br>
+      <p class="web__item-text centered">Getting Started page (concept)</p>
+      </br>
+      <a href="../../img/overview-1.png" target="_blank"><img class="workshop__photo" src="../../img/overview-1.png" alt="Overview"></a>
+      </br>
+      <p class="web__item-text centered">Cluster Overview</p>
+      </br>
+      <a href="../../img/solutions-1.png" target="_blank"><img class="workshop__photo" src="../../img/solutions-1.png" alt="Solutions"></a>
+      </br>
+      <p class="web__item-text centered">Solutions catalog</p>
+      </br>
+      <a href="../../img/tutorials-1.png" target="_blank"><img class="workshop__photo" src="../../img/tutorials-1.png" alt="Tutorials"></a>
+      </br>
+      <p class="web__item-text centered">Cluster Tutorials</p>
+      </br>
+      <a href="../../img/workernodes-1.png" target="_blank"><img class="workshop__photo" src="../../img/workernodes-1.png" alt="Worker Nodes"></a>
+      </br>
+      <p class="web__item-text centered">Worker Nodes</p>
+
+
+
+
   	</div>
   <% include ../../global/scripts.ejs %>
   </body>

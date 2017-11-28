@@ -1,7 +1,8 @@
 // Home Page
 // testing ssh
 if (document.body.classList.contains('home')) {
-
+  console.log("Hi! Thanks for checking out the code! I used Sass, vanilla JS and Node.js + Express for routing and EJS for templating.");
+  console.log("Feel free to take a look around. You can see the source on my GitHub. If you have questions email me at rossfenrick@gmail.com");
   var wordSwap = [
     "developing",
     "prototyping",
@@ -28,11 +29,22 @@ if (document.body.classList.contains('home')) {
 
 // Work Page
 if (document.body.classList.contains('work')) {
-  var getWorkPieces = document.querySelectorAll(".work__piece");
+  var webLinks = document.querySelectorAll(".work__piece-link");
+  var getWorkContainer = document.querySelector(".work__container");
   var i;
-	for (i = 0; i < getWorkPieces.length; i++) {
-		getWorkPieces[i].addEventListener("click", workPieceAnimation);
-	}
+    for (i = 0; i < webLinks.length; i++) {
+      webLinks[i].addEventListener("click", function(){
+        getWorkContainer.classList.add("work__container-animation-out");
+      });
+  }
+
+  var pieceLinks = document.querySelectorAll(".project");
+  var getMonitorContainer = document.querySelector(".monitor__container");
+  for (i = 0; i < pieceLinks.length; i++) {
+    pieceLinks[i].addEventListener("click", function(){
+      getMonitorContainer.classList.add("work__container-animation-out");
+    });
+}
 
 	function workPieceAnimation() {
     var workContainer = document.querySelector(".work__container");
@@ -142,12 +154,10 @@ var buttonContainer = document.querySelector(".add__route-button-container");
 var favoritesContainer = document.querySelector(".favorites__container");
 
 iconAdd.addEventListener('click', function(){
-  console.log("ayyyy");
   addRoute.style.display = "flex";
 });
 
 routeSelector.addEventListener('change', function(){
-  console.log("yeah");
   stopContainer.style.opacity = "1";
   buttonContainer.style.opacity = "1";
 });
@@ -164,23 +174,8 @@ addButton.addEventListener('click', function(){
     favoritesContainer.appendChild(createNewRoute);
     createNewRoute.appendChild(createRouteName);
     createNewRoute.setAttribute("class", "mcts-favorites-row");
-    createRouteName.setAttribute("class", "stop-name-favorites");
+    createRouteName.setAttribute("class", "route-street");
     createRouteName.appendChild(routeTxt);
   }
 });
-
-
 }
-//
-// if (document.body.classList.contains('web-work')) {
-//   var getProjects = document.querySelectorAll(".project");
-//   var i;
-//   for (i = 0; i < getProjects.length; i++) {
-//     getProjects[i].addEventListener("click", addFade);
-//   }
-//
-//   function addFade() {
-//     var getMonitorContainer = document.querySelector(".monitor__container")
-//       getMonitorContainer.classList.add("project__selected");
-//   }
-// }

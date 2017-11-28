@@ -1,0 +1,127 @@
+header {
+  .site__title {
+    @include link(true);
+    @include bold;
+    display: inline-block;
+    text-align: center;
+  	align-self: center;
+    padding-top: 0.8rem;
+    width: 100%;
+
+      span {
+        @include light;
+      }
+  }
+
+  nav {
+    @include flex;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    z-index: 999;
+    a {
+      @include link(true);
+    }
+  }
+}
+
+.nav__list span {
+	display: none;
+}
+
+.nav__list {
+	display: flex;
+	width: 100%;
+}
+
+.nav__list-item {
+	display: flex;
+	flex-direction: column;
+	width: 23%;
+	padding: 0.5% 1% 8px 1%;
+	text-align: center;
+	font-size: 11px;
+}
+
+.nav__icon {
+	width: 24px;
+	padding-bottom: 1px;
+	display: block;
+	margin: 0 auto;
+}
+
+.nav__list-item:hover path {
+		fill: $yellow;
+}
+
+.home {
+	.link-home {
+		color: $yellow;
+	}
+}
+
+.about-me {
+	.link-about {
+		color: $yellow;
+	}
+}
+
+.work {
+	.link-work {
+		color: $yellow;
+	}
+}
+
+.get-in-touch {
+	.link-get-in-touch {
+		color: $yellow;
+	}
+}
+
+@media screen and (min-width: 650px) {
+		header {
+			@include flex-row;
+			justify-content: space-between;
+
+      .site__title {
+  			width: auto;
+  			padding: .8rem;
+  		}
+
+      nav {
+        bottom: auto;
+        position: relative;
+        width: auto;
+        padding: .8rem;
+        align-self: flex-end;
+      }
+		}
+
+		.nav__list-item {
+			@include size-base;
+			width: auto;
+			padding: 0 .4rem 0 .4rem;
+		}
+
+		.nav__icon {
+			display: none;
+		}
+
+		.nav__list span {
+			display: inline;
+		}
+		.home {
+			header {
+				transform: translateY(-40px);
+				animation: slideDown 540ms ease-out;
+				animation-delay: 120ms;
+				animation-fill-mode: forwards;
+			}
+
+			@keyframes slideDown {
+				0% { transform: translateY(-40px); }
+				40% { transform: translateY(2px); }
+				100% { transform: translateY(0); }
+			}
+		}
+}

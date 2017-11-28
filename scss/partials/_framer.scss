@@ -1,0 +1,47 @@
+.framer-article {
+  overflow-y: visible;
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+  code {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+  }
+
+  pre, code {
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    display: block;
+    margin-top: -16px;
+    margin-bottom: -24px;
+  }
+  .framer__widescreen {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  .framer__widescreen:nth-of-type(1) {
+    padding-top: 0;
+  }
+
+  .framer__phone {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    display: block;
+  }
+
+  h4 {
+    a {
+      color: $yellow;
+      text-decoration: underline;
+    }
+  }
+
+  .web__item-text {
+    span {
+      font-weight: 700;
+    }
+  }
+}

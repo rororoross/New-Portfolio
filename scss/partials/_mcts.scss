@@ -5,8 +5,24 @@
 	}
 }
 
+#map {
+	width: 100%;
+	height: 390px;
+}
+
 #bus-app {
 	padding-top: 0;
+}
+
+.description {
+		@include size-base;
+		@include normal;
+		max-width: 95%;
+		width: 800px;
+		display: block;
+		margin: 0 auto;
+		padding-top: 2rem;
+		line-height: 1.4;
 }
 
 .phone-prototype {
@@ -30,14 +46,6 @@
 	0% { transform: translateY(2000px); }
 	70% { transform: translateY(-184px); }
 	100% { transform: translateY(-140px); }
-}
-
-.lorem {
-	width: 50%;
-	display: block;
-	margin: 0 auto;
-	padding-top: 2rem;
-	line-height: 1.4;
 }
 
 .phone-background {
@@ -131,13 +139,7 @@
 		}
 }
 
-#map {
-	width: 100%;
-	height: 390px;
-	z-index: 5;
-	background-image: url(../img/map.jpg);
-	background-size: cover;
-}
+
 
 .routes {
 	width: 100%;
@@ -861,4 +863,76 @@
 	background: #eee;
 	height: 40px;
 	width: 100%;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: absolute;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+	right: 24px;
+}
+
+.input {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.row:nth-of-type(1) {
+	margin-top: 18px;
+}
+
+.row {
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding: 4px 0px 4px 24px;
+	border-bottom: 1px solid #eee;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 200ms;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  transition: 200ms;
+}
+
+input:checked + .slider {
+  background-color: $green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px $green;
+}
+
+input:checked + .slider:before {
+  transform: translateX(18px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

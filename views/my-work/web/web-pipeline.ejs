@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../../global/head.ejs %></head>
+  <body class="blue-bg web__items bluemix framer-article work">
+  <% include ../../global/header.ejs %>
+  <% include ../work-heading.ejs %>
+  <div class="web__item-container">
+    <h1 class="web__item-header">Automated development pipeline</h1>
+    <p class="web__item-text award">Creating an automated GitHub to Docker Cloud pipeline</p>
+    <div class="web__item-monitor">
+      <img src="../../img/monitor-docker.png" alt="Docker Pipeline" class="monitor__web-item">
+    </div>
+    <div class="web__item-content">
+      </br>
+      <p class="web__item-text">
+        About halfway through making my portfolio I realized.."I'm going to have to figure out how to get this thing live on the internet." In the past I've used Cloud Foundry to host Node apps, but I wanted to see what else was out there.
+        After a few hours of doing some research, I was really interested in what Docker Cloud has to offer. For the past year or so I've been learning the ecosystem of Docker (and Kubernetes) so it seemed like a good fit. Also, I wanted to learn how to containerize an application.
+        I ended up with my application live on my domain, which all starts with pushing to my GitHub repo's master branch, which then triggers a build of a new container image on Docker Cloud, which is running on a Digital Ocean server.
+      </p>
+      </br>
+      <p class="web__item-text">
+        FYI: Install both git and the Docker CLI if you don't have them already.
+      </p>
+      </br>
+      <p class="web__item-text">
+        The first thing you're going to want to do is create a Docker ID at <a href="https://cloud.docker.com/" target="_blank">Docker Cloud</a>. Once you're all set, you can turn off the toggle for Docker Swarm, as we won't be needing any of those capabilities. First thing you're going to want to do is connect your GitHub account. Click Cloud Settings in the left navigation, and navigate to the Source Providers section. Click the plug to connect your account.
+      </p>
+      </br>
+      <p class="web__item-text">
+        Now we need to connect some infrastructure. Click the Cloud providers tab and you'll see a list of AWS, Digital Ocean, etc.., we'll be using Digital Ocean. If you don't have an account you can create one <a href="https://www.digitalocean.com/" target="_blank">here</a>. That's all there really is to it, now we can click Create, which just creates a Droplet on Digital Ocean for us. Give your node a name, region, size (we'll just need the smallest 1CPU / 512MB) and click Launch node cluster. Give it a few minutes to boot up.
+      </p>
+      </br>
+      <p class="web__item-text">
+        Let's clone the repo we'll be setting up the build for <a href="https://github.com/theblankie/nodefordocker" target="_blank">here</a>. Open the project up in your text editor of choice and a blank file named Dockerfile. A Dockerfile is where you set things like what base image you want to use and various scripts for running your app, setting ports, etc. This is what we'll be adding to our Dockerfile:
+      </p>
+      <pre>
+        <code>
+          FROM node:latest
+
+          # Create app directory
+          RUN mkdir -p /usr/src/app
+          WORKDIR /usr/src/app
+
+          # Install app dependencies
+          COPY package.json /usr/src/app/
+          RUN npm install
+
+          # Bundle app source
+          COPY . /usr/src/app
+          RUN npm run-script build
+
+          EXPOSE 3000
+          CMD [ "npm", "start" ]
+        </code>
+      </pre>
+      <p class="web__item-text">
+        We're specifying that we want to use the latest official node image from Dockerhub. We then create a folder for our app and set the context. We copy over our package.json file and run an npm install. We then copy over our app and do a gulp build to make sure the latest assets are compiled. Finally we expose our port and then start the application with npm start.
+      </p>
+      </br>
+      <p class="web__item-text">
+        Open up your terminal and cd into the app's root folder. Login to Docker with "docker login". We will now create a Docker image, with "docker build -t dockernode .". If you run "docker images" you should see your built image. We can run our docker container locally by using the command "docker run -p 3000:3000 dockernode". You should now see the app running at <a href="http://localhost:4000" target="_blank">localhost:3000</a>.
+      </p>
+      </br>
+      <p class="web__item-text">
+        Now we can add our image to Dockerhub. Run the docker tag command to point your image to your Docker Registry with "docker tag dockernode username/dockernode:latest". Push your image with "docker push username/dockernode:latest". If you go to your Dockerhub page you should now see your image and that has been pushed to recently. From now on, you can use "docker run" and run your app on any machine with this command "docker run -p 3000:3000 theblankie/dockernode:latest". Our Docker image is now at the point where we can setup our automated build process!
+      </p>
+      </br>
+      <p class="web__item-text">
+        Head back to Docker cloud and click Repositories in the left navigation, you should automatically see your DockerHub repository listed (add it manually if for some reason you don't). Click the Launch Service button. Scroll down and in the Ports section, check the Published box and add 80 as the Node port. This will map our 3000 dev port to port 80 so the app can be visible on the internet. Click Add Port and then Create and Deploy. You should now have a service up with your image running as a container. It's important to note that the Service will exist indefinitely, but everytime you push a new build the container will be destroyed and a new one created automatically.
+      </p>
+      </br>
+      <p class="web__item-text">
+        Once it's running you should see a link to a Service Endpoint, something like "tcp://dockernode-082e0983.2e1d8f5c.svc.dockerapp.io:80". Click the link icon next to it, and delete the "tcp://" part, and you should see your app running live on the internet!
+      </p>
+      </br>
+      <p class="web__item-text">
+        Let's setup our automated build process by going back to the Repositories tab. This will make it so that everytime we push to our GitHub repo, it automatically kicks off a new build of our image in DockerHub, and then redeploys the container on Docker Cloud. Since our GitHub is already connected, you can just click the GitHub icon and select your username and the repo name. Click Save and Build, and you will be redirected to the Builds tab. This will build a new container based off our image. Once it's done, you can go back to the app and commit some changes, push to master, a build will start and you should then see your changes live at your service URL.
+      </p>
+      </br>
+      <p class="web__item-text">
+        If you want to connect your running app to your domain name, you can simply go to your domain provider and in your cPanel use the DNS Advanced Zone editor to map the IP address of your Digital Ocean droplet (you can get this info in either the Nodes tab of Docker Cloud or in your droplet area of Digital Ocean) to your top level domain with an A type DNS. If you want it to run on a sublevel domain (node.rossfenrick.com) you can use the CNAME DNS type instead.
+      </p>
+    </div>
+  </div>
+  <% include ../../global/scripts.ejs %>
+  </body>
+  </html>

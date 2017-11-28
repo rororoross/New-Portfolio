@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../../global/head.ejs %></head>
+  <body class="blue-bg web__items work">
+  <% include ../../global/header.ejs %>
+  <% include ../work-heading.ejs %>
+  <div class="web__item-container">
+    <h1 class="web__item-header">Full stack node.js app</h1>
+    <p class="web__item-text award">You can see the app live <a target="_blank" href="http://node.rossfenrick.com/">here</a> and the source code on my <a target="_blank" href="https://github.com/rossfenrick/full-stack-node-app">GitHub</a>.</p>
+    <div class="web__item-monitor">
+      <img src="../../img/monitor-node.png" alt="Node app" class="monitor__web-item">
+    </div>
+    <div class="web__item-content">
+      </br>
+      <p class="web__item-text">
+        This app is the end result of Wes Bos' <a href="https://learnnode.com/" target="_blank">Learn Node</a> course. While I do have experience working in Node.js environments, I have mostly been focused on the top of the stack doing layout, styling and interaction work.
+        I decided to take this course to learn the basics of full stack development with server side JavaScript, creating APIs, and working with databases.
+      </p>
+      </br>
+      <p class="web__item-text">
+        The app is a restaurant application which "users can search, geolocate, review and curate their favorite restaurants from around the world."
+        It features user authentication using Passport.js, database storage with MongoDB, Ajax REST API, file uploading and image resizing middleware.
+        The app uses Pug for templating, allows users to reset their password via email, has error handling, pagination, and geospatial data with Google Maps.
+        It also introduced ES2017 concepts such as async + await, and pleny of ES6 features.
+      </p>
+      </br>
+      <p class="web__item-text">
+        I really enjoyed making this because it brought me out of my comfort zone and helped me understand the basic concepts of full stack development. While I don't plan on going full stack, I think this will help me work and communicate with engineering teams in the future.
+      </p>
+    </div>
+  </div>
+  <% include ../../global/scripts.ejs %>
+  </body>
+  </html>

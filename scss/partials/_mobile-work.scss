@@ -1,0 +1,26 @@
+.mobile-work {
+  .mobile-screens {
+    max-width: 200px;
+  }
+
+  .monitor__container {
+    margin-top: 0px;
+    h2 {
+      font-size: 1rem;
+      text-align: center;
+
+    }
+  }
+
+  .mobile-project {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .mobile-work {
+    .monitor__container {
+      margin-top: 60px;
+    }
+  }
+}

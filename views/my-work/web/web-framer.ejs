@@ -1,23 +1,197 @@
 <!DOCTYPE html>
 <html>
   <head><% include ../../global/head.ejs %></head>
-  <body class="blue-bg web__items bluemix">
+  <body class="blue-bg web__items bluemix framer-article work">
   <% include ../../global/header.ejs %>
   <% include ../work-heading.ejs %>
 
   	<div class="web__item-container">
   		<h1 class="web__item-header">Prototyping for the web with Framer</h1>
-  		<p class="web__item-text award">Medium article</p>
-  		<div class="web__item-monitor">
-  			<img src="../../img/monitor-chatbot.png" alt=""class="monitor__web-item">
-			</div>
-      <!-- <img class="web__project-view" src="img/bluemix-onboard.jpg" alt=""> -->
-			<div class="web__item-content" id="bluemix-body">
-				<h2 class="web__item-subheading">Framer isn't just for mobile</h2>
-				<p class="web__item-text">This is an article I wrote that will give you an insight into my prototyping process. I like to user Framer really early in my process, prototyping things like micro interactions and screen flows.
-          I follow the Framer Group on Facebook and I noticed a lot of people asking if it's even possible to do web prototyping, so I wrote an article showing how I was doing just that.
-        </br></br>It ended up being featured in Framer's social media and you can see it on their <a href="https://framer.com/getstarted/resources/#articles" target="_blank">website</a>. You can read the article <a href="https://blog.framer.com/prototyping-for-the-web-with-framer-c619925272d5" target="_blank">here</a>.
-				</p></br>
+  		<div class="web__item-content" id="bluemix-body">
+        <p class="web__item-text">
+          You can read this article on Medium <a href="https://blog.framer.com/prototyping-for-the-web-with-framer-c619925272d5">here.</a> Framer is a really powerful tool that can prototype anything you can think of but if you take a look at Framer’s Gallery you’ll quickly notice something:
+        </p>
+        <img class="screen__wide" src="../../img/web-framer-1.jpeg" alt="Framer mobile">
+        <p class="web__item-text centered">
+          Nearly every example of a Framer prototype is a mobile app.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Out of their 54 examples, 48 of them are apps, 4 for Apple Watch, 1 for iPad and 1 for Apple TV. Is Framer even meant for ‘traditional’ web/desktop design?
+        </p>
+        </br>
+        <p class="web__item-text">
+          <span>Absolutely.</span>
+        </p>
+        </br>
+        <p class="web__item-text">
+          At IBM Design most of my designs are made for enterprise desktop web applications. Most designers I work with use Sketch (including myself). These Sketch files are then prototyped using a tool like InVision or recreated and prototyped in code. As a front end developer on a design team I have a unique position where I both design and code prototypes.
+        </p>
+        </br>
+        <p class="web__item-text">
+          After learning the basics of Framer, I decided to add it to my workflow and it’s really improved my design process. The single most powerful part is being able to import a static Sketch file into Framer and turn it into a realistic, interactive prototype in a relatively short amount of time.
+        </p>
+        </br>
+        <p class="web__item-text">
+          With this, I don’t have to spend valuable time in the beginning of the process recreating designs in code. I can get ideas in front of stakeholders & users much faster. I can save coding for later on when the project is more solidified.
+        </p>
+        </br>
+        <img class="screen__wide" src="../../img/web-framer-2.png" alt="Framer artboards">
+        <p class="web__item-text centered">
+          Take your static artboards
+        </p>
+        <img class="screen__wide" src="../../img/web-framer-3.gif" alt="Framer interactive">
+        <p class="web__item-text centered">
+          And use Framer to create an interactive prototype
+        </p>
+        </br>
+        <p class="web__item-text">
+          After using Framer for a few months here’s some things I’ve learned:
+        </p>
+        </br>
+        <h4 class="web__item-par-heading">
+          Plan and scope your prototypes
+        </h4>
+        <p class="web__item-text">
+          Before I start a project, I decide a few things:
+          </br></br>
+          What am I trying to accomplish?
+          </br></br>
+          Whether the prototype is for user testing or getting an idea conceptualized, what’s the minimum amount of work needed to get my idea across or to gain insight from testing? I’m not just being lazy 😉, this helps decide the necessary interactions, animations and screens that are needed.
+        </p>
+        </br>
+        <p class="web__item-text">
+          The more time you spend on your design the more you become attached. The more attached, the less likely you are to make the necessary changes.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Let’s use the prototype above as an example. I was working on a new project and I wanted to explore what a card based layout with ‘shuffling’ animations in between states would look like. I sketched out the basic idea I wanted to make and used that as my starting point.
+        </p>
+        <img class="screen__wide" src="../../img/web-framer-4.jpeg" alt="Sketch">
+        <p class="web__item-text centered">
+          I generally sketch before I use Sketch
+        </p>
+        </br>
+        <p class="web__item-text">
+          If you <a href="http://share.framerjs.com/yzb4l8t61m2w/" target="_blank">take a look</a> at the finished prototype, only the first card is clickable in each step. There is no way to go back, no hover states, the content in the last screen isn’t complete, and it’s not nearly pixel perfect. None of those were necessary to get my idea across so I didn’t spend time including them. Framer can do just about anything, but that doesn’t mean you should try to do everything in your prototype.
+        </p>
+        </br>
+        <h4 class="web__item-par-heading">
+          Create UI flows using Andreas’ awesome <a href="ViewController module" target="_blank">ViewController module</a>
+        </h4>
+        <p class="web__item-text">
+          You can use the ViewController Sketch plugin to create UI flows right in Sketch. Quickly turn your designs into clickable prototypes without having to write code.
+        </p>
+        <img class="screen__wide" src="../../img/web-framer-5.gif" alt="Framer artboards">
+        <p class="web__item-text centered">
+          Link your artboards together inside Sketch..
+        </p>
+        <img class="screen__wide" src="../../img/web-framer-6.gif" alt="Clickable prototype">
+        <p class="web__item-text">
+          To create a clickable prototype
+        </p>
+        </br>
+        <p class="web__item-text">
+          This is great for presenting your work to stakeholders and is really quite simple to do. Instead of walking through a Sketch file with a dozen artboards or a .pdf, you can present an interactive prototype or share your hosted Framer project URL.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Depending on what I’m trying to accomplish I may end up writing some code for things like hover effects, animations and text inputs for an added touch of realism and interactivity. Again, as a designer, decide what’s necessary to get your idea across and implement appropriately.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Check out <a href="https://uxdesign.cc/create-ui-flows-using-sketch-and-framer-36b6552306b5?gi=579334b2c8f8#.uwhcoy9wp" target="_blank">Andreas’ Create UI flows using Sketch and Framer article</a> to learn more about the plugin.
+        </p>
+        </br>
+        <h4 class="web__item-par-heading">
+          Microinteractions
+        </h4>
+        <img class="screen__wide" src="../../img/web-framer-7.gif" alt="Framer">
+        <p class="web__item-text">
+          I think there’s a few reasons that mobile prototyping is really popular with Framer, one of them being microinteractions seem to much more commonplace on mobile. But it doesn’t have to be that way! I think as designers for the web can be better at making our work have more motion and Framer is really good at this.
+        </p>
+        </br>
+        <p class="web__item-text">
+          This is just a simple example of a quick interaction I made using a Sketch file a designer on my team had already made. Exploring interactions like this takes a matter of minutes.
+        </p>
+        </br>
+        <h4 class="web__item-par-heading">
+          Sure, but why not just code?
+        </h4>
+        <p class="web__item-text">
+          As a front end developer, a lot of my projects will eventually end up with a coded prototype. I then use this prototype as a basis to write the front end code into the product, working along side engineering. So why not just code from the start?
+        </p>
+        </br>
+        <p class="web__item-text">
+          As I mentioned earlier, speed. I can quickly flesh out ideas that either I or another designer have already made by importing them from Sketch into Framer. It’s great for the early part of the design process where you’re exploring ideas and implementing feedback quickly. I can move pretty fast in code, but Framer takes it to the next level.
+        </p>
+        </br>
+        <p class="web__item-text">
+          Another reason is freedom. The simple fact that all of my code written in Framer will be thrown away is actually kind of great. It allows me to try things I wouldn’t otherwise and to be a bit more loose with my code. I can spend 15 minutes exploring an idea and then trash it without any remorse.
+        </p>
+        </br>
+        <h4 class="web__item-par-heading">
+          Some tips & tricks
+        </h4>
+        <p class="web__item-text">
+          You (or the designer you’re working with) will probably have to set up Sketch files a bit differently.
+        </p>
+        <ul>
+          <li>Group your layers. Layers that are not in a group are ignored</li>
+          <li>Avoid using spaces in your group names</li>
+          <li>Hidden layers in Sketch are still imported, but their visibility will be set to false.</li>
+          <li>Create simple, unique names for your artboards</li>
+          <li>A minus (-) at the end of your artboard will exclude it from being imported into Framer</li>
+        </ul>
+        </br>
+        <p class="web__item-text">
+          Flatten any layers in Sketch that will remain static. This will improve the loading time of your project, which is especially great when creating a heftier prototype. You can do this by adding an asterisk(*) to the end of the layer in Sketch.
+        </p>
+        <img class="screen__wide" src="../../img/web-framer-8.png" alt="Framer">
+        <p class="web__item-text">
+          It’s worth spending some time with the designers on your team to go over how to setup Sketch files to best fit the workflow and what works best for the team.
+        </p>
+        </br>
+        <p class="web__item-text">
+          When you import a Sketch file into Framer, you’ll see something like this:
+        </p>
+        <pre>
+          <code>
+            # Import file "design"
+            sketch = Framer.Importer.load("imported/design@1x")
+          </code>
+        </pre>
+        <p class="web__item-text">
+          Use this snippet to reference layers directly. No more need to reference sketch file, you can just reference layers directly:
+        </p>
+        <pre>
+          <code>
+            Utils.globalLayers sketch
+          </code>
+        </pre>
+        <p class="web__item-text">
+          Use the ‘Normal Cursor’ snippet for a normal mouse pointer:
+        </p>
+        <pre>
+          <code>
+            document.body.style.cursor = "auto"
+          </code>
+        </pre>
+        <p class="web__item-text">
+          I import my designs at @2x and then scale them down, so they’re extra crisp. Note that this doesn’t seem to get along with the ViewController module mentioned above.
+        </p>
+        <pre>
+          <code>
+            Framer.Device.contentScale = .5
+          </code>
+        </pre>
+        <p class="web__item-text">
+          Sketch and Framer use different default artboards/devices for the web. Sketch uses 1440x1024 while Framer uses 1440x900. I opt for 1440x900. Don’t think you’re restricted to 900 pixels for height though, you can easily create scrollable pages in Framer.
+        </p>
+        </br>
+        <p class="web__item-text">
+          If you have any questions tweet me <a href="https://twitter.com/rossfenrick" target="_blank">@rossfenrick</a>
+        </p>
 			</div>
   	</div>
   <% include ../../global/scripts.ejs %>

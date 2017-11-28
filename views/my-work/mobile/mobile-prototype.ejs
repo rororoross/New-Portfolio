@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+  <head><% include ../../global/head.ejs %></head>
+  <body class="blue-bg mobile-work work">
+    <% include ../../global/header.ejs %>
+    <% include ../work-heading.ejs %>
+<div class="phone-prototype">
+  <h2>Bus Tracker App</h2>
+  <p id="phone-head">interactive prototype</p>
+  <div class="phone-background">
+    <div id="phone-screen">
+      <div class="mcts-home-screen screen">
+        <div class="bus-subheader">
+          <div id="location-container">
+            <div id="destination"><p>Where are you headed?</p></div>
+          </div>
+        </div>
+        <div id="map"></div>
+        <div class="route-button">
+          <img src="../../img/mcts-icon-routes.svg" alt="Routes" id="find-location">
+        </div>
+        <div class="routes">
+          <div id="near-you"><p>Stops near you</p></div>
+          <div class="route-row">
+            <div class="route-number"><p>30</p></div>
+            <p class="route-name">UWM via Maryland</p>
+            <p class="route-stop">Van Buren & Kilbourn</p>
+            <p class="route-time">Due in 5 minutes</p>
+          </div>
+          <div class="route-row">
+            <div class="route-number"><p>10</p></div>
+            <p class="route-name">Bayshore</p>
+            <p class="route-stop">Prospect & Wells</p>
+            <p class="route-time">Due in 8 minutes</p>
+          </div>
+          <div class="route-row">
+            <div class="route-number"><p>15</p></div>
+            <p class="route-name">Downtown</p>
+            <p class="route-stop">Wisconsin & Cass</p>
+            <p class="route-time">Due in 1 minutes</p>
+          </div>
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>45</p></div>
+            <p class="route-name">Boytel</p>
+            <p class="route-stop">Wisconsin & Cass</p>
+            <p class="route-time">Due in 9 minutes</p>
+          </div>
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>20</p></div>
+            <p class="route-name">Bayview</p>
+            <p class="route-stop">Wisconsin & Cass</p>
+            <p class="route-time">Due in 3 minutes</p>
+          </div>
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>60</p></div>
+            <p class="route-name">Grafton</p>
+            <p class="route-stop">Maryland & Downer</p>
+            <p class="route-time">Due in 10 minutes</p>
+          </div>
+
+          <div class="route-row bottom-routes">
+            <div class="route-number"><p>20</p></div>
+            <p class="route-name">Pabst</p>
+            <p class="route-stop">Water & Beer</p>
+            <p class="route-time">Due in 33 minutes</p>
+          </div>
+        </div> <!--End of routes-->
+      </div> <!-- End of mcts-home-screen-->
+
+    <div class="mcts-favorites-screen screen">
+      <div class="favorites__container">
+      <header class="mcts-header">
+        <img src="" alt="" class="header-icon icon-add">
+        <h1 class="mcts-heading">Favorites</h1>
+        <img src="../../img/icon-settings.svg" alt="Settings" class="header-icon icon-gear">
+      </header>
+      <div class="mcts-container">
+        <div class="mcts-favorites-row">
+          <div class="route-number-favorites">
+            <p class="route-number-lg">10</p>
+          </div>
+          <div class="route-name-favorites">
+            <h2 class="route-street">Brookfield Square</h2>
+            <p class="stop-name-favorites">Prospect & Brady</p>
+          </div>
+          <div class="route-eta">
+            <p class="street-start"><img src="../../img/icon-walk.svg" alt="Walk" class="icon-walk"> Prospect</p><span class="street-start-time">8 min</span>
+            <p class="bus-arrival">Due in 12 minutes</p>
+          </div>
+        </div>
+
+        <div class="mcts-favorites-row">
+          <div class="route-number-favorites">
+            <p class="route-number-lg">15</p>
+          </div>
+          <div class="route-name-favorites">
+            <h2 class="route-street">Shorewood</h2>
+            <p class="stop-name-favorites">Beverly & Oakland</p>
+          </div>
+          <div class="route-eta">
+            <p class="street-start"><img src="../../img/icon-walk.svg" alt="Walk" class="icon-walk"> Beverly</p><span class="street-start-time">58 min</span>
+            <p class="bus-arrival">Due in 34 minutes</p>
+          </div>
+        </div>
+
+        <div class="mcts-favorites-row">
+          <div class="route-number-favorites">
+            <p class="route-number-lg">30</p>
+          </div>
+          <div class="route-name-favorites">
+            <h2 class="route-street">Bayview</h2>
+            <p class="stop-name-favorites">Mitchell & Florida</p>
+          </div>
+          <div class="route-eta">
+            <p class="street-start"><img src="../../img/icon-walk.svg" alt="Walk" class="icon-walk"> Mitchell</p><span class="street-start-time">33 min</span>
+            <p class="bus-arrival">Due in 20 minutes</p>
+          </div>
+        </div>
+      </div>
+      <div class="add__route">
+        <div class="add__container">
+          <label for="routePicker">Select a route</label>
+          <select name="routePicker" class="selectors" id="route__selector">
+            <option value="Brotel">Select a route</option>
+            <option value="Brotel">Bayview</option>
+            <option value="Brotel">Fox Point</option>
+            <option value="Brotel">Third Ward</option>
+            <option value="Brotel">West Allis</option>
+          </select>
+          <div class="stop__container">
+            <label for="stopPicker">Select a stop</label>
+            <select name="stopPicker" class="selectors" id="stop__selector">
+              <option value="Brotel">34th and Lamar</option>
+              <option value="Brotel">Wisconsin and Water</option>
+              <option value="Brotel">Oklahoma and Clement</option>
+              <option value="Brotel">Mitchell and Lapham</option>
+            </select>
+          </div>
+          <div class="add__route-button-container">
+            <button class="mcts__button mcts__button-secondary">cancel</button>
+            <button id="add__button" class="mcts__button">add</button>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div> <!--End of favorites-screen-->
+
+    <div class="mcts-routes-screen screen">
+      <header class="mcts-header">
+        <img src="../../img/icon-add.svg" alt="Add" class="header-icon hidden">
+        <h1 class="mcts-heading">Routes</h1>
+        <img src="../../img/icon-settings.svg" alt="Settings" class="header-icon icon-gear">
+      </header>
+      <div class="routes-list" id="route-list-one">
+        <div class="route-list-name">
+          <p class="route-list-number">6</p>
+          <p class="route-list-street">Holton - Kinnickinnic</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">9</p>
+          <p class="route-list-street">New Berlin Industrial Park</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">12</p>
+          <p class="route-list-street">Teutonia - Hampton</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">14</p>
+          <p class="route-list-street">Humboldt - Forest Home</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">17</p>
+          <p class="route-list-street">Oakland - Maryland</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">20</p>
+          <p class="route-list-street">Cass - Downer</p>
+        </div>
+        <div class="route-list-name">
+          <p class="route-list-number">25</p>
+          <p class="route-list-street">Cramer - Beverly</p>
+        </div>
+      </div>
+    </div>
+    <div class="mcts-map-screen screen">
+      <header class="mcts-header">
+        <img src="../../img/icon-add.svg" alt="Add" class="header-icon hidden">
+        <h1 class="mcts-heading">Settings</h1>
+        <img src="../../img/icon-settings.svg" alt="Settings" class="header-icon icon-gear">
+      </header>
+      <div class="row">
+        <p class="input">Cellular data</p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Location services</p>
+        <label class="switch">
+          <input type="checkbox" checked>
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Background app refresh</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Notifications</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+      <div class="row">
+        <p class="input">Microphone</p>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="main-nav">
+    <ul>
+    <li class="mcts-home mcts-nav">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mcts-icon" viewBox="0 0 48 48">
+    <path class="changefill nav-home" d="M20 40v-12h8v12h10v-16h6l-20-18-20 18h6v16z" fill="#34b262"/>
+    <path d="M0 0h48v48h-48z" fill="none"/>
+    </svg>
+    <p class="nav-p home-p">Home</p>
+    </li>
+    <li class="mcts-favorites mcts-nav">
+      <svg class="mcts-icon icon-fav" viewBox="0 0 24 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <defs></defs>
+          <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+              <g id="icon-star">
+                  <polygon id="Shape" class="changefill nav-favorites" fill="#838383" fill-rule="nonzero" points="12 17.6 19.42 23 16.58 14.28 24 9 14.9 9 12 0 9.1 9 0 9 7.42 14.28 4.59 23"></polygon>
+                  <polygon id="Shape" points="0 0 24 0 24 24 0 24"></polygon>
+              </g>
+          </g>
+      </svg>
+    <p class="nav-p fav-p">Favorites</p>
+    </li>
+    <li class="mcts-routes mcts-nav">
+    <svg xmlns="http://www.w3.org/2000/svg" class="mcts-icon icon-small" viewBox="0 0 48 48">
+    <path class="changefill nav-routes" d="M43.41 22.59l-18-18c-.78-.78-2.05-.78-2.82 0l-18 18c-.78.78-.78 2.05 0 2.83l18 17.99v.01c.78.78 2.05.78 2.83 0l18-18c.78-.79.78-2.05-.01-2.83zm-15.41 6.41v-5h-8v6h-4v-8c0-1.11.89-2 2-2h10v-5l7 7-7 7z" fill="#838383"/>
+    <path d="M0 0h48v48h-48z" fill="none"/>
+    </svg>
+    <p class="nav-p routes-p">Routes</p>
+    </li>
+    <li class="mcts-map mcts-nav">
+      <svg fill="#838383" class="mcts-icon icon-small" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 0h24v24H0z" fill="none"/>
+          <path class="changefill nav-routes" d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+      </svg>
+
+    <p class="nav-p map-p">Settings</p>
+    </li>
+    </ul>
+    </div> <!--End of main-nav-->
+    </div> <!--End of phone-screen-->
+  </div> <!--End of phone-background-->
+  <p class="description">I have experience creating a fairly extensive prototype for mobile at IBM, but due to confidentiality of that project I can't share it publicly. So I made this prototype to show how I use web development to prototype for mobile. This is a fairly simple prototype, as there's no CRUD actions and only a handful of interactivity, but it's a solid base if I want to expand upon it in the future.</p>
+</div>
+
+    <script>
+      function initMap() {
+        // Create a map object and specify the DOM element for display.
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 43.051167, lng: -87.900774},
+          zoom: 16,
+          disableDefaultUI: true
+        });
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgLUWP4Y4YzeMAsPPLSTFLTGQb26RyWgg&callback=initMap"
+    async defer></script>
+    <% include ../../global/scripts.ejs %>
+  </body>
+</html>

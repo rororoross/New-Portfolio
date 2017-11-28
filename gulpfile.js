@@ -12,7 +12,7 @@ var SOURCE = {
 	css: 'public/css/',
 	ejs: 'views/**/*.ejs',
 	js: 'js/*.js',
-	img: 'img/**/*'
+	img: 'img/**/*.*'
 };
 
 var AUTOPREFIXER_BROWSERS = [
@@ -44,8 +44,14 @@ gulp.task('js', function(){
 		.pipe(browserSync.stream());
 	});
 
-gulp.task('img', function() {
-  gulp.src('img/.*')
+	gulp.task('ejs', function(){
+	  gulp.src('views/**/*.ejs')
+			.pipe(browserSync.stream());
+		});
+
+gulp.task('img', function(){
+  gulp.src('img/**/*.*')
+		return gulp.src('img/**/*.*')
     .pipe(gulp.dest('public/img'))
 		.pipe(browserSync.stream());
 	});
@@ -59,10 +65,10 @@ gulp.task('sass', function(){
     .pipe(browserSync.stream());
 	});
 
+gulp.task('build', ['img', 'sass', 'js']);
+
 gulp.task('default', ['sass', 'js', 'img', 'browser-sync'], function(){
 	gulp.watch(SOURCE.scss, ['sass']);
+	gulp.watch(SOURCE.ejs, ['ejs']);
 	gulp.watch(SOURCE.js, ['js']);
-	gulp.watch(SOURCE.png, ['img']);
 });
-
-gulp.task('build', ['img', 'sass', 'js']);

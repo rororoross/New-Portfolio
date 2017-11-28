@@ -11,24 +11,43 @@ router.get('/my-work/', function(req, res, next) {
 });
 
 router.get('/my-work/web/', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/')}), 250);
+	setTimeout((function() {res.render('my-work/web/')}), 320);
 });
 
 router.get('/my-work/web/web-container-service', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-container-service')}), 250);
+	setTimeout((function() {res.render('my-work/web/web-container-service')}), 320);
 });
 
 router.get('/my-work/web/web-get-started', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-get-started')}), 100);
+	setTimeout((function() {res.render('my-work/web/web-get-started')}), 320);
 });
 
 router.get('/my-work/web/web-framer', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/web/web-framer')}), 330);
+	setTimeout((function() {res.render('my-work/web/web-framer')}), 320);
 });
 
+router.get('/my-work/web/web-node', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-node')}), 320);
+});
+
+router.get('/my-work/web/web-pipeline', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-pipeline')}), 320);
+});
+
+router.get('/my-work/web/web-code101', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/web/web-code101')}), 320);
+});
 
 router.get('/my-work/mobile', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/mobile/')}), 250);
+	setTimeout((function() {res.render('my-work/mobile/')}), 320);
+});
+
+router.get('/my-work/mobile/mobile-prototype', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/mobile/mobile-prototype')}), 320);
+});
+
+router.get('/my-work/mobile/framer-prototype', function(req, res, next) {
+	setTimeout((function() {res.render('my-work/mobile/framer-prototype')}), 320);
 });
 
 router.get('/about-me', function(req, res, next) {
@@ -40,7 +59,7 @@ router.get('/get-in-touch', function(req, res, next) {
 });
 
 router.get('/my-work/animations', function(req, res, next) {
-	setTimeout((function() {res.render('my-work/animations/')}), 250);
+	setTimeout((function() {res.render('my-work/animations/')}), 320);
 });
 
 router.get('/my-work/animations/animation-get-started', function(req, res, next) {

@@ -1,16 +1,17 @@
 @import 'partials/reset';
-@import 'theme/colors';
-@import 'theme/typography';
-@import 'theme/buttons-links';
+@import 'mixins/globals';
+@import 'partials/navigation/navigation';
 @import 'partials/home';
-@import 'partials/header';
 @import 'partials/footer';
 @import 'partials/work';
 @import 'partials/web';
+@import 'partials/mobile-work';
 @import 'partials/mcts';
+@import 'partials/framer';
 @import 'partials/about-me';
 @import 'partials/get-in-touch';
 @import 'partials/web-item';
+@import 'partials/animations';
 
 .clearfix {
 	clear: both;
